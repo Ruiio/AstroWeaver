@@ -1,0 +1,72 @@
+{
+    "name": "PSR J0337+1715",
+    "type": "Psr",
+    "ID": "@8348542",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "03 37 43.8210968640  +17 15 14.886499572",
+        "notes": "(Opt ) A [0.1363 0.1413 90]",
+        "ref": "2020yCat.1350....0G"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "03 34 53.3382154269  +17 05 27.12419008"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "169.9896596276568  -30.039483367196"
+    },
+    "hierarchy counts": {
+        "parents": 0,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "5.480-4.427",
+        "notes": "[0.1880.16390]A",
+        "ref": "2020yCat.1350....0G"
+    },
+    "Parallax(mas)": {
+        "value": "0.5417",
+        "notes": "[0.1951] A",
+        "ref": " 2020yCat.1350....0G"
+    },
+    "Radial Velocity": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Redshift": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "cz": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "~",
+        "notes": "   ~   ~ (~)  ~",
+        "ref": "~"
+    },
+    "identifiers": [
+        "PSR J0337+1715",
+        "Gaia DR3 44308738051547264",
+        "SDSS J033743.82+171514.8"
+    ],
+    "measures": "PLX:2PM:3"
+}

@@ -1,0 +1,709 @@
+{
+    "entity_name": "Starlink",
+    "infobox_attributes": {
+        "Manufacturer": "SpaceX",
+        "Country of origin": "United States",
+        "Operator": "Starlink Services, LLC (a wholly-owned subsidiary of SpaceX)",
+        "Applications": "Internet service",
+        "Website": "starlink.com",
+        "Project cost": "US$10 billion (estimated)",
+        "ASN": "14593",
+        "Spacecraft type": "Small satellite",
+        "Launch mass": "v0.9: 227 kg (500 lb) v1: 260 kg (570 lb) v1.5: ~306 kg (675 lb) v2 mini: ~740 kg (1, 630 lb) v2: ~1, 250 kg (2, 760 lb)",
+        "Equipment": "Ku-, Ka-, and E-band phased array antennas Laser transponders (some units) Hall-effect thrusters",
+        "Regime": "Low Earth orbit Sun-synchronous orbit",
+        "Status": "Active since 2019 ; 6 years ago ( 2019 ) Paying customers since Oct 26, 2020 ; 4 years ago ( Oct 26, 2020 )"
+    },
+    "consolidated_relationships": [
+        {
+            "Operated By": [
+                "Iau Centre For The Protection Of The Dark And Quiet Sky From Satellite Constellation Interference",
+                "Starlink Services, Llc"
+            ],
+            "Owned By": [
+                "Spacex"
+            ],
+            "Provides Coverage To": [
+                "130 Countries And Territories"
+            ],
+            "Aims To Provide": [
+                "Global Mobile Broadband"
+            ],
+            "Launched By": [
+                "Falcon 9",
+                "Spacex",
+                "Starship"
+            ],
+            "Contains": [
+                "65% Of All Active Satellites",
+                "Over 7,600 Mass-Produced Small Satellites",
+                "Swarm Technologies",
+                "T-Mobile Us"
+            ],
+            "Orbits": [
+                "Low Earth Orbit"
+            ],
+            "Planned To Have": [
+                "12,000 Satellites",
+                "Possible Later Extension To 34,400"
+            ],
+            "Has Subscribers": [
+                "4 Million Subscribers In September 2024",
+                "Over 1 Million Subscribers In December 2022"
+            ],
+            "Housed In": [
+                "Spacex Satellite Development Facility In Redmond, Washington"
+            ],
+            "Estimated Cost": [
+                "Us$10 Billion"
+            ],
+            "Revenue In": [
+                "2022 Were Reportedly $1.4 Billion",
+                "2023 Began Small Profit",
+                "2024 Expected To Reach $6.6 Billion",
+                "2025 Expected To Reach $11.8 Billion"
+            ],
+            "Used In": [
+                "2022 Russian Invasion Of Ukraine",
+                "Mexico",
+                "Ukraine"
+            ],
+            "Has Contract With": [
+                "United States Department Of Defense"
+            ],
+            "Has Version": [
+                "Starlink Mini",
+                "Starshield"
+            ],
+            "Criticized By": [
+                "Astronomers",
+                "Chinese Authorities",
+                "Dmitry Rogozin",
+                "International Astronomical Union",
+                "Iran",
+                "National Radio Astronomy Observatory",
+                "Square Kilometre Array Organization"
+            ],
+            "Mitigation Measures By": [
+                "Spacex"
+            ],
+            "Has Equipment": [
+                "Hall-Effect Thrusters"
+            ],
+            "Designed For": [
+                "Autonomously And Smoothly Avoid Collisions"
+            ],
+            "Developed By": [
+                "Spacex"
+            ],
+            "Approved By": [
+                "Federal Communications Commission"
+            ],
+            "Inspired By": [
+                "The Fault In Our Stars"
+            ],
+            "Member Of": [
+                "Starlink Constellation",
+                "Steam"
+            ],
+            "Targets Traffic": [
+                "High-Density Cities"
+            ],
+            "Funds Mission": [
+                "Mars"
+            ],
+            "Operates In": [
+                "Brazil",
+                "Canada",
+                "Fiji",
+                "India",
+                "Indonesia",
+                "Iran",
+                "Irvine",
+                "Ka-Band",
+                "Ku-Band",
+                "Lesotho",
+                "Low Earth Orbit",
+                "Mongolia",
+                "Orbital",
+                "Philippines",
+                "Redmond",
+                "Romania",
+                "Somalia",
+                "Sri Lanka",
+                "Taiwan",
+                "Ukraine",
+                "United States",
+                "V-Band Payload",
+                "Yemen",
+                "Zambia"
+            ],
+            "Operates In Frequency Range": [
+                "Ka-Band",
+                "Ku- And Ka- Frequency Bands"
+            ],
+            "Approved For Satellites": [
+                "4,425 Satellites"
+            ],
+            "Requires Approval From": [
+                "Itu"
+            ],
+            "Complies With Request From": [
+                "Nasa"
+            ],
+            "Offers Service": [
+                "Aircraft",
+                "Australia",
+                "Better Than Nothing Beta",
+                "Boats",
+                "Canada",
+                "Hawaiian Airlines",
+                "Internet",
+                "Jsx Airline",
+                "Low Earth Orbit",
+                "Moving Vehicles",
+                "New Zealand",
+                "Qatar Airways",
+                "Royal Caribbean Group",
+                "United Airlines"
+            ],
+            "Has Service Tier": [
+                "Starlink Business"
+            ],
+            "Planned To Deploy": [
+                "12,000 Satellites",
+                "Marslink",
+                "Starship"
+            ],
+            "Collaborated With": [
+                "Airtel",
+                "Jio",
+                "Kddi",
+                "National Authority For Communications Administration And Regulation",
+                "National Cellular Service Providers",
+                "One Nz",
+                "Optus",
+                "Rogers Communications",
+                "Romanian Ministry Of National Defense",
+                "Ses",
+                "Spacex",
+                "T-Mobile Us"
+            ],
+            "Investigated By": [
+                "Usaid"
+            ],
+            "Opposed To": [
+                "Federal Communications Commission"
+            ],
+            "Proposed To": [
+                "Russian President Vladimir Putin"
+            ],
+            "Supports": [
+                "Ukraine"
+            ],
+            "Manufactured By": [
+                "Starlink Mini",
+                "Stmicroelectronics"
+            ],
+            "Used By": [
+                "Space Development Agency",
+                "U.S. Space Force",
+                "Virgin Voyages"
+            ],
+            "Launched With Capability": [
+                "Cell Phone Capable Satellites"
+            ],
+            "Has Service": [
+                "Starshield"
+            ],
+            "Connected To": [
+                "Ac-130 Gunship",
+                "Beechcraft C-12 Huron",
+                "Boeing Kc-135 Stratotanker",
+                "Ground Stations",
+                "Starshield"
+            ],
+            "Part Of": [
+                "National Defense Space Architecture"
+            ],
+            "Associated With": [
+                "Google Data-Centers",
+                "Terrence J. O'Shaughnessy"
+            ],
+            "Supports Military Operation": [
+                "United States Air Force"
+            ],
+            "Targeted By Military Strategy": [
+                "Chinese Military"
+            ],
+            "Pending Approval In": [
+                "India",
+                "Morocco"
+            ],
+            "Activated In": [
+                "Iran"
+            ],
+            "Uses Technology": [
+                "Digital Processing Technologies",
+                "Optical Inter-Satellite Links",
+                "Phased Array Beam-Forming"
+            ],
+            "Communicates Via": [
+                "Ka-Band",
+                "Ku-Band"
+            ],
+            "Employs Propulsion": [
+                "Hall-Effect Thrusters"
+            ],
+            "Uses": [
+                "Argon",
+                "Krypton",
+                "Pulsarad"
+            ],
+            "Has Connectivity Mode": [
+                "Broadband Satellite Internet Service",
+                "Direct-To-Cell Capability"
+            ],
+            "Has Terminal": [
+                "Starlink Mini",
+                "Starlink Terminal"
+            ],
+            "Submitted Application For": [
+                "Federal Communications Commission",
+                "Maritime Market",
+                "V-Band Payload"
+            ],
+            "Uses Chip": [
+                "Catson"
+            ],
+            "Uses Beamformer": [
+                "Shiraz"
+            ],
+            "Uses Communication Band": [
+                "71–86 Ghz W Band",
+                "Ka-Band"
+            ],
+            "Operates Constellation": [
+                "Tintin A",
+                "Tintin B"
+            ],
+            "Communicates With": [
+                "California Ground Stations",
+                "Ground Stations",
+                "Washington State Ground Stations"
+            ],
+            "Uses Navigation System": [
+                "Star Tracker"
+            ],
+            "Utilizes Data From": [
+                "United States Department Of Defense"
+            ],
+            "Operates At Altitude": [
+                "550 Km"
+            ],
+            "Has Component": [
+                "Darksat"
+            ],
+            "Has Feature": [
+                "Lasers For Inter-Satellite Communication",
+                "Visors That Blocked Sunlight"
+            ],
+            "Launched In": [
+                "January 24, 2021"
+            ],
+            "Originates From": [
+                "Starlink V1.5",
+                "Starlink V2.0"
+            ],
+            "Hosts Payload": [
+                "Classified Government Payloads",
+                "Military Payloads"
+            ],
+            "Produced By": [
+                "Spacex"
+            ],
+            "Has Form Factor": [
+                "Bus F9-1",
+                "Bus F9-2",
+                "Bus F9-3",
+                "Bus Starship-1",
+                "Bus Starship-2",
+                "Starlink Mini",
+                "Starlink V2.0"
+            ],
+            "Supported By": [
+                "30,000 Additional Starlink Satellites"
+            ],
+            "Tested By": [
+                "Federal Communications Commission"
+            ],
+            "Operates In Orbit": [
+                "550 Km"
+            ],
+            "Modified By": [
+                "Spacex"
+            ],
+            "Includes Satellites": [
+                "Tintin A",
+                "Tintin B"
+            ],
+            "Launched Satellites": [
+                "Starlink Group 4–7"
+            ],
+            "Affected By": [
+                "Geomagnetic Storm",
+                "Kosmos 1408 Debris"
+            ],
+            "Performed Test On": [
+                "S33"
+            ],
+            "Hosts Solar Panels Like": [
+                "Starlink V2.0"
+            ],
+            "Affects": [
+                "Radio Telescopes",
+                "Square Kilometre Array Organization"
+            ],
+            "Causes Signal Loss": [
+                "Cerro Tololo Inter-American Observatory"
+            ],
+            "Affected Scientific Observations": [
+                "Decam"
+            ],
+            "Has Experimental Satellite": [
+                "Darksat"
+            ],
+            "Paired With": [
+                "International Astronomical Union"
+            ],
+            "Launched Generation": [
+                "Mini"
+            ],
+            "Uses Brightness Mitigation": [
+                "Gen 2"
+            ],
+            "Emits": [
+                "Radio Signals"
+            ],
+            "Performs Collision-Avoidance Maneuvers With": [
+                "European Satellite",
+                "Kosmos 1408 Debris",
+                "Tiangong Space Station"
+            ],
+            "Subject Of Warning By": [
+                "National Telecommunications And Information Administration"
+            ],
+            "Competes With": [
+                "Oneweb",
+                "Project Kuiper",
+                "Samsung Constellation",
+                "Telesat Constellation"
+            ],
+            "Challenged By": [
+                "National Rural Electric Cooperative Association"
+            ]
+        },
+        {
+            "Planned To Deploy": "Planned To Deploy",
+            "Revenue In": "Revenue In",
+            "Pending Approval In": "Pending Approval In",
+            "Housed In": "Housed In",
+            "Used By": "Used By",
+            "Operates At Altitude": "Operates At Altitude",
+            "Causes Signal Loss": "Causes Signal Loss",
+            "Partnered With": "Collaborated With",
+            "Collaborates With": "Collaborated With",
+            "Manufactures": "Manufactured By",
+            "Targeted By Military Strategy": "Targeted By Military Strategy",
+            "Complies With Request From": "Complies With Request From",
+            "Emits": "Emits",
+            "Competes With": "Competes With",
+            "Has Feature": "Has Feature",
+            "Operates Constellation": "Operates Constellation",
+            "Comprises": "Contains",
+            "Has Form Factor": "Has Form Factor",
+            "Criticized By": "Criticized By",
+            "Uses Module": "Uses",
+            "Activated In": "Activated In",
+            "Inspired By": "Inspired By",
+            "Supplemented By": "Supported By",
+            "Modified By": "Modified By",
+            "Communicates With": "Communicates With",
+            "Operates In Band": "Operates In Frequency Range",
+            "Launched With Capability": "Launched With Capability",
+            "Submitted Application For": "Submitted Application For",
+            "Operated By": "Operated By",
+            "Proposed To": "Proposed To",
+            "Launched By": "Launched By",
+            "Contracted By": "Has Contract With",
+            "Estimated Cost": "Estimated Cost",
+            "Planned To Have": "Planned To Have",
+            "Affects Observations": "Affected Scientific Observations",
+            "Targets Traffic": "Targets Traffic",
+            "Developed By": "Developed By",
+            "Equipped With": "Has Equipment",
+            "Applied For Permission": "Submitted Application For",
+            "Has Version": "Has Version",
+            "Performs Collision-Avoidance Maneuvers With": "Performs Collision-Avoidance Maneuvers With",
+            "Aims To Provide": "Aims To Provide",
+            "Launched Satellites": "Launched Satellites",
+            "Designed To": "Designed For",
+            "Member Of": "Member Of",
+            "Consists Of": "Contains",
+            "Provides Coverage To": "Provides Coverage To",
+            "Orbits": "Orbits",
+            "Has Terminal": "Has Terminal",
+            "Utilizes Data From": "Utilizes Data From",
+            "Operates In": "Operates In",
+            "Mitigation Measures By": "Mitigation Measures By",
+            "Communicates Via": "Communicates Via",
+            "Launched Since": "Launched In",
+            "Subject Of Complaint By": "Criticized By",
+            "Used In": "Used In",
+            "Submitted Application To": "Submitted Application For",
+            "Supports Military Operation": "Supports Military Operation",
+            "Subject Of Warning By": "Subject Of Warning By",
+            "Uses Frequency Band": "Uses Communication Band",
+            "Uses Technology": "Uses Technology",
+            "Derived From": "Originates From",
+            "Has Experimental Satellite": "Has Experimental Satellite",
+            "Planned Constellation": "Planned To Deploy",
+            "Interconnects With": "Connected To",
+            "Tested Deployment System With": "Performed Test On",
+            "Associated With": "Associated With",
+            "Includes Payload From": "Contains",
+            "Challenged By": "Challenged By",
+            "Affects": "Affects",
+            "Produced By": "Produced By",
+            "Impacted By": "Affected By",
+            "Uses Beamformer": "Uses Beamformer",
+            "Has Component": "Has Component",
+            "Uses Chip": "Uses Chip",
+            "Investigated By": "Investigated By",
+            "Launched Generation": "Launched Generation",
+            "Approved For Satellites": "Approved For Satellites",
+            "Funds Mission": "Funds Mission",
+            "Has Regulatory Approval From": "Approved By",
+            "Licensed By": "Approved By",
+            "Connects With": "Connected To",
+            "Operates In Orbit": "Operates In Orbit",
+            "Subsidiary Of": "Owned By",
+            "Offers Service": "Offers Service",
+            "Provides Service For": "Offers Service",
+            "Hosts Solar Panels Like": "Hosts Solar Panels Like",
+            "Manufactured By": "Manufactured By",
+            "Works With": "Paired With",
+            "Denied By": "Opposed To",
+            "Has Service": "Has Service",
+            "Tested By": "Tested By",
+            "Partners With": "Collaborated With",
+            "Approved By": "Approved By",
+            "Concerns Raised By": "Criticized By",
+            "Connected To Aircraft": "Connected To",
+            "Planned To Launch On": "Planned To Deploy",
+            "Has Service Tier": "Has Service Tier",
+            "Operates In Frequency Bands": "Operates In Frequency Range",
+            "Affected By": "Affected By",
+            "Employs Propulsion": "Employs Propulsion",
+            "Requires Approval From": "Requires Approval From",
+            "Deployed In": "Used In",
+            "Managed By": "Operated By",
+            "Has Military Version": "Has Version",
+            "Provides Service To": "Offers Service",
+            "Has Subscribers": "Has Subscribers",
+            "Uses Navigation System": "Uses Navigation System",
+            "Includes Satellites": "Includes Satellites",
+            "Uses Brightness Mitigation": "Uses Brightness Mitigation",
+            "Part Of": "Part Of",
+            "Uses Propulsion System": "Employs Propulsion",
+            "Cooperates With": "Collaborated With",
+            "Supports": "Supports",
+            "Hosts Payload": "Hosts Payload",
+            "Provides Service": "Offers Service",
+            "Has Connectivity Mode": "Has Connectivity Mode",
+            "Uses Reaction Mass": "Uses"
+        },
+        {
+            "130 countries and territories": "130 Countries And Territories",
+            "NASA": "Nasa",
+            "2024 expected to reach $6.6 billion": "2024 Expected To Reach $6.6 Billion",
+            "Indonesia": "Indonesia",
+            "moving vehicles": "Moving Vehicles",
+            "Telesat constellation": "Telesat Constellation",
+            "International Astronomical Union": "International Astronomical Union",
+            "Terrence J. O'Shaughnessy": "Terrence J. O'Shaughnessy",
+            "Qatar Airways": "Qatar Airways",
+            "OneWeb": "Oneweb",
+            "Lesotho": "Lesotho",
+            "AC-130 Gunship": "Ac-130 Gunship",
+            "Mexico": "Mexico",
+            "Low Earth Orbit": "Low Earth Orbit",
+            "SpaceX satellite development facility in Redmond, Washington": "Spacex Satellite Development Facility In Redmond, Washington",
+            "Brazil": "Brazil",
+            "Pulsarad": "Pulsarad",
+            "Taiwan": "Taiwan",
+            "Starlink Services, LLC": "Starlink Services, Llc",
+            "Sri Lanka": "Sri Lanka",
+            "Starlink v2 mini satellites": "Starlink Mini",
+            "Project Kuiper": "Project Kuiper",
+            "DarkSat": "Darksat",
+            "over 7,600 mass-produced small satellites": "Over 7,600 Mass-Produced Small Satellites",
+            "Irvine": "Irvine",
+            "Astronomers": "Astronomers",
+            "national cellular service providers": "National Cellular Service Providers",
+            "Chinese military": "Chinese Military",
+            "Bus Starship-2": "Bus Starship-2",
+            "krypton": "Krypton",
+            "Russo-Ukrainian War": "2022 Russian Invasion Of Ukraine",
+            "Hall-effect thrusters": "Hall-Effect Thrusters",
+            "California ground stations": "California Ground Stations",
+            "Tintin A": "Tintin A",
+            "2022 were reportedly $1.4 billion": "2022 Were Reportedly $1.4 Billion",
+            "SpaceX": "Spacex",
+            "Airtel": "Airtel",
+            "Catson": "Catson",
+            "Romanian Ministry of National Defense": "Romanian Ministry Of National Defense",
+            "Jio": "Jio",
+            "classified government payloads": "Classified Government Payloads",
+            "argon": "Argon",
+            "National Rural Electric Cooperative Association": "National Rural Electric Cooperative Association",
+            "SES": "Ses",
+            "Starshield": "Starshield",
+            "Zambia": "Zambia",
+            "Cell phone capable satellites": "Cell Phone Capable Satellites",
+            "Marslink": "Marslink",
+            "United States Air Force": "United States Air Force",
+            "high-density cities": "High-Density Cities",
+            "Falcon 9": "Falcon 9",
+            "Bus F9-3": "Bus F9-3",
+            "2025 expected to reach $11.8 billion": "2025 Expected To Reach $11.8 Billion",
+            "Starlink v1.5": "Starlink V1.5",
+            "direct-to-cell capability": "Direct-To-Cell Capability",
+            "JSX airline": "Jsx Airline",
+            "Starlink Terminal": "Starlink Terminal",
+            "DECam": "Decam",
+            "2023 began small profit": "2023 Began Small Profit",
+            "U.S. Space Force": "U.S. Space Force",
+            "Kosmos 1408 debris": "Kosmos 1408 Debris",
+            "Royal Caribbean Group": "Royal Caribbean Group",
+            "12,000 satellites": "12,000 Satellites",
+            "4 million subscribers in September 2024": "4 Million Subscribers In September 2024",
+            "KDDI": "Kddi",
+            "Beechcraft C-12 Huron": "Beechcraft C-12 Huron",
+            "Visors that blocked sunlight": "Visors That Blocked Sunlight",
+            "radio signals": "Radio Signals",
+            "65% of all active satellites": "65% Of All Active Satellites",
+            "Better Than Nothing Beta": "Better Than Nothing Beta",
+            "Mongolia": "Mongolia",
+            "Ku- and Ka- frequency bands": "Ku- And Ka- Frequency Bands",
+            "Canada": "Canada",
+            "550 km": "550 Km",
+            "Starlink Business": "Starlink Business",
+            "IAU Centre for the Protection of the Dark and Quiet Sky from Satellite Constellation Interference": "Iau Centre For The Protection Of The Dark And Quiet Sky From Satellite Constellation Interference",
+            "low Earth orbit (LEO)": "Low Earth Orbit",
+            "Federal Communications Commission": "Federal Communications Commission",
+            "possible later extension to 34,400": "Possible Later Extension To 34,400",
+            "radio telescopes": "Radio Telescopes",
+            "low Earth orbit": "Low Earth Orbit",
+            "ITU": "Itu",
+            "Ku-band": "Ku-Band",
+            "Starlink Mini": "Starlink Mini",
+            "Cerro Tololo Inter-American Observatory": "Cerro Tololo Inter-American Observatory",
+            "January 24, 2021": "January 24, 2021",
+            "digital processing technologies": "Digital Processing Technologies",
+            "STMicroelectronics": "Stmicroelectronics",
+            "Somalia": "Somalia",
+            "Bus F9-1": "Bus F9-1",
+            "Square Kilometre Array Organization": "Square Kilometre Array Organization",
+            "Iran": "Iran",
+            "Ka microwave bands": "Ka-Band",
+            "Dmitry Rogozin": "Dmitry Rogozin",
+            "Shiraz": "Shiraz",
+            "71–86 GHz W band": "71–86 Ghz W Band",
+            "STEAM": "Steam",
+            "Samsung constellation": "Samsung Constellation",
+            "Morocco": "Morocco",
+            "US$10 billion": "Us$10 Billion",
+            "Ku microwave bands": "Ku-Band",
+            "over 1 million subscribers in December 2022": "Over 1 Million Subscribers In December 2022",
+            "Russian President Vladimir Putin": "Russian President Vladimir Putin",
+            "New Zealand": "New Zealand",
+            "4,425 satellites": "4,425 Satellites",
+            "Gen 2": "Gen 2",
+            "The Fault in Our Stars": "The Fault In Our Stars",
+            "Starlink Group 4–7": "Starlink Group 4–7",
+            "Bus Starship-1": "Bus Starship-1",
+            "National Radio Astronomy Observatory": "National Radio Astronomy Observatory",
+            "National Telecommunications and Information Administration": "National Telecommunications And Information Administration",
+            "Geomagnetic Storm": "Geomagnetic Storm",
+            "United States Department of Defense": "United States Department Of Defense",
+            "Starlink v2.0": "Starlink V2.0",
+            "Starship": "Starship",
+            "Starship V2 satellites": "Starlink V2.0",
+            "United States": "United States",
+            "30,000 additional Starlink satellites": "30,000 Additional Starlink Satellites",
+            "Chinese authorities": "Chinese Authorities",
+            "Romania": "Romania",
+            "Lasers for inter-satellite communication": "Lasers For Inter-Satellite Communication",
+            "Orbit": "Orbital",
+            "v2 mini": "Starlink Mini",
+            "T-Mobile US": "T-Mobile Us",
+            "Google data-centers": "Google Data-Centers",
+            "U.S. Department of Defense": "United States Department Of Defense",
+            "Rogers Communications": "Rogers Communications",
+            "Internet": "Internet",
+            "Chinese Tiangong space station": "Tiangong Space Station",
+            "autonomously and smoothly avoid collisions": "Autonomously And Smoothly Avoid Collisions",
+            "Optus": "Optus",
+            "National Authority for Communications Administration and Regulation": "National Authority For Communications Administration And Regulation",
+            "Swarm Technologies": "Swarm Technologies",
+            "FCC": "Federal Communications Commission",
+            "maritime market": "Maritime Market",
+            "Fiji": "Fiji",
+            "ground stations": "Ground Stations",
+            "One NZ": "One Nz",
+            "nearly 12,000 satellites": "12,000 Satellites",
+            "Mini": "Mini",
+            "Philippines": "Philippines",
+            "Yemen": "Yemen",
+            "SpaceX non-geostationary orbit communications satellite constellation": "Starlink Constellation",
+            "Gen2 Starlink satellites": "Starlink V2.0",
+            "National Defense Space Architecture": "National Defense Space Architecture",
+            "military payloads": "Military Payloads",
+            "optical inter-satellite links": "Optical Inter-Satellite Links",
+            "India": "India",
+            "Hawaiian Airlines": "Hawaiian Airlines",
+            "Tintin B": "Tintin B",
+            "Starlink v2": "Starlink V2.0",
+            "Redmond": "Redmond",
+            "Ukraine": "Ukraine",
+            "aircraft": "Aircraft",
+            "Starshield satellites": "Starshield",
+            "Iranian government": "Iran",
+            "United States FCC": "Federal Communications Commission",
+            "USAID": "Usaid",
+            "Virgin Voyages": "Virgin Voyages",
+            "European satellite": "European Satellite",
+            "Star tracker": "Star Tracker",
+            "Square Kilometer Array": "Square Kilometre Array Organization",
+            "Space Development Agency": "Space Development Agency",
+            "broadband satellite internet service": "Broadband Satellite Internet Service",
+            "Mars": "Mars",
+            "fixed satellite Earth stations": "Ground Stations",
+            "global mobile broadband": "Global Mobile Broadband",
+            "phased array beam-forming": "Phased Array Beam-Forming",
+            "Washington State ground stations": "Washington State Ground Stations",
+            "Boeing KC-135 Stratotanker": "Boeing Kc-135 Stratotanker",
+            "United Airlines": "United Airlines",
+            "T-Mobile": "T-Mobile Us",
+            "Starlink constellation": "Starlink Constellation",
+            "boats": "Boats",
+            "Ka-band": "Ka-Band",
+            "Bus F9-2": "Bus F9-2",
+            "V-band payload": "V-Band Payload",
+            "S33": "S33",
+            "V-band": "V-Band Payload",
+            "Australia": "Australia"
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "entity_name": "Crab Nebula",
+    "infobox_attributes": {
+        "Supernova remnant": "Hubble Space Telescope mosaic image assembled from 24 individual Wide Field and Planetary Camera 2 exposures taken in October 1999, January 2000, and December 2000",
+        "Right ascension": "05 34 31.8 ICRS",
+        "Declination": "+22° 01′ 03″ ICRS",
+        "Distance": "6500 ± 1600 ly (2000 ± 500 pc)",
+        "Apparent magnitude (V)": "8.4",
+        "Apparent dimensions (V)": "420″ × 290″",
+        "Constellation": "Taurus",
+        "Radius": "~5.5 ly (~1.7 pc)",
+        "Absolute magnitude (V)": "−3.1 ± 0.5",
+        "Notable features": "Optical pulsar",
+        "Designations": "Messier 1, NGC 1952, Taurus A, Sh 2-244"
+    },
+    "consolidated_relationships": [
+        {
+            "Developed By": [
+                "Sn 1054"
+            ],
+            "Recorded By": [
+                "Chinese Astronomers",
+                "Ibn Abi Usaibia",
+                "Ibn Butlan",
+                "Japanese Observers"
+            ],
+            "Observed By": [
+                "Carl Otto Lampland",
+                "Chandra X-Ray Observatory",
+                "Coronae",
+                "Whipple Observatory 10M Gamma-Ray Telescope",
+                "William Herschel",
+                "William Parsons, 3Rd Earl Of Rosse"
+            ],
+            "Discovered By": [
+                "Charles Messier",
+                "David H. Staelin",
+                "Edward C. Reifenstein Iii",
+                "John Bevis",
+                "Richard V. E. Lovelace"
+            ],
+            "Located In": [
+                "Taurus"
+            ],
+            "Catalogued In": [
+                "Messier Catalogue"
+            ],
+            "Connected To Supernova": [
+                "Supernova"
+            ],
+            "Studied By": [
+                "Carl Otto Lampland",
+                "Edwin Hubble",
+                "John Charles Duncan",
+                "Knut Lundmark",
+                "Nicholas Mayall",
+                "V. M. Slipher"
+            ],
+            "Associated With Historical Event": [
+                "Sn 1054"
+            ],
+            "Contains": [
+                "Helium-Rich Torus",
+                "Neutron Star",
+                "Psr J0737−3039",
+                "Pulsar"
+            ],
+            "Associated With": [
+                "Np 0527",
+                "Np 0532",
+                "Pulsar"
+            ],
+            "Example Of": [
+                "Pulsar Wind Nebula",
+                "Supernova Remnant"
+            ],
+            "Powered By": [
+                "Psr J0737−3039"
+            ],
+            "First Identified Source Beyond": [
+                "100 Tev"
+            ],
+            "Proposed By": [
+                "Iosif Shklovsky"
+            ],
+            "Distance From Earth": [
+                "2.0 ± 0.5 Kpc (6,500 ± 1,600 Ly)"
+            ],
+            "Expansion Velocity": [
+                "1,500 Km/S (930 Mi/S)"
+            ],
+            "Emits": [
+                "Radio Signals",
+                "Synchrotron Radiation"
+            ],
+            "Has Feature": [
+                "Shock Front"
+            ],
+            "Produced By": [
+                "Supernova"
+            ],
+            "Progenitor Star": [
+                "9-11 M☉",
+                "Super-Asymptotic Giant Branch Star"
+            ],
+            "Candidate For": [
+                "Electron-Capture Supernova"
+            ],
+            "Missing Mass Theory": [
+                "Stellar Wind"
+            ],
+            "Located Near": [
+                "Ecliptic"
+            ],
+            "Can Be Transited By": [
+                "Moon",
+                "Planets",
+                "Saturn"
+            ],
+            "Occulted By": [
+                "Moon",
+                "Planets"
+            ],
+            "Transits In Front Of": [
+                "Sun"
+            ],
+            "Mapped": [
+                "Lunar Transits"
+            ],
+            "Has X-Ray Shadow": [
+                "Titan"
+            ],
+            "Similar To": [
+                "Southern Crab Nebula"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Located Near": "Located Near",
+            "Connected To Supernova": "Connected To Supernova",
+            "Can Be Transited By": "Can Be Transited By",
+            "Proposed By": "Proposed By",
+            "Observed By": "Observed By",
+            "Produced By": "Produced By",
+            "Candidate For": "Candidate For",
+            "Detected By": "Observed By",
+            "Transited By": "Can Be Transited By",
+            "Has X-ray Shadow": "Has X-Ray Shadow",
+            "Created By": "Developed By",
+            "Powered By": "Powered By",
+            "Emits": "Emits",
+            "Expansion Velocity": "Expansion Velocity",
+            "Corona Passes In Front Of": "Transits In Front Of",
+            "First Identified Source Beyond": "First Identified Source Beyond",
+            "Resembles": "Similar To",
+            "Studied By": "Studied By",
+            "Catalogued In": "Catalogued In",
+            "Can Be Occulted By": "Occulted By",
+            "Structure Changes Observed By": "Observed By",
+            "Contains": "Contains",
+            "Missing Mass Theory": "Missing Mass Theory",
+            "Discovered By": "Discovered By",
+            "Potential Progenitor Type": "Progenitor Star",
+            "Example Of": "Example Of",
+            "Associated With Historical Event": "Associated With Historical Event",
+            "Recorded By": "Recorded By",
+            "Distance From Earth": "Distance From Earth",
+            "Has Dynamic Feature": "Has Feature",
+            "Associated With": "Associated With",
+            "Mapped By": "Mapped",
+            "Progenitor Star Mass Range": "Progenitor Star"
+        },
+        {
+            "Japanese observers": "Japanese Observers",
+            "Saturn": "Saturn",
+            "pulsar": "Pulsar",
+            "helium-rich torus": "Helium-Rich Torus",
+            "Chinese astronomers": "Chinese Astronomers",
+            "Ibn Abi Usaibia": "Ibn Abi Usaibia",
+            "Ibn Butlan": "Ibn Butlan",
+            "SN 1054": "Sn 1054",
+            "Edwin Hubble": "Edwin Hubble",
+            "William Parsons, 3rd Earl of Rosse": "William Parsons, 3Rd Earl Of Rosse",
+            "9-11 M☉": "9-11 M☉",
+            "Vesto Slipher": "V. M. Slipher",
+            "2.0 ± 0.5 kpc (6,500 ± 1,600 ly)": "2.0 ± 0.5 Kpc (6,500 ± 1,600 Ly)",
+            "John Charles Duncan": "John Charles Duncan",
+            "electron-capture supernova": "Electron-Capture Supernova",
+            "Richard V. E. Lovelace": "Richard V. E. Lovelace",
+            "Iosif Shklovsky": "Iosif Shklovsky",
+            "NP 0532": "Np 0532",
+            "Knut Lundmark": "Knut Lundmark",
+            "Taurus": "Taurus",
+            "John Bevis": "John Bevis",
+            "Carl Otto Lampland": "Carl Otto Lampland",
+            "fast stellar wind": "Stellar Wind",
+            "Lunar transits": "Lunar Transits",
+            "Titan": "Titan",
+            "Nicholas Mayall": "Nicholas Mayall",
+            "Pulsar Wind Nebula": "Pulsar Wind Nebula",
+            "Carl Lampland": "Carl Otto Lampland",
+            "100 TeV": "100 Tev",
+            "David H. Staelin": "David H. Staelin",
+            "shock front": "Shock Front",
+            "Messier catalogue": "Messier Catalogue",
+            "super-asymptotic giant branch star": "Super-Asymptotic Giant Branch Star",
+            "Sun": "Sun",
+            "Sun's corona": "Coronae",
+            "William Herschel": "William Herschel",
+            "radio waves": "Radio Signals",
+            "Chandra X-ray Observatory": "Chandra X-Ray Observatory",
+            "Whipple Observatory 10m Gamma-Ray telescope": "Whipple Observatory 10M Gamma-Ray Telescope",
+            "synchrotron radiation": "Synchrotron Radiation",
+            "NP 0527": "Np 0527",
+            "1,500 km/s (930 mi/s)": "1,500 Km/S (930 Mi/S)",
+            "guest star of 1054": "Sn 1054",
+            "Edward C. Reifenstein III": "Edward C. Reifenstein Iii",
+            "Crab Pulsar": "Psr J0737−3039",
+            "Southern Crab Nebula": "Southern Crab Nebula",
+            "Supernova Remnant": "Supernova Remnant",
+            "Ecliptic": "Ecliptic",
+            "Moon": "Moon",
+            "Planets": "Planets",
+            "Charles Messier": "Charles Messier",
+            "neutron star": "Neutron Star",
+            "supernova explosion": "Supernova"
+        }
+    ]
+}

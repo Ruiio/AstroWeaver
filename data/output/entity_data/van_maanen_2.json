@@ -1,0 +1,99 @@
+{
+    "entity_name": "van Maanen 2",
+    "infobox_attributes": {
+        "Observation data, Epoch J2000.0 Equinox J2000.0 (ICRS)": "12.374",
+        "Characteristics": "0.4",
+        "Proper motion (μ)": "RA: +1, 231.399 mas / yr, Dec.: −2, 711.883 mas / yr",
+        "Parallax (π)": "231.7800 ± 0.0183 mas",
+        "Distance": "14.072 ± 0.001 ly, (4.3144 ± 0.0003 pc)",
+        "Mass": "0.67 ± 0.02 M ☉",
+        "Radius": "0.01129 ± 0.00066 R ☉",
+        "Luminosity": "1.622 +0.156 −0.143 × 10^−4 L ☉",
+        "Temperature": "6, 130 ± 110 K",
+        "Age": "4.1 ± 1.0, >3.45 ± 0.36 Gyr",
+        "Other designations": "van Maanen's Star, van Maanen 2, vMa2, BD +18°2165, GJ 35, HIP 3829, G 001-027, LFT 76, LHS 7, LTT 10292, WD 0046+051, Wolf 28",
+        "SIMBAD": "data"
+    },
+    "consolidated_relationships": [
+        {
+            "Discovered By": [
+                "Adriaan Van Maanen"
+            ],
+            "Closest To": [
+                "Solar System"
+            ],
+            "Type Of": [
+                "White Dwarf"
+            ],
+            "Order Of Discovery": [
+                "40 Eridani B",
+                "Sirius"
+            ],
+            "Identified As": [
+                "White Dwarf"
+            ],
+            "Has Evidence Of": [
+                "Planetary Matter"
+            ],
+            "Located In Constellation": [
+                "Pisces"
+            ],
+            "Close To Star": [
+                "Delta Piscium"
+            ],
+            "Prototype For": [
+                "Dz White Dwarfs"
+            ],
+            "Observed By": [
+                "International Ultraviolet Explorer"
+            ],
+            "Candidate Planet": [
+                "0.4 To 1.1 Jupiter Masses"
+            ],
+            "Ruled Out Companion": [
+                "75 Mj Or Greater",
+                "Four Jupiter Masses Or Greater"
+            ],
+            "Member Of": [
+                "List Of Nearest Stars And Brown Dwarfs",
+                "List Of White Dwarfs"
+            ],
+            "Named After": [
+                "Adriaan Van Maanen"
+            ]
+        },
+        {
+            "Named After": "Named After",
+            "Discovered By": "Discovered By",
+            "Located In Constellation": "Located In Constellation",
+            "Observed By": "Observed By",
+            "Type Of": "Type Of",
+            "Closest To": "Closest To",
+            "Has Evidence Of": "Has Evidence Of",
+            "Prototype Of": "Prototype For",
+            "Member Of": "Member Of",
+            "Identified As": "Identified As",
+            "Order Of Discovery": "Order Of Discovery",
+            "Has Candidate Planet": "Candidate Planet",
+            "Nearby Star": "Close To Star",
+            "Ruled Out Companion": "Ruled Out Companion"
+        },
+        {
+            "four Jupiter masses or greater": "Four Jupiter Masses Or Greater",
+            "White Dwarf": "White Dwarf",
+            "Solar System": "Solar System",
+            "40 Eridani B": "40 Eridani B",
+            "List of white dwarfs": "List Of White Dwarfs",
+            "Pisces": "Pisces",
+            "International Ultraviolet Explorer": "International Ultraviolet Explorer",
+            "DZ white dwarfs": "Dz White Dwarfs",
+            "Adriaan van Maanen": "Adriaan Van Maanen",
+            "Sirius B": "Sirius",
+            "Planetary Matter": "Planetary Matter",
+            "Delta Piscium": "Delta Piscium",
+            "List of nearest stars and brown dwarfs": "List Of Nearest Stars And Brown Dwarfs",
+            "0.4 to 1.1 Jupiter masses": "0.4 To 1.1 Jupiter Masses",
+            "75 MJ or greater": "75 Mj Or Greater"
+        }
+    ]
+}

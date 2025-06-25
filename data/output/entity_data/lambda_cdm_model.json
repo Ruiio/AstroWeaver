@@ -1,0 +1,425 @@
+{
+    "entity_name": "Lambda-CDM model",
+    "infobox_attributes": {},
+    "consolidated_relationships": [
+        {
+            "Has Component": [
+                "Baryons",
+                "Cold Dark Matter",
+                "Dark Energy",
+                "Einstein'S Cosmological Constant",
+                "Luminous Matter",
+                "Radiation"
+            ],
+            "Is Standard Model Of": [
+                "Big Bang Cosmology"
+            ],
+            "Explains": [
+                "B-Mode Polarization Of The Cmb Light",
+                "Baryon Acoustic Oscillation Feature",
+                "Cosmic Background Radiation",
+                "Deuterium",
+                "Early Dark Energy Models",
+                "Early Stars",
+                "Gravitational Lensing",
+                "H2O Emission Spectra From A Galaxy 12.8 Billion Light Years Away",
+                "High-Precision Cmb Angular Distribution",
+                "Large-Scale Cosmic Structures",
+                "Linear E-Mode Polarization Of The Cmb Radiation",
+                "Observable Universe",
+                "Observations Of Accelerating Expansion",
+                "Observed Abundances Of Hydrogen",
+                "Polarization Of The Cmb",
+                "Standard Model Of Particle Physics"
+            ],
+            "Assumes": [
+                "Classical General Relativity",
+                "Cosmological Principle",
+                "Universe"
+            ],
+            "Inspired By": [
+                "Classical General Relativity",
+                "Cosmological Principle",
+                "Hermann Weyl Postulate",
+                "Inflation Theory"
+            ],
+            "Simplifies Into": [
+                "Friedmann"
+            ],
+            "Contains": [
+                "Baryons",
+                "Big Bang Cosmology",
+                "Cold Dark Matter",
+                "Dark Matter",
+                "Einstein'S Cosmological Constant",
+                "Hubble Constant",
+                "Neutrinos",
+                "Photons"
+            ],
+            "Accounts For": [
+                "Gravitational Effects In Large-Scale Structures"
+            ],
+            "Proposed By": [
+                "Cold Dark Matter"
+            ],
+            "Successor To": [
+                "Inflation Theory"
+            ],
+            "Associated With": [
+                "Dennis Sciama",
+                "Einstein'S Cosmological Constant",
+                "Esa",
+                "Planck"
+            ],
+            "Describes Expansion": [
+                "Universe"
+            ],
+            "Relates To Density": [
+                "Critical Density"
+            ],
+            "Calculated From Parameters": [
+                "Baryon Density Parameter",
+                "Curvature Fluctuation Amplitude",
+                "Dark Energy Density",
+                "Dark Matter Density Parameter",
+                "Hubble Constant",
+                "Reionization Optical Depth",
+                "Scalar Spectral Index"
+            ],
+            "Supported By": [
+                "2Dfgrs Galaxy Redshift Survey",
+                "Boomerang Microwave Background Experiment",
+                "Cosmic Background Explorer (Cobe)",
+                "Planck",
+                "Wmap"
+            ],
+            "Resolved By": [
+                "Galaxy Formation And Evolution"
+            ],
+            "Overtook": [
+                "Observations Of Accelerating Expansion"
+            ],
+            "Predicts": [
+                "Baryon Acoustic Oscillation Feature",
+                "Dark Matter",
+                "Deuterium",
+                "Dwarf Galaxy",
+                "Galaxies",
+                "Gravitational Lensing",
+                "Lithium In The Universe",
+                "Polarization Of The Cmb",
+                "Primordial Gravitational Waves",
+                "Small Dark Matter Halos",
+                "Tensor Fluctuations"
+            ],
+            "Approximation Of": [
+                "More Fundamental Model"
+            ],
+            "Constructed At": [
+                "Friedmann–Lemaître–Robertson–Walker Metric"
+            ],
+            "Suggested Violations Of": [
+                "Cosmological Principle"
+            ],
+            "Opposed To": [
+                "Cosmological Principle",
+                "El Gordo",
+                "Modified Newtonian Dynamics",
+                "Observed Galaxy Bars"
+            ],
+            "Applies To": [
+                "Large Volumes Of Space"
+            ],
+            "Featured In": [
+                "N-Body Simulations"
+            ],
+            "Predicted Scale Of": [
+                "Homogeneity"
+            ],
+            "Violated By": [
+                "Kbc Void"
+            ],
+            "Compatible With": [
+                "Kbc Void"
+            ],
+            "Experienced Issue": [
+                "Hubble Tension",
+                "Small Scale Crisis"
+            ],
+            "Has Proposed Modifications": [
+                "Dark Energy",
+                "Dark Matter",
+                "Dark Radiation",
+                "Elementary Particles",
+                "Gravity",
+                "Inflation"
+            ],
+            "Quantifies Parameter": [
+                "S8"
+            ],
+            "May Be Incomplete Due To": [
+                "S8"
+            ],
+            "Requires Solution Beyond": [
+                "Lambda-Cdm (Λcdm) Model"
+            ],
+            "Contradicted By": [
+                "Ngc 3109 Association",
+                "Positive Curvature"
+            ],
+            "Assumes Principle": [
+                "Strong Equivalence Principle"
+            ],
+            "Inconsistent With Effect": [
+                "Tidal Effects"
+            ],
+            "Discrepancies With": [
+                "Cold Dark Matter"
+            ],
+            "Criticized By": [
+                "Kroupa",
+                "Mcgaugh",
+                "Milgrom"
+            ],
+            "Alternative Theories": [
+                "Bimetric Gravity",
+                "Brane Cosmology Models",
+                "Dgp Model",
+                "F(R) Gravity",
+                "Galileon Theories",
+                "Massive Gravity",
+                "Modified Gravity Schemes",
+                "Modified Newtonian Dynamics",
+                "Scalar–Tensor Theories"
+            ],
+            "Framework For": [
+                "High-Resolution Hydrodynamical Cosmological Simulations",
+                "Local Group"
+            ],
+            "Quantifies Tension With": [
+                "Observed Distribution Of Galaxy Shapes"
+            ],
+            "May Need Revision": [
+                "Planck Collaboration"
+            ],
+            "Challenged By": [
+                "High-Redshift Galaxies"
+            ],
+            "Adopted Conventionalist Stratagems": [
+                "Karl Popper"
+            ],
+            "Added Dark Matter": [
+                "Anomalous Galaxy Rotation Rates"
+            ],
+            "Viewed As Problem Solving": [
+                "Thomas Kuhn"
+            ],
+            "Accommodates": [
+                "Hot Dark Matter",
+                "Inflation Theory",
+                "Quintessence",
+                "Running Spectral Index",
+                "Spatial Curvature"
+            ],
+            "Also Known As": [
+                "Lambda-Cdm (Λcdm) Model"
+            ],
+            "Unrelated To": [
+                "Standard Model Of Particle Physics"
+            ],
+            "Documented In": [
+                "Cosmic Concordance",
+                "Heart Of Darkness: Unraveling The Mysteries Of The Invisible Universe"
+            ],
+            "Used In": [
+                "Very Small Array Data"
+            ]
+        },
+        {
+            "Also Known As": "Also Known As",
+            "Resolves": "Resolved By",
+            "Violated By": "Violated By",
+            "Approximation Of": "Approximation Of",
+            "Viewed As Problem Solving": "Viewed As Problem Solving",
+            "Predicted Scale Of": "Predicted Scale Of",
+            "Assumes Principle": "Assumes Principle",
+            "Could Be Explained By": "Explains",
+            "Built On": "Constructed At",
+            "Has Proposed Modifications": "Has Proposed Modifications",
+            "Allows For": "Accommodates",
+            "Includes Component": "Has Component",
+            "Supported By Observations": "Supported By",
+            "Not Related To": "Unrelated To",
+            "Adopted Conventionalist Stratagems": "Adopted Conventionalist Stratagems",
+            "Describes": "Explains",
+            "Relates To Density": "Relates To Density",
+            "Accounts For Component": "Has Component",
+            "Discrepancies With": "Discrepancies With",
+            "Quantifies Tension With": "Quantifies Tension With",
+            "May Need Revision": "May Need Revision",
+            "Describes Expansion": "Describes Expansion",
+            "Calculated From Parameters": "Calculated From Parameters",
+            "Simplifies Into": "Simplifies Into",
+            "Quantifies Parameter": "Quantifies Parameter",
+            "Is Standard Model Of": "Is Standard Model Of",
+            "Based On Parameters": "Calculated From Parameters",
+            "Includes Event": "Contains",
+            "Predicts": "Predicts",
+            "Assumes": "Assumes",
+            "Suggested Violations Of": "Suggested Violations Of",
+            "Applies To": "Applies To",
+            "Consistent With": "Compatible With",
+            "Could Be Challenged By": "Challenged By",
+            "Proposes": "Proposed By",
+            "Contrasted With": "Opposed To",
+            "In Tension With": "Opposed To",
+            "Criticized By": "Criticized By",
+            "Contradicted By": "Contradicted By",
+            "Assumes Theory": "Assumes",
+            "Requires Solution Beyond": "Requires Solution Beyond",
+            "Inconsistent With": "Contradicted By",
+            "Alternative Theories": "Alternative Theories",
+            "Includes": "Contains",
+            "Based On": "Inspired By",
+            "Shows In": "Featured In",
+            "Added Dark Matter": "Added Dark Matter",
+            "Used In": "Used In",
+            "Contradicts": "Opposed To",
+            "Includes Parameter": "Contains",
+            "Became Leading Model After": "Overtook",
+            "Accounts For": "Accounts For",
+            "Inconsistent With Effect": "Inconsistent With Effect",
+            "May Be Incomplete Due To": "May Be Incomplete Due To",
+            "Framework For": "Framework For",
+            "Explains Phenomenon": "Explains",
+            "Described In": "Documented In",
+            "Followed By": "Successor To",
+            "Predicts Behavior Of": "Predicts",
+            "Motivated By": "Inspired By",
+            "Assumes Shape Of": "Assumes",
+            "Associated With": "Associated With",
+            "Incorporates Constant": "Contains",
+            "Has Problem": "Experienced Issue"
+        },
+        {
+            "hot dark matter": "Hot Dark Matter",
+            "dark radiation": "Dark Radiation",
+            "B-mode polarization of the CMB light": "B-Mode Polarization Of The Cmb Light",
+            "N-body simulations": "N-Body Simulations",
+            "gravity": "Gravity",
+            "McGaugh": "Mcgaugh",
+            "Radiation": "Radiation",
+            "Local Group": "Local Group",
+            "homogeneity": "Homogeneity",
+            "massive gravity": "Massive Gravity",
+            "NGC 3109 association": "Ngc 3109 Association",
+            "Standard Model": "Standard Model Of Particle Physics",
+            "formation of galaxies": "Galaxy Formation And Evolution",
+            "S8": "S8",
+            "existing ΛCDM model": "Lambda-Cdm (Λcdm) Model",
+            "Cold dark matter": "Cold Dark Matter",
+            "galaxies": "Galaxies",
+            "running spectral index": "Running Spectral Index",
+            "Planck Mission": "Planck",
+            "baryons": "Baryons",
+            "Cosmic Concordance": "Cosmic Concordance",
+            "tensor fluctuations": "Tensor Fluctuations",
+            "observed abundance of deuterium": "Deuterium",
+            "early dark energy models": "Early Dark Energy Models",
+            "Karl Popper": "Karl Popper",
+            "general relativity": "Classical General Relativity",
+            "Cosmological principle": "Cosmological Principle",
+            "Cosmological constant": "Einstein'S Cosmological Constant",
+            "quintessence": "Quintessence",
+            "large-scale structure in the distribution of galaxies": "Large-Scale Cosmic Structures",
+            "Hubble tension": "Hubble Tension",
+            "baryon acoustic oscillation feature": "Baryon Acoustic Oscillation Feature",
+            "neutrinos": "Neutrinos",
+            "dwarf galaxies": "Dwarf Galaxy",
+            "Friedmann–Lemaître–Robertson–Walker metric": "Friedmann–Lemaître–Robertson–Walker Metric",
+            "Dennis Sciama": "Dennis Sciama",
+            "lithium in the universe": "Lithium In The Universe",
+            "WMAP": "Wmap",
+            "Standard Model of Particle Physics": "Standard Model Of Particle Physics",
+            "cold dark matter": "Cold Dark Matter",
+            "high-precision CMB angular distribution": "High-Precision Cmb Angular Distribution",
+            "Very Small Array data": "Very Small Array Data",
+            "curvature fluctuation amplitude": "Curvature Fluctuation Amplitude",
+            "cosmological constant": "Einstein'S Cosmological Constant",
+            "scalar–tensor theories": "Scalar–Tensor Theories",
+            "primordial gravitational waves": "Primordial Gravitational Waves",
+            "Standard Model of Cosmology": "Lambda-Cdm (Λcdm) Model",
+            "photons": "Photons",
+            "Hubble parameter": "Hubble Constant",
+            "baryon density parameter": "Baryon Density Parameter",
+            "dark matter": "Dark Matter",
+            "cosmic inflation": "Inflation Theory",
+            "Planck Collaboration": "Planck Collaboration",
+            "dark energy density": "Dark Energy Density",
+            "small scale crisis": "Small Scale Crisis",
+            "spatial curvature": "Spatial Curvature",
+            "dark matter density parameter": "Dark Matter Density Parameter",
+            "cosmic microwave background": "Cosmic Background Radiation",
+            "high-resolution hydrodynamical cosmological simulations": "High-Resolution Hydrodynamical Cosmological Simulations",
+            "Dark energy": "Dark Energy",
+            "galileon theories": "Galileon Theories",
+            "European Space Agency": "Esa",
+            "S8 tension": "S8",
+            "dark energy": "Dark Energy",
+            "reionization optical depth": "Reionization Optical Depth",
+            "Tidal Effects": "Tidal Effects",
+            "BOOMERanG microwave background experiment": "Boomerang Microwave Background Experiment",
+            "early universe galaxies": "High-Redshift Galaxies",
+            "Anomalous galaxy rotation rates": "Anomalous Galaxy Rotation Rates",
+            "gravitational effects in large-scale structures": "Gravitational Effects In Large-Scale Structures",
+            "H2O emission spectra from a galaxy 12.8 billion light years away": "H2O Emission Spectra From A Galaxy 12.8 Billion Light Years Away",
+            "Planck": "Planck",
+            "El Gordo": "El Gordo",
+            "tensor–vector–scalar gravity theory": "Scalar–Tensor Theories",
+            "scalar spectral index": "Scalar Spectral Index",
+            "modified gravity theory": "Modified Gravity Schemes",
+            "statistics of weak gravitational lensing": "Gravitational Lensing",
+            "Positive Curvature": "Positive Curvature",
+            "observed abundances of hydrogen": "Observed Abundances Of Hydrogen",
+            "KBC void": "Kbc Void",
+            "Hermann Weyl postulate": "Hermann Weyl Postulate",
+            "elementary particles": "Elementary Particles",
+            "Milgrom": "Milgrom",
+            "modified Newtonian dynamics": "Modified Newtonian Dynamics",
+            "f(R) gravity": "F(R) Gravity",
+            "Big Bang cosmology": "Big Bang Cosmology",
+            "Kroupa": "Kroupa",
+            "Heart of Darkness: Unraveling the mysteries of the invisible universe": "Heart Of Darkness: Unraveling The Mysteries Of The Invisible Universe",
+            "Universe": "Universe",
+            "inflation": "Inflation",
+            "large volumes of space": "Large Volumes Of Space",
+            "Population III stars": "Early Stars",
+            "observable universe": "Observable Universe",
+            "Critical density": "Critical Density",
+            "more fundamental model": "More Fundamental Model",
+            "Strong Equivalence Principle": "Strong Equivalence Principle",
+            "Friedmann equations": "Friedmann",
+            "observations of accelerating expansion": "Observations Of Accelerating Expansion",
+            "bimetric gravity": "Bimetric Gravity",
+            "Hubble constant": "Hubble Constant",
+            "observed distribution of galaxy shapes": "Observed Distribution Of Galaxy Shapes",
+            "polarization of the CMB": "Polarization Of The Cmb",
+            "MOND": "Modified Newtonian Dynamics",
+            "Cosmic Background Explorer": "Cosmic Background Explorer (Cobe)",
+            "Big Bang": "Big Bang Cosmology",
+            "brane cosmologies": "Brane Cosmology Models",
+            "accelerating expansion of the universe": "Observations Of Accelerating Expansion",
+            "observed galaxy bars": "Observed Galaxy Bars",
+            "primordial abundance of deuterium": "Deuterium",
+            "ordinary matter": "Luminous Matter",
+            "cosmological principle": "Cosmological Principle",
+            "linear E-mode polarization of the CMB radiation": "Linear E-Mode Polarization Of The Cmb Radiation",
+            "2dFGRS galaxy redshift survey": "2Dfgrs Galaxy Redshift Survey",
+            "DGP model": "Dgp Model",
+            "small dark matter halos": "Small Dark Matter Halos",
+            "Baryons": "Baryons",
+            "theory of cosmic inflation": "Inflation Theory",
+            "Thomas Kuhn": "Thomas Kuhn"
+        }
+    ]
+}

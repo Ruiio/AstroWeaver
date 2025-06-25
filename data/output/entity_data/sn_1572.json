@@ -1,0 +1,163 @@
+{
+    "entity_name": "SN 1572",
+    "infobox_attributes": {
+        "Event type": "Astronomical radio source, astrophysical X-ray source",
+        "Date": "November 1572",
+        "Constellation": "Cassiopeia",
+        "Right ascension": "0 25.3",
+        "Declination": "+64° 09 ′",
+        "Epoch": "?",
+        "Galactic coordinates": "G.120.1+1.4",
+        "Distance": "between 8, 000 ly (2.5 kpc) and 9, 800 ly (3 kpc)",
+        "Remnant": "Nebula",
+        "Host": "Milky Way",
+        "Progenitor": "Unknown",
+        "Progenitor type": "Unknown",
+        "Colour (B-V)": "~1",
+        "Peak apparent magnitude": "−4",
+        "Other designations": "SN 1572, HR 92, SN 1572A, SNR G120.1+01.4, SNR G120.2+01.4, 1ES 0022+63.8, 1RXS J002509.2+640946, B Cas, BD+63 39a, 8C 0022+638, 4C 63.01, 3C 10, 3C 10.0, 2C 34, RRF 1174, 1XRS 00224+638, 2U 0022+63, 3A 0022+638, 3CR 10, 3U 0022+63, 4U 0022+63, AJG 112, ASB 1, BG 0022+63, CTB 4, KR 101, VRO 63.00.01,3, PBC J0024.9+6407, F3R 3628, WB 0022+6351, CGPSE 107, GB6 B0022+6352",
+        "Preceded by": "SN 1181",
+        "Followed by": "SN 1604"
+    },
+    "consolidated_relationships": [
+        {
+            "Type Of": [
+                "Type I Supernova"
+            ],
+            "Located In Constellation": [
+                "Cassiopeia"
+            ],
+            "Also Known As": [
+                "3C 10",
+                "B Cas",
+                "B Cassiopeiae",
+                "G120.7+2.1",
+                "Tycho'S Supernova"
+            ],
+            "Has Remnant": [
+                "Tycho'S Supernova"
+            ],
+            "Observed By": [
+                "Bartholomäus Reisacher",
+                "Christopher Clavius",
+                "Francesco Maurolico",
+                "Jerónimo Muñoz",
+                "John Dee",
+                "Tadeáš Hájek",
+                "Thomas Allen",
+                "Thomas Digges",
+                "Tycho Brahe",
+                "Wolfgang Schuler"
+            ],
+            "Associated With Historical Event": [
+                "Great Comet Of 1577"
+            ],
+            "Documented In": [
+                "De Nova Et Nullius Aevi Memoria Prius Visa Stella"
+            ],
+            "Identified As": [
+                "Tycho'S Supernova",
+                "Type I Supernova"
+            ],
+            "Distance To": [
+                "3.8+1.5−0.9 Kpc"
+            ],
+            "Discovered By": [
+                "Cyril Hazard",
+                "Palomar Mountain Telescope",
+                "Robert Hanbury Brown"
+            ],
+            "Observed At": [
+                "Cambridge Radio Telescope",
+                "Jodrell Bank Observatory"
+            ],
+            "Catalogued In": [
+                "Second Cambridge Catalogue Of Radio Sources",
+                "Third Cambridge List"
+            ],
+            "Compared To": [
+                "Sn 1054"
+            ],
+            "Photographed By": [
+                "Rosat Spacecraft"
+            ],
+            "Has Companion Star": [
+                "Tycho G"
+            ],
+            "Inspired Literary Work": [
+                "Al Aaraaf",
+                "The Martian Star-Gazers",
+                "The Star"
+            ],
+            "Featured In": [
+                "Hamlet"
+            ]
+        },
+        {
+            "Located In": "Located In Constellation",
+            "Also Known As": "Also Known As",
+            "Documented In": "Documented In",
+            "Observed By": "Observed By",
+            "Classified As": "Identified As",
+            "Mentioned In Literary Work": "Featured In",
+            "Located In Constellation": "Located In Constellation",
+            "Type Of": "Type Of",
+            "Catalogued In": "Catalogued In",
+            "Compared To": "Compared To",
+            "Type": "Type Of",
+            "Has Remnant": "Has Remnant",
+            "Distance To": "Distance To",
+            "Observed At": "Observed At",
+            "Has Companion Star": "Has Companion Star",
+            "Discovered By": "Discovered By",
+            "Associated With Historical Event": "Associated With Historical Event",
+            "Is Identified As": "Identified As",
+            "Inspired Literary Work": "Inspired Literary Work",
+            "Photographed By": "Photographed By"
+        },
+        {
+            "Cyril Hazard": "Cyril Hazard",
+            "Francesco Maurolico": "Francesco Maurolico",
+            "Christopher Clavius": "Christopher Clavius",
+            "Great Comet of 1577": "Great Comet Of 1577",
+            "SN 1054": "Sn 1054",
+            "Tycho's Supernova": "Tycho'S Supernova",
+            "Thomas Allen": "Thomas Allen",
+            "Tycho's supernova": "Tycho'S Supernova",
+            "Jerónimo Muñoz": "Jerónimo Muñoz",
+            "ROSAT spacecraft": "Rosat Spacecraft",
+            "type I supernova": "Type I Supernova",
+            "John Dee": "John Dee",
+            "second Cambridge Catalogue of Radio Sources": "Second Cambridge Catalogue Of Radio Sources",
+            "Type Ia supernova": "Type I Supernova",
+            "Palomar Mountain telescope": "Palomar Mountain Telescope",
+            "Tycho's Star": "Tycho'S Supernova",
+            "Tadeáš Hájek": "Tadeáš Hájek",
+            "Cassiopeia": "Cassiopeia",
+            "Tycho Brahe": "Tycho Brahe",
+            "De nova et nullius aevi memoria prius visa stella": "De Nova Et Nullius Aevi Memoria Prius Visa Stella",
+            "third Cambridge list": "Third Cambridge List",
+            "Wolfgang Schuler": "Wolfgang Schuler",
+            "B Cassiopeiae": "B Cassiopeiae",
+            "type Ia supernova": "Type I Supernova",
+            "3.8+1.5−0.9 kpc": "3.8+1.5−0.9 Kpc",
+            "Type Ia": "Type I Supernova",
+            "3C 10": "3C 10",
+            "Bartholomäus Reisacher": "Bartholomäus Reisacher",
+            "Hamlet": "Hamlet",
+            "B Cas": "B Cas",
+            "Robert Hanbury Brown": "Robert Hanbury Brown",
+            "Tycho's supernova remnant": "Tycho'S Supernova",
+            "Thomas Digges": "Thomas Digges",
+            "The Martian Star-Gazers": "The Martian Star-Gazers",
+            "Tycho G": "Tycho G",
+            "Jodrell Bank Observatory": "Jodrell Bank Observatory",
+            "Cambridge Radio Telescope": "Cambridge Radio Telescope",
+            "The Star": "The Star",
+            "Tycho's Nova": "Tycho'S Supernova",
+            "G120.7+2.1": "G120.7+2.1",
+            "Tycho SNR": "Tycho'S Supernova",
+            "Al Aaraaf": "Al Aaraaf"
+        }
+    ]
+}

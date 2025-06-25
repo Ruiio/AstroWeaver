@@ -1,0 +1,327 @@
+{
+    "entity_name": "101955 Bennu",
+    "infobox_attributes": {
+        "Discovered by": "LINEAR",
+        "Discovery site": "Lincoln Lab's ETS",
+        "Discovery date": "11 September 1999",
+        "MPC designation": "(101955) Bennu",
+        "Pronunciation": "/ ˈ b ɛ n uː /",
+        "Named after": "Bennu",
+        "Alternative designations": "1999 RQ 36",
+        "Minor planet category": "Apollo · NEO · PHA · risk listed",
+        "Orbital characteristics": "Uncertainty parameter 0",
+        "Observation arc": "21.06 yr (7693 days)",
+        "Aphelion": "1.3559 au (202.84 Gm)",
+        "Perihelion": "0.8969 au (134.17 Gm)",
+        "Semi-major axis": "1.1264 au (168.51 Gm)",
+        "Eccentricity": "0.2038",
+        "Orbital period (sidereal)": "1.1955 yr (436.65 d)",
+        "Average orbital speed": "28.0 km/s (63, 000 mph)",
+        "Mean anomaly": "101.7039 °",
+        "Mean motion": "0° 49 28.056 / day",
+        "Inclination": "6.0349°",
+        "Longitude of ascending node": "2.0609°",
+        "Argument of perihelion": "66.2231°",
+        "Earth MOID": "0.0032228 au (482, 120 km)",
+        "Venus MOID": "0.194 au (29, 000, 000 km)",
+        "Mars MOID": "0.168 au (25, 100, 000 km)",
+        "Jupiter MOID": "3.877 au (580.0 Gm)",
+        "T Jupiter": "5.525",
+        "Proper eccentricity": "0.21145",
+        "Proper inclination": "5.0415°",
+        "Proper mean motion": "301.1345 deg / yr",
+        "Proper orbital period": "1.19548 yr, (436.649 d)",
+        "Dimensions": "565 m × 535 m × 508 m (1854 ft × 1755 ft × 1667 ft)",
+        "Mean radius": "245.03 ± 0.08 m (804 ± 0.262 ft)",
+        "Equatorial radius": "282.37 ± 0.06 m (926.4 ± 0.197 ft)",
+        "Polar radius": "249.25 ± 0.06 m (817.74 ± 0.197 ft)",
+        "Surface area": "0.782 ± 0.004 km^2 (0.302 ± 0.002 sq mi)",
+        "Volume": "0.0615 ± 0.0001 km^3",
+        "Mass": "(7.329 ± 0.009) × 10^10 kg",
+        "Mean density": "1.190 ± 0.013 g/cm^3",
+        "Equatorial surface gravity": "6.27 micro-g (61.5 μm/s^2)",
+        "Equatorial escape velocity": "20 cm/s",
+        "Synodic rotation period": "4.296 057 ± 0.000 002 h",
+        "Axial tilt": "177.6 ± 0.11 °",
+        "North pole right ascension": "+85.65 ± 0.12 °",
+        "North pole declination": "−60.17 ± 0.09 °",
+        "Geometric albedo": "0.044 ± 0.002",
+        "Spectral type": "B, F",
+        "Absolute magnitude (H)": "20.9"
+    },
+    "consolidated_relationships": [
+        {
+            "Discovered By": [
+                "Lincoln Near-Earth Asteroid Research (Linear)"
+            ],
+            "Member Of": [
+                "Apollo Group"
+            ],
+            "Named After": [
+                "Bennu",
+                "Bird-Like Figures In Mythology",
+                "Egyptian Mythological Bird Bennu"
+            ],
+            "Target Of Mission": [
+                "Osiris-Rex Mission"
+            ],
+            "Observed By": [
+                "Arecibo Telescope",
+                "Deep Space Network",
+                "Osiris-Rex Mission",
+                "Spitzer Space Telescope"
+            ],
+            "Identified As": [
+                "Near-Earth Asteroid"
+            ],
+            "Inspired By": [
+                "Yarkovsky Effect"
+            ],
+            "Contains": [
+                "Carbonate Minerals",
+                "Hydrated Minerals",
+                "Organic Molecules",
+                "Presolar Graphite",
+                "Presolar Silicon Carbide"
+            ],
+            "Has Classification": [
+                "B-Type Stars"
+            ],
+            "Belongs To Subclass": [
+                "F Stars"
+            ],
+            "Corresponds To Meteorite": [
+                "Carbonaceous Chondrite",
+                "Ci Chondrite Meteorites"
+            ],
+            "Has Mineral": [
+                "Magnetite",
+                "Sheet Silicates"
+            ],
+            "Studied By": [
+                "German Sal",
+                "Nasa",
+                "Osiris-Rex Mission"
+            ],
+            "Displays Polarization Similar To": [
+                "3200 Phaethon",
+                "Comet Hale–Bopp"
+            ],
+            "Example Of": [
+                "Active Asteroids"
+            ],
+            "Potential Dual-Status Designation": [
+                "Bennu"
+            ],
+            "Has Geological Features Named After": [
+                "Bird-Like Figures In Mythology",
+                "Birds"
+            ],
+            "Visited By": [
+                "Osiris-Rex Mission"
+            ],
+            "Has Surface Features": [
+                "Beta Region",
+                "Craters",
+                "Dorsa",
+                "Fossae",
+                "Saxa"
+            ],
+            "Has Sample Site": [
+                "Nightingale",
+                "Osprey"
+            ],
+            "Has Instrument": [
+                "Mapcam",
+                "Ovirs"
+            ],
+            "Originates From": [
+                "Eulalia Family",
+                "Larger Parent Body",
+                "Polana Family"
+            ],
+            "Orbits": [
+                "Earth",
+                "Sun"
+            ],
+            "Has Interaction With": [
+                "Jupiter",
+                "Saturn"
+            ],
+            "Possibly Related To": [
+                "Comets"
+            ],
+            "Close Approach To": [
+                "Earth"
+            ],
+            "Potential Impact": [
+                "Earth",
+                "Jupiter",
+                "Mars",
+                "Mercury",
+                "Venus"
+            ],
+            "Affected By Yarkovsky Effect": [
+                "Yarkovsky Effect"
+            ],
+            "Gravitational Interaction With": [
+                "Asteroid Belt"
+            ],
+            "Will Pass Near": [
+                "Earth"
+            ],
+            "May Pass Through": [
+                "Gravitational Keyhole"
+            ],
+            "Potential Impact Date": [
+                "24 September 2182"
+            ],
+            "Keyhole Pass Date": [
+                "25 September 2135"
+            ],
+            "Potential Impact Risk": [
+                "Earth"
+            ],
+            "Ejected From": [
+                "Jupiter"
+            ],
+            "Parent Body Of": [
+                "Weak Meteor Shower"
+            ],
+            "Radiates From": [
+                "Sculptor"
+            ],
+            "Sample Returned By": [
+                "Osiris-Rex Mission"
+            ],
+            "Selected By": [
+                "Osiris-Rex Selection Committee"
+            ],
+            "Candidate For": [
+                "Osiris-Rex Mission"
+            ],
+            "Exhibited At": [
+                "Hall Of Meteorites Of The National Museum Of Natural History",
+                "International Astronautical Congress"
+            ],
+            "Similar To": [
+                "Asteroid Ryugu",
+                "Ci Chondrite Meteorites"
+            ]
+        },
+        {
+            "Potential Impact Date": "Potential Impact Date",
+            "Possibly Related To": "Possibly Related To",
+            "Has Sample Site": "Has Sample Site",
+            "Observed By": "Observed By",
+            "Displays Polarization Similar To": "Displays Polarization Similar To",
+            "Candidate For": "Candidate For",
+            "Classified As": "Identified As",
+            "Has Instrument": "Has Instrument",
+            "Sample Studied By": "Studied By",
+            "Potential Impact Risk": "Potential Impact Risk",
+            "Keyhole Pass Date": "Keyhole Pass Date",
+            "Similar To": "Similar To",
+            "Contains Mineral": "Has Mineral",
+            "Parent Body Of": "Parent Body Of",
+            "Member Of": "Member Of",
+            "Potential Impact": "Potential Impact",
+            "Studied By": "Studied By",
+            "Orbits": "Orbits",
+            "Affected By Yarkovsky Effect": "Affected By Yarkovsky Effect",
+            "Named After": "Named After",
+            "Has Classification": "Has Classification",
+            "Ejected By": "Ejected From",
+            "Exhibited At": "Exhibited At",
+            "Visited By": "Visited By",
+            "Will Pass Near": "Will Pass Near",
+            "Selected By": "Selected By",
+            "Potential Impact Earth": "Potential Impact",
+            "Radiates From": "Radiates From",
+            "Potential Dual-Status Designation": "Potential Dual-Status Designation",
+            "May Pass Through": "May Pass Through",
+            "Contains": "Contains",
+            "Originated From": "Originates From",
+            "Has Close Approach To": "Close Approach To",
+            "Discovered By": "Discovered By",
+            "Interacts With": "Has Interaction With",
+            "Example Of": "Example Of",
+            "Gravitational Interaction With": "Gravitational Interaction With",
+            "Belongs To Subclass": "Belongs To Subclass",
+            "Features Named After": "Named After",
+            "Has Surface Features": "Has Surface Features",
+            "Has Geological Features Named After": "Has Geological Features Named After",
+            "Sample Returned By": "Sample Returned By",
+            "Target Of Mission": "Target Of Mission",
+            "Influenced By": "Inspired By",
+            "Corresponds To Meteorite": "Corresponds To Meteorite"
+        },
+        {
+            "Saturn": "Saturn",
+            "bird-like figures in mythology": "Bird-Like Figures In Mythology",
+            "carbonate minerals": "Carbonate Minerals",
+            "regiones": "Beta Region",
+            "Nightingale": "Nightingale",
+            "Goldstone Deep Space Network": "Deep Space Network",
+            "CI chondrite meteorites": "Ci Chondrite Meteorites",
+            "NASA": "Nasa",
+            "larger parent body": "Larger Parent Body",
+            "Yarkovsky effect": "Yarkovsky Effect",
+            "birds": "Birds",
+            "OVIRS": "Ovirs",
+            "comets": "Comets",
+            "gravitational keyhole": "Gravitational Keyhole",
+            "dorsa": "Dorsa",
+            "24 September 2182": "24 September 2182",
+            "OSIRIS-REx mission": "Osiris-Rex Mission",
+            "Bennu": "Bennu",
+            "25 September 2135": "25 September 2135",
+            "Hall of Meteorites of the National Museum of Natural History": "Hall Of Meteorites Of The National Museum Of Natural History",
+            "main asteroid belt": "Asteroid Belt",
+            "Comet Hale-Bopp": "Comet Hale–Bopp",
+            "weak meteor shower": "Weak Meteor Shower",
+            "Sculptor": "Sculptor",
+            "presolar graphite": "Presolar Graphite",
+            "birds and bird-like creatures in mythology": "Bird-Like Figures In Mythology",
+            "Earth": "Earth",
+            "B-type": "B-Type Stars",
+            "Apollo group": "Apollo Group",
+            "fossae": "Fossae",
+            "OSIRIS-REx selection committee": "Osiris-Rex Selection Committee",
+            "International Astronautical Congress": "International Astronautical Congress",
+            "Active Asteroids": "Active Asteroids",
+            "Lincoln Near-Earth Asteroid Research (LINEAR)": "Lincoln Near-Earth Asteroid Research (Linear)",
+            "craters": "Craters",
+            "CI carbonaceous chondrite": "Ci Chondrite Meteorites",
+            "Mars": "Mars",
+            "OSIRIS-REx mission team": "Osiris-Rex Mission",
+            "Sun": "Sun",
+            "Polana family": "Polana Family",
+            "Spitzer Space Telescope": "Spitzer Space Telescope",
+            "Yarkovsky–O'Keefe–Radzievskii–Paddack effect": "Yarkovsky Effect",
+            "Arecibo Observatory": "Arecibo Telescope",
+            "saxa": "Saxa",
+            "Egyptian mythological bird Bennu": "Egyptian Mythological Bird Bennu",
+            "CM carbonaceous chondrite": "Carbonaceous Chondrite",
+            "presolar silicon carbide": "Presolar Silicon Carbide",
+            "Venus": "Venus",
+            "Near-Earth asteroid": "Near-Earth Asteroid",
+            "magnetite": "Magnetite",
+            "MapCam": "Mapcam",
+            "organic molecules": "Organic Molecules",
+            "Phyllosilicates": "Sheet Silicates",
+            "hydrated minerals": "Hydrated Minerals",
+            "Osprey": "Osprey",
+            "F subclass": "F Stars",
+            "Eulalia family": "Eulalia Family",
+            "Jupiter": "Jupiter",
+            "Mercury": "Mercury",
+            "asteroid Ryugu": "Asteroid Ryugu",
+            "German SAL": "German Sal",
+            "OSIRIS-REx": "Osiris-Rex Mission",
+            "P/1999 RQ36 (LINEAR)": "Bennu",
+            "3200 Phaethon": "3200 Phaethon",
+            "LINEAR Project": "Lincoln Near-Earth Asteroid Research (Linear)"
+        }
+    ]
+}

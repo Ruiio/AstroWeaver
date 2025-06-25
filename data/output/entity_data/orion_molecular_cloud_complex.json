@@ -1,0 +1,162 @@
+{
+    "entity_name": "Orion Molecular Cloud Complex",
+    "infobox_attributes": {
+        "Molecular cloud": "Part of the Orion molecular cloud complex, with the Great Nebula in Orion near the center, along with the Belt of Orion, and Barnard's Loop curling around the image",
+        "Right ascension": "05 35.3",
+        "Declination": "−05° 23′",
+        "Constellation": "Orion",
+        "Designations": "Orion complex, Orion cloud complex, Orion molecular cloud complex"
+    },
+    "consolidated_relationships": [
+        {
+            "Contains": [
+                "25 Ori Cluster",
+                "Arc A",
+                "Arc B",
+                "Arc C",
+                "Barnard 30",
+                "Barnard 35 (Angelfish Nebula)",
+                "Barnard'S Loop",
+                "Becklin-Neugebauer Object",
+                "Eridanus Loop",
+                "Flame Nebula",
+                "Great Nebula In Orion",
+                "Hh 1/2",
+                "Hh 111",
+                "Hh 24-26",
+                "Hh 34",
+                "Horsehead Nebula",
+                "Ic 2118",
+                "Ic 434",
+                "Kleinmann-Low Nebula",
+                "Lambda Orionis Cluster",
+                "Lambda Orionis Molecular Ring (Sh2-264)",
+                "Ldn 1641",
+                "M43",
+                "M78",
+                "Mcneil'S Nebula",
+                "Meissa",
+                "Ngc 1980",
+                "Ngc 1981",
+                "Ngc 1999",
+                "Orion A Molecular Cloud",
+                "Orion B Molecular Cloud",
+                "Orion East Cloud (Ldn 1621 + Ldn 1622)",
+                "Orion Molecular Cloud 1 (Omc-1)",
+                "Orion Molecular Cloud 2 (Omc-2)",
+                "Orion Molecular Cloud 3 (Omc-3)",
+                "Orion Molecular Cloud 4 (Omc-4)",
+                "Orion Ob1 Association",
+                "Orion Ob1A",
+                "Orion'S Belt",
+                "Orion-Eridanus Superbubble",
+                "Sh2-279",
+                "Sigma Ori Cluster",
+                "Waterfall Nebula (Hh-222)"
+            ],
+            "Part Of": [
+                "Orion"
+            ],
+            "Has Feature": [
+                "Dark Nebulae",
+                "Emission Nebulae",
+                "Proto-Planetary Disks (Proplyds) In The Orion Nebula",
+                "Reflection Nebulae",
+                "Very Young Stars"
+            ],
+            "Located In": [
+                "Night Sky"
+            ],
+            "Has Star Forming Region": [
+                "Orion B Molecular Cloud",
+                "Orion Ob1A"
+            ],
+            "Member Of": [
+                "Local Neighbourhood Of The Sun"
+            ],
+            "Located Behind": [
+                "Great Nebula In Orion"
+            ],
+            "Visible In": [
+                "Far-Infrared",
+                "Radio Wavelengths"
+            ],
+            "Associated With": [
+                "Lambda Orionis Molecular Ring (Sh2-264)"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Located Behind": "Located Behind",
+            "Has Star Forming Region": "Has Star Forming Region",
+            "Has Star-Forming Region": "Has Star Forming Region",
+            "Visible In": "Visible In",
+            "Is Part Of": "Part Of",
+            "Has Feature": "Has Feature",
+            "Member Of": "Member Of",
+            "Associated With": "Associated With",
+            "Contains": "Contains"
+        },
+        {
+            "Orion constellation": "Orion",
+            "Orion A molecular cloud": "Orion A Molecular Cloud",
+            "Orion OB1 association": "Orion Ob1 Association",
+            "Orion molecular cloud 1 (OMC-1)": "Orion Molecular Cloud 1 (Omc-1)",
+            "Barnard 30": "Barnard 30",
+            "Lambda Orionis Cluster": "Lambda Orionis Cluster",
+            "protoplanetary discs": "Proto-Planetary Disks (Proplyds) In The Orion Nebula",
+            "Orion's Belt": "Orion'S Belt",
+            "Sigma Ori cluster": "Sigma Ori Cluster",
+            "Orion-Eridanus superbubble": "Orion-Eridanus Superbubble",
+            "HH 24-26": "Hh 24-26",
+            "Orion molecular cloud 2 (OMC-2)": "Orion Molecular Cloud 2 (Omc-2)",
+            "Arc C": "Arc C",
+            "IC 434": "Ic 434",
+            "HH 111": "Hh 111",
+            "Flame Nebula": "Flame Nebula",
+            "dark nebulae": "Dark Nebulae",
+            "Flame Nebula (NGC 2024)": "Flame Nebula",
+            "reflection nebulae": "Reflection Nebulae",
+            "very young stars": "Very Young Stars",
+            "Orion molecular cloud 3 (OMC-3)": "Orion Molecular Cloud 3 (Omc-3)",
+            "Kleinmann-Low Nebula": "Kleinmann-Low Nebula",
+            "M78": "M78",
+            "night sky": "Night Sky",
+            "Orion molecular cloud 4 (OMC-4)": "Orion Molecular Cloud 4 (Omc-4)",
+            "Orion OB1a": "Orion Ob1A",
+            "Orion A": "Orion Ob1A",
+            "Orion Nebula": "Great Nebula In Orion",
+            "NGC 1999": "Ngc 1999",
+            "M43": "M43",
+            "emission nebulae": "Emission Nebulae",
+            "Eridanus Loop": "Eridanus Loop",
+            "Barnard's Loop (Sh2-276)": "Barnard'S Loop",
+            "Local Neighbourhood of the Sun": "Local Neighbourhood Of The Sun",
+            "Sh2-279": "Sh2-279",
+            "IC 2118": "Ic 2118",
+            "Horsehead Nebula (Barnard 33)": "Horsehead Nebula",
+            "Orion B molecular cloud": "Orion B Molecular Cloud",
+            "Arc B": "Arc B",
+            "NGC 1980": "Ngc 1980",
+            "Far-Infrared": "Far-Infrared",
+            "Waterfall nebula (HH-222)": "Waterfall Nebula (Hh-222)",
+            "Barnard 35 (Angelfish nebula)": "Barnard 35 (Angelfish Nebula)",
+            "LDN 1641": "Ldn 1641",
+            "NGC 1981": "Ngc 1981",
+            "HH 1/2": "Hh 1/2",
+            "Orion B": "Orion B Molecular Cloud",
+            "25 Ori cluster": "25 Ori Cluster",
+            "Lambda Ori cluster": "Lambda Orionis Cluster",
+            "Arc A": "Arc A",
+            "Radio Wavelengths": "Radio Wavelengths",
+            "Meissa": "Meissa",
+            "Becklin-Neugebauer object": "Becklin-Neugebauer Object",
+            "Orion East Cloud (LDN 1621 + LDN 1622)": "Orion East Cloud (Ldn 1621 + Ldn 1622)",
+            "H II regions": "Emission Nebulae",
+            "Lambda Orionis molecular ring (Sh2-264)": "Lambda Orionis Molecular Ring (Sh2-264)",
+            "Lambda Orionis ring": "Lambda Orionis Molecular Ring (Sh2-264)",
+            "McNeil's Nebula": "Mcneil'S Nebula",
+            "HH 34": "Hh 34"
+        }
+    ]
+}

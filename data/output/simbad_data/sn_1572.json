@@ -1,0 +1,72 @@
+{
+    "name": "SN 1572A",
+    "type": "SN*",
+    "ID": "@165698",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "00 25 21.5  +64 08 27",
+        "notes": "(Rad ) D [2000 2000 0]",
+        "ref": "1997A&AS..124..259R"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "00 22 33.5  +63 51 50"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "120.0924  +01.4129"
+    },
+    "hierarchy counts": {
+        "parents": 0,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "~~",
+        "notes": "[~~]~",
+        "ref": "~"
+    },
+    "Parallax(mas)": {
+        "value": "~",
+        "notes": "[~] ~",
+        "ref": " ~"
+    },
+    "Radial Velocity": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Redshift": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "cz": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Spectral type": {
+        "value": "B8",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "8",
+        "notes": "   8     0 (~)  D",
+        "ref": "2007PASJ...59..811I"
+    },
+    "identifiers": [
+        "SRGA J002512.3+640822",
+        "RRF 1174",
+        "[KRL2007b] 2"
+    ],
+    "measures": "distance:1herschel:8ISO:7XMM:2"
+}

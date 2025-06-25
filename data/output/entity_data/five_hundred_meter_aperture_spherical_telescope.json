@@ -1,0 +1,211 @@
+{
+    "entity_name": "Five-hundred-meter Aperture Spherical Telescope",
+    "infobox_attributes": {
+        "Alternative names": "Tianyan",
+        "Location (s)": "People's Republic of China",
+        "Coordinates": "25°39′11″N 106°51′24″E ﻿ / ﻿ 25.6531°N 106.8567°E ﻿ / 25.6531; 106.8567",
+        "Wavelength": "0.10 m (3.0 GHz) –4.3 m (70 MHz)",
+        "First light": "3 July 2016",
+        "Diameter": "500 m (1, 640 ft 5 in)",
+        "Illuminated diameter": "300 m (984 ft 3 in)",
+        "Collecting area": "196, 000 m^2 (2, 110, 000 sq ft)",
+        "Illuminated area": "70, 690 m^2 (760, 900 sq ft)",
+        "Focal length": "140 m (459 ft 4 in)",
+        "Website": "fast .bao .ac .cn"
+    },
+    "consolidated_relationships": [
+        {
+            "Nicknamed": [
+                "Tianyan"
+            ],
+            "Located In Constellation": [
+                "Dawodang Depression",
+                "Natural Sinkhole"
+            ],
+            "Has Design": [
+                "Active Surface Made Of 4,500 Metal Panels"
+            ],
+            "Observes Wavelengths": [
+                "10 Cm To 4.3 M"
+            ],
+            "Construction Started": [
+                "2011",
+                "March 2011"
+            ],
+            "First Light": [
+                "25 September 2016",
+                "September 2016"
+            ],
+            "Declared Fully Operational": [
+                "11 January 2020",
+                "Fast L-Band Receiver-Array Of 19 Beams"
+            ],
+            "Discovered By": [
+                "Psr J1859-01",
+                "Psr J1931-02"
+            ],
+            "Confirmed By": [
+                "Parkes Observatory"
+            ],
+            "Proposed In": [
+                "1994"
+            ],
+            "Approved By": [
+                "National Development And Reform Commission"
+            ],
+            "Chief Scientist": [
+                "Nan Rendong"
+            ],
+            "Chief Engineer": [
+                "Nan Rendong"
+            ],
+            "Detected Signals": [
+                "Artificial Signals"
+            ],
+            "Has Component": [
+                "Feed Cabin",
+                "Next Generation Archive System",
+                "Stewart Platform"
+            ],
+            "Operates In Frequency Range": [
+                "70 Mhz To 3.0 Ghz"
+            ],
+            "Has Planned Expansion": [
+                "24 Radio Dishes"
+            ],
+            "First Discovery Instrument": [
+                "Commissioning Ultra-Wide Band Receiver"
+            ],
+            "Data Storage Maintained By": [
+                "European Southern Observatory",
+                "International Centre For Radio Astronomy Research"
+            ],
+            "Participates In": [
+                "Pulsar Timing Arrays"
+            ],
+            "Open To": [
+                "Global Scientific Community"
+            ],
+            "Observed": [
+                "Seti Observations"
+            ],
+            "Conducted Survey": [
+                "Large Scale Neutral Hydrogen Survey"
+            ],
+            "Observes": [
+                "Interstellar Communication Signals",
+                "Interstellar Molecules",
+                "Pulsar Observations"
+            ],
+            "Creates": [
+                "International Very Long Baseline Interferometry (Vlbi) Network"
+            ],
+            "Similar Design To": [
+                "Arecibo Telescope"
+            ],
+            "Has Reflector Type": [
+                "Perforated Aluminium Panels"
+            ],
+            "Has Receiver Type": [
+                "Movable Receiver"
+            ],
+            "Limited To Wavelength": [
+                "10 Cm"
+            ],
+            "Potential Improvement In Wavelength": [
+                "6 Cm"
+            ],
+            "Has Field Of View": [
+                "Wider Field Of View"
+            ],
+            "Cannot Participate In": [
+                "Planetary Defense"
+            ],
+            "Could Serve As": [
+                "Receiver In A Bistatic Radar System"
+            ]
+        },
+        {
+            "Located In": "Located In Constellation",
+            "Proposed In": "Proposed In",
+            "Construction Started": "Construction Started",
+            "Has Component": "Has Component",
+            "Currently Operational Instrument": "Declared Fully Operational",
+            "Discovered": "Discovered By",
+            "Construction Began": "Construction Started",
+            "Conducts Observations": "Observed",
+            "Observes": "Observes",
+            "First Light": "First Light",
+            "Has Receiver Type": "Has Receiver Type",
+            "Observes Wavelengths": "Observes Wavelengths",
+            "Has Field Of View": "Has Field Of View",
+            "Similar Design To": "Similar Design To",
+            "Could Serve As": "Could Serve As",
+            "Declared Fully Operational": "Declared Fully Operational",
+            "Open To": "Open To",
+            "Confirmed By": "Confirmed By",
+            "First Discovery Instrument": "First Discovery Instrument",
+            "Detected Signals": "Detected Signals",
+            "Has Design": "Has Design",
+            "Observed First Light": "First Light",
+            "Performs Survey": "Conducted Survey",
+            "Chief Engineer": "Chief Engineer",
+            "Potential Improvement In Wavelength": "Potential Improvement In Wavelength",
+            "Nicknamed": "Nicknamed",
+            "Limited To Wavelength": "Limited To Wavelength",
+            "Cannot Participate In": "Cannot Participate In",
+            "Data Storage Maintained By": "Data Storage Maintained By",
+            "Leads": "Creates",
+            "Chief Scientist": "Chief Scientist",
+            "Operates In Frequency Range": "Operates In Frequency Range",
+            "Has Reflector Type": "Has Reflector Type",
+            "Has Planned Expansion": "Has Planned Expansion",
+            "Approved By": "Approved By",
+            "Participates In": "Participates In"
+        },
+        {
+            "March 2011": "March 2011",
+            "11 January 2020": "11 January 2020",
+            "natural sinkhole": "Natural Sinkhole",
+            "Stewart platform": "Stewart Platform",
+            "active surface made of 4,500 metal panels": "Active Surface Made Of 4,500 Metal Panels",
+            "global scientific community": "Global Scientific Community",
+            "70 MHz to 3.0 GHz": "70 Mhz To 3.0 Ghz",
+            "25 September 2016": "25 September 2016",
+            "PSR J1859-01": "Psr J1859-01",
+            "Large scale neutral hydrogen survey": "Large Scale Neutral Hydrogen Survey",
+            "international very long baseline interferometry (VLBI) network": "International Very Long Baseline Interferometry (Vlbi) Network",
+            "10 cm": "10 Cm",
+            "planetary defense": "Planetary Defense",
+            "FAST L-band Receiver-array of 19 beams": "Fast L-Band Receiver-Array Of 19 Beams",
+            "International Centre for Radio Astronomy Research": "International Centre For Radio Astronomy Research",
+            "Pulsar timing arrays": "Pulsar Timing Arrays",
+            "1994": "1994",
+            "wider field of view": "Wider Field Of View",
+            "Pulsar observations": "Pulsar Observations",
+            "receiver in a bistatic radar system": "Receiver In A Bistatic Radar System",
+            "September 2016": "September 2016",
+            "Arecibo Telescope": "Arecibo Telescope",
+            "Next Generation Archive System": "Next Generation Archive System",
+            "10 cm to 4.3 m": "10 Cm To 4.3 M",
+            "6 cm": "6 Cm",
+            "feed cabin": "Feed Cabin",
+            "PSR J1931-02": "Psr J1931-02",
+            "interstellar communication signals": "Interstellar Communication Signals",
+            "interstellar molecules": "Interstellar Molecules",
+            "2011": "2011",
+            "European Southern Observatory": "European Southern Observatory",
+            "perforated aluminium panels": "Perforated Aluminium Panels",
+            "SETI observations": "Seti Observations",
+            "National Development and Reform Commission": "National Development And Reform Commission",
+            "Dawodang depression": "Dawodang Depression",
+            "Parkes Observatory": "Parkes Observatory",
+            "24 radio dishes": "24 Radio Dishes",
+            "Nan Rendong": "Nan Rendong",
+            "Tianyan": "Tianyan",
+            "movable receiver": "Movable Receiver",
+            "commissioning ultra-wide band receiver": "Commissioning Ultra-Wide Band Receiver",
+            "artificial signals": "Artificial Signals"
+        }
+    ]
+}

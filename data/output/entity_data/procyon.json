@@ -1,0 +1,179 @@
+{
+    "entity_name": "Procyon",
+    "infobox_attributes": {
+        "Observation data, Epoch J2000 Equinox J2000": "0.34 (A) / 10.7 (B)",
+        "Characteristics": "suspected (A)",
+        "Proper motion (μ)": "RA: −714.590 mas / yr, Dec.: −1036.80 mas / yr",
+        "Parallax (π)": "284.56 ± 1.26 mas",
+        "Distance": "11.46 ± 0.05 ly, (3.51 ± 0.02 pc)",
+        "Position (relative to Procyon A)": "",
+        "Component": "Procyon B",
+        "Angular distance": "maximum 5 ″",
+        "Companion": "Procyon B",
+        "Period (P)": "40.840 ± 0.022 yr",
+        "Semi-major axis (a)": "4.3075 ± 0.0016″",
+        "Eccentricity (e)": "0.39785 ± 0.00025",
+        "Inclination (i)": "31.408 ± 0.050°",
+        "Periastron epoch (T)": "1, 968.076 ± 0.023",
+        "Mass": "0.592 ± 0.006 M ☉",
+        "Radius": "0.01234 ± 0.00032 R ☉",
+        "Luminosity": "0.00049 L ☉",
+        "Habitable zone inner limit": "2.391 AU",
+        "Habitable zone outer limit": "4.152 AU",
+        "Temperature": "7, 740 ± 50 K",
+        "Metallicity [Fe/H]": "−0.02 ± 0.02 dex",
+        "Rotation": "23 days",
+        "Age": "1.37 Gyr",
+        "Other designations": "Elgomaisa, α Canis Minoris, 10 Canis Minoris, BD +05°1739, GJ 280, HD 61421, HIP 37279, HR 2943, SAO 115756, LHS 233",
+        "SIMBAD": "The system"
+    },
+    "consolidated_relationships": [
+        {
+            "Member Of": [
+                "Canis Minor",
+                "Winter Triangle"
+            ],
+            "Has Companion Star": [
+                "Procyon A",
+                "Procyon B"
+            ],
+            "Bayer Designation": [
+                "Procyon A"
+            ],
+            "Forms Asterism With": [
+                "Betelgeuse",
+                "Sirius"
+            ],
+            "Orbits With": [
+                "Procyon B"
+            ],
+            "Observed By": [
+                "Copernicus Satellite",
+                "Einstein Observatory",
+                "Most Satellite Telescope",
+                "Td-1A Satellite",
+                "Wide Field Infrared Explorer"
+            ],
+            "Displays Phenomenon": [
+                "Granulation",
+                "Solar-Like Oscillations"
+            ],
+            "Discovered By": [
+                "John Martin Schaeberle"
+            ],
+            "Observed At": [
+                "Lick Observatory"
+            ],
+            "Associated With": [
+                "Procyon A"
+            ],
+            "Closest To": [
+                "Procyon A",
+                "Procyon B"
+            ],
+            "Associated With Constellation": [
+                "Canis Minor"
+            ],
+            "Associated With Mythological Figure": [
+                "Erigone",
+                "Icarius Of Athens",
+                "Maera",
+                "Marduk"
+            ],
+            "Standardized By": [
+                "International Astronomical Union"
+            ],
+            "Member Of Asterism": [
+                "Ke Ka O Makali'I",
+                "South River"
+            ],
+            "Symbolizes": [
+                "Amazonas"
+            ],
+            "Known As In Language": [
+                "Puana",
+                "Puangahori",
+                "Sikuliarsiujuittuq"
+            ],
+            "Associated With Cultural Group": [
+                "Babylonians",
+                "Chinese",
+                "Egyptians",
+                "Hawaiians",
+                "Inuit",
+                "Kalapalo People",
+                "Macedonian Folklore",
+                "Māori",
+                "Tahitian Lore"
+            ],
+            "Has Neighboring Star": [
+                "Luyten'S Star"
+            ],
+            "Visible From": [
+                "Luyten'S Star"
+            ]
+        },
+        {
+            "Associated With": "Associated With",
+            "Observed By": "Observed By",
+            "Associated With Mythology": "Associated With Mythological Figure",
+            "Visible From": "Visible From",
+            "Associated With Constellation": "Associated With Constellation",
+            "Displays Phenomenon": "Displays Phenomenon",
+            "Bayer Designation": "Bayer Designation",
+            "Associated With Culture": "Associated With Cultural Group",
+            "Member Of": "Member Of",
+            "Symbolizes": "Symbolizes",
+            "Has Neighboring Star": "Has Neighboring Star",
+            "Has Companion Star": "Has Companion Star",
+            "Orbits With": "Orbits With",
+            "Observed At": "Observed At",
+            "Part Of Asterism": "Member Of Asterism",
+            "Forms Asterism With": "Forms Asterism With",
+            "Discovered By": "Discovered By",
+            "Standardized By": "Standardized By",
+            "Located Near": "Closest To",
+            "Known As In Language": "Known As In Language"
+        },
+        {
+            "Marduk": "Marduk",
+            "Kalapalo people": "Kalapalo People",
+            "Luyten's Star": "Luyten'S Star",
+            "Sirius": "Sirius",
+            "Canis Minor": "Canis Minor",
+            "International Astronomical Union": "International Astronomical Union",
+            "John Martin Schaeberle": "John Martin Schaeberle",
+            "South River": "South River",
+            "Wide Field Infrared Explorer": "Wide Field Infrared Explorer",
+            "Icarius of Athens": "Icarius Of Athens",
+            "Alpha Canis Minoris": "Procyon A",
+            "granulation": "Granulation",
+            "Winter Triangle": "Winter Triangle",
+            "Procyon B": "Procyon B",
+            "Inuit": "Inuit",
+            "Egyptians": "Egyptians",
+            "solar-like oscillations": "Solar-Like Oscillations",
+            "Amazonas": "Amazonas",
+            "Puangahori": "Puangahori",
+            "Procyon AB": "Procyon A",
+            "Procyon A": "Procyon A",
+            "Chinese": "Chinese",
+            "Tahitian lore": "Tahitian Lore",
+            "Betelgeuse": "Betelgeuse",
+            "Macedonian folklore": "Macedonian Folklore",
+            "Copernicus satellite": "Copernicus Satellite",
+            "Hawaiians": "Hawaiians",
+            "Puana": "Puana",
+            "Māori": "Māori",
+            "Sikuliarsiujuittuq": "Sikuliarsiujuittuq",
+            "Einstein Observatory": "Einstein Observatory",
+            "TD-1A satellite": "Td-1A Satellite",
+            "Maera": "Maera",
+            "Babylonians": "Babylonians",
+            "MOST satellite telescope": "Most Satellite Telescope",
+            "Lick Observatory": "Lick Observatory",
+            "Erigone": "Erigone",
+            "Ke ka o Makali'i": "Ke Ka O Makali'I"
+        }
+    ]
+}

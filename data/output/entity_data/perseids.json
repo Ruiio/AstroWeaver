@@ -1,0 +1,90 @@
+{
+    "entity_name": "Perseids",
+    "infobox_attributes": {
+        "Perseids (PER)": "Perseids in 2017 as seen from the White Desert, Egypt",
+        "Pronunciation": "/ ˈ p ɜːr s i . ə d z /",
+        "Discovery date": "AD 36 (first record)",
+        "Parent body": "Comet Swift–Tuttle",
+        "Constellation": "Perseus and Cassiopeia, (near HD 19557)",
+        "Right ascension": "03 13",
+        "Declination": "+58°",
+        "Occurs during": "July 14 – September 1",
+        "Date of peak": "August 12, (August 13 for 2023)",
+        "Velocity": "58.8 km/s",
+        "Zenithal hourly rate": "100"
+    },
+    "consolidated_relationships": [
+        {
+            "Associated With": [
+                "Perseid Cloud",
+                "Saint Lawrence",
+                "Swift-Tuttle"
+            ],
+            "Visible From": [
+                "Perseus"
+            ],
+            "Radiant Bordering": [
+                "Camelopardalis",
+                "Cassiopeia"
+            ],
+            "Named After": [
+                "Perseus"
+            ],
+            "Located In Constellation": [
+                "Perseus"
+            ],
+            "Originates From": [
+                "Swift-Tuttle"
+            ],
+            "Visible In Hemisphere": [
+                "Northern Hemisphere"
+            ],
+            "Linked To Comet": [
+                "Swift-Tuttle"
+            ],
+            "Observed By": [
+                "Adolphe Quetelet",
+                "Angelo Secchi",
+                "Giovanni Schiaparelli"
+            ],
+            "Referenced In": [
+                "Against The Day",
+                "Curious George",
+                "Rocky Mountain High"
+            ],
+            "Located In": [
+                "August"
+            ]
+        },
+        {
+            "Named After": "Named After",
+            "Originates From": "Originates From",
+            "Visible In Hemisphere": "Visible In Hemisphere",
+            "Occurs In": "Located In",
+            "Linked To Comet": "Linked To Comet",
+            "Observed By": "Observed By",
+            "Mentioned In": "Referenced In",
+            "Associated With": "Associated With",
+            "Visible In Constellation": "Located In Constellation",
+            "Radiant Bordering": "Radiant Bordering",
+            "Visible From Constellation": "Visible From"
+        },
+        {
+            "August": "August",
+            "Perseid cloud": "Perseid Cloud",
+            "Adolphe Quetelet": "Adolphe Quetelet",
+            "Swift-Tuttle": "Swift-Tuttle",
+            "Swift–Tuttle": "Swift-Tuttle",
+            "Curious George": "Curious George",
+            "Cassiopeia": "Cassiopeia",
+            "Giovanni Virginio Schiaparelli": "Giovanni Schiaparelli",
+            "Angelo Secchi": "Angelo Secchi",
+            "Saint Lawrence": "Saint Lawrence",
+            "Camelopardalis": "Camelopardalis",
+            "Northern Hemisphere": "Northern Hemisphere",
+            "Perseus": "Perseus",
+            "Rocky Mountain High": "Rocky Mountain High",
+            "Against the Day": "Against The Day"
+        }
+    ]
+}

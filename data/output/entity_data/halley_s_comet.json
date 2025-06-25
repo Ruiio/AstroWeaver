@@ -1,0 +1,487 @@
+{
+    "entity_name": "Halley's Comet",
+    "infobox_attributes": {
+        "Discovered by": "Prehistoric (observation) , Edmond Halley (recognition of periodicity)",
+        "Discovery date": "1758 (first predicted perihelion)",
+        "Orbital characteristics": "Epoch 4 August 2061 (2474040.5)",
+        "Aphelion": "35.14 au, (aphelion: 9 December 2023)",
+        "Perihelion": "0.59278 au, (last perihelion: 9 February 1986) , (next perihelion: 28 July 2061)",
+        "Semi-major axis": "17.737 au",
+        "Eccentricity": "0.96658",
+        "Orbital period (sidereal)": "74.7 yr, 75y 5m 19d (perihelion to perihelion)",
+        "Mean anomaly": "0.07323°",
+        "Inclination": "161.96°",
+        "Longitude of ascending node": "59.396°",
+        "Time of perihelion": "28 July 2061, ≈27 March 2134",
+        "Argument of perihelion": "112.05°",
+        "Earth MOID": "0.075 au (11.2 million km) , (epoch 1968)",
+        "T Jupiter": "-0.598",
+        "Dimensions": "14.42 km × 7.4 km × 7.4 km (Giotto) , 15.3 km × 7.21 km × 7.21 km (Vega)",
+        "Mean diameter": "11 km",
+        "Mass": "(2.2 ± 0.9) × 10^14 kg",
+        "Mean density": "0.55 ± 0.25 g/cm^3, 0.2–1.5 g/cm^3 (est.)",
+        "Escape velocity": "~0.002 km/s",
+        "Synodic rotation period": "2.2 d (52.8 h) (?)",
+        "Albedo": "0.04",
+        "Apparent magnitude": "2.1 (in 1986) , 28.2 (in 2003)"
+    },
+    "consolidated_relationships": [
+        {
+            "Visible From": [
+                "Earth"
+            ],
+            "Designated By": [
+                "Comet Halley"
+            ],
+            "Also Known As": [
+                "Comet Halley"
+            ],
+            "Named After": [
+                "Edmond Halley"
+            ],
+            "Observed By": [
+                "Babylonians",
+                "Byzantine Astronomers",
+                "Charles Morris",
+                "Chinese Astronomers",
+                "D. Olmstead",
+                "David C. Jewitt",
+                "E. Loomis",
+                "Edmond Halley",
+                "Edward Joshua Cooper",
+                "Eilmer Of Malmesbury",
+                "Emperor Hirohito",
+                "Eso'S Very Large Telescope",
+                "Francis Williams",
+                "François Arago",
+                "Friedrich Bessel",
+                "G. Edward Danielson",
+                "German Astronomers",
+                "Giotto Di Bondone",
+                "Girolamo Fracastoro",
+                "Japanese Astronomers",
+                "Jewish Historian Josephus",
+                "Johann Georg Palitzsch",
+                "Johannes Kepler",
+                "John Flamsteed",
+                "Middle Eastern Astronomers",
+                "Petrus Apianus",
+                "Roman Historian Cassius Dio",
+                "Sir John Herschel",
+                "Stephen Edberg",
+                "Stephen James O'Meara",
+                "Struve",
+                "Tamil Bards",
+                "Vega",
+                "William Of Malmesbury",
+                "Zara Yaqob",
+                "Æthelmær",
+                "Śrīvara"
+            ],
+            "Proposed By": [
+                "Fred Whipple"
+            ],
+            "Discovered By": [
+                "Edmond Halley"
+            ],
+            "Orbits": [
+                "Sun"
+            ],
+            "Predicted By": [
+                "Edmond Halley"
+            ],
+            "Calculated Perturbations By": [
+                "Alexis Clairaut",
+                "Joseph Lalande",
+                "Nicole-Reine Lepaute"
+            ],
+            "Named By": [
+                "Nicolas-Louis De Lacaille"
+            ],
+            "Close Approach To": [
+                "0.10 Au",
+                "0.42 Au",
+                "1910",
+                "Earth"
+            ],
+            "Associated With Meteor Shower": [
+                "Eta Aquariids",
+                "Orionids"
+            ],
+            "Identified As": [
+                "Short-Period Comets"
+            ],
+            "Originates From": [
+                "Oort Cloud"
+            ],
+            "Possible Origin": [
+                "2008 Kv42"
+            ],
+            "Member Of": [
+                "Short-Period Comets"
+            ],
+            "Compared To": [
+                "Avocado",
+                "Comet Tralles Of 1819",
+                "Peanut",
+                "Potato"
+            ],
+            "Has Structure": [
+                "Rubble Pile"
+            ],
+            "Has Composition": [
+                "Silicates",
+                "Tholins"
+            ],
+            "Has Tail": [
+                "Stellar Wind"
+            ],
+            "Has Coma": [
+                "Solar Light"
+            ],
+            "Recorded In": [
+                "Annals Of Ulster",
+                "Babylonian Tablets",
+                "Book Of Han",
+                "Comets",
+                "Records Of The Grand Historian",
+                "Science And Civilisation In China",
+                "Zuqnin Chronicle"
+            ],
+            "Associated With": [
+                "Attila The Hun",
+                "Emperor Louis The Pious",
+                "François Arago",
+                "Isaac Newton",
+                "Johannes Kepler",
+                "Marcus Vipsanius Agrippa",
+                "Mark Twain",
+                "Star Of Bethlehem",
+                "Tigranes The Great"
+            ],
+            "Featured In": [
+                "1378",
+                "1456",
+                "1835",
+                "1910",
+                "Anglo-Saxon Chronicle",
+                "Bayeux Tapestry",
+                "Chaco Native Americans Petroglyphs",
+                "Comet",
+                "England",
+                "Irish Annals Of The Four Masters",
+                "Italo-Byzantine Chronicle Of Lupus The Protospatharios"
+            ],
+            "Recorded By": [
+                "Monk Eadwine"
+            ],
+            "Inspired By": [
+                "Genghis Khan",
+                "Jupiter",
+                "Saturn",
+                "The Adventures Of Mark Twain"
+            ],
+            "Visible In": [
+                "South Korea"
+            ],
+            "Represented By": [
+                "Giotto Di Bondone"
+            ],
+            "Referenced In": [
+                "A Jewish Understanding Of The World",
+                "Annales Mediolanenses",
+                "East Asian Sources",
+                "Guru Granth Sahib",
+                "Star-God"
+            ],
+            "Observed In": [
+                "1456",
+                "Comets And How To Observe Them"
+            ],
+            "Associated With Historical Event": [
+                "Fall Of Sultan Zayn Al-Abidin",
+                "Siege Of Belgrade",
+                "Xinhai Revolution"
+            ],
+            "Studied By": [
+                "Giotto Di Bondone",
+                "International Cometary Explorer",
+                "Paris Observatory",
+                "Sakigake",
+                "Suisei",
+                "Vega 1",
+                "Vega 2"
+            ],
+            "Observed At": [
+                "Cape Of Good Hope",
+                "Dorpat Observatory",
+                "Markree Observatory",
+                "Newfoundland",
+                "Paris Observatory",
+                "Quebec",
+                "Yale College"
+            ],
+            "Flew Through Tail Of": [
+                "Earth"
+            ],
+            "Discovered Organic Molecules In": [
+                "Cyanogen"
+            ],
+            "Used In": [
+                "Le Bon Marché"
+            ],
+            "Inspired Hoax": [
+                "Sacred Followers"
+            ],
+            "Had Apparition In": [
+                "1986"
+            ],
+            "Target Of Mission": [
+                "Sts-51-L",
+                "Sts-61-E"
+            ],
+            "Reached Point In Orbit": [
+                "Sun"
+            ],
+            "Will Reach Perihelion On": [
+                "27 March 2134",
+                "28 July 2061"
+            ],
+            "Will Pass Within": [
+                "Earth",
+                "Jupiter",
+                "Venus"
+            ],
+            "Has Apparent Magnitude": [
+                "-2.0"
+            ],
+            "First Periodic Comet": [
+                "Yes"
+            ],
+            "Historical Observation": [
+                "240 Bc"
+            ],
+            "Peak Magnitude": [
+                "0Th Magnitude"
+            ],
+            "Has Orbit Type": [
+                "Kepler Orbit"
+            ],
+            "Returned In": [
+                "1910"
+            ],
+            "Anticipated Return In": [
+                "1758"
+            ],
+            "Documented In": [
+                "Cometography"
+            ],
+            "Explored In": [
+                "Beyond Earth"
+            ]
+        },
+        {
+            "Studied By Probe": "Studied By",
+            "Depicted By": "Represented By",
+            "First Periodic Comet": "First Periodic Comet",
+            "Documented In": "Documented In",
+            "Witnessed By": "Observed By",
+            "Was Target Of Mission": "Target Of Mission",
+            "Reached Point In Orbit": "Reached Point In Orbit",
+            "Will Pass Within": "Will Pass Within",
+            "Composition Model Proposed By": "Proposed By",
+            "Visible From": "Visible From",
+            "Observed By": "Observed By",
+            "Has Composition": "Has Composition",
+            "Visible In": "Visible In",
+            "Appeared In": "Featured In",
+            "Classified As": "Identified As",
+            "Calculated Perturbations By": "Calculated Perturbations By",
+            "Had Closest Approach": "Close Approach To",
+            "Returned In": "Returned In",
+            "Associated With Person": "Associated With",
+            "Approached Earth": "Close Approach To",
+            "Proposed Origin": "Possible Origin",
+            "Inspired": "Inspired By",
+            "Has Apparent Magnitude": "Has Apparent Magnitude",
+            "Approached Earth At Distance": "Close Approach To",
+            "Observed By Spacecraft": "Observed By",
+            "Chronicled In": "Recorded In",
+            "Discovered Substance In Tail": "Discovered Organic Molecules In",
+            "Featured In": "Featured In",
+            "Member Of": "Member Of",
+            "Close Approach To": "Close Approach To",
+            "Has Structure": "Has Structure",
+            "Will Reach Perihelion On": "Will Reach Perihelion On",
+            "Named By": "Named By",
+            "Associated With Event": "Associated With Historical Event",
+            "Studied By": "Studied By",
+            "Compared To": "Compared To",
+            "Orbits": "Orbits",
+            "Had Apparition In": "Had Apparition In",
+            "Influenced By": "Inspired By",
+            "Named After": "Named After",
+            "Has Tail": "Has Tail",
+            "Passed Through Tail": "Flew Through Tail Of",
+            "Inspired Film": "Inspired By",
+            "Peak Magnitude": "Peak Magnitude",
+            "Closest Approach To": "Close Approach To",
+            "Has Orbit Type": "Has Orbit Type",
+            "Will Pass Near": "Will Pass Within",
+            "Observed At": "Observed At",
+            "Explored In": "Explored In",
+            "Has Coma": "Has Coma",
+            "Next Perihelion Predicted For": "Will Reach Perihelion On",
+            "Used In Advertising": "Used In",
+            "Historical Sightings": "Historical Observation",
+            "Recorded In": "Recorded In",
+            "Predicted Return By": "Predicted By",
+            "Originated From": "Originates From",
+            "Discovered By": "Discovered By",
+            "Referenced In": "Referenced In",
+            "Mentioned In": "Referenced In",
+            "Recorded By": "Recorded By",
+            "Inspired Hoax": "Inspired Hoax",
+            "Commonly Called": "Also Known As",
+            "Associated With": "Associated With",
+            "Anticipated Return In": "Anticipated Return In",
+            "Associated With Meteor Shower": "Associated With Meteor Shower",
+            "Officially Designated": "Designated By",
+            "Observed In": "Observed In"
+        },
+        {
+            "François Arago": "François Arago",
+            "Eilmer of Malmesbury": "Eilmer Of Malmesbury",
+            "28 July 2061": "28 July 2061",
+            "Śrīvara": "Śrīvara",
+            "William of Malmesbury": "William Of Malmesbury",
+            "Italo-Byzantine chronicle of Lupus the Protospatharios": "Italo-Byzantine Chronicle Of Lupus The Protospatharios",
+            "Quebec": "Quebec",
+            "Markree Observatory": "Markree Observatory",
+            "Edward Joshua Cooper": "Edward Joshua Cooper",
+            "Eta Aquariids": "Eta Aquariids",
+            "Sakigake": "Sakigake",
+            "Dorpat observatory": "Dorpat Observatory",
+            "Very Large Telescopes": "Eso'S Very Large Telescope",
+            "England": "England",
+            "potato": "Potato",
+            "1758": "1758",
+            "solar wind": "Stellar Wind",
+            "E. Loomis": "E. Loomis",
+            "Johannes Kepler": "Johannes Kepler",
+            "Æthelmær": "Æthelmær",
+            "CHON compounds": "Tholins",
+            "Struve": "Struve",
+            "Irish Annals of the Four Masters": "Irish Annals Of The Four Masters",
+            "Suisei": "Suisei",
+            "Edmond Halley": "Edmond Halley",
+            "Tamil bards": "Tamil Bards",
+            "Earth": "Earth",
+            "Francis Williams": "Francis Williams",
+            "Tigranes the Great": "Tigranes The Great",
+            "-2.0": "-2.0",
+            "Le Bon Marché": "Le Bon Marché",
+            "Comet Halley": "Comet Halley",
+            "German astronomers": "German Astronomers",
+            "Girolamo Fracastoro": "Girolamo Fracastoro",
+            "1P/Halley": "Comet Halley",
+            "Star of Bethlehem": "Star Of Bethlehem",
+            "Sun": "Sun",
+            "Friedrich Wilhelm Bessel": "Friedrich Bessel",
+            "Bayeux Tapestry": "Bayeux Tapestry",
+            "Siege of Belgrade": "Siege Of Belgrade",
+            "27 March 2134": "27 March 2134",
+            "Chaco Native Americans petroglyphs": "Chaco Native Americans Petroglyphs",
+            "1456": "1456",
+            "The Adventures of Mark Twain": "The Adventures Of Mark Twain",
+            "monk Eadwine": "Monk Eadwine",
+            "STS-61-E": "Sts-61-E",
+            "Comets: A Chronological History of Observation, Science, Myth, and Folklore": "Comets",
+            "Venus": "Venus",
+            "Zara Yaqob": "Zara Yaqob",
+            "0.42 au": "0.42 Au",
+            "240 BC": "240 Bc",
+            "Vega": "Vega",
+            "rubble pile": "Rubble Pile",
+            "Attila the Hun": "Attila The Hun",
+            "Middle Eastern astronomers": "Middle Eastern Astronomers",
+            "1378": "1378",
+            "Book of Han": "Book Of Han",
+            "Emperor Louis the Pious": "Emperor Louis The Pious",
+            "Jewish historian Josephus": "Jewish Historian Josephus",
+            "Babylonian tablets": "Babylonian Tablets",
+            "Vega 2": "Vega 2",
+            "1910": "1910",
+            "Kepler orbit": "Kepler Orbit",
+            "STS-51-L": "Sts-51-L",
+            "Cape of Good Hope": "Cape Of Good Hope",
+            "Halley-type comets": "Short-Period Comets",
+            "Comet": "Comet",
+            "Byzantine astronomers": "Byzantine Astronomers",
+            "Saturn": "Saturn",
+            "A Jewish Understanding of the World": "A Jewish Understanding Of The World",
+            "Japanese astronomers": "Japanese Astronomers",
+            "Chinese astronomers": "Chinese Astronomers",
+            "International Cometary Explorer": "International Cometary Explorer",
+            "Nicolas-Louis de Lacaille": "Nicolas-Louis De Lacaille",
+            "Comet Tralles of 1819": "Comet Tralles Of 1819",
+            "Genghis Khan": "Genghis Khan",
+            "Emperor Hirohito": "Emperor Hirohito",
+            "2008 KV42": "2008 Kv42",
+            "Annales Mediolanenses": "Annales Mediolanenses",
+            "Giotto di Bondone": "Giotto Di Bondone",
+            "Babylonian astronomers": "Babylonians",
+            "Cyanogen": "Cyanogen",
+            "Sacred Followers": "Sacred Followers",
+            "Newfoundland": "Newfoundland",
+            "Mark Twain": "Mark Twain",
+            "Cometography": "Cometography",
+            "Roman historian Cassius Dio": "Roman Historian Cassius Dio",
+            "Stephen Edberg": "Stephen Edberg",
+            "Isaac Newton": "Isaac Newton",
+            "Sir John Herschel": "Sir John Herschel",
+            "Xinhai Revolution": "Xinhai Revolution",
+            "Alexis Clairaut": "Alexis Clairaut",
+            "solar light": "Solar Light",
+            "Records of the Grand Historian": "Records Of The Grand Historian",
+            "0.10 au": "0.10 Au",
+            "Zuqnin Chronicle": "Zuqnin Chronicle",
+            "Oort cloud": "Oort Cloud",
+            "Comets and How to Observe Them": "Comets And How To Observe Them",
+            "Beyond Earth": "Beyond Earth",
+            "silicates": "Silicates",
+            "Fred Whipple": "Fred Whipple",
+            "Vega 1": "Vega 1",
+            "Stephen James O'Meara": "Stephen James O'Meara",
+            "G. Edward Danielson": "G. Edward Danielson",
+            "1986": "1986",
+            "Anglo-Saxon Chronicle": "Anglo-Saxon Chronicle",
+            "Fall of Sultan Zayn al-Abidin": "Fall Of Sultan Zayn Al-Abidin",
+            "East Asian sources": "East Asian Sources",
+            "Charles Morris": "Charles Morris",
+            "True": "Yes",
+            "Giotto": "Giotto Di Bondone",
+            "Joseph Lalande": "Joseph Lalande",
+            "0th magnitude": "0Th Magnitude",
+            "John Flamsteed": "John Flamsteed",
+            "peanut": "Peanut",
+            "1835": "1835",
+            "Paris Observatory": "Paris Observatory",
+            "Korea": "South Korea",
+            "David C. Jewitt": "David C. Jewitt",
+            "Guru Granth Sahib": "Guru Granth Sahib",
+            "Jupiter": "Jupiter",
+            "Science and Civilisation in China": "Science And Civilisation In China",
+            "Yale College": "Yale College",
+            "D. Olmstead": "D. Olmstead",
+            "Johann Georg Palitzsch": "Johann Georg Palitzsch",
+            "Star Gods of the Maya": "Star-God",
+            "avocado": "Avocado",
+            "Annals of Ulster": "Annals Of Ulster",
+            "Marcus Vipsanius Agrippa": "Marcus Vipsanius Agrippa",
+            "Nicole-Reine Lepaute": "Nicole-Reine Lepaute",
+            "Petrus Apianus": "Petrus Apianus",
+            "Orionids": "Orionids"
+        }
+    ]
+}

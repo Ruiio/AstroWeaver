@@ -1,0 +1,115 @@
+{
+    "entity_name": "ULAS J1342+0928",
+    "infobox_attributes": {
+        "ULAS J1342+0928": "Artist's conception of a similar quasar",
+        "Constellation": "Boötes",
+        "Right ascension": "13 42 08.10",
+        "Declination": "+09° 28′ 38.61″",
+        "Redshift": "7.5413 ± 0.0007",
+        "Distance": "29.36 Gly (9.00 Gpc) , ( comoving distance ) , 13.1 Gly (4.0 Gpc) , ( light travel distance )",
+        "Other designations": "See also: Quasar, List of quasars"
+    },
+    "consolidated_relationships": [
+        {
+            "Located In Constellation": [
+                "Boötes"
+            ],
+            "Contains Supermassive Black Hole": [
+                "Nuclear Black Holes"
+            ],
+            "Most Distant Quasar Observed In": [
+                "2017",
+                "Qso J0313-1806"
+            ],
+            "Discovered By": [
+                "Decam",
+                "United Kingdom Infrared Telescope",
+                "Wide Field Infrared Explorer"
+            ],
+            "Confirmed By": [
+                "Gemini Observatory",
+                "Large Binocular Telescope",
+                "Magellan Telescopes"
+            ],
+            "Associated With": [
+                "Reionization Process"
+            ],
+            "Hosts": [
+                "Black Holes"
+            ],
+            "Releases Into": [
+                "Interstellar Medium"
+            ],
+            "Has Redshift": [
+                "7.54"
+            ],
+            "Located At Comoving Distance From": [
+                "Earth"
+            ],
+            "Emitted Light After Big Bang": [
+                "690 Million Years"
+            ],
+            "Has Luminosity": [
+                "4×10^13 Solar Luminosities"
+            ],
+            "Powered By Supermassive Black Hole": [
+                "7.8×10^8 Solar Masses"
+            ],
+            "Studied By": [
+                "Bañados"
+            ],
+            "Emitted Light Before": [
+                "Reionization Process"
+            ],
+            "Important Energy Source For": [
+                "Reionization Process"
+            ],
+            "Challenges Theories Of": [
+                "Black Hole Formation"
+            ]
+        },
+        {
+            "Spectroscopically Confirmed By": "Confirmed By",
+            "Discovered By": "Discovered By",
+            "Most Distant Quasar Observed In": "Most Distant Quasar Observed In",
+            "Contains Supermassive Black Hole": "Contains Supermassive Black Hole",
+            "Located In Constellation": "Located In Constellation",
+            "Was Most Distant Quasar Until": "Most Distant Quasar Observed In",
+            "Emitted Light Before": "Emitted Light Before",
+            "Located At Comoving Distance From": "Located At Comoving Distance From",
+            "Has Luminosity": "Has Luminosity",
+            "Powered By Supermassive Black Hole": "Powered By Supermassive Black Hole",
+            "Studied By Astronomer": "Studied By",
+            "Emitted Light After Big Bang": "Emitted Light After Big Bang",
+            "Hosts": "Hosts",
+            "Has Redshift": "Has Redshift",
+            "Associated With": "Associated With",
+            "Important Energy Source For": "Important Energy Source For",
+            "Releases Into": "Releases Into",
+            "Challenges Theories Of": "Challenges Theories Of"
+        },
+        {
+            "United Kingdom Infrared Telescope": "United Kingdom Infrared Telescope",
+            "Gemini North telescope": "Gemini Observatory",
+            "Large Binocular Telescope": "Large Binocular Telescope",
+            "7.8×10^8 solar masses": "7.8×10^8 Solar Masses",
+            "Magellan Telescopes": "Magellan Telescopes",
+            "reionization process": "Reionization Process",
+            "supermassive black hole": "Nuclear Black Holes",
+            "DECam Legacy Survey": "Decam",
+            "2017": "2017",
+            "black hole": "Black Holes",
+            "Wide-field Infrared Survey Explorer": "Wide Field Infrared Explorer",
+            "Boötes": "Boötes",
+            "black hole formation": "Black Hole Formation",
+            "interstellar medium": "Interstellar Medium",
+            "Bañados": "Bañados",
+            "4×10^13 solar luminosities": "4×10^13 Solar Luminosities",
+            "690 million years": "690 Million Years",
+            "epoch of reionization": "Reionization Process",
+            "Earth": "Earth",
+            "7.54": "7.54",
+            "QSO J0313-1806": "Qso J0313-1806"
+        }
+    ]
+}

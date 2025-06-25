@@ -1,0 +1,144 @@
+{
+    "entity_name": "Gliese 581g",
+    "infobox_attributes": {
+        "Discovered by": "Steven S. Vogt et al.",
+        "Discovery site": "Keck Observatory, Hawaii",
+        "Discovery date": "September 29, 2010",
+        "Detection method": "Radial velocity",
+        "Orbital characteristics": "Epoch JD 2451409.762",
+        "Semi-major axis": "0.13 AU (19, 000, 000 km)",
+        "Eccentricity": "0",
+        "Orbital period (sidereal)": "32 d",
+        "Mean anomaly": "271 ± 48",
+        "Semi-amplitude": "1.29 ± 0.19",
+        "Star": "Gliese 581",
+        "Temperature": "242 K (−31 °C; −24 °F) to 261 K (−12 °C; 10 °F)"
+    },
+    "consolidated_relationships": [
+        {
+            "Orbits": [
+                "Gliese 581",
+                "M Dwarfs"
+            ],
+            "Discovered By": [
+                "Lick–Carnegie Exoplanet Survey",
+                "Steven Vogt"
+            ],
+            "Member Of": [
+                "Gliese 581"
+            ],
+            "Claimed By": [
+                "Steven S. Vogt"
+            ],
+            "Detected Using": [
+                "Harps Instrument",
+                "Hires Instrument"
+            ],
+            "Also Known As": [
+                "Zarmina'S World"
+            ],
+            "Challenged By": [
+                "Geneva Observatory",
+                "Mikko Tuomi",
+                "Philip Gregory",
+                "Rene Andrae"
+            ],
+            "Orbital Characteristics Disputed By": [
+                "Swiss Group"
+            ],
+            "Catalogued As": [
+                "Extrasolar Planets Encyclopaedia"
+            ],
+            "Supported By": [
+                "Guillem Anglada-Escudé",
+                "Rebekah Dawson",
+                "Steven Vogt"
+            ],
+            "Located In": [
+                "Habitable Zone"
+            ],
+            "Depends On": [
+                "Gliese 581D"
+            ],
+            "Delisted From": [
+                "List Of Potentially Habitable Exoplanets"
+            ],
+            "Tidally Locked To": [
+                "Gliese 581"
+            ],
+            "Depends On For Habitability": [
+                "Gaseous Envelope",
+                "Planetary Surface"
+            ],
+            "Represented By": [
+                "General Circulation Model"
+            ],
+            "Potential Life Support": [
+                "Life"
+            ],
+            "Potentially Habitable Exoplanet Group": [
+                "Gliese 581"
+            ],
+            "Implies Lower Limit On": [
+                "Η⊕"
+            ],
+            "Discovered In": [
+                "Habitable Zone"
+            ],
+            "Potential For": [
+                "Earthlike Planets"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Claimed By": "Claimed By",
+            "Potentially Habitable Planet": "Potentially Habitable Exoplanet Group",
+            "Depends On": "Depends On",
+            "Tidally Locked To": "Tidally Locked To",
+            "Informally Referred To As": "Also Known As",
+            "Implies Lower Limit On": "Implies Lower Limit On",
+            "Member Of": "Member Of",
+            "Disputed By": "Challenged By",
+            "Supported By": "Supported By",
+            "Modeled By": "Represented By",
+            "Orbits": "Orbits",
+            "Depends On For Habitability": "Depends On For Habitability",
+            "Discovered In": "Discovered In",
+            "Orbital Characteristics Disputed By": "Orbital Characteristics Disputed By",
+            "Potential Life Support": "Potential Life Support",
+            "Delisted From": "Delisted From",
+            "Listed As": "Catalogued As",
+            "Discovered By": "Discovered By",
+            "Suggests Potential Of": "Potential For",
+            "Detected Using": "Detected Using"
+        },
+        {
+            "Planetary Surface": "Planetary Surface",
+            "Steven Vogt": "Steven Vogt",
+            "Mikko Tuomi": "Mikko Tuomi",
+            "HIRES instrument": "Hires Instrument",
+            "life": "Life",
+            "HARPS instrument": "Harps Instrument",
+            "Steven S. Vogt": "Steven S. Vogt",
+            "General Circulation Model": "General Circulation Model",
+            "Extrasolar Planets Encyclopaedia": "Extrasolar Planets Encyclopaedia",
+            "η⊕": "Η⊕",
+            "Earthlike planets": "Earthlike Planets",
+            "Rene Andrae": "Rene Andrae",
+            "Atmosphere": "Gaseous Envelope",
+            "Geneva Observatory": "Geneva Observatory",
+            "Lick–Carnegie Exoplanet Survey": "Lick–Carnegie Exoplanet Survey",
+            "Swiss group": "Swiss Group",
+            "Guillem Anglada-Escudé": "Guillem Anglada-Escudé",
+            "Gliese 581": "Gliese 581",
+            "red dwarf": "M Dwarfs",
+            "Zarmina's World": "Zarmina'S World",
+            "Rebekah Dawson": "Rebekah Dawson",
+            "Gliese 581 system": "Gliese 581",
+            "Philip Gregory": "Philip Gregory",
+            "Gliese 581d": "Gliese 581D",
+            "Habitable Exoplanets Catalog": "List Of Potentially Habitable Exoplanets",
+            "Habitable Zone": "Habitable Zone"
+        }
+    ]
+}

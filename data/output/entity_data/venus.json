@@ -1,0 +1,646 @@
+{
+    "entity_name": "Venus",
+    "infobox_attributes": {
+        "Pronunciation": "/ ˈ v iː n ə s /",
+        "Named after": "Roman goddess of love (see goddess Venus)",
+        "Adjectives": "Venusian / v ɪ ˈ nj uː z i ə n, - ʒ ə n /, rarely Cytherean / s ɪ θ ə ˈ r iː ə n / or Venerean / Venerian / v ɪ ˈ n ɪər i ə n /",
+        "Symbol": "",
+        "Orbital characteristics": "Epoch J2000",
+        "Aphelion": "0.728213 AU (108.94 million km)",
+        "Perihelion": "0.718440 AU (107.48 million km)",
+        "Semi-major axis": "0.723332 AU (108.21 million km)",
+        "Eccentricity": "0.006772",
+        "Orbital period (sidereal)": "224.701 d 0.615 198 Julian year 0.615 187 sidereal year 1.92 Venus solar day",
+        "Orbital period (synodic)": "583.92 days",
+        "Average orbital speed": "35.02 km/s",
+        "Mean anomaly": "50.115°",
+        "Inclination": "3.394 58 ° to ecliptic 3.86° to Sun 's equator 2.15° to invariable plane",
+        "Longitude of ascending node": "76.680°",
+        "Argument of perihelion": "54.884°",
+        "Satellites": "None",
+        "Mean radius": "6, 051.8 ± 1.0 km 0.9499 Earths",
+        "Flattening": "0",
+        "Surface area": "4.6023 × 10^8 km^2 0.902 Earths",
+        "Volume": "9.2843 × 10^11 km^3 0.857 Earths",
+        "Mass": "4.8675 × 10^24 kg 0.815 Earths",
+        "Mean density": "5.243 g/cm^3",
+        "Surface gravity": "8.87 m/s^2 (0.904 g 0)",
+        "Escape velocity": "10.36 km/s (6.44 mi/s)",
+        "Synodic rotation period": "−116.75 d (retrograde) , 1 Venus solar day",
+        "Sidereal rotation period": "−243.0226 d (retrograde)",
+        "Equatorial rotation velocity": "1.81 m/s",
+        "Axial tilt": "2.64° (for retrograde rotation) , 177.36° (to orbit)",
+        "North pole right ascension": "18 11 2 272.76°",
+        "North pole declination": "67.16°",
+        "Albedo": "0.689 ( geometric ) 0.76 ( Bond )",
+        "Temperature": "232 K (−41 °C) (blackbody temperature)",
+        "Surface absorbed dose rate": "2.1 × 10^−6 μGy/h",
+        "Surface equivalent dose rate": "2.2 × 10^−6 μSv/h, 0.092–22 μSv/h at cloud level",
+        "Apparent magnitude": "−4.92 to −2.98",
+        "Absolute magnitude (H)": "−4.4",
+        "Angular diameter": "9.7″–66.0″",
+        "Surface pressure": "93 bar (9.3 MPa) , 92 atm",
+        "Composition by volume": "96.5% carbon dioxide 3.5% nitrogen 0.015% sulphur dioxide 0.0070% argon 0.0020% water vapour 0.0017% carbon monoxide 0.0012% helium 0.0007% neon Trace carbonyl sulfide Trace hydrogen chloride Trace hydrogen fluoride"
+    },
+    "consolidated_relationships": [
+        {
+            "Orbits": [
+                "Sun"
+            ],
+            "Has Twin Planet": [
+                "Earth"
+            ],
+            "Closest To": [
+                "Earth"
+            ],
+            "Member Of": [
+                "Solar System"
+            ],
+            "Has No Natural Satellite": [
+                "Moon"
+            ],
+            "Visited By": [
+                "Akatsuki",
+                "Bepicolombo",
+                "Cassini–Huygens",
+                "Galileo Galilei",
+                "Ikaros",
+                "Magellan",
+                "Mariner 10",
+                "Mariner 2",
+                "Mbr Explorer",
+                "Messenger",
+                "Pioneer Venus Multiprobe",
+                "Pioneer Venus Orbiter",
+                "Solar Orbiter",
+                "Vega 1",
+                "Vega 2",
+                "Venera 1",
+                "Venera 10",
+                "Venera 13",
+                "Venera 14",
+                "Venera 15",
+                "Venera 16",
+                "Venera 3",
+                "Venera 4",
+                "Venera 7",
+                "Venera 9",
+                "Venus Life Finder",
+                "Venus Orbiter Mission"
+            ],
+            "Brightest Object In Sky After": [
+                "Moon",
+                "Sun"
+            ],
+            "Located Near": [
+                "Sun"
+            ],
+            "Approaches In Synodic Period": [
+                "Earth"
+            ],
+            "Has Flyby Missions": [
+                "Solar Orbiter",
+                "Venus Life Finder"
+            ],
+            "Similar To": [
+                "Earth"
+            ],
+            "Has Feature": [
+                "Alpha Regio",
+                "Aphrodite Terra",
+                "Ariadne",
+                "Beta Regio",
+                "Beta Region",
+                "Eve",
+                "Ishtar Terra",
+                "Maxwell Montes",
+                "Niobe Planitia",
+                "Ovda Regio",
+                "Sedna Planitia",
+                "Sif Mons"
+            ],
+            "Mapped": [
+                "Magellan"
+            ],
+            "Explored By": [
+                "Venera Landers"
+            ],
+            "Has Prime Meridian Reference": [
+                "Ariadne",
+                "Eve"
+            ],
+            "Has Volcano": [
+                "Arachnoids",
+                "Coronae",
+                "Farra",
+                "Ganis Chasma",
+                "Maat Mons",
+                "Novae"
+            ],
+            "Named After": [
+                "Aphrodite",
+                "James Clerk Maxwell",
+                "Star Of Ishtar",
+                "Venus"
+            ],
+            "Observed By": [
+                "Abraham Lincoln",
+                "Arecibo Telescope",
+                "Avicenna",
+                "Captain Cook",
+                "Chester Smith Lyman",
+                "Edmond Halley",
+                "Frank E. Ross",
+                "Galileo Galilei",
+                "Giovanni Domenico Cassini",
+                "Jeremiah Horrocks",
+                "Johannes Kepler",
+                "Magellan Orbiter",
+                "Napoleon Bonaparte",
+                "V. M. Slipher",
+                "Venus Orbiter Mission"
+            ],
+            "Has Impact Crater": [
+                "Earth",
+                "Moon"
+            ],
+            "Underwent Global Resurfacing Event": [
+                "Earth"
+            ],
+            "Unable To Sustain Plate Tectonics": [
+                "Earth"
+            ],
+            "Similar Internal Structure To": [
+                "Earth"
+            ],
+            "Has Core": [
+                "Earth"
+            ],
+            "Has Outer Shell": [
+                "Earth"
+            ],
+            "Lacks Plate Tectonics Compared To": [
+                "Earth"
+            ],
+            "Lacks Intrinsic Magnetic Field": [
+                "Earth"
+            ],
+            "Has Magnetic Field": [
+                "Earth"
+            ],
+            "Has Induced Magnetosphere": [
+                "Stellar Wind"
+            ],
+            "Has Atmosphere Interaction": [
+                "Stellar Wind"
+            ],
+            "Has Atmospheric Erosion": [
+                "Stellar Wind"
+            ],
+            "Has Atmosphere Composition": [
+                "Dry Ice",
+                "Nitrogen"
+            ],
+            "Has Surface Temperature Comparison": [
+                "Mercury"
+            ],
+            "Has Atmospheric Pressure Comparison": [
+                "Earth"
+            ],
+            "Has Solar Irradiance Comparison": [
+                "Earth",
+                "Mercury"
+            ],
+            "Has Greenhouse Effect Comparison": [
+                "Earth"
+            ],
+            "Has Cloud Composition": [
+                "Sulphuric Acid"
+            ],
+            "Has Wind Speed Comparison": [
+                "Earth"
+            ],
+            "Has Atmospheric Phenomenon": [
+                "Double Atmospheric Polar Vortex",
+                "Lightning",
+                "Ozone Layer",
+                "Stationary Gravity Waves"
+            ],
+            "Has Historical Comparison": [
+                "Early Earth"
+            ],
+            "Has Retrograde Rotation": [
+                "Earth"
+            ],
+            "Has Trojan Asteroids": [
+                "2001 Ck32",
+                "2012 Xe133",
+                "524522 Zoozve"
+            ],
+            "Has Dust Ring-Cloud": [
+                "Proto-Planetary Disks (Proplyds) In The Orion Nebula"
+            ],
+            "Has Orbital Resonance With": [
+                "Earth"
+            ],
+            "Used For Gravity Assist To": [
+                "Asteroids",
+                "Jupiter",
+                "Mars",
+                "Mercury",
+                "Sun"
+            ],
+            "Exerts Tidal Force On": [
+                "Earth"
+            ],
+            "Visible As": [
+                "Hesperus",
+                "Morning Star"
+            ],
+            "Occulted By": [
+                "Moon"
+            ],
+            "Located In Constellation": [
+                "Evening Sky",
+                "Pisces",
+                "Virgo"
+            ],
+            "Displays Phases Similar To": [
+                "Moon"
+            ],
+            "Visible With Telescope": [
+                "Earth"
+            ],
+            "Has Atmosphere Visible Through Telescope": [
+                "Sun"
+            ],
+            "Observed At": [
+                "London",
+                "Luxembourg",
+                "Washington, D.C."
+            ],
+            "Transits In Front Of": [
+                "Sun"
+            ],
+            "Occurs In Sequence With": [
+                "Earth"
+            ],
+            "Historical Observation": [
+                "Australia",
+                "Tahiti"
+            ],
+            "Displays Phenomenon": [
+                "Ashen Light"
+            ],
+            "Observed In Phase": [
+                "Crescent Phase"
+            ],
+            "Visible Without Aid": [
+                "Earth'S Sky"
+            ],
+            "Third Brightest Object In": [
+                "Earth'S Sky"
+            ],
+            "Also Known As": [
+                "Chánggēng",
+                "Dilbat",
+                "Earth'S Sister Planet",
+                "Ninsi'Anna",
+                "Qǐmíng",
+                "Tàibái"
+            ],
+            "Initially Believed To Be": [
+                "Hesperus",
+                "Phosphorus"
+            ],
+            "Identified As": [
+                "Lucifer",
+                "Vesper"
+            ],
+            "Located Between": [
+                "Earth",
+                "Sun"
+            ],
+            "Observed As Black Spot By": [
+                "Ibn Bajjah"
+            ],
+            "Discovered By": [
+                "Johann Schröter",
+                "Mikhail Lomonosov"
+            ],
+            "Rotation Period Determined By": [
+                "Spectroscopic Observations"
+            ],
+            "Surface Detail Revealed By": [
+                "Ultraviolet"
+            ],
+            "Has Scheduled Mission": [
+                "Davinci",
+                "Envision",
+                "Venus Life Finder",
+                "Venus Orbiter Mission",
+                "Veritas"
+            ],
+            "Important Case For Understanding": [
+                "Development Of Habitable Environments",
+                "Earth",
+                "Origins Of The Solar System",
+                "Planetary Bodies Evolution"
+            ],
+            "Has Proposed Exploration Concept": [
+                "Nasa'S High Altitude Venus Operational Concept"
+            ],
+            "Potential For": [
+                "Floating Cities",
+                "Thermoacidophilic Extremophile Microorganisms"
+            ],
+            "Has Potential Life Indicator": [
+                "Phosphine"
+            ],
+            "Studied By": [
+                "Carl Sagan",
+                "Harold J. Morowitz",
+                "Jane Greaves",
+                "Yeon Joo Lee"
+            ],
+            "Investigated By": [
+                "Venus Life Finder"
+            ],
+            "Under Planetary Protection Category": [
+                "Category Two"
+            ],
+            "Associated With Mythology": [
+                "Frigg"
+            ],
+            "Named In Culture": [
+                "Noh Ek'"
+            ],
+            "Associated With": [
+                "Dresden Codex",
+                "Star Of Ishtar"
+            ],
+            "Depicted On": [
+                "Flag Of Chile"
+            ],
+            "Close To Star": [
+                "Sun"
+            ],
+            "Similar In Size To": [
+                "Earth"
+            ],
+            "Possesses": [
+                "Gaseous Envelope"
+            ],
+            "Has Symbol": [
+                "Venus"
+            ],
+            "Represented By": [
+                "Copper"
+            ],
+            "Located In": [
+                "Venus Zone"
+            ]
+        },
+        {
+            "Has Dust Ring-Cloud": "Has Dust Ring-Cloud",
+            "Has Induced Magnetosphere": "Has Induced Magnetosphere",
+            "Unable To Sustain Plate Tectonics": "Unable To Sustain Plate Tectonics",
+            "Discovered Atmosphere By": "Discovered By",
+            "Probed By": "Investigated By",
+            "Named In Culture": "Named In Culture",
+            "Depicted On": "Depicted On",
+            "Has Surface Feature": "Has Feature",
+            "Potential For": "Potential For",
+            "Located Between": "Located Between",
+            "Visible Through Telescope": "Visible With Telescope",
+            "Has Feature": "Has Feature",
+            "Has Atmospheric Pressure Comparison": "Has Atmospheric Pressure Comparison",
+            "Lacks Intrinsic Magnetic Field": "Lacks Intrinsic Magnetic Field",
+            "Named After": "Named After",
+            "Has Wind Speed Comparison": "Has Wind Speed Comparison",
+            "Visited By": "Visited By",
+            "Can Be Occulted By": "Occulted By",
+            "Displays Phases Similar To": "Displays Phases Similar To",
+            "Has Surface Temperature Comparison": "Has Surface Temperature Comparison",
+            "Has Atmosphere Visible Through Telescope": "Has Atmosphere Visible Through Telescope",
+            "Possesses": "Possesses",
+            "Similar To": "Similar To",
+            "Has Core": "Has Core",
+            "Has Retrograde Rotation": "Has Retrograde Rotation",
+            "Closer To": "Close To Star",
+            "Has Greenhouse Effect Comparison": "Has Greenhouse Effect Comparison",
+            "Has Atmospheric Feature": "Has Atmospheric Phenomenon",
+            "Has Atmospheric Erosion": "Has Atmospheric Erosion",
+            "Has Twin Planet": "Has Twin Planet",
+            "Observed Transit By": "Observed By",
+            "Located In Constellation": "Located In Constellation",
+            "Member Of": "Member Of",
+            "Known As": "Also Known As",
+            "Orbits": "Orbits",
+            "Explored By": "Explored By",
+            "Has Magnetic Field": "Has Magnetic Field",
+            "Referred To As": "Also Known As",
+            "Has Orbital Resonance With": "Has Orbital Resonance With",
+            "Similar In Size To": "Similar In Size To",
+            "Underwent Global Resurfacing Event": "Underwent Global Resurfacing Event",
+            "Closest Planet To": "Closest To",
+            "Has Cloud Composition": "Has Cloud Composition",
+            "Transits": "Transits In Front Of",
+            "Has Impact Craters": "Has Impact Crater",
+            "Associated With": "Associated With",
+            "Represented In Alchemy As": "Represented By",
+            "Observed In Phase": "Observed In Phase",
+            "Has Potential Life Indicator": "Has Potential Life Indicator",
+            "Observed By": "Observed By",
+            "Associated With Mythology": "Associated With Mythology",
+            "Brightest Object In Sky After": "Brightest Object In Sky After",
+            "Historical Observation": "Historical Observation",
+            "Rotation Period Determined By": "Rotation Period Determined By",
+            "Initially Believed To Be": "Initially Believed To Be",
+            "Has Atmosphere Composition": "Has Atmosphere Composition",
+            "Lacks Plate Tectonics Compared To": "Lacks Plate Tectonics Compared To",
+            "Visible As": "Visible As",
+            "Studied By": "Studied By",
+            "Observed As Black Spot By": "Observed As Black Spot By",
+            "Visible Without Aid": "Visible Without Aid",
+            "Has Volcanic Activity": "Has Volcano",
+            "Has Symbol": "Has Symbol",
+            "Approaches Closest To": "Closest To",
+            "Used For Gravity Assist To": "Used For Gravity Assist To",
+            "Has Proposed Exploration Concept": "Has Proposed Exploration Concept",
+            "Exhibits Phenomenon": "Displays Phenomenon",
+            "Observed At Location": "Observed At",
+            "Designated As": "Identified As",
+            "Has Volcano": "Has Volcano",
+            "Gravity Assist Flyby For": "Used For Gravity Assist To",
+            "Has Flyby Missions": "Has Flyby Missions",
+            "Mapped By": "Mapped",
+            "Potential Habitat For": "Potential For",
+            "Located In": "Located In",
+            "Has Trojan Asteroids": "Has Trojan Asteroids",
+            "Approaches In Synodic Period": "Approaches In Synodic Period",
+            "Appears Close To": "Located Near",
+            "Has Crust": "Has Outer Shell",
+            "Observed Atmosphere By": "Observed By",
+            "Has Solar Irradiance Comparison": "Has Solar Irradiance Comparison",
+            "Has Historical Comparison": "Has Historical Comparison",
+            "Has Scheduled Mission": "Has Scheduled Mission",
+            "Exerts Tidal Force On": "Exerts Tidal Force On",
+            "Associated With Calendar": "Associated With",
+            "Will Be Visited By": "Visited By",
+            "Under Planetary Protection Category": "Under Planetary Protection Category",
+            "Has No Natural Satellite": "Has No Natural Satellite",
+            "Third Brightest Object In": "Third Brightest Object In",
+            "Has Volcanic Feature": "Has Volcano",
+            "Lacks Magnetic Field Compared To": "Lacks Intrinsic Magnetic Field",
+            "Similar Internal Structure To": "Similar Internal Structure To",
+            "Surface Detail Revealed By": "Surface Detail Revealed By",
+            "Has Atmospheric Phenomenon": "Has Atmospheric Phenomenon",
+            "Has Prime Meridian": "Has Prime Meridian Reference",
+            "Important Case For Understanding": "Important Case For Understanding",
+            "Occurs In Sequence With": "Occurs In Sequence With",
+            "Has Atmosphere Interaction": "Has Atmosphere Interaction"
+        },
+        {
+            "Phosphorus": "Phosphorus",
+            "Aphrodite Terra": "Aphrodite Terra",
+            "Venus zone": "Venus Zone",
+            "Maxwell Montes": "Maxwell Montes",
+            "Cassini–Huygens": "Cassini–Huygens",
+            "Venera 1": "Venera 1",
+            "Nitrogen": "Nitrogen",
+            "Spectroscopic observations": "Spectroscopic Observations",
+            "Jane Greaves": "Jane Greaves",
+            "Solar Orbiter": "Solar Orbiter",
+            "Magellan orbiter": "Magellan Orbiter",
+            "Substantial Atmosphere": "Gaseous Envelope",
+            "Phosphine": "Phosphine",
+            "Early Earth": "Early Earth",
+            "Magellan": "Magellan",
+            "Eve": "Eve",
+            "Alpha Regio": "Alpha Regio",
+            "Abraham Lincoln": "Abraham Lincoln",
+            "524522 Zoozve": "524522 Zoozve",
+            "Captain Cook": "Captain Cook",
+            "Star of Ishtar": "Star Of Ishtar",
+            "Venera 7": "Venera 7",
+            "Johannes Kepler": "Johannes Kepler",
+            "Vesper": "Vesper",
+            "Solar System": "Solar System",
+            "Mikhail Lomonosov": "Mikhail Lomonosov",
+            "Niobe Planitia": "Niobe Planitia",
+            "Pisces": "Pisces",
+            "Ishtar": "Star Of Ishtar",
+            "Mariner 2": "Mariner 2",
+            "Pioneer Venus Multiprobe": "Pioneer Venus Multiprobe",
+            "Aphrodite": "Aphrodite",
+            "Luxembourg": "Luxembourg",
+            "Pioneer Venus Orbiter": "Pioneer Venus Orbiter",
+            "Ozone Layer": "Ozone Layer",
+            "Venera 3": "Venera 3",
+            "Earth": "Earth",
+            "Venera 9": "Venera 9",
+            "BepiColombo": "Bepicolombo",
+            "Ultraviolet observations": "Ultraviolet",
+            "Washington, D.C.": "Washington, D.C.",
+            "Avicenna": "Avicenna",
+            "Venus symbol": "Venus",
+            "Earth's sky": "Earth'S Sky",
+            "Ariadne": "Ariadne",
+            "James Clerk Maxwell": "James Clerk Maxwell",
+            "Venera 14": "Venera 14",
+            "Beta region": "Beta Region",
+            "Johann Schröter": "Johann Schröter",
+            "ashen light": "Ashen Light",
+            "Sun": "Sun",
+            "Venera 13": "Venera 13",
+            "Sedna Planitia": "Sedna Planitia",
+            "planetary bodies evolution": "Planetary Bodies Evolution",
+            "Thermoacidophilic Extremophile Microorganisms": "Thermoacidophilic Extremophile Microorganisms",
+            "Hesperus": "Hesperus",
+            "Arecibo Observatory": "Arecibo Telescope",
+            "Copper": "Copper",
+            "Beta Regio": "Beta Regio",
+            "MESSENGER": "Messenger",
+            "Frigg": "Frigg",
+            "Sulphuric Acid": "Sulphuric Acid",
+            "Lightning": "Lightning",
+            "Jeremiah Horrocks": "Jeremiah Horrocks",
+            "Venus Orbiter Mission": "Venus Orbiter Mission",
+            "Mercury": "Mercury",
+            "Flag of Chile": "Flag Of Chile",
+            "origins of the solar system": "Origins Of The Solar System",
+            "Moon": "Moon",
+            "Floating Cities": "Floating Cities",
+            "Vega 2": "Vega 2",
+            "Venus Life Finder": "Venus Life Finder",
+            "Venera landers": "Venera Landers",
+            "Galileo": "Galileo Galilei",
+            "Napoleon Bonaparte": "Napoleon Bonaparte",
+            "farra": "Farra",
+            "MBR Explorer": "Mbr Explorer",
+            "Yeon Joo Lee": "Yeon Joo Lee",
+            "Solar System's original circumstellar disc": "Proto-Planetary Disks (Proplyds) In The Orion Nebula",
+            "coronae": "Coronae",
+            "Venera 10": "Venera 10",
+            "Ovda Regio": "Ovda Regio",
+            "Edmund Halley": "Edmond Halley",
+            "Akatsuki": "Akatsuki",
+            "Virgo": "Virgo",
+            "Venera 4": "Venera 4",
+            "crescent phase": "Crescent Phase",
+            "Galileo Galilei": "Galileo Galilei",
+            "Lucifer": "Lucifer",
+            "Carl Sagan": "Carl Sagan",
+            "Sif Mons": "Sif Mons",
+            "Vesto Slipher": "V. M. Slipher",
+            "Noh Ek'": "Noh Ek'",
+            "NASA's High Altitude Venus Operational Concept": "Nasa'S High Altitude Venus Operational Concept",
+            "Dilbat": "Dilbat",
+            "Ganis Chasma": "Ganis Chasma",
+            "Harold J. Morowitz": "Harold J. Morowitz",
+            "London": "London",
+            "Venus (goddess)": "Venus",
+            "Carbon Dioxide": "Dry Ice",
+            "Morning Star": "Morning Star",
+            "Alpha region": "Alpha Regio",
+            "Dresden Codex": "Dresden Codex",
+            "2001 CK32": "2001 Ck32",
+            "Venera 16": "Venera 16",
+            "Ninsi'anna": "Ninsi'Anna",
+            "Frank E. Ross": "Frank E. Ross",
+            "Tahiti": "Tahiti",
+            "arachnoids": "Arachnoids",
+            "Chánggēng": "Chánggēng",
+            "Vega 1": "Vega 1",
+            "Stationary Gravity Waves": "Stationary Gravity Waves",
+            "Mars": "Mars",
+            "Evening Star": "Hesperus",
+            "Ibn Bajjah": "Ibn Bajjah",
+            "Giovanni Cassini": "Giovanni Domenico Cassini",
+            "Category Two": "Category Two",
+            "Venera 15": "Venera 15",
+            "Venus Express": "Venus Orbiter Mission",
+            "IKAROS": "Ikaros",
+            "Double Atmospheric Polar Vortex": "Double Atmospheric Polar Vortex",
+            "Qǐmíng": "Qǐmíng",
+            "Asteroids": "Asteroids",
+            "Earth's Sister Planet": "Earth'S Sister Planet",
+            "development of habitable environments": "Development Of Habitable Environments",
+            "Ishtar Terra": "Ishtar Terra",
+            "Chester Smith Lyman": "Chester Smith Lyman",
+            "Mariner 10": "Mariner 10",
+            "DAVINCI": "Davinci",
+            "Jupiter": "Jupiter",
+            "VERITAS": "Veritas",
+            "novae": "Novae",
+            "Australia": "Australia",
+            "Tàibái": "Tàibái",
+            "evening sky": "Evening Sky",
+            "2012 XE133": "2012 Xe133",
+            "EnVision": "Envision",
+            "Maat Mons": "Maat Mons",
+            "Solar Wind": "Stellar Wind"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "name": "NAME Sgr A*",
+    "type": "X",
+    "ID": "@2419046",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "17 45 40.03599  -29 00 28.1699",
+        "notes": "(Rad ) B [2.65 1.42 0]",
+        "ref": "2011AJ....142...35P"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "17 42 29.30683  -28 59 18.558"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "359.94423568  -00.04616002"
+    },
+    "hierarchy counts": {
+        "parents": 1,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "~~",
+        "notes": "[~~]~",
+        "ref": "~"
+    },
+    "Parallax(mas)": {
+        "value": "~",
+        "notes": "[~] ~",
+        "ref": " ~"
+    },
+    "Radial Velocity": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Redshift": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "cz": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "~",
+        "notes": "   ~   ~ (~)  ~",
+        "ref": "~"
+    },
+    "identifiers": [
+        "NAME Sgr A*",
+        "CXOGC J174540.0-290027",
+        "NAME SgrA*/IR"
+    ],
+    "measures": "herschel:188ISO:82XMM:5"
+}

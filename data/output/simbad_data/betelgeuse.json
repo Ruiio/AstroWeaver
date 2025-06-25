@@ -1,0 +1,72 @@
+{
+    "name": "* alf Ori",
+    "type": "s*r",
+    "ID": "@843879",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "05 55 10.30536  +07 24 25.4304",
+        "notes": "(Opt ) A [9.04 5.72 90]",
+        "ref": "2007A&A...474..653V"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "05 52 27.79758  +07 23 57.790"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "199.78723619  -08.95860329"
+    },
+    "hierarchy counts": {
+        "parents": 0,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "27.5411.30",
+        "notes": "[1.030.650]A",
+        "ref": "2007A&A...474..653V"
+    },
+    "Parallax(mas)": {
+        "value": "6.55",
+        "notes": "[0.83] A",
+        "ref": " 2007A&A...474..653V"
+    },
+    "Radial Velocity": {
+        "value": "21.91",
+        "notes": "[0.51] A",
+        "ref": " 2005A&A...430..165F"
+    },
+    "Redshift": {
+        "value": "0.000073",
+        "notes": "[0.000002] A",
+        "ref": " 2005A&A...430..165F"
+    },
+    "cz": {
+        "value": "21.91",
+        "notes": "[0.51] A",
+        "ref": " 2005A&A...430..165F"
+    },
+    "Spectral type": {
+        "value": "M1-M2Ia-Iab",
+        "ref": "1989ApJS...71..245K"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "~",
+        "notes": "   ~   ~ (~)  ~",
+        "ref": "~"
+    },
+    "identifiers": [
+        "HIP 27989",
+        "GEN# +1.00039801",
+        "TIC 269273552"
+    ],
+    "measures": "Fe_H:9herschel:28ISO:10IUE:690MK:23PLX:3PM:4ROT:1velocities:19"
+}

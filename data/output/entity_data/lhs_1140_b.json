@@ -1,0 +1,85 @@
+{
+    "entity_name": "LHS 1140 b",
+    "infobox_attributes": {
+        "Discovered by": "MEarth Project",
+        "Discovery date": "20 April 2017 (Published)",
+        "Detection method": "Transit",
+        "Semi-major axis": "0.0946 ± 0.0017 AU",
+        "Eccentricity": "<0.043",
+        "Orbital period (sidereal)": "24.736 9148 ± 0.000 0058 d",
+        "Inclination": "89.86° ± 0.04°",
+        "Star": "LHS 1140",
+        "Mean radius": "1.730 ± 0.025 R 🜨",
+        "Mass": "5.60 ± 0.19 M 🜨",
+        "Mean density": "5.9 ± 0.3 g/cm^3",
+        "Temperature": "226 ± 4 K (−47 °C; −53 °F, equilibrium)"
+    },
+    "consolidated_relationships": [
+        {
+            "Orbits": [
+                "Lhs 1140"
+            ],
+            "Discovered By": [
+                "Mearth Project"
+            ],
+            "Member Of": [
+                "List Of Potentially Habitable Exoplanets",
+                "Super-Earth Category"
+            ],
+            "Observed By": [
+                "Hubble Space Telescope",
+                "James Webb Space Telescope",
+                "Radial Velocity Method",
+                "Transit Photometry"
+            ],
+            "Comparable Diameter To": [
+                "Kepler-62E"
+            ],
+            "Potentially Habitable Exoplanet Group": [
+                "Trappist-1 Planets"
+            ],
+            "Has Equilibrium Temperature Comparable To": [
+                "Earth"
+            ],
+            "Has Atmosphere Composition": [
+                "Dry Ice",
+                "Nitrogen",
+                "Water Vapor"
+            ],
+            "Located In": [
+                "Habitability Of Red Dwarf Systems",
+                "Habitable Zone"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Discovered By": "Discovered By",
+            "Comparable Radius To": "Comparable Diameter To",
+            "Potentially Habitable Exoplanet Group": "Potentially Habitable Exoplanet Group",
+            "Observed By": "Observed By",
+            "Has Atmosphere Composition": "Has Atmosphere Composition",
+            "Has Equilibrium Temperature Comparable To": "Has Equilibrium Temperature Comparable To",
+            "Detected By": "Observed By",
+            "Member Of": "Member Of",
+            "Orbits": "Orbits"
+        },
+        {
+            "super-Earth category": "Super-Earth Category",
+            "TRAPPIST-1 planets": "Trappist-1 Planets",
+            "Habitability of red dwarf systems": "Habitability Of Red Dwarf Systems",
+            "Nitrogen": "Nitrogen",
+            "Kepler-62e": "Kepler-62E",
+            "James Webb Space Telescope": "James Webb Space Telescope",
+            "Transit Photometry": "Transit Photometry",
+            "List of potentially habitable exoplanets": "List Of Potentially Habitable Exoplanets",
+            "Water Vapor": "Water Vapor",
+            "MEarth Project": "Mearth Project",
+            "Carbon Dioxide": "Dry Ice",
+            "habitable zone": "Habitable Zone",
+            "Earth": "Earth",
+            "LHS 1140": "Lhs 1140",
+            "Radial Velocity Method": "Radial Velocity Method",
+            "Hubble Space Telescope": "Hubble Space Telescope"
+        }
+    ]
+}

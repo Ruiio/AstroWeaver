@@ -1,0 +1,109 @@
+{
+    "entity_name": "Helix Nebula",
+    "infobox_attributes": {
+        "Emission nebula": "NGC 7293 seen through several visible filters by Hubble Space Telescope",
+        "Right ascension": "22 29 38.55",
+        "Declination": "−20° 50′ 13.6″",
+        "Distance": "200 ± 1 pc (650 ± 3) ly",
+        "Apparent magnitude (V)": "+7.6",
+        "Apparent dimensions (V)": "25′",
+        "Constellation": "Aquarius",
+        "Radius": "2.87 ly (0.88 pc) ly",
+        "Notable features": "One of the nearest PNe",
+        "Designations": "NGC 7293 Caldwell 63"
+    },
+    "consolidated_relationships": [
+        {
+            "Also Known As": [
+                "Caldwell 63",
+                "Eye Of God",
+                "Eye Of Sauron",
+                "Ngc 7293"
+            ],
+            "Located In": [
+                "Aquarius",
+                "Asymptotic Giant Branch"
+            ],
+            "Discovered By": [
+                "Karl Ludwig Harding"
+            ],
+            "Similar Design To": [
+                "Ngc 7293",
+                "Ring Nebula"
+            ],
+            "Type Of": [
+                "Planetary Nebula"
+            ],
+            "Formed By": [
+                "Intermediate To Low-Mass Star"
+            ],
+            "Has Central Star": [
+                "Wd 2226-210",
+                "White Dwarf"
+            ],
+            "Contains": [
+                "Cometary Knots"
+            ],
+            "Has Circumstellar Envelope": [
+                "Ngc 7293",
+                "Ring Nebula"
+            ],
+            "Associated With": [
+                "Rayleigh-Taylor Instability"
+            ],
+            "Has Disk": [
+                "Kuiper Belt Objects"
+            ],
+            "Has Rings": [
+                "30 To 100 Au"
+            ],
+            "Has Hypothetical Planet": [
+                "Planet With Radius 0.021 Solar Radii"
+            ],
+            "May Be Accreting": [
+                "Remains Of A Jupiter-Like Planet"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Discovered By": "Discovered By",
+            "Also Known As": "Also Known As",
+            "Referred To As": "Also Known As",
+            "Has Disk": "Has Disk",
+            "Has Hypothetical Planet": "Has Hypothetical Planet",
+            "Is Type Of": "Type Of",
+            "Has Molecular Envelope": "Has Circumstellar Envelope",
+            "Formed By": "Formed By",
+            "May Be Accreting": "May Be Accreting",
+            "Associated With": "Associated With",
+            "Similar To": "Similar Design To",
+            "Contains": "Contains",
+            "Has Ring": "Has Rings",
+            "Has Central Star": "Has Central Star"
+        },
+        {
+            "Karl Ludwig Harding": "Karl Ludwig Harding",
+            "Eye of God": "Eye Of God",
+            "30 to 100 AU": "30 To 100 Au",
+            "White dwarf star": "White Dwarf",
+            "Rayleigh-Taylor instability": "Rayleigh-Taylor Instability",
+            "NGC 7293": "Ngc 7293",
+            "Caldwell 63": "Caldwell 63",
+            "Ring Nebula": "Ring Nebula",
+            "Intermediate to low-mass star": "Intermediate To Low-Mass Star",
+            "remains of a Jupiter-like planet": "Remains Of A Jupiter-Like Planet",
+            "Aquarius": "Aquarius",
+            "Ring nebula": "Ring Nebula",
+            "Eye of Sauron": "Eye Of Sauron",
+            "WD 2226-210": "Wd 2226-210",
+            "Asymptotic Giant Branch": "Asymptotic Giant Branch",
+            "cometary knots": "Cometary Knots",
+            "Cat's Eye Nebula": "Ngc 7293",
+            "Kuiper-belt like objects": "Kuiper Belt Objects",
+            "Planetary Nebula": "Planetary Nebula",
+            "Dumbbell Nebula": "Ngc 7293",
+            "Planetary Nebula Nucleus (PNN)": "White Dwarf",
+            "planet with radius 0.021 solar radii": "Planet With Radius 0.021 Solar Radii"
+        }
+    ]
+}

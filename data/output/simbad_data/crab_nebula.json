@@ -1,0 +1,72 @@
+{
+    "name": "M 1",
+    "type": "SNR",
+    "ID": "@795871",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "05 34 31.8  +22 01 03",
+        "notes": "(Xray) D [5000 5000 90]",
+        "ref": "2022A&A...661A..38P"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "05 31 31.2  +21 59 05"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "184.5547  -05.7833"
+    },
+    "hierarchy counts": {
+        "parents": 1,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "~~",
+        "notes": "[~~]~",
+        "ref": "~"
+    },
+    "Parallax(mas)": {
+        "value": "~",
+        "notes": "[~] ~",
+        "ref": " ~"
+    },
+    "Radial Velocity": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Redshift": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "cz": {
+        "value": "~",
+        "notes": "[~ ~",
+        "ref": " ] ~ ~"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "7.0",
+        "notes": " 5.0    ~ (Rad )  D",
+        "ref": "2014BASI...42...47G"
+    },
+    "identifiers": [
+        "PCCS2 030 G184.54-05.78",
+        "SRGA J053431.8+220103",
+        "3HWC J0534+220"
+    ],
+    "measures": "distance:1herschel:8ISO:43PLX:1PM:1XMM:21"
+}

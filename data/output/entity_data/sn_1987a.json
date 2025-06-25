@@ -1,0 +1,220 @@
+{
+    "entity_name": "SN 1987A",
+    "infobox_attributes": {
+        "Event type": "Supernova",
+        "Date": "c. 168, 000 years ago, (discovered by Ian Shelton and Oscar Duhalde at 5:31 UTC on February 24, 1987)",
+        "Constellation": "Dorado",
+        "Right ascension": "05 35 28.03",
+        "Declination": "−69° 16′ 11.79″",
+        "Epoch": "J2000",
+        "Galactic coordinates": "G279.7-31.9",
+        "Distance": "51.4 kpc (168, 000 ly)",
+        "Host": "Large Magellanic Cloud",
+        "Progenitor": "Sanduleak -69 202",
+        "Progenitor type": "B3 Supergiant",
+        "Colour (B-V)": "+0.085",
+        "Notable features": "Closest recorded supernova since invention of telescope",
+        "Peak apparent magnitude": "+2.9",
+        "Other designations": "SN 1987A, AAVSO 0534-69, INTREF 262, SNR 1987A, SNR B0535-69.3,SNR J0535.5-6916"
+    },
+    "consolidated_relationships": [
+        {
+            "Type Of": [
+                "Core-Collapse Supernova",
+                "Supernova"
+            ],
+            "Located In Constellation": [
+                "Large Magellanic Cloud"
+            ],
+            "Observed By": [
+                "Astron",
+                "Baksan",
+                "Cerro Tololo Inter-American Observatory",
+                "Eso'S Very Large Telescope",
+                "European Southern Observatory",
+                "Hubble Space Telescope",
+                "Imb",
+                "Integral Space X-Ray Telescope",
+                "James Webb Space Telescope",
+                "Kamiokande Ii",
+                "Kepler'S Supernova",
+                "South African Astronomical Observatory"
+            ],
+            "Discovered In": [
+                "1987"
+            ],
+            "Studied By": [
+                "Hubble Space Telescope",
+                "Modern Astronomers"
+            ],
+            "Supported By": [
+                "Neutron Star"
+            ],
+            "Observed": [
+                "Atacama Large Millimeter Array",
+                "Chandra X-Ray Observatory",
+                "Nustar X-Ray Telescope"
+            ],
+            "Discovered By": [
+                "Albert Jones",
+                "Ian Shelton",
+                "Oscar Duhalde"
+            ],
+            "Progenitor Star": [
+                "Sanduleak —69°202"
+            ],
+            "Potential Companion": [
+                "Companion Star"
+            ],
+            "Associated With Neutrino Burst": [
+                "Mont Blanc Liquid Scintillator"
+            ],
+            "Marked Beginning Of": [
+                "Neutrino Astronomy"
+            ],
+            "Resulted In": [
+                "Neutron Star"
+            ],
+            "Has Hypothesis": [
+                "Became A Quark Star",
+                "Black Holes",
+                "Obscured By Surrounding Dense Dust Clouds",
+                "Pulsar With Unusual Magnetic Field"
+            ],
+            "Evidence Found In": [
+                "Brightest Dust Clumps"
+            ],
+            "Emits": [
+                "Hard X-Ray Emissions"
+            ],
+            "Illuminates": [
+                "Gas From Inner Regions"
+            ],
+            "Powered By": [
+                "44Ti",
+                "56Co",
+                "56Ni"
+            ],
+            "Has Rings": [
+                "Inner Ring"
+            ],
+            "Progenitor Of": [
+                "Circumstellar Ring"
+            ],
+            "Shockwave Interaction With": [
+                "Circumstellar Ring"
+            ],
+            "Distance From Earth": [
+                "168,000 Light-Years"
+            ],
+            "Infrared Excess Reported By": [
+                "European Southern Observatory"
+            ],
+            "Dust Mass Estimated By": [
+                "European Southern Observatory"
+            ],
+            "Dust Presence Confirmed By": [
+                "European Southern Observatory"
+            ],
+            "Dust Reservoir Found By": [
+                "Atacama Large Millimeter Array",
+                "Herschel Space Observatory"
+            ],
+            "Challenged By": [
+                "Australian Team"
+            ],
+            "Has Observed Molecule": [
+                "Carbon Monoxide (Co)",
+                "Silicate Molecules (Sio)"
+            ],
+            "Has Interaction With": [
+                "Equatorial Ring"
+            ]
+        },
+        {
+            "Located In": "Located In Constellation",
+            "Has Rings": "Has Rings",
+            "Possible Binary Companion": "Potential Companion",
+            "Infrared Excess Reported By": "Infrared Excess Reported By",
+            "Observed By": "Observed By",
+            "Provided Evidence For": "Supported By",
+            "Resulted In": "Resulted In",
+            "Progenitor Of": "Progenitor Of",
+            "Marked Beginning Of": "Marked Beginning Of",
+            "Powered By": "Powered By",
+            "Challenged By": "Challenged By",
+            "Has Interaction With": "Has Interaction With",
+            "Emitted Neutrinos Detected By": "Observed By",
+            "Has Hypothesis": "Has Hypothesis",
+            "Emits": "Emits",
+            "Type Of": "Type Of",
+            "Progenitor Star": "Progenitor Star",
+            "Studied By": "Studied By",
+            "Dust Reservoir Found By": "Dust Reservoir Found By",
+            "Shockwave Interaction With": "Shockwave Interaction With",
+            "Dust Mass Estimated By": "Dust Mass Estimated By",
+            "Discovered In": "Discovered In",
+            "Observed By Instrument": "Observed By",
+            "Observed With": "Observed",
+            "Associated With Neutrino Burst": "Associated With Neutrino Burst",
+            "Discovered By": "Discovered By",
+            "Has Observed Molecule": "Has Observed Molecule",
+            "Illuminates": "Illuminates",
+            "Evidence Found In": "Evidence Found In",
+            "Is Type Of": "Type Of",
+            "Distance From Earth": "Distance From Earth",
+            "Dust Presence Confirmed By": "Dust Presence Confirmed By"
+        },
+        {
+            "Large Magellanic Cloud": "Large Magellanic Cloud",
+            "Australian team": "Australian Team",
+            "Albert Jones": "Albert Jones",
+            "1987": "1987",
+            "Equatorial ring": "Equatorial Ring",
+            "South African Astronomical Observatory": "South African Astronomical Observatory",
+            "inner ring": "Inner Ring",
+            "core-collapse supernova": "Core-Collapse Supernova",
+            "INTEGRAL space X-ray telescope": "Integral Space X-Ray Telescope",
+            "Kepler's Supernova": "Kepler'S Supernova",
+            "circumstellar ring": "Circumstellar Ring",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "brightest dust clumps": "Brightest Dust Clumps",
+            "became a quark star": "Became A Quark Star",
+            "modern astronomers": "Modern Astronomers",
+            "hard X-ray emissions": "Hard X-Ray Emissions",
+            "Very Large Telescope": "Eso'S Very Large Telescope",
+            "56Ni": "56Ni",
+            "companion star": "Companion Star",
+            "Atacama Large Millimeter Array": "Atacama Large Millimeter Array",
+            "Neutrino Astronomy": "Neutrino Astronomy",
+            "Ian Shelton": "Ian Shelton",
+            "pulsar with unusual magnetic field": "Pulsar With Unusual Magnetic Field",
+            "Atacama Large Millimeter Array telescope": "Atacama Large Millimeter Array",
+            "Chandra X-ray telescope": "Chandra X-Ray Observatory",
+            "Sanduleak —69°202": "Sanduleak —69°202",
+            "NuSTAR X-ray telescope": "Nustar X-Ray Telescope",
+            "Astron": "Astron",
+            "collapsed into black hole": "Black Holes",
+            "European Southern Observatory": "European Southern Observatory",
+            "168,000 light-years": "168,000 Light-Years",
+            "Kamiokande II": "Kamiokande Ii",
+            "Sanduleak −69 202": "Sanduleak —69°202",
+            "56Co": "56Co",
+            "Oscar Duhalde": "Oscar Duhalde",
+            "44Ti": "44Ti",
+            "gas from inner regions": "Gas From Inner Regions",
+            "Cerro Tololo Inter-American Observatory": "Cerro Tololo Inter-American Observatory",
+            "IMB": "Imb",
+            "Mont Blanc liquid scintillator": "Mont Blanc Liquid Scintillator",
+            "James Webb Space Telescope": "James Webb Space Telescope",
+            "Silicate molecules (SiO)": "Silicate Molecules (Sio)",
+            "Carbon monoxide (CO)": "Carbon Monoxide (Co)",
+            "obscured by surrounding dense dust clouds": "Obscured By Surrounding Dense Dust Clouds",
+            "Supernova": "Supernova",
+            "Herschel Space Telescope": "Herschel Space Observatory",
+            "Baksan": "Baksan",
+            "neutron star": "Neutron Star",
+            "Type II supernova": "Core-Collapse Supernova"
+        }
+    ]
+}

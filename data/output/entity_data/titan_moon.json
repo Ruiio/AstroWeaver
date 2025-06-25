@@ -1,0 +1,407 @@
+{
+    "entity_name": "Titan (moon)",
+    "infobox_attributes": {
+        "Infobox Title": "Titan",
+        "Discovered by": "Christiaan Huygens",
+        "Discovery date": "March 25, 1655",
+        "Designation": "Saturn VI",
+        "Pronunciation": "/ ˈ t aɪ t ən /",
+        "Named after": "Τῑτάν Tītan",
+        "Adjectives": "Titanian or Titanean (both / t aɪ ˈ t eɪ n i ə n /)",
+        "Periapsis": "1 186 680 km",
+        "Apoapsis": "1 257 060 km",
+        "Semi-major axis": "1 221 870 km",
+        "Eccentricity": "0.0288",
+        "Orbital period (sidereal)": "15.945 d",
+        "Average orbital speed": "5.57 km/s (calculated)",
+        "Inclination": "0.348 54 ° (to Saturn's equator)",
+        "Satellite of": "Saturn",
+        "Mean radius": "2 574 .73 ± 0.09 km (0.404 Earths)",
+        "Surface area": "8.33 × 10^7 km^2 (0.163 Earths)",
+        "Volume": "7.16 × 10^10 km^3 (0.066 Earths)",
+        "Mass": "(1.345 18 ± 0.000 03 ) × 10^23 kg, (0.0225 Earths)",
+        "Mean density": "1.8798 ± 0.0044 g/cm^3",
+        "Surface gravity": "1.352 m/s^2 (0.138 g)",
+        "Moment of inertia factor": "0.3414 ± 0.0005 (estimate)",
+        "Escape velocity": "2.641 km/s",
+        "Synodic rotation period": "Synchronous",
+        "Axial tilt": "Zero (to the orbital plane) ;, 27° (to the sun)",
+        "Albedo": "0.22 (geometric) , 0.265 ± 0.03 (Bond)",
+        "Temperature": "93.7 K (−179.5 °C)",
+        "Apparent magnitude": "8.2 to 9.0",
+        "Surface pressure": "146.7 kPa (1.45 atm)",
+        "Composition by volume": "Variable Stratosphere : 98.4% nitrogen ( N 2 ) , 1.4% methane ( CH 4 ) , 0.2% hydrogen ( H 2 ) ; Lower troposphere:, 95.0% N 2, 4.9% CH 4;, 97% N 2, 2.7±0.1% CH 4, 0.1–0.2% H 2"
+    },
+    "consolidated_relationships": [
+        {
+            "Largest Moon Of": [
+                "Saturn"
+            ],
+            "Second Largest Moon In": [
+                "Solar System"
+            ],
+            "Discovered By": [
+                "Christiaan Huygens",
+                "Voyager 1"
+            ],
+            "Orbits": [
+                "Saturn"
+            ],
+            "Member Of": [
+                "Saturn",
+                "Saturn'S Moons",
+                "Solar System"
+            ],
+            "Has Atmosphere Composition": [
+                "Argon-40",
+                "Hydrogen",
+                "Methane",
+                "Nitrogen"
+            ],
+            "Has Surface Features Similar To": [
+                "Earth"
+            ],
+            "Most Earth-Like Celestial Object In": [
+                "Solar System"
+            ],
+            "Named By": [
+                "Sir John Herschel"
+            ],
+            "Controls": [
+                "Saturn"
+            ],
+            "Formed By": [
+                "Giant Impacts"
+            ],
+            "Has Atmospheric Source": [
+                "Oort Cloud"
+            ],
+            "Tidally Locked To": [
+                "Saturn"
+            ],
+            "Has Orbital Resonance With": [
+                "Hyperion"
+            ],
+            "Larger Than": [
+                "Ganymede",
+                "Mercury",
+                "Moon"
+            ],
+            "Compared To": [
+                "Callisto",
+                "Ganymede"
+            ],
+            "Studied By": [
+                "Cassini–Huygens",
+                "Chris Mckay",
+                "Darrell Strobel",
+                "Mark Allen"
+            ],
+            "Has Atmosphere": [
+                "Earth",
+                "Liquid Hydrocarbons",
+                "Methane"
+            ],
+            "Supports": [
+                "Triton"
+            ],
+            "Observed By": [
+                "Cassini–Huygens",
+                "Gerard P. Kuiper",
+                "Hubble Space Telescope",
+                "Josep Comas I Solà"
+            ],
+            "Surface Imaged By": [
+                "Cassini–Huygens"
+            ],
+            "Organic Chemicals Detected": [
+                "Tholins"
+            ],
+            "Polycyclic Aromatic Hydrocarbons Detected": [
+                "Spanish Astrobiology Center"
+            ],
+            "Propene Detected By": [
+                "Cassini–Huygens"
+            ],
+            "Has Cloud Composition": [
+                "Ethane",
+                "Methane"
+            ],
+            "Has Atmospheric Phenomenon": [
+                "Methane Rain",
+                "Titan Troposphere"
+            ],
+            "Has Seasons": [
+                "Northern Summer",
+                "Southern Summer"
+            ],
+            "Has Feature": [
+                "Adiri",
+                "Doom Mons",
+                "Erebor Mons",
+                "Kraken Mare",
+                "Lakes",
+                "Ligeia Mare",
+                "Mohini Fluctus",
+                "Ontario Lacus",
+                "Punga Mare",
+                "Sand Dunes With Slopes Up To 12.5°",
+                "Seas",
+                "Sotra Patera",
+                "Undifferentiated Plains",
+                "Xanadu"
+            ],
+            "Has Geological Feature": [
+                "Chasms",
+                "Lineae",
+                "Mountains",
+                "Valleys"
+            ],
+            "Orbited By": [
+                "Cassini–Huygens"
+            ],
+            "Visited By": [
+                "Pioneer 11",
+                "Voyager 1",
+                "Voyager 2"
+            ],
+            "Mapped": [
+                "Cassini–Huygens",
+                "Nature"
+            ],
+            "Explored By": [
+                "Cassini–Huygens"
+            ],
+            "Landed On": [
+                "Cassini–Huygens"
+            ],
+            "Has Landing Site Named": [
+                "Hubert Curien Memorial Station"
+            ],
+            "Target Of Mission": [
+                "Dragonfly Mission"
+            ],
+            "Mission Arrival": [
+                "Mid-2030S"
+            ],
+            "Proposed Target For": [
+                "Aerial Vehicle For In-Situ And Airborne Titan Reconnaissance (Aviatr)",
+                "Journey To Enceladus And Titan (Jet)",
+                "Titan Lake In-Situ Sampling Propelled Explorer (Talise)",
+                "Titan Mare Explorer (Time)",
+                "Titan Saturn System Mission (Tssm)",
+                "Titan Submarine"
+            ],
+            "Has Proposed Mission By": [
+                "Esa",
+                "Nasa",
+                "Sener",
+                "Spanish Astrobiology Center",
+                "University Of Idaho"
+            ],
+            "Has Potential Ocean": [
+                "Global Ocean"
+            ],
+            "Has Atmosphere Similar To": [
+                "Early Earth",
+                "Miller–Urey Experiment"
+            ],
+            "Produces With Uv Radiation": [
+                "Complex Molecules",
+                "Polymer Substances",
+                "Tholins"
+            ],
+            "Produces With Energy": [
+                "Amino Acids",
+                "Nucleotide Bases"
+            ],
+            "Potential For Chemical Evolution": [
+                "Earth"
+            ],
+            "Possesses Subsurface Ocean": [
+                "Ammonia–Water Solution",
+                "Liquid-Ammonia Oceans"
+            ],
+            "Could Host Life": [
+                "Methanogenic Life"
+            ],
+            "Has Hypothetical Organisms": [
+                "Organisms Consuming Hydrocarbons"
+            ],
+            "Has Hypothetical Cell Membrane": [
+                "Azotosome"
+            ],
+            "Viewed As Experiment By": [
+                "Jonathan Lunine"
+            ],
+            "Used As Prebiotic Experiment": [
+                "Earth"
+            ],
+            "Encountered": [
+                "Earth"
+            ],
+            "Has Potential Life Forms": [
+                "Earth Life"
+            ],
+            "Potential Habitability": [
+                "Sun"
+            ],
+            "Has Atmosphere Affected By": [
+                "Sun"
+            ]
+        },
+        {
+            "Formed From": "Formed By",
+            "Produces With Energy": "Produces With Energy",
+            "Atmosphere Composition": "Has Atmosphere Composition",
+            "Has Hypothetical Organisms": "Has Hypothetical Organisms",
+            "Observed By": "Observed By",
+            "Polycyclic Aromatic Hydrocarbons Detected": "Polycyclic Aromatic Hydrocarbons Detected",
+            "Most Earth-like Celestial Object In": "Most Earth-Like Celestial Object In",
+            "Has Atmospheric Feature": "Has Atmospheric Phenomenon",
+            "Tidally Locked To": "Tidally Locked To",
+            "May Have Subsurface Ocean": "Possesses Subsurface Ocean",
+            "Similar Atmosphere To": "Has Atmosphere Similar To",
+            "Has Atmosphere Similar To": "Has Atmosphere Similar To",
+            "Has Atmosphere Affected By": "Has Atmosphere Affected By",
+            "Has Surface Feature": "Has Feature",
+            "In Orbital Resonance With": "Has Orbital Resonance With",
+            "Has Atmosphere": "Has Atmosphere",
+            "Experiences Weather Phenomena": "Has Atmospheric Phenomenon",
+            "Produces With UV Radiation": "Produces With Uv Radiation",
+            "Dominates System": "Controls",
+            "Could Become Habitable Due To": "Potential Habitability",
+            "Proposed Mission For": "Proposed Target For",
+            "Has Atmosphere Composition": "Has Atmosphere Composition",
+            "Largest Moon Of": "Largest Moon Of",
+            "Has Geological Feature": "Has Geological Feature",
+            "Surface Imaged By": "Surface Imaged By",
+            "Member Of": "Member Of",
+            "Has Atmospheric Component": "Has Atmosphere Composition",
+            "Has Probe Landed": "Landed On",
+            "Has Landing Site Named": "Has Landing Site Named",
+            "Could Host Life": "Could Host Life",
+            "Named By": "Named By",
+            "Studied By": "Studied By",
+            "Compared To": "Compared To",
+            "Orbits": "Orbits",
+            "Propene Detected By": "Propene Detected By",
+            "Has Potential Ocean": "Has Potential Ocean",
+            "Orbited By": "Orbited By",
+            "Explored By": "Explored By",
+            "Organic Chemicals Detected": "Organic Chemicals Detected",
+            "Has Proposed Exploration By": "Has Proposed Mission By",
+            "Visited By": "Visited By",
+            "Has Seasonal Changes": "Has Seasons",
+            "May Encounter": "Encountered",
+            "Second Largest Moon In": "Second Largest Moon In",
+            "Supports Weather": "Supports",
+            "Discovered By": "Discovered By",
+            "Has Surface Features Similar To": "Has Surface Features Similar To",
+            "Mission Arrival": "Mission Arrival",
+            "Larger Than": "Larger Than",
+            "Viewed As Experiment By": "Viewed As Experiment By",
+            "Has Potential Life Forms": "Has Potential Life Forms",
+            "Potential For Chemical Evolution": "Potential For Chemical Evolution",
+            "Has Cloud Composition": "Has Cloud Composition",
+            "Has Hypothetical Cell Membrane": "Has Hypothetical Cell Membrane",
+            "Used As Prebiotic Experiment": "Used As Prebiotic Experiment",
+            "Has Atmospheric Source": "Has Atmospheric Source",
+            "Target Of Mission": "Target Of Mission",
+            "Mapped By": "Mapped"
+        },
+        {
+            "Nitrogen": "Nitrogen",
+            "Titan troposphere": "Titan Troposphere",
+            "NASA": "Nasa",
+            "Gerard P. Kuiper": "Gerard P. Kuiper",
+            "Early Earth": "Early Earth",
+            "chasms": "Chasms",
+            "Kraken Mare": "Kraken Mare",
+            "Titan Lake In-situ Sampling Propelled Explorer (TALISE)": "Titan Lake In-Situ Sampling Propelled Explorer (Talise)",
+            "Solar System": "Solar System",
+            "Dragonfly mission": "Dragonfly Mission",
+            "liquid-ammonia oceans": "Liquid-Ammonia Oceans",
+            "Cassini probe": "Cassini–Huygens",
+            "ESA": "Esa",
+            "Hydrogen": "Hydrogen",
+            "Earth": "Earth",
+            "Darrell Strobel": "Darrell Strobel",
+            "Undifferentiated Plains": "Undifferentiated Plains",
+            "Callisto": "Callisto",
+            "Nucleotide bases": "Nucleotide Bases",
+            "mid-2030s": "Mid-2030S",
+            "Erebor Mons": "Erebor Mons",
+            "dark lineaments": "Lineae",
+            "Sun": "Sun",
+            "methanogenic life": "Methanogenic Life",
+            "Global Ocean": "Global Ocean",
+            "Jonathan Lunine": "Jonathan Lunine",
+            "Northern Summer": "Northern Summer",
+            "Earth's Moon": "Moon",
+            "Giant Impacts": "Giant Impacts",
+            "liquid hydrocarbons": "Liquid Hydrocarbons",
+            "Ethane": "Ethane",
+            "Centro de Astrobiología": "Spanish Astrobiology Center",
+            "Xanadu": "Xanadu",
+            "Oort Cloud": "Oort Cloud",
+            "Mercury": "Mercury",
+            "Titan Submarine": "Titan Submarine",
+            "Chris McKay": "Chris Mckay",
+            "Cassini–Huygens mission": "Cassini–Huygens",
+            "Doom Mons": "Doom Mons",
+            "azotosome": "Azotosome",
+            "Hyperion": "Hyperion",
+            "Josep Comas i Solà": "Josep Comas I Solà",
+            "Adiri": "Adiri",
+            "Cassini spacecraft": "Cassini–Huygens",
+            "SENER": "Sener",
+            "Sotra Patera": "Sotra Patera",
+            "Punga Mare": "Punga Mare",
+            "Saturn": "Saturn",
+            "Mark Allen": "Mark Allen",
+            "Methane Rain": "Methane Rain",
+            "valleys": "Valleys",
+            "Cassini–Huygens spacecraft": "Cassini–Huygens",
+            "sand dunes": "Sand Dunes With Slopes Up To 12.5°",
+            "ammonia–water solution": "Ammonia–Water Solution",
+            "Ligeia Mare": "Ligeia Mare",
+            "Saturn's moons": "Saturn'S Moons",
+            "Titan Saturn System Mission (TSSM)": "Titan Saturn System Mission (Tssm)",
+            "Saturnian moons": "Saturn'S Moons",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "IAA-CSIC": "Spanish Astrobiology Center",
+            "Voyager 1": "Voyager 1",
+            "Journey to Enceladus and Titan (JET)": "Journey To Enceladus And Titan (Jet)",
+            "Argon-40": "Argon-40",
+            "Christiaan Huygens": "Christiaan Huygens",
+            "Amino acids": "Amino Acids",
+            "seas": "Seas",
+            "Pioneer 11": "Pioneer 11",
+            "mountains": "Mountains",
+            "Triton": "Triton",
+            "Complex molecules": "Complex Molecules",
+            "Mohini Fluctus": "Mohini Fluctus",
+            "Cassini orbiter": "Cassini–Huygens",
+            "Methane": "Methane",
+            "John Herschel": "Sir John Herschel",
+            "Southern Summer": "Southern Summer",
+            "Nature": "Nature",
+            "Polymer substances": "Polymer Substances",
+            "Titan Mare Explorer (TiME)": "Titan Mare Explorer (Time)",
+            "Ontario Lacus": "Ontario Lacus",
+            "Aerial Vehicle for In-situ and Airborne Titan Reconnaissance (AVIATR)": "Aerial Vehicle For In-Situ And Airborne Titan Reconnaissance (Aviatr)",
+            "Ganymede": "Ganymede",
+            "organisms consuming hydrocarbons": "Organisms Consuming Hydrocarbons",
+            "Voyager 2": "Voyager 2",
+            "Cassini-Huygens": "Cassini–Huygens",
+            "Earth life": "Earth Life",
+            "Tholins": "Tholins",
+            "Huygens": "Cassini–Huygens",
+            "University of Idaho": "University Of Idaho",
+            "lakes": "Lakes",
+            "Miller–Urey experiment": "Miller–Urey Experiment",
+            "Hubert Curien Memorial Station": "Hubert Curien Memorial Station"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "name": "M 31",
+    "type": "AGN",
+    "ID": "@1575544",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "00 42 44.330  +41 16 07.50",
+        "notes": "(IR  ) C [~ ~ ]",
+        "ref": "2006AJ....131.1163S"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "00 40 00.095  +40 59 41.73"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "121.174329  -21.573309"
+    },
+    "hierarchy counts": {
+        "parents": 3,
+        "children": 19425,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "~~",
+        "notes": "[~~]~",
+        "ref": "~"
+    },
+    "Parallax(mas)": {
+        "value": "~",
+        "notes": "[~] ~",
+        "ref": " ~"
+    },
+    "Radial Velocity": {
+        "value": "-300.0",
+        "notes": "[4.0] C",
+        "ref": " 2012AJ....144....4M"
+    },
+    "Redshift": {
+        "value": "-0.001000",
+        "notes": "[0.000013] C",
+        "ref": " 2012AJ....144....4M"
+    },
+    "cz": {
+        "value": "-299.85",
+        "notes": "[4.00] C",
+        "ref": " 2012AJ....144....4M"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "SA(s)b",
+        "notes": "D",
+        "ref": "2013AJ....146...67B"
+    },
+    "Angular size": {
+        "value": "199.53 70.79",
+        "notes": "35 (Opt )  D",
+        "ref": "2003A&A...412...45P"
+    },
+    "identifiers": [
+        "SRGA J004241.1+411603",
+        "PLX 124.00",
+        "PPM 43228"
+    ],
+    "measures": "distance:14herschel:21ISO:156IUE:15PM:1velocities:9XMM:22"
+}

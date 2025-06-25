@@ -1,0 +1,147 @@
+{
+    "entity_name": "Hertzsprung-Russell Diagram",
+    "infobox_attributes": {},
+    "consolidated_relationships": [
+        {
+            "Developed By": [
+                "Ejnar Hertzsprung",
+                "Henry Norris Russell"
+            ],
+            "Shows Relationship Between": [
+                "Absolute Magnitudes",
+                "Effective Temperatures",
+                "Stellar Types"
+            ],
+            "Used In": [
+                "Henry Draper Catalogue"
+            ],
+            "Plots": [
+                "Luminous Matter",
+                "Temperature"
+            ],
+            "Includes Data From": [
+                "Hyades Stream",
+                "Moving Groups",
+                "Pleiades"
+            ],
+            "Displays Phenomenon": [
+                "Stars",
+                "Structure And Evolution Of The Stars"
+            ],
+            "Used By": [
+                "Observers"
+            ],
+            "Produced By": [
+                "Hertzsprung",
+                "Rosenberg"
+            ],
+            "Replaced By": [
+                "Color–Magnitude Diagram"
+            ],
+            "Distinguished From": [
+                "Color–Magnitude Diagram"
+            ],
+            "Contains": [
+                "Hertzsprung Gap",
+                "Horizontal Branch",
+                "Instability Strip",
+                "Stellar Sequences"
+            ],
+            "Used For": [
+                "Main Sequence Fitting",
+                "Spectroscopic Parallax"
+            ],
+            "Has Feature": [
+                "M Dwarfs",
+                "White Dwarf"
+            ],
+            "Explains": [
+                "Core Crystallization",
+                "Fully Convective Core",
+                "Partly Convective Core"
+            ],
+            "Displays Concentration": [
+                "Cooling Sequence Of White Dwarfs"
+            ],
+            "Has Composition": [
+                "Helium Dominated Atmospheres",
+                "Hydrogen Dominated Atmospheres"
+            ],
+            "Inspired By": [
+                "Arthur Eddington"
+            ],
+            "Used As Basis For": [
+                "Structure And Evolution Of The Stars"
+            ],
+            "Annotated With": [
+                "Stellar Sequences"
+            ],
+            "Associated With": [
+                "Nuclear Fusion"
+            ]
+        },
+        {
+            "Displays": "Displays Phenomenon",
+            "Used By": "Used By",
+            "Produced By": "Produced By",
+            "Developed By": "Developed By",
+            "Plots": "Plots",
+            "Used As Basis For": "Used As Basis For",
+            "Shows Feature": "Has Feature",
+            "Created By": "Developed By",
+            "Inspired": "Inspired By",
+            "Explains Transition": "Explains",
+            "Shows Relationship Between": "Shows Relationship Between",
+            "Replaced By": "Replaced By",
+            "Displays Concentration": "Displays Concentration",
+            "Used In": "Used In",
+            "Demonstrates": "Displays Phenomenon",
+            "Contains": "Contains",
+            "Annotated With": "Annotated With",
+            "Explains Phenomenon": "Explains",
+            "Includes Data From": "Includes Data From",
+            "Used For": "Used For",
+            "Associated With": "Associated With",
+            "Indicates Composition": "Has Composition",
+            "Distinguished From": "Distinguished From"
+        },
+        {
+            "Hertzsprung": "Hertzsprung",
+            "nuclear fusion": "Nuclear Fusion",
+            "spectroscopic parallax": "Spectroscopic Parallax",
+            "Absolute Magnitudes": "Absolute Magnitudes",
+            "Hertzsprung gap": "Hertzsprung Gap",
+            "Ejnar Hertzsprung": "Ejnar Hertzsprung",
+            "stellar evolution": "Structure And Evolution Of The Stars",
+            "white dwarfs": "White Dwarf",
+            "stellar sequences": "Stellar Sequences",
+            "main sequence": "Stellar Sequences",
+            "Henry Norris Russell": "Henry Norris Russell",
+            "Moving groups": "Moving Groups",
+            "Luminosity": "Luminous Matter",
+            "Rosenberg": "Rosenberg",
+            "color–magnitude diagram": "Color–Magnitude Diagram",
+            "observers": "Observers",
+            "fully convective core": "Fully Convective Core",
+            "cooling sequence of white dwarfs": "Cooling Sequence Of White Dwarfs",
+            "main sequence fitting": "Main Sequence Fitting",
+            "instability strip": "Instability Strip",
+            "Stellar Classifications": "Stellar Types",
+            "theoretical Hertzsprung–Russell diagram": "Color–Magnitude Diagram",
+            "Henry Draper Catalogue": "Henry Draper Catalogue",
+            "Effective Temperatures": "Effective Temperatures",
+            "horizontal branch": "Horizontal Branch",
+            "Arthur Eddington": "Arthur Eddington",
+            "Temperature": "Temperature",
+            "helium dominated atmospheres": "Helium Dominated Atmospheres",
+            "M-dwarfs": "M Dwarfs",
+            "core crystallization": "Core Crystallization",
+            "Pleiades cluster": "Pleiades",
+            "stars": "Stars",
+            "partly convective core": "Partly Convective Core",
+            "stellar physics": "Structure And Evolution Of The Stars",
+            "Hyades": "Hyades Stream",
+            "hydrogen dominated atmospheres": "Hydrogen Dominated Atmospheres"
+        }
+    ]
+}

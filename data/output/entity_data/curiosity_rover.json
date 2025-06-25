@@ -1,0 +1,525 @@
+{
+    "entity_name": "Curiosity (rover)",
+    "infobox_attributes": {
+        "Curiosity": "Self-portrait by Curiosity at the foot of Mount Sharp in October 2015",
+        "Type": "Mars rover",
+        "Owner": "NASA",
+        "Manufacturer": "Jet Propulsion Laboratory",
+        "Dimensions": "2.9 m × 2.7 m × 2.2 m (9 ft 6 in × 8 ft 10 in × 7 ft 3 in)",
+        "Dry mass": "899 kilograms (1, 982 lb)",
+        "Communication": "UHF : ~400 MHz, 2 Mbit/s X band : 7–8 GHz, 800 bit/s",
+        "Power": "MMRTG: ~100 W (0.13 hp)",
+        "Rocket": "Atlas V 541",
+        "Instruments": "APXS ChemCam CheMin DAN Hazcam × 8 MAHLI MARDI MastCam Navcam × 4 RAD REMS SAM",
+        "Launched": "November 26, 2011, 15:02 UTC ( 2011-11-26UTC15:02 ) from Cape Canaveral SLC-41",
+        "Deployed": "August 6, 2012, 05:17 UTC ; 12 years ago ( August 6, 2012, 05:17 UTC ) from the MSL EDLS",
+        "Location": "Gale crater, Mars",
+        "Traveled": "34.32 km (21.33 mi) on Mars as of 4 April 2025",
+        "NASA Mars rovers": "← Opportunity Perseverance →"
+    },
+    "consolidated_relationships": [
+        {
+            "Explores": [
+                "Gale Crater",
+                "Mars",
+                "Mount Sharp (Aeolis Mons)"
+            ],
+            "Part Of Mission": [
+                "Mars Exploration Program",
+                "Mars Science Laboratory (Msl)"
+            ],
+            "Launched From": [
+                "Cape Canaveral (Ccafs)"
+            ],
+            "Landed On": [
+                "Aeolis Palus",
+                "Mars",
+                "Sky Crane System"
+            ],
+            "Won Award": [
+                "2012 Robert J. Collier Trophy"
+            ],
+            "Basis For Design Of": [
+                "Mars 2020 Mission"
+            ],
+            "Contributed To": [
+                "Human Exploration"
+            ],
+            "Measured By": [
+                "Surface Radiation"
+            ],
+            "Studies": [
+                "Climate Of Mars",
+                "Geology Of Mars"
+            ],
+            "Named By": [
+                "Clara Ma"
+            ],
+            "Assembled At": [
+                "Nasa'S Jet Propulsion Laboratory"
+            ],
+            "Larger Than": [
+                "Mars Exploration Rovers"
+            ],
+            "Has Instrument": [
+                "Apxs",
+                "Brush",
+                "Chemcam",
+                "Chemin",
+                "Dan Instrument",
+                "Dust Removal Tool (Drt)",
+                "Gas Chromatograph (Gc)",
+                "Hazcams",
+                "Mardi",
+                "Mars Descent Imager (Mardi)",
+                "Mars Hand Lens Imager (Mahli Camera)",
+                "Mastcam",
+                "Mastcam-100",
+                "Mastcam-34",
+                "Mechanisms For Scooping, Sieving, And Portioning Samples",
+                "Navcams",
+                "Percussion Drill",
+                "Quadrupole Mass Spectrometer (Qms)",
+                "Radiation Assessment Detector (Rad)",
+                "Rems",
+                "Sample Analysis At Mars (Sam)",
+                "Tunable Laser Spectrometer (Tls)",
+                "X-Ray Fluorescence"
+            ],
+            "Preceded By": [
+                "Mars Exploration Rovers",
+                "Mars Pathfinder",
+                "Mars Surveyor 2001 Lander",
+                "Opportunity",
+                "Phoenix Lander",
+                "Spirit"
+            ],
+            "Powered By": [
+                "Radioisotope Thermoelectric Generators"
+            ],
+            "Has Computer": [
+                "Rover Compute Element"
+            ],
+            "Uses Chip": [
+                "Rad750"
+            ],
+            "Has Processor": [
+                "Powerpc",
+                "Sparc"
+            ],
+            "Has Interaction With": [
+                "Mars Express Satellite",
+                "Mars Reconnaissance Orbiter",
+                "Maven Orbiter",
+                "Odyssey Orbiter"
+            ],
+            "Has Equipment": [
+                "Deep Space Transponder",
+                "Solid-State Power Amplifier",
+                "Ultra High Frequency (Uhf) Electra-Lite Software-Defined Radio",
+                "X Band Transmitter"
+            ],
+            "Monitored By": [
+                "2001 Mars Odyssey",
+                "Mars Express Satellite",
+                "Mars Reconnaissance Orbiter"
+            ],
+            "Supported By": [
+                "Consultative Committee For Space Data Systems",
+                "Germany'S Space Agency (Dlr)",
+                "Nasa Headquarters",
+                "Russian Federal Space Agency"
+            ],
+            "Data Distribution Hub": [
+                "Nasa'S Jet Propulsion Laboratory"
+            ],
+            "Has Mobility System": [
+                "Rocker-Bogie Suspension"
+            ],
+            "Has Wheel": [
+                "Six 50 Cm Diameter Wheels"
+            ],
+            "Can Climb": [
+                "Sand Dunes With Slopes Up To 12.5°"
+            ],
+            "Can Withstand Tilt": [
+                "50° In Any Direction Without Overturning"
+            ],
+            "Operated By": [
+                "Honeybee Robotics",
+                "Vandi Verma"
+            ],
+            "Landed Near": [
+                "Mount Sharp (Aeolis Mons)"
+            ],
+            "Expected To Traverse": [
+                "Minimum Of 19 Km During Primary Mission"
+            ],
+            "Landed In": [
+                "Gale Crater"
+            ],
+            "Located In": [
+                "Bradbury Landing",
+                "Jpl Mars Yard"
+            ],
+            "Close To Star": [
+                "Alluvial Fan"
+            ],
+            "Carries": [
+                "Heat-Resistant Bacterial Spores"
+            ],
+            "Employed System": [
+                "Rover Suspension System"
+            ],
+            "Transformed Configuration": [
+                "Msl Spacecraft"
+            ],
+            "Prepared For": [
+                "Science Mission"
+            ],
+            "Has Test Bed": [
+                "Vehicle System Test Bed (Vstb)"
+            ],
+            "Has Replica": [
+                "Maggie Rover",
+                "Scarecrow Rover"
+            ],
+            "Has Laboratory": [
+                "Chemin",
+                "Sample Analysis At Mars (Sam)"
+            ],
+            "Has Camera System": [
+                "Mastcam",
+                "Medium Angle Camera",
+                "Narrow Angle Camera"
+            ],
+            "Missed Incorporation": [
+                "Mastcams With Zoom Lenses"
+            ],
+            "Future Mission Incorporation": [
+                "Mars 2020 Mission"
+            ],
+            "Performed Test On": [
+                "Coronation Rock"
+            ],
+            "Has Navigation Camera": [
+                "Hazcams",
+                "Navcams"
+            ],
+            "Uses": [
+                "Visible Light"
+            ],
+            "Collaborated With": [
+                "Finnish Meteorological Institute",
+                "Spanish Astrobiology Center",
+                "Spanish Ministry Of Education And Science"
+            ],
+            "Uses For Hazard Avoidance": [
+                "Hazcams"
+            ],
+            "Uses For Positioning": [
+                "Robotic Arm"
+            ],
+            "Connected To": [
+                "Computer"
+            ],
+            "Captures Imagery": [
+                "Stereoscopic Three-Dimensional (3-D) Imagery"
+            ],
+            "Maps Terrain": [
+                "Terrain"
+            ],
+            "Developed By": [
+                "Canadian Space Agency",
+                "Christian-Albrechts-Universität Zu Kiel",
+                "Goddard Space Flight Center",
+                "Honeybee Robotics",
+                "Laboratoire Atmosphères, Milieux, Observations Spatiales (Latmos)",
+                "Laboratoire Inter-Universitaire Des Systèmes Atmosphériques (Lisa)",
+                "Nasa'S Jet Propulsion Laboratory",
+                "Southwest Research Institute (Swri)"
+            ],
+            "Manufactured By": [
+                "Macdonald Dettwiler",
+                "Mda Us Systems"
+            ],
+            "Science Team Includes": [
+                "Cornell University",
+                "Nasa",
+                "University Of California, San Diego",
+                "University Of Guelph",
+                "University Of New Brunswick",
+                "University Of Western Ontario"
+            ],
+            "Used Technique": [
+                "Particle-Induced X-Ray Emission",
+                "X-Ray Fluorescence"
+            ],
+            "Performed Analysis": [
+                "Martian Regolith"
+            ],
+            "Found Minerals": [
+                "Calcium Sulfates",
+                "Crystalline Siderite",
+                "Feldspar",
+                "Iron Oxyhydroxides",
+                "Magnesium Sulfates",
+                "Olivine",
+                "Plagioclase",
+                "Pyroxenes",
+                "X-Ray Amorphous Material"
+            ],
+            "Drilled Samples From": [
+                "Drill Sites",
+                "Rock Formations"
+            ],
+            "Provided By": [
+                "Russia"
+            ],
+            "Delivers Samples To": [
+                "Chemin Analyzer",
+                "Sample Analysis At Mars (Sam)"
+            ],
+            "Played Music On": [
+                "Mars"
+            ],
+            "Discovered Organic Molecules In": [
+                "Gale Crater"
+            ],
+            "Discovered Long Chain Alkanes In": [
+                "Gale Crater"
+            ],
+            "Has Plaque With Names": [
+                "International Community"
+            ],
+            "Has Plaque With Signatures": [
+                "Barack Obama",
+                "Joe Biden"
+            ],
+            "Has Autograph": [
+                "Clara Ma"
+            ]
+        },
+        {
+            "Future Mission Incorporation": "Future Mission Incorporation",
+            "Connected To": "Connected To",
+            "Uses For Positioning": "Uses For Positioning",
+            "Preceded By": "Preceded By",
+            "Studies": "Studies",
+            "Contributes To": "Contributed To",
+            "Has Camera System": "Has Camera System",
+            "Developed By": "Developed By",
+            "Equipped With": "Has Equipment",
+            "Funded By": "Supported By",
+            "Part Of Mission": "Part Of Mission",
+            "Has Instrument": "Has Instrument",
+            "Has Computer": "Has Computer",
+            "Explores": "Explores",
+            "Can Withstand Tilt": "Can Withstand Tilt",
+            "Contains Instrument": "Has Instrument",
+            "Employed System": "Employed System",
+            "Has Wheel": "Has Wheel",
+            "Built By": "Manufactured By",
+            "Has Test Bed": "Has Test Bed",
+            "Landed On": "Landed On",
+            "Powered By": "Powered By",
+            "Collaborates With": "Collaborated With",
+            "Located At": "Located In",
+            "Has Navigation Camera": "Has Navigation Camera",
+            "Monitored By": "Monitored By",
+            "Can Climb": "Can Climb",
+            "Landed Using": "Landed On",
+            "Has Laboratory": "Has Laboratory",
+            "Science Team Includes": "Science Team Includes",
+            "Has Plaque With Names": "Has Plaque With Names",
+            "Has Plaque With Signatures": "Has Plaque With Signatures",
+            "Uses For Hazard Avoidance": "Uses For Hazard Avoidance",
+            "Maps Terrain": "Maps Terrain",
+            "Named By": "Named By",
+            "Carried": "Carries",
+            "Played Music On": "Played Music On",
+            "Discovered Long Chain Alkanes In": "Discovered Long Chain Alkanes In",
+            "Found Minerals": "Found Minerals",
+            "Near": "Close To Star",
+            "Landed Near": "Landed Near",
+            "Performed Test On": "Performed Test On",
+            "Has Tool": "Has Instrument",
+            "Awarded": "Won Award",
+            "Performed Analysis": "Performed Analysis",
+            "Has Processor": "Has Processor",
+            "Drilled Samples From": "Drilled Samples From",
+            "Data Distribution Hub": "Data Distribution Hub",
+            "Has Mobility System": "Has Mobility System",
+            "Launched From": "Launched From",
+            "Landed In": "Landed In",
+            "Provided By": "Provided By",
+            "Prepared For": "Prepared For",
+            "Transformed Configuration": "Transformed Configuration",
+            "Larger Than": "Larger Than",
+            "Communicates With": "Has Interaction With",
+            "Relies On": "Supported By",
+            "Measures": "Measured By",
+            "Has Twin Rover": "Has Replica",
+            "Expected To Traverse": "Expected To Traverse",
+            "Missed Incorporation": "Missed Incorporation",
+            "Has Navigation Cameras": "Has Navigation Camera",
+            "Uses Light": "Uses",
+            "Captures Imagery": "Captures Imagery",
+            "Uses Technique": "Used Technique",
+            "Assembled At": "Assembled At",
+            "Delivers Samples To": "Delivers Samples To",
+            "Basis For Design Of": "Basis For Design Of",
+            "Discovered Organic Molecules In": "Discovered Organic Molecules In",
+            "Operated By": "Operated By",
+            "Has Autograph": "Has Autograph",
+            "Design Basis For": "Basis For Design Of",
+            "Uses CPU": "Uses Chip",
+            "Incorporates Camera": "Has Camera System"
+        },
+        {
+            "Coronation rock": "Coronation Rock",
+            "Russian Federal Space Agency": "Russian Federal Space Agency",
+            "Mars Hand Lens Imager (MAHLI camera)": "Mars Hand Lens Imager (Mahli Camera)",
+            "magnesium sulfates": "Magnesium Sulfates",
+            "NASA": "Nasa",
+            "MastCam-100": "Mastcam-100",
+            "SPARC": "Sparc",
+            "Mastcam": "Mastcam",
+            "NASA Headquarters": "Nasa Headquarters",
+            "Six 50 cm diameter wheels": "Six 50 Cm Diameter Wheels",
+            "Scarecrow rover": "Scarecrow Rover",
+            "percussion drill": "Percussion Drill",
+            "heat-resistant bacterial spores": "Heat-Resistant Bacterial Spores",
+            "X band transmitter": "X Band Transmitter",
+            "robotic arm": "Robotic Arm",
+            "MARDI": "Mardi",
+            "CheMin": "Chemin",
+            "Rover Compute Element": "Rover Compute Element",
+            "Rover Suspension System": "Rover Suspension System",
+            "Spirit": "Spirit",
+            "Medium Angle Camera": "Medium Angle Camera",
+            "Mars Exploration Program": "Mars Exploration Program",
+            "hazcams": "Hazcams",
+            "tunable laser spectrometer (TLS)": "Tunable Laser Spectrometer (Tls)",
+            "Mars Science Laboratory (MSL)": "Mars Science Laboratory (Msl)",
+            "Visible light": "Visible Light",
+            "University of Western Ontario": "University Of Western Ontario",
+            "NavCams": "Navcams",
+            "Perseverance mission": "Mars 2020 Mission",
+            "Radiation assessment detector (RAD)": "Radiation Assessment Detector (Rad)",
+            "calcium sulfates": "Calcium Sulfates",
+            "pyroxenes": "Pyroxenes",
+            "University of New Brunswick": "University Of New Brunswick",
+            "feldspar": "Feldspar",
+            "Spanish Astrobiology Center": "Spanish Astrobiology Center",
+            "CheMin analyzer": "Chemin Analyzer",
+            "Multi-Mission Radioisotope Thermoelectric Generator": "Radioisotope Thermoelectric Generators",
+            "Narrow Angle Camera": "Narrow Angle Camera",
+            "Dust Removal Tool (DRT)": "Dust Removal Tool (Drt)",
+            "MAGGIE rover": "Maggie Rover",
+            "Mars Pathfinder": "Mars Pathfinder",
+            "Sand dunes with slopes up to 12.5°": "Sand Dunes With Slopes Up To 12.5°",
+            "Mars Descent Imager (MARDI)": "Mars Descent Imager (Mardi)",
+            "Navigation cameras": "Navcams",
+            "solid-state power amplifier": "Solid-State Power Amplifier",
+            "rock formations": "Rock Formations",
+            "DAN instrument": "Dan Instrument",
+            "terrain": "Terrain",
+            "x-ray amorphous material": "X-Ray Amorphous Material",
+            "Barack Obama": "Barack Obama",
+            "Sample Analysis at Mars (SAM)": "Sample Analysis At Mars (Sam)",
+            "MAVEN orbiter": "Maven Orbiter",
+            "Sky Crane System": "Sky Crane System",
+            "Perseverance rover": "Mars 2020 Mission",
+            "Jet Propulsion Laboratory": "Nasa'S Jet Propulsion Laboratory",
+            "Mars Reconnaissance Orbiter": "Mars Reconnaissance Orbiter",
+            "Quadrupole Mass Spectrometer (QMS)": "Quadrupole Mass Spectrometer (Qms)",
+            "Mount Sharp (Aeolis Mons)": "Mount Sharp (Aeolis Mons)",
+            "Ultra high frequency (UHF) Electra-Lite software-defined radio": "Ultra High Frequency (Uhf) Electra-Lite Software-Defined Radio",
+            "international community": "International Community",
+            "NASA Goddard Space Flight Center": "Goddard Space Flight Center",
+            "Sojourner": "Mars Pathfinder",
+            "Honeybee Robotics": "Honeybee Robotics",
+            "plagioclase": "Plagioclase",
+            "Odyssey orbiter": "Odyssey Orbiter",
+            "MAHLI": "Mars Hand Lens Imager (Mahli Camera)",
+            "Rocker-bogie suspension": "Rocker-Bogie Suspension",
+            "University of California, San Diego": "University Of California, San Diego",
+            "Particle-Induced X-ray Emission": "Particle-Induced X-Ray Emission",
+            "HazCams": "Hazcams",
+            "Mars Express satellite": "Mars Express Satellite",
+            "Southwest Research Institute (SwRI)": "Southwest Research Institute (Swri)",
+            "Gale crater": "Gale Crater",
+            "surface radiation": "Surface Radiation",
+            "Gale (crater)": "Gale Crater",
+            "crystalline siderite": "Crystalline Siderite",
+            "Mars Surveyor 2001 Lander": "Mars Surveyor 2001 Lander",
+            "Science Mission": "Science Mission",
+            "Canadian Space Agency": "Canadian Space Agency",
+            "Martian regolith": "Martian Regolith",
+            "PowerPC": "Powerpc",
+            "deep space transponder": "Deep Space Transponder",
+            "Finnish Meteorological Institute": "Finnish Meteorological Institute",
+            "SAM analyzer": "Sample Analysis At Mars (Sam)",
+            "NASA Jet Propulsion Laboratory": "Nasa'S Jet Propulsion Laboratory",
+            "SAM instrument suite": "Sample Analysis At Mars (Sam)",
+            "Christian-Albrechts-Universität zu Kiel": "Christian-Albrechts-Universität Zu Kiel",
+            "Mars Hand Lens Imager (MAHLI)": "Mars Hand Lens Imager (Mahli Camera)",
+            "Mastcams with zoom lenses": "Mastcams With Zoom Lenses",
+            "Mars Exploration Rovers": "Mars Exploration Rovers",
+            "alluvial fan": "Alluvial Fan",
+            "X-ray fluorescence": "X-Ray Fluorescence",
+            "Consultative Committee for Space Data Systems": "Consultative Committee For Space Data Systems",
+            "MDA US Systems": "Mda Us Systems",
+            "Gale Crater": "Gale Crater",
+            "Laboratoire Inter-Universitaire des Systèmes Atmosphériques (LISA)": "Laboratoire Inter-Universitaire Des Systèmes Atmosphériques (Lisa)",
+            "stereoscopic three-dimensional (3-D) imagery": "Stereoscopic Three-Dimensional (3-D) Imagery",
+            "MacDonald Dettwiler": "Macdonald Dettwiler",
+            "Mars 2020 mission": "Mars 2020 Mission",
+            "Cape Canaveral (CCAFS)": "Cape Canaveral (Ccafs)",
+            "RAD750": "Rad750",
+            "2001 Mars Odyssey": "2001 Mars Odyssey",
+            "Jet Propulsion Laboratory (JPL)": "Nasa'S Jet Propulsion Laboratory",
+            "Vandi Verma": "Vandi Verma",
+            "Joe Biden": "Joe Biden",
+            "main computers": "Computer",
+            "Mars Exploration Rovers (Spirit and Opportunity)": "Mars Exploration Rovers",
+            "APXS": "Apxs",
+            "MastCam-34": "Mastcam-34",
+            "brush": "Brush",
+            "Russia": "Russia",
+            "MastCam": "Mastcam",
+            "mechanisms for scooping, sieving, and portioning samples": "Mechanisms For Scooping, Sieving, And Portioning Samples",
+            "olivine": "Olivine",
+            "Germany's Space Agency (DLR)": "Germany'S Space Agency (Dlr)",
+            "Mars": "Mars",
+            "Cornell University": "Cornell University",
+            "UHF radios": "Ultra High Frequency (Uhf) Electra-Lite Software-Defined Radio",
+            "Vehicle System Test Bed (VSTB)": "Vehicle System Test Bed (Vstb)",
+            "MSL Spacecraft": "Msl Spacecraft",
+            "Mount Sharp": "Mount Sharp (Aeolis Mons)",
+            "Bradbury Landing": "Bradbury Landing",
+            "JPL Mars Yard": "Jpl Mars Yard",
+            "drill sites": "Drill Sites",
+            "Clara Ma": "Clara Ma",
+            "human exploration": "Human Exploration",
+            "Phoenix lander": "Phoenix Lander",
+            "Opportunity": "Opportunity",
+            "Spanish Ministry of Education and Science": "Spanish Ministry Of Education And Science",
+            "gas chromatograph (GC)": "Gas Chromatograph (Gc)",
+            "Mars Science Laboratory": "Mars Science Laboratory (Msl)",
+            "2012 Robert J. Collier Trophy": "2012 Robert J. Collier Trophy",
+            "geology of Mars": "Geology Of Mars",
+            "X-ray spectrometer (APXS)": "X-Ray Fluorescence",
+            "Aeolis Palus": "Aeolis Palus",
+            "50° in any direction without overturning": "50° In Any Direction Without Overturning",
+            "Minimum of 19 km during primary mission": "Minimum Of 19 Km During Primary Mission",
+            "climate of Mars": "Climate Of Mars",
+            "REMS": "Rems",
+            "ChemCam": "Chemcam",
+            "iron oxyhydroxides": "Iron Oxyhydroxides",
+            "Laboratoire atmosphères, milieux, observations spatiales (LATMOS)": "Laboratoire Atmosphères, Milieux, Observations Spatiales (Latmos)",
+            "University of Guelph": "University Of Guelph"
+        }
+    ]
+}

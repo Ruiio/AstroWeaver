@@ -1,0 +1,144 @@
+{
+    "entity_name": "Omega Centauri",
+    "infobox_attributes": {
+        "Omega Centauri": "The globular cluster Omega Centauri",
+        "Class": "VIII",
+        "Constellation": "Centaurus",
+        "Right ascension": "13 26 47.28",
+        "Declination": "−47° 28′ 46.1″",
+        "Distance": "15.8 ± 1.1 kly (4.84 ± 0.34 kpc)",
+        "Apparent magnitude (V)": "3.9",
+        "Apparent dimensions (V)": "36′.3",
+        "Mass": "(4.05 ± 0.1) × 10^6 M ☉",
+        "Radius": "86 ± 6 ly",
+        "Metallicity": "[ Fe / H ] {\\displaystyle {\\begin{smallmatrix}\\left[{\\ce {Fe}}/{\\ce {H}}\\right]\\end{smallmatrix}}} = –1.35 dex",
+        "Estimated age": "11.52 Gyr",
+        "Other designations": "NGC 5139, GCl 24, ω Centauri, Caldwell 80, Mel 118"
+    },
+    "consolidated_relationships": [
+        {
+            "Located In": [
+                "Centaurus"
+            ],
+            "Discovered By": [
+                "Edmond Halley"
+            ],
+            "Member Of": [
+                "Milky Way Galaxy"
+            ],
+            "Originates From": [
+                "Disrupted Dwarf Galaxy",
+                "Dwarf Galaxy"
+            ],
+            "Catalogued By": [
+                "Ptolemy"
+            ],
+            "Designated By": [
+                "Johann Bayer"
+            ],
+            "Observed By": [
+                "Edmond Halley",
+                "Gemini Observatory",
+                "Hubble Space Telescope"
+            ],
+            "Catalogued In": [
+                "Jean-Philippe De Cheseaux'S List Of Nebulae",
+                "Lacaille'S Catalogue",
+                "Philosophical Transactions Of The Royal Society"
+            ],
+            "Identified As": [
+                "Globular Cluster"
+            ],
+            "Described By": [
+                "James Dunlop"
+            ],
+            "Visible From": [
+                "Naked Eye"
+            ],
+            "Associated With": [
+                "Kapteyn'S Star",
+                "Milky Way Galaxy"
+            ],
+            "Contains": [
+                "Population Ii Stars"
+            ],
+            "Orbits": [
+                "Milky Way Galaxy"
+            ],
+            "Brighter Than": [
+                "Mayall Ii"
+            ],
+            "More Massive Than": [
+                "Mayall Ii"
+            ],
+            "Has Intermediate-Mass Black Hole": [
+                "40,000 Solar Masses Black Hole",
+                "8,200 Solar Masses Black Hole"
+            ],
+            "Studied By": [
+                "E. Noyola And Colleagues"
+            ],
+            "Core Of": [
+                "Dwarf Galaxy"
+            ],
+            "Similar Design To": [
+                "Mayall Ii"
+            ],
+            "Featured In": [
+                "Atlan Series",
+                "Singularity (2012)"
+            ]
+        },
+        {
+            "Located In": "Located In",
+            "Designated By": "Designated By",
+            "Featured In": "Featured In",
+            "Observed By": "Observed By",
+            "Listed In": "Catalogued In",
+            "Included In": "Catalogued In",
+            "Catalogued By": "Catalogued By",
+            "More Massive Than": "More Massive Than",
+            "Visible To": "Visible From",
+            "Member Of": "Member Of",
+            "Studied By": "Studied By",
+            "Orbits": "Orbits",
+            "Described By": "Described By",
+            "Core Of": "Core Of",
+            "Originates From": "Originates From",
+            "Brighter Than": "Brighter Than",
+            "Contains": "Contains",
+            "Originated From": "Originates From",
+            "Discovered By": "Discovered By",
+            "Has Intermediate-Mass Black Hole": "Has Intermediate-Mass Black Hole",
+            "Recognized As": "Identified As",
+            "Associated With": "Associated With",
+            "Similar To": "Similar Design To"
+        },
+        {
+            "disrupted dwarf galaxy": "Disrupted Dwarf Galaxy",
+            "Milky Way": "Milky Way Galaxy",
+            "Atlan series": "Atlan Series",
+            "Globular Cluster": "Globular Cluster",
+            "Philosophical Transactions of the Royal Society": "Philosophical Transactions Of The Royal Society",
+            "E. Noyola and colleagues": "E. Noyola And Colleagues",
+            "Population II stars": "Population Ii Stars",
+            "Ptolemy": "Ptolemy",
+            "James Dunlop": "James Dunlop",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "Dwarf Galaxy": "Dwarf Galaxy",
+            "Naked Eye": "Naked Eye",
+            "Jean-Philippe de Cheseaux's list of nebulae": "Jean-Philippe De Cheseaux'S List Of Nebulae",
+            "Singularity (2012)": "Singularity (2012)",
+            "Gemini Observatory": "Gemini Observatory",
+            "Johann Bayer": "Johann Bayer",
+            "dwarf galaxy": "Dwarf Galaxy",
+            "Edmond Halley": "Edmond Halley",
+            "40,000 solar masses black hole": "40,000 Solar Masses Black Hole",
+            "8,200 solar masses black hole": "8,200 Solar Masses Black Hole",
+            "Kapteyn's Star": "Kapteyn'S Star",
+            "Mayall II": "Mayall Ii",
+            "Centaurus": "Centaurus",
+            "Lacaille's catalogue": "Lacaille'S Catalogue"
+        }
+    ]
+}

@@ -1,0 +1,271 @@
+{
+    "entity_name": "Nebular Hypothesis",
+    "infobox_attributes": {},
+    "consolidated_relationships": [
+        {
+            "Describes Formation Of": [
+                "Accretion Disk",
+                "Asteroid Belt",
+                "Brown Dwarfs",
+                "Comet",
+                "Exocomet",
+                "Giant Planets",
+                "Kuiper Belt",
+                "Oort Cloud",
+                "Planetary System",
+                "Solar System",
+                "Stars",
+                "T Tauri Stars",
+                "Terrestrial Planets"
+            ],
+            "Developed By": [
+                "Andrew Prentice",
+                "Immanuel Kant",
+                "Pierre-Simon Laplace",
+                "Victor Safronov"
+            ],
+            "Modified By": [
+                "Pierre-Simon Laplace"
+            ],
+            "Published In": [
+                "Exposition Du Systeme Du Monde",
+                "Universal Natural History And Theory Of The Heavens"
+            ],
+            "Modern Variant": [
+                "Solar Nebular Model"
+            ],
+            "Explains": [
+                "Planetary Orbits",
+                "Rotation Of The Star"
+            ],
+            "Associated With": [
+                "Accretion Disk",
+                "Bok Globules",
+                "Class 0 Protostars",
+                "Earth",
+                "Frost Line",
+                "Giant Planets",
+                "Herbig–Haro Objects",
+                "History Of Earth",
+                "Mars",
+                "Mercury",
+                "Origins Of The Solar System",
+                "Planetary Embryos",
+                "Planetary Formation",
+                "Solar Nebular Model",
+                "Star Formation",
+                "T Tauri Stars",
+                "Venus"
+            ],
+            "Located In": [
+                "Giant Molecular Clouds"
+            ],
+            "Resulted In": [
+                "Failed Cores",
+                "Ice Giants",
+                "Planetary System",
+                "Proto-Planetary Disks (Proplyds) In The Orion Nebula",
+                "T Tauri Stars"
+            ],
+            "Involves Process Of": [
+                "Accretion Disk",
+                "Giant Molecular Clouds",
+                "Gravitational Scattering",
+                "Kozai Mechanism",
+                "Merger Stage",
+                "Oligarchic Accretion",
+                "Planetary Accretion",
+                "Runaway Accretion"
+            ],
+            "Led To Development Of": [
+                "Giant Planets",
+                "Planetesimals",
+                "Protostellar Nebulae",
+                "Terrestrial Planets"
+            ],
+            "Proposed By": [
+                "Emanuel Swedenborg",
+                "Immanuel Kant",
+                "Pierre-Simon Laplace"
+            ],
+            "Criticized By": [
+                "James Clerk Maxwell",
+                "Sir David Brewster"
+            ],
+            "Replaced By": [
+                "Accretion Model",
+                "Capture Theory",
+                "Modern Laplacian Theory",
+                "Planetesimal Theory",
+                "Protoplanet Theory",
+                "Solar Nebular Model",
+                "Tidal Model"
+            ],
+            "Inspired By": [
+                "George Wetherill"
+            ],
+            "Supported By": [
+                "Protostars",
+                "T Tauri Stars"
+            ],
+            "Experienced Issue": [
+                "Formation Of Planetesimals",
+                "Formation Timescale Of Giant Planets",
+                "Orbital Migration Of Giant Planets"
+            ],
+            "Proposed Solution": [
+                "Magnetic Braking",
+                "Photo-Evaporation",
+                "Viscous Diffusion"
+            ],
+            "Preceded Formation Of": [
+                "Class I Protostars"
+            ],
+            "Eventually Forms": [
+                "Classical T Tauri Stars"
+            ],
+            "Includes Theory": [
+                "Disk Instability Model",
+                "Planetary Accretion"
+            ],
+            "Proposes Formation Of": [
+                "Hot-Jupiters",
+                "Warm-Jupiters"
+            ],
+            "Suggests Migration Mechanism": [
+                "Type I Migration",
+                "Type Ii Migration"
+            ],
+            "Considers Formation Scenario": [
+                "In Situ Growth",
+                "Migration From Initial Locations"
+            ],
+            "Relates To Disk Dynamics": [
+                "Gas Disk Dissipation",
+                "Radial Drift Of Small Solids"
+            ]
+        },
+        {
+            "Proposed Solution": "Proposed Solution",
+            "Proposed By": "Proposed By",
+            "Developed By": "Developed By",
+            "Modern Variant": "Modern Variant",
+            "Precedes Formation Of": "Preceded Formation Of",
+            "Includes Theory": "Includes Theory",
+            "Relates To Disk Dynamics": "Relates To Disk Dynamics",
+            "Describes Formation Of": "Describes Formation Of",
+            "Occurs In": "Located In",
+            "Proposes Formation Of": "Proposes Formation Of",
+            "Supported By": "Supported By",
+            "Developed Further By": "Developed By",
+            "Leads To Formation Of": "Led To Development Of",
+            "Explains Formation Of": "Describes Formation Of",
+            "Can Result In": "Resulted In",
+            "Replaced By": "Replaced By",
+            "Considers Formation Scenario": "Considers Formation Scenario",
+            "Modern Version Developed By": "Developed By",
+            "Results In": "Resulted In",
+            "Modified By": "Modified By",
+            "Explains Properties Of": "Explains",
+            "Published In": "Published In",
+            "Critiqued By": "Criticized By",
+            "Related To": "Associated With",
+            "Involves Process Of": "Involves Process Of",
+            "Eventually Forms": "Eventually Forms",
+            "Associated With": "Associated With",
+            "Suggests Migration Mechanism": "Suggests Migration Mechanism",
+            "Influenced By": "Inspired By",
+            "Involves Process": "Involves Process Of",
+            "Has Problem": "Experienced Issue"
+        },
+        {
+            "Bok globule": "Bok Globules",
+            "tidal model": "Tidal Model",
+            "Planetary Accretion": "Planetary Accretion",
+            "migration from initial locations": "Migration From Initial Locations",
+            "Frost Line": "Frost Line",
+            "planetary embryos": "Planetary Embryos",
+            "Class 0 Protostars": "Class 0 Protostars",
+            "Herbig–Haro object": "Herbig–Haro Objects",
+            "Solar System": "Solar System",
+            "Protostellar Nebulae": "Protostellar Nebulae",
+            "Pierre-Simon Laplace": "Pierre-Simon Laplace",
+            "protoplanetary disk": "Accretion Disk",
+            "Type II migration": "Type Ii Migration",
+            "Earth": "Earth",
+            "Kozai mechanism": "Kozai Mechanism",
+            "Formation and evolution of the Solar System": "Origins Of The Solar System",
+            "Exposition du systeme du monde": "Exposition Du Systeme Du Monde",
+            "Protoplanetary Disk": "Proto-Planetary Disks (Proplyds) In The Orion Nebula",
+            "James Clerk Maxwell": "James Clerk Maxwell",
+            "Solar Nebular Model": "Solar Nebular Model",
+            "hot-Jupiters": "Hot-Jupiters",
+            "in situ growth": "In Situ Growth",
+            "warm-Jupiters": "Warm-Jupiters",
+            "Accretion Disk": "Accretion Disk",
+            "Planetesimals": "Planetesimals",
+            "Giant Molecular Clouds": "Giant Molecular Clouds",
+            "Planetary System": "Planetary System",
+            "Emanuel Swedenborg": "Emanuel Swedenborg",
+            "accretion model": "Accretion Model",
+            "Andrew Prentice": "Andrew Prentice",
+            "gravitational scattering": "Gravitational Scattering",
+            "Pierre Laplace": "Pierre-Simon Laplace",
+            "merger stage": "Merger Stage",
+            "Venus": "Venus",
+            "Solar Nebular Disk Model": "Solar Nebular Model",
+            "Mercury": "Mercury",
+            "Photo-evaporation": "Photo-Evaporation",
+            "runaway accretion": "Runaway Accretion",
+            "Star Formation": "Star Formation",
+            "Ice Giants": "Ice Giants",
+            "Stars": "Stars",
+            "Asteroid belt": "Asteroid Belt",
+            "Class I Protostars": "Class I Protostars",
+            "Comet": "Comet",
+            "George Wetherill": "George Wetherill",
+            "protostars": "Protostars",
+            "Brown Dwarfs": "Brown Dwarfs",
+            "capture theory": "Capture Theory",
+            "Victor Safronov": "Victor Safronov",
+            "planetesimal theory": "Planetesimal Theory",
+            "Orbital migration of giant planets": "Orbital Migration Of Giant Planets",
+            "Classical T Tauri Stars": "Classical T Tauri Stars",
+            "Planetary Formation": "Planetary Formation",
+            "Immanuel Kant": "Immanuel Kant",
+            "Sun's Rotation": "Rotation Of The Star",
+            "Magnetic braking": "Magnetic Braking",
+            "Exocomet": "Exocomet",
+            "Kuiper belt": "Kuiper Belt",
+            "accretion disks": "Accretion Disk",
+            "gas disk dissipation": "Gas Disk Dissipation",
+            "Formation of planetesimals": "Formation Of Planetesimals",
+            "T Tauri stars": "T Tauri Stars",
+            "T Tauri star": "T Tauri Stars",
+            "Core Accretion Model": "Planetary Accretion",
+            "T Tauri Star Stage": "T Tauri Stars",
+            "modern Laplacian theory": "Modern Laplacian Theory",
+            "Viscous diffusion": "Viscous Diffusion",
+            "solar nebular disk model": "Solar Nebular Model",
+            "Disk Instability Model": "Disk Instability Model",
+            "Failed Cores": "Failed Cores",
+            "terrestrial planets": "Terrestrial Planets",
+            "Oort cloud": "Oort Cloud",
+            "radial drift of small solids": "Radial Drift Of Small Solids",
+            "Mars": "Mars",
+            "Type I migration": "Type I Migration",
+            "Terrestrial Planets": "Terrestrial Planets",
+            "Universal Natural History and Theory of the Heavens": "Universal Natural History And Theory Of The Heavens",
+            "History of Earth": "History Of Earth",
+            "oligarchic accretion": "Oligarchic Accretion",
+            "Young T Tauri Stars": "T Tauri Stars",
+            "Formation timescale of giant planets": "Formation Timescale Of Giant Planets",
+            "rocky planets": "Terrestrial Planets",
+            "Sir David Brewster": "Sir David Brewster",
+            "Giant Planets": "Giant Planets",
+            "Planetary Orbits": "Planetary Orbits",
+            "protoplanet theory": "Protoplanet Theory",
+            "Planetary Systems": "Planetary System"
+        }
+    ]
+}

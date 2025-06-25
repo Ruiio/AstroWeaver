@@ -1,0 +1,72 @@
+{
+    "name": "NGC 5139",
+    "type": "GlC",
+    "ID": "@3375707",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "13 26 47.28  -47 28 46.1",
+        "notes": "(Opt ) D [~ ~ ]",
+        "ref": "2010AJ....140.1830G"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "13 23 47.16  -47 13 11.9"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "309.10202  +14.96833"
+    },
+    "hierarchy counts": {
+        "parents": 0,
+        "children": 10412,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "-3.24-6.73",
+        "notes": "[0.010.0190]C",
+        "ref": "2019MNRAS.482.5138B"
+    },
+    "Parallax(mas)": {
+        "value": "0.193",
+        "notes": "[0.009] C",
+        "ref": " 2021MNRAS.505.5978V"
+    },
+    "Radial Velocity": {
+        "value": "232.7",
+        "notes": "[0.2] A",
+        "ref": " 2018MNRAS.478.1520B"
+    },
+    "Redshift": {
+        "value": "0.000777",
+        "notes": "[0.000001] A",
+        "ref": " 2018MNRAS.478.1520B"
+    },
+    "cz": {
+        "value": "232.79",
+        "notes": "[0.20] A",
+        "ref": " 2018MNRAS.478.1520B"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "36.3",
+        "notes": "36.3   90 (Opt )  D",
+        "ref": "1989Sci...246.1066D"
+    },
+    "identifiers": [
+        "* ome Cen",
+        "C 1323-472",
+        "CD-46 8646"
+    ],
+    "measures": "distance:3Fe_H:6ISO:3IUE:18PLX:2PM:3velocities:4XMM:2"
+}

@@ -1,0 +1,72 @@
+{
+    "name": "M 16",
+    "type": "OpC",
+    "ID": "@2585552",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "18 18 45.1  -13 47 31",
+        "notes": "(Opt ) E [~ ~ ]",
+        "ref": "2021A&A...647A..19T"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "18 15 55.0  -13 48 47"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "016.9615  +00.8106"
+    },
+    "hierarchy counts": {
+        "parents": 0,
+        "children": 2287,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "0.178-1.576",
+        "notes": "[0.0140.01890]C",
+        "ref": "2020A&A...633A..99C"
+    },
+    "Parallax(mas)": {
+        "value": "0.566",
+        "notes": "[0.006] C",
+        "ref": " 2020A&A...633A..99C"
+    },
+    "Radial Velocity": {
+        "value": "18.00",
+        "notes": "[0.58] A",
+        "ref": " 2017AstBu..72..257L"
+    },
+    "Redshift": {
+        "value": "0.000060",
+        "notes": "[0.000002] A",
+        "ref": " 2017AstBu..72..257L"
+    },
+    "cz": {
+        "value": "18.00",
+        "notes": "[0.58] A",
+        "ref": " 2017AstBu..72..257L"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "~",
+        "notes": "~",
+        "ref": "~"
+    },
+    "Angular size": {
+        "value": "80.0",
+        "notes": "80.0    0 (~)  C",
+        "ref": "2022A&A...664A..66M"
+    },
+    "identifiers": [
+        "Villafranca O-019",
+        "C 1816-138",
+        "CTB 51"
+    ],
+    "measures": "distance:7Fe_H:1herschel:16ISO:52IUE:3PLX:7PM:9velocities:6"
+}

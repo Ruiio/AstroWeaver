@@ -1,0 +1,464 @@
+{
+    "entity_name": "Big Bang",
+    "infobox_attributes": {},
+    "consolidated_relationships": [
+        {
+            "Explains": [
+                "Abundance Of Light Elements",
+                "Cosmic Background Radiation",
+                "Deuterium",
+                "Evolution Of The Universe",
+                "Helium",
+                "Helium-3",
+                "Hubble'S Law",
+                "Large-Scale Cosmic Structures",
+                "Light Elements",
+                "Lithium-7",
+                "Observable Universe",
+                "Universe"
+            ],
+            "Associated With": [
+                "Baryogenesis",
+                "Baryons",
+                "Cosmic Background Radiation",
+                "Dark Energy",
+                "Dark Matter",
+                "Deuterium",
+                "Friedmann",
+                "Friedmann–Lemaître–Robertson–Walker Metric",
+                "Gluons",
+                "Helium",
+                "Highly Energetic Electrons",
+                "Inflation Theory",
+                "Large Hadron Collider",
+                "Multiverse",
+                "Neutrinos",
+                "Neutrons",
+                "Photon-Baryon Plasma Sea",
+                "Photons",
+                "Primordial Gas Clouds",
+                "Protons",
+                "Quarks",
+                "Quasar Apm 08279+5255",
+                "Recombination",
+                "Sakharov Conditions",
+                "Standard Model Of Particle Physics",
+                "Type I Supernova"
+            ],
+            "Resulted In": [
+                "Atoms",
+                "Early Stars",
+                "Electroweak Epoch",
+                "Galaxies",
+                "Quark–Gluon Plasma",
+                "Subatomic Particles"
+            ],
+            "Proposed By": [
+                "Alexander Friedmann",
+                "George F. R. Ellis",
+                "Lemaître",
+                "Roger Penrose",
+                "Stephen Hawking"
+            ],
+            "Has Evidence Of": [
+                "Cosmic Background Radiation",
+                "Hubble'S Law"
+            ],
+            "Depends On": [
+                "Cosmological Principle",
+                "Perfect Fluid",
+                "Universality Of Physical Laws"
+            ],
+            "Tested By": [
+                "Cosmic Background Radiation",
+                "Fine-Structure Constant Observations",
+                "General Relativity Tests"
+            ],
+            "Controls Evolution Of": [
+                "Universe"
+            ],
+            "Has Component": [
+                "Dark Energy",
+                "Dark Matter",
+                "Luminous Matter"
+            ],
+            "Has Feature": [
+                "Observable Universe"
+            ],
+            "Described By": [
+                "Einstein'S Cosmological Constant",
+                "Friedmann–Lemaître–Robertson–Walker Metric",
+                "Lambda-Cdm Model",
+                "Modified Gravity Schemes",
+                "Quintessence"
+            ],
+            "Indicates State": [
+                "Cooling",
+                "Expanding"
+            ],
+            "Preceded By": [
+                "Big Crunch",
+                "Inflationary Epoch",
+                "Planck Epoch",
+                "Primordial Gravitational Waves",
+                "Symmetry-Breaking Phase Transitions"
+            ],
+            "Successor To": [
+                "Big Bang Nucleosynthesis",
+                "Big Freeze",
+                "Big Rip",
+                "Grand Unification Epoch",
+                "Recombination"
+            ],
+            "Coined By": [
+                "Fred Hoyle"
+            ],
+            "Identified As": [
+                "Primordial Singularity"
+            ],
+            "Alternative Model": [
+                "Steady-State"
+            ],
+            "Supported By": [
+                "Cmb Fluctuations",
+                "Cosmic Background Explorer (Cobe)",
+                "Cosmic Background Radiation",
+                "Galaxy Distributions",
+                "Gamow",
+                "Planck Space Probe",
+                "Quasar",
+                "Radio Source Counts",
+                "Star Formation",
+                "Wmap"
+            ],
+            "Predicted By": [
+                "Alpher",
+                "Friedmann",
+                "Gamow",
+                "Herman",
+                "Lemaître",
+                "Ralph Alpher",
+                "Robert Herman"
+            ],
+            "Opposed To": [
+                "Arthur Eddington",
+                "Fred Hoyle"
+            ],
+            "Discovered By": [
+                "Fred Hoyle"
+            ],
+            "Initial Condition": [
+                "Mathematical Singularities"
+            ],
+            "Resolved By Theory": [
+                "Inflation"
+            ],
+            "Measured By": [
+                "Cosmic Background Explorer (Cobe)",
+                "Hubble Space Telescope",
+                "Wmap"
+            ],
+            "Creates": [
+                "Light Elements"
+            ],
+            "Contains": [
+                "Cosmic Background Radiation",
+                "Expansion Of The Universe",
+                "Galaxy Formation And Evolution",
+                "Large-Scale Cosmic Structures"
+            ],
+            "Appeals To": [
+                "Baryogenesis",
+                "Dark Energy",
+                "Dark Matter",
+                "Inflation"
+            ],
+            "Developed By": [
+                "Friedmann",
+                "Lemaître",
+                "Robertson",
+                "Walker"
+            ],
+            "Core Of": [
+                "Hubble'S Law"
+            ],
+            "Confirmed By": [
+                "Cosmic Background Radiation"
+            ],
+            "Predicts": [
+                "Deuterium",
+                "Helium",
+                "Helium-3",
+                "Lithium-7",
+                "Quantum Fluctuations"
+            ],
+            "Preceded Formation Of": [
+                "Galaxies",
+                "Quasar"
+            ],
+            "Preceded Formation Of Larger Structures": [
+                "Galaxy Clusters",
+                "Superclusters"
+            ],
+            "Simulated By": [
+                "Classical General Relativity",
+                "Formation Of Structure In The Universe"
+            ],
+            "Occurred Before": [
+                "Bbn"
+            ],
+            "Supports": [
+                "Lambda-Cdm (Λcdm) Model"
+            ],
+            "Experienced Issue": [
+                "Flatness Problem",
+                "Horizon Problem",
+                "Magnetic Monopole Problem"
+            ],
+            "Resolved By": [
+                "Inflation Theory"
+            ],
+            "Investigated By": [
+                "Astronomers"
+            ],
+            "Hypothesized To Cause": [
+                "Baryon Asymmetry"
+            ],
+            "Has Mystery": [
+                "Dark Energy"
+            ],
+            "Misunderstood As": [
+                "Big Bang Cosmology"
+            ],
+            "Called By": [
+                "Gamow",
+                "Lemaître"
+            ],
+            "Preceded By Hypotheses": [
+                "Brane Cosmology Models",
+                "Cyclic Model",
+                "Ekpyrotic Model",
+                "Emergent Universe Models",
+                "Hartle–Hawking No-Boundary Condition",
+                "Inflation Theory",
+                "Pre-Big Bang Model",
+                "Quantum Fluctuations"
+            ],
+            "Has Bearing On": [
+                "Philosophy",
+                "Religion"
+            ],
+            "Assumes": [
+                "Creator"
+            ],
+            "Makes Superfluous": [
+                "Creator"
+            ]
+        },
+        {
+            "Makes Superfluous": "Makes Superfluous",
+            "Theorized By": "Proposed By",
+            "Succeeded By": "Successor To",
+            "Preceded By": "Preceded By",
+            "Proposed By": "Proposed By",
+            "Developed By": "Developed By",
+            "Depends On": "Depends On",
+            "Has Component": "Has Component",
+            "Controls Evolution Of": "Controls Evolution Of",
+            "Resolved By Theory": "Resolved By Theory",
+            "Alternative Model": "Alternative Model",
+            "Explains": "Explains",
+            "Occurred Before": "Occurred Before",
+            "Called By": "Called By",
+            "Cornerstone Of": "Core Of",
+            "Describes": "Explains",
+            "Studied By Instruments": "Measured By",
+            "Supported By Simulations Of": "Simulated By",
+            "Misunderstood As": "Misunderstood As",
+            "Has Mystery": "Has Mystery",
+            "Leads To": "Resulted In",
+            "Resolved By": "Resolved By",
+            "Has Feature": "Has Feature",
+            "Opposed By": "Opposed To",
+            "Supported By Evidence": "Supported By",
+            "Confirmed By": "Confirmed By",
+            "Explained By": "Described By",
+            "Implies": "Assumes",
+            "Supported By": "Supported By",
+            "Hypothesized To Cause": "Hypothesized To Cause",
+            "Modeled By": "Simulated By",
+            "Predicts": "Predicts",
+            "Described By": "Described By",
+            "Has Bearing On": "Has Bearing On",
+            "Explains Abundance Of": "Explains",
+            "Described As": "Identified As",
+            "Preceded Formation Of Larger Structures": "Preceded Formation Of Larger Structures",
+            "Initial Condition": "Initial Condition",
+            "Concept Introduced By": "Proposed By",
+            "Empirical Evidence Includes": "Has Evidence Of",
+            "Preceded Formation Of": "Preceded Formation Of",
+            "Includes Evidence": "Contains",
+            "Results In": "Resulted In",
+            "Predicted By": "Predicted By",
+            "Discovered By": "Discovered By",
+            "Preceded By Hypotheses": "Preceded By Hypotheses",
+            "Predicts Ratios For": "Predicts",
+            "Related To": "Associated With",
+            "Tested By": "Tested By",
+            "Indicates State": "Indicates State",
+            "Coined By": "Coined By",
+            "Followed By": "Successor To",
+            "Supports Model": "Supports",
+            "Appeals To": "Appeals To",
+            "Produces": "Creates",
+            "Associated With": "Associated With",
+            "Under Investigation By": "Investigated By",
+            "Led To Formation Of": "Resulted In",
+            "Has Problem": "Experienced Issue",
+            "Supported By Observations Of": "Supported By"
+        },
+        {
+            "Large Hadron Collider": "Large Hadron Collider",
+            "Type Ia supernovae": "Type I Supernova",
+            "atoms": "Atoms",
+            "inflation theory": "Inflation Theory",
+            "Inflationary Epoch": "Inflationary Epoch",
+            "Cosmic Inflation": "Inflation Theory",
+            "evolution of the universe": "Evolution Of The Universe",
+            "star formation": "Star Formation",
+            "helium-4": "Helium",
+            "Cosmic Background Radiation": "Cosmic Background Radiation",
+            "protons": "Protons",
+            "astrophysicists": "Astronomers",
+            "classical general relativity": "Classical General Relativity",
+            "quasars": "Quasar",
+            "CMB discovery": "Cosmic Background Radiation",
+            "Inflation Theory": "Inflation Theory",
+            "galaxies": "Galaxies",
+            "Emergent Universe models": "Emergent Universe Models",
+            "baryons": "Baryons",
+            "Philosophy": "Philosophy",
+            "Planck epoch": "Planck Epoch",
+            "Big Freeze": "Big Freeze",
+            "steady-state": "Steady-State",
+            "flatness problem": "Flatness Problem",
+            "Einstein's Cosmological Constant": "Einstein'S Cosmological Constant",
+            "CMB": "Cosmic Background Radiation",
+            "Lemaître": "Lemaître",
+            "Cosmological principle": "Cosmological Principle",
+            "Symmetry-breaking phase transitions": "Symmetry-Breaking Phase Transitions",
+            "radio source counts": "Radio Source Counts",
+            "Friedmann": "Friedmann",
+            "Brane cosmology models": "Brane Cosmology Models",
+            "light elements": "Light Elements",
+            "baryogenesis": "Baryogenesis",
+            "helium nuclei": "Helium",
+            "neutrinos": "Neutrinos",
+            "Alexander Friedmann": "Alexander Friedmann",
+            "Friedmann–Lemaître–Robertson–Walker metric": "Friedmann–Lemaître–Robertson–Walker Metric",
+            "large-scale cosmic structures": "Large-Scale Cosmic Structures",
+            "Modified Gravity Schemes": "Modified Gravity Schemes",
+            "Alpher": "Alpher",
+            "WMAP": "Wmap",
+            "Hubble's law": "Hubble'S Law",
+            "hydrogen nuclei": "Protons",
+            "primordial gravitational waves": "Primordial Gravitational Waves",
+            "photons": "Photons",
+            "Quintessence": "Quintessence",
+            "dark matter": "Dark Matter",
+            "cosmic inflation": "Inflation Theory",
+            "Roger Penrose": "Roger Penrose",
+            "quantum fluctuations": "Quantum Fluctuations",
+            "Expanding": "Expanding",
+            "galaxy distributions": "Galaxy Distributions",
+            "mathematical singularities": "Mathematical Singularities",
+            "expansion of the universe": "Expansion Of The Universe",
+            "formation of structure in the universe": "Formation Of Structure In The Universe",
+            "Cosmic Background Explorer (COBE)": "Cosmic Background Explorer (Cobe)",
+            "Religion": "Religion",
+            "Photon-baryon plasma sea": "Photon-Baryon Plasma Sea",
+            "subatomic particles": "Subatomic Particles",
+            "helium-3": "Helium-3",
+            "cosmic microwave background": "Cosmic Background Radiation",
+            "electrons": "Highly Energetic Electrons",
+            "Luminous Matter": "Luminous Matter",
+            "CMB temperature observations": "Cosmic Background Radiation",
+            "Georges Lemaître": "Lemaître",
+            "cosmic microwave background radiation": "Cosmic Background Radiation",
+            "dark energy": "Dark Energy",
+            "deuterium": "Deuterium",
+            "George F. R. Ellis": "George F. R. Ellis",
+            "Measurements of the CMB": "Cosmic Background Radiation",
+            "BBN": "Bbn",
+            "quarks": "Quarks",
+            "recombination": "Recombination",
+            "baryon asymmetry": "Baryon Asymmetry",
+            "Robert Herman": "Robert Herman",
+            "Ralph Alpher": "Ralph Alpher",
+            "Universality of physical laws": "Universality Of Physical Laws",
+            "Standard Model of particle physics": "Standard Model Of Particle Physics",
+            "Neutrinos": "Neutrinos",
+            "Fred Hoyle": "Fred Hoyle",
+            "ekpyrotic model": "Ekpyrotic Model",
+            "Big Rip": "Big Rip",
+            "gluons": "Gluons",
+            "Big Bang nucleosynthesis": "Big Bang Nucleosynthesis",
+            "General relativity tests": "General Relativity Tests",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "quark–gluon plasma": "Quark–Gluon Plasma",
+            "Quantum Thermal Fluctuations": "Quantum Fluctuations",
+            "abundance of light elements": "Abundance Of Light Elements",
+            "Perfect fluid": "Perfect Fluid",
+            "Lambda-CDM (ΛCDM) model": "Lambda-Cdm (Λcdm) Model",
+            "Hartle–Hawking no-boundary condition": "Hartle–Hawking No-Boundary Condition",
+            "Arthur Eddington": "Arthur Eddington",
+            "neutrons": "Neutrons",
+            "Herman": "Herman",
+            "Robertson": "Robertson",
+            "cosmologists": "Astronomers",
+            "Creator": "Creator",
+            "large-scale structure": "Large-Scale Cosmic Structures",
+            "Universe": "Universe",
+            "inflation": "Inflation",
+            "early stars": "Early Stars",
+            "electroweak epoch": "Electroweak Epoch",
+            "Walker": "Walker",
+            "observable universe": "Observable Universe",
+            "Dark Energy": "Dark Energy",
+            "Friedmann equations": "Friedmann",
+            "Fine-structure constant observations": "Fine-Structure Constant Observations",
+            "lambda-CDM model": "Lambda-Cdm Model",
+            "COBE": "Cosmic Background Explorer (Cobe)",
+            "horizon problem": "Horizon Problem",
+            "galaxy formation and evolution": "Galaxy Formation And Evolution",
+            "quasar distributions": "Quasar",
+            "Recombination": "Recombination",
+            "particle horizons": "Observable Universe",
+            "Big Crunch": "Big Crunch",
+            "Gamow": "Gamow",
+            "universe": "Universe",
+            "Dark Matter": "Dark Matter",
+            "Wilkinson Microwave Anisotropy Probe": "Wmap",
+            "Cooling": "Cooling",
+            "galaxy clusters": "Galaxy Clusters",
+            "Stephen Hawking": "Stephen Hawking",
+            "magnetic monopole problem": "Magnetic Monopole Problem",
+            "Planck space probe": "Planck Space Probe",
+            "primordial singularity": "Primordial Singularity",
+            "Eternal inflation": "Inflation Theory",
+            "superclusters": "Superclusters",
+            "Cosmic Microwave Background": "Cosmic Background Radiation",
+            "quasar APM 08279+5255": "Quasar Apm 08279+5255",
+            "pre-Big Bang model": "Pre-Big Bang Model",
+            "George Gamow": "Gamow",
+            "CMB fluctuations": "Cmb Fluctuations",
+            "origin of the universe": "Big Bang Cosmology",
+            "multiverse": "Multiverse",
+            "cyclic model": "Cyclic Model",
+            "primordial gas clouds": "Primordial Gas Clouds",
+            "grand unification epoch": "Grand Unification Epoch",
+            "lithium-7": "Lithium-7",
+            "Sakharov conditions": "Sakharov Conditions"
+        }
+    ]
+}

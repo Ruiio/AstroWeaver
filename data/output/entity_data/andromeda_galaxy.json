@@ -1,0 +1,441 @@
+{
+    "entity_name": "Andromeda Galaxy",
+    "infobox_attributes": {
+        "Andromeda Galaxy": "A visible light image of the Andromeda Galaxy and two satellite galaxies. Messier 32 is above the galactic nucleus and Messier 110 is at the bottom.",
+        "Pronunciation": "/ æ n ˈ d r ɒ m ɪ d ə /",
+        "Constellation": "Andromeda",
+        "Right ascension": "00 42 44.3",
+        "Declination": "+41° 16′ 9″",
+        "Redshift": "z = −0.001004 (minus sign indicates blueshift)",
+        "Heliocentric radial velocity": "−301 ± 1 km/s",
+        "Distance": "765 kpc (2.50 Mly)",
+        "Apparent magnitude (V)": "3.44",
+        "Absolute magnitude (V)": "−21.5",
+        "Type": "SA (s) b",
+        "Mass": "(1.5 ± 0.2) × 10^12 M ☉",
+        "Number of stars": "~1 trillion (10)",
+        "Size": "46.56 kpc (152, 000 ly) , (diameter; D 25 isophote)",
+        "Apparent size (V)": "3.167° × 1°",
+        "Other designations": "M 31, NGC 224, UGC 454, PGC 2557, 2C 56 (Core) , CGCG 535-17, MCG +07-02-016, IRAS 00400+4059, 2MASX J00424433+4116074, GC 116, h 50, Bode 3, Flamsteed 58, Hevelius 32, Ha 3.3, IRC +40013"
+    },
+    "consolidated_relationships": [
+        {
+            "Is Nearest Major Galaxy To": [
+                "Milky Way Galaxy"
+            ],
+            "Catalogued As": [
+                "33 Andromedae",
+                "Andromeda Galaxy"
+            ],
+            "Located In Constellation": [
+                "Andromeda"
+            ],
+            "Member Of": [
+                "Local Neighbourhood Of The Sun"
+            ],
+            "Possible Collision With": [
+                "Milky Way Galaxy"
+            ],
+            "Visible As": [
+                "Messier Catalogue"
+            ],
+            "Visible From": [
+                "Naked Eye"
+            ],
+            "Described By": [
+                "Abd Al-Rahman Al-Sufi"
+            ],
+            "Cataloged In Messier Catalog As": [
+                "Andromeda Galaxy"
+            ],
+            "Observed By": [
+                "Chandra X-Ray Observatory",
+                "Heber Curtis",
+                "Hubble Space Telescope",
+                "Isaac Roberts",
+                "Nasa'S Swift Gamma-Ray Burst Mission",
+                "Simon Marius",
+                "Sir William Huggins",
+                "V. M. Slipher",
+                "Very Large Array",
+                "Very Long Baseline Array",
+                "William Herschel",
+                "William Parsons, 3Rd Earl Of Rosse",
+                "Xmm-Newton Orbiting Observatory"
+            ],
+            "Supernova Observed": [
+                "S Andromedae"
+            ],
+            "Photographed By": [
+                "Hubble Space Telescope",
+                "Isaac Roberts"
+            ],
+            "Radial Velocity Measured By": [
+                "V. M. Slipher"
+            ],
+            "Proposed As Galaxy By": [
+                "Immanuel Kant"
+            ],
+            "Distance Estimated By": [
+                "Cepheid Variable Method",
+                "Eclipsing Binary Star",
+                "Heber Curtis",
+                "Infrared Surface Brightness Fluctuations",
+                "Trgb Method"
+            ],
+            "Debated Nature By": [
+                "Harlow Shapley",
+                "Heber Curtis"
+            ],
+            "Distance Estimated Using Stars By": [
+                "Ernst Öpik"
+            ],
+            "Distance Confirmed By": [
+                "Edwin Hubble"
+            ],
+            "Stars Resolved By": [
+                "Walter Baade"
+            ],
+            "Radio Emissions Detected By": [
+                "Cyril Hazard",
+                "Robert Hanbury Brown"
+            ],
+            "Radio Mapped By": [
+                "John Baldwin"
+            ],
+            "Nucleus Rotation Discovered By": [
+                "Andre Lallemand",
+                "M. Duschene",
+                "Merle Walker"
+            ],
+            "Has Planet": [
+                "Planet In 2009"
+            ],
+            "Has Magnetic Field": [
+                "Ordered Magnetic Fields"
+            ],
+            "Has Emission Nebula": [
+                "Sdso-1"
+            ],
+            "Distance Calibrated By": [
+                "Hipparcos"
+            ],
+            "Contains": [
+                "Cepheid Variable Stars",
+                "Eclipsing Binary Star",
+                "Red Clump Giants",
+                "Standard Red Giants"
+            ],
+            "Experienced Major Merger With": [
+                "Two Galaxies"
+            ],
+            "Encountered": [
+                "Triangulum Galaxy (M33)"
+            ],
+            "Has Component": [
+                "Bulge Profile",
+                "Extended Thick Disk",
+                "Giant Stream",
+                "Large Bar",
+                "Overall Halo Density Profile",
+                "Static 10 Kpc Ring",
+                "Young Age Thin Disk"
+            ],
+            "Has Halo Mass": [
+                "1.5×10^12 M☉"
+            ],
+            "Has Stellar Mass": [
+                "10–15×10^10 M☉"
+            ],
+            "Has Interstellar Medium": [
+                "Dust",
+                "Hydrogen"
+            ],
+            "Surrounded By": [
+                "Massive Halo Of Hot Gas"
+            ],
+            "Located In": [
+                "Green Valley"
+            ],
+            "Ejects Elements Via": [
+                "Supernovae"
+            ],
+            "Has Higher Luminosity Than": [
+                "Milky Way Galaxy"
+            ],
+            "Compared To": [
+                "Sombrero Galaxy"
+            ],
+            "Identified As": [
+                "Barred Spiral Galaxy"
+            ],
+            "Has Bar": [
+                "Barred Spiral Galaxy"
+            ],
+            "May Have Satellite": [
+                "M110",
+                "M32",
+                "Triangulum Galaxy (M33)"
+            ],
+            "Has Halo": [
+                "Galactic Halo"
+            ],
+            "Has Spiral Arms": [
+                "Two Spiral Arms"
+            ],
+            "Has Interaction With": [
+                "M110",
+                "M32",
+                "Milky Way Galaxy"
+            ],
+            "Has Rings": [
+                "Ring Of Fire"
+            ],
+            "Similar To": [
+                "Milky Way Galaxy"
+            ],
+            "Contains Star Cluster": [
+                "Extended Clusters",
+                "P3"
+            ],
+            "Contains Supermassive Black Hole": [
+                "Andromeda Galaxy"
+            ],
+            "Has Core": [
+                "P1",
+                "P2"
+            ],
+            "Detected X-Rays By": [
+                "Nustar X-Ray Telescope",
+                "Swift Bat All-Sky Survey",
+                "Xmm-Newton Orbiting Observatory"
+            ],
+            "X-Ray Source": [
+                "3Xmm J004232.1+411314"
+            ],
+            "Has Binary Systems": [
+                "3Xmm J004232.1+411314"
+            ],
+            "Contains Microquasar": [
+                "Radio Burst Emanating From A Smaller Black Hole"
+            ],
+            "Has Globular Cluster": [
+                "037-B327",
+                "B023-G078",
+                "G76",
+                "Mayall Ii"
+            ],
+            "Hosts Microlensing Event": [
+                "Pa-99-N2"
+            ],
+            "Hosts": [
+                "Extragalactic Planet"
+            ],
+            "Has Dwarf Galaxy Population": [
+                "Over 20 Known Dwarf Galaxies"
+            ],
+            "Has Satellite Galaxies In Plane": [
+                "Nine Of The Satellite Galaxies"
+            ],
+            "Performs Close Approach To": [
+                "Milky Way Galaxy"
+            ],
+            "Blueshifted Galaxy": [
+                "Milky Way Galaxy"
+            ],
+            "Potential Merger Outcome": [
+                "Giant Elliptical Galaxy",
+                "Large Disc Galaxy"
+            ],
+            "Potential Future Member": [
+                "Solar System"
+            ],
+            "Visible With Telescope": [
+                "Cassiopeia",
+                "Pegasus"
+            ],
+            "Contains Star Cloud": [
+                "Ngc 206"
+            ],
+            "Catalogued In": [
+                "Messier Catalogue",
+                "New General Catalogue"
+            ]
+        },
+        {
+            "Distance Estimated Using Stars By": "Distance Estimated Using Stars By",
+            "Located In": "Located In",
+            "Photographed By": "Photographed By",
+            "Has Evolutionary Path Similar To": "Similar To",
+            "Contains Star Cloud": "Contains Star Cloud",
+            "Radio Emissions Detected By": "Radio Emissions Detected By",
+            "Distance Calibrated By": "Distance Calibrated By",
+            "Observed By": "Observed By",
+            "Has Halo Mass": "Has Halo Mass",
+            "Ejects Elements Via": "Ejects Elements Via",
+            "Has Star Cluster": "Contains Star Cluster",
+            "Expected To Collide With": "Possible Collision With",
+            "Imaged By": "Photographed By",
+            "Classified As": "Identified As",
+            "Contains X-ray Source": "X-Ray Source",
+            "Approaching": "Performs Close Approach To",
+            "Visible With Aid Of": "Visible With Telescope",
+            "Distance Estimated By": "Distance Estimated By",
+            "Has Component": "Has Component",
+            "Experienced Major Merger With": "Experienced Major Merger With",
+            "Nucleus Rotation Discovered By": "Nucleus Rotation Discovered By",
+            "Located In Constellation": "Located In Constellation",
+            "Contains Nucleus": "Has Core",
+            "Detected X-rays By": "Detected X-Rays By",
+            "Cataloged In": "Catalogued In",
+            "Visible To": "Visible From",
+            "Is Nearest Major Galaxy To": "Is Nearest Major Galaxy To",
+            "Has Dwarf Galaxy Population": "Has Dwarf Galaxy Population",
+            "Has Satellite Galaxy": "May Have Satellite",
+            "Has Higher Luminosity Than": "Has Higher Luminosity Than",
+            "Has Supermassive Black Hole": "Contains Supermassive Black Hole",
+            "Member Of": "Member Of",
+            "Has Emission Nebula": "Has Emission Nebula",
+            "Visible As": "Visible As",
+            "Has Bar": "Has Bar",
+            "Predicted To Collide With": "Possible Collision With",
+            "Contains Binary System": "Has Binary Systems",
+            "Has Halo": "Has Halo",
+            "Has Satellite Galaxies In Plane": "Has Satellite Galaxies In Plane",
+            "Described By": "Described By",
+            "Radial Velocity Measured By": "Radial Velocity Measured By",
+            "Has Magnetic Field": "Has Magnetic Field",
+            "Had Close Passage With": "Encountered",
+            "Cataloged As": "Catalogued As",
+            "Surrounded By": "Surrounded By",
+            "Has Interstellar Medium": "Has Interstellar Medium",
+            "Has Stellar Mass": "Has Stellar Mass",
+            "Collides With": "Possible Collision With",
+            "Observed Nova By": "Observed By",
+            "Debated Nature By": "Debated Nature By",
+            "Contains Microquasar": "Contains Microquasar",
+            "Hosts Microlensing Event": "Hosts Microlensing Event",
+            "May Have Satellite": "May Have Satellite",
+            "Has Globular Cluster": "Has Globular Cluster",
+            "Blueshifted Galaxy": "Blueshifted Galaxy",
+            "Hosts Planet": "Has Planet",
+            "Distance Confirmed By": "Distance Confirmed By",
+            "Contains": "Contains",
+            "Has Spiral Arms": "Has Spiral Arms",
+            "Interacts With": "Has Interaction With",
+            "Possible Host Of": "Hosts",
+            "Potential Future Member": "Potential Future Member",
+            "Cataloged In Messier Catalog As": "Cataloged In Messier Catalog As",
+            "Stars Resolved By": "Stars Resolved By",
+            "Contains Star Cluster": "Contains Star Cluster",
+            "Potential Merger Outcome": "Potential Merger Outcome",
+            "Supernova Observed": "Supernova Observed",
+            "Has Ring Structure": "Has Rings",
+            "Comparable To": "Compared To",
+            "Proposed As Galaxy By": "Proposed As Galaxy By",
+            "Radio Mapped By": "Radio Mapped By"
+        },
+        {
+            "Cyril Hazard": "Cyril Hazard",
+            "Simon Marius": "Simon Marius",
+            "Hipparcos satellite": "Hipparcos",
+            "barred spiral galaxy": "Barred Spiral Galaxy",
+            "ring of fire": "Ring Of Fire",
+            "large bar": "Large Bar",
+            "Swift BAT all-sky survey": "Swift Bat All-Sky Survey",
+            "Local Group": "Local Neighbourhood Of The Sun",
+            "Chandra X-Ray Observatory": "Chandra X-Ray Observatory",
+            "Green Valley": "Green Valley",
+            "XMM-Newton orbiting observatory": "Xmm-Newton Orbiting Observatory",
+            "Edwin Hubble": "Edwin Hubble",
+            "William Parsons, 3rd Earl of Rosse": "William Parsons, 3Rd Earl Of Rosse",
+            "NGC 206": "Ngc 206",
+            "young age thin disk": "Young Age Thin Disk",
+            "standard red giants": "Standard Red Giants",
+            "037-B327": "037-B327",
+            "M110": "M110",
+            "Solar System": "Solar System",
+            "TRGB Method": "Trgb Method",
+            "John Baldwin": "John Baldwin",
+            "New General Catalogue": "New General Catalogue",
+            "Andre Lallemand": "Andre Lallemand",
+            "two galaxies": "Two Galaxies",
+            "P2": "P2",
+            "Very Large Array": "Very Large Array",
+            "Sombrero Galaxy": "Sombrero Galaxy",
+            "Eclipsing Binary Star": "Eclipsing Binary Star",
+            "William Huggins": "Sir William Huggins",
+            "Heber Curtis": "Heber Curtis",
+            "bulge profile": "Bulge Profile",
+            "extended thick disk": "Extended Thick Disk",
+            "Large Disc Galaxy": "Large Disc Galaxy",
+            "red clump stars": "Red Clump Giants",
+            "Mayall II": "Mayall Ii",
+            "Ernst Öpik": "Ernst Öpik",
+            "M. Duschene": "M. Duschene",
+            "M31*": "Andromeda Galaxy",
+            "extended clusters": "Extended Clusters",
+            "nine of the satellite galaxies": "Nine Of The Satellite Galaxies",
+            "Cassiopeia": "Cassiopeia",
+            "Triangulum Galaxy (M33)": "Triangulum Galaxy (M33)",
+            "SA(s)b galaxy": "Barred Spiral Galaxy",
+            "Abd al-Rahman al-Sufi": "Abd Al-Rahman Al-Sufi",
+            "overall halo density profile": "Overall Halo Density Profile",
+            "S Andromedae": "S Andromedae",
+            "William Herschel": "William Herschel",
+            "supernovae": "Supernovae",
+            "NASA's Swift Gamma-Ray Burst Mission": "Nasa'S Swift Gamma-Ray Burst Mission",
+            "PA-99-N2": "Pa-99-N2",
+            "Messier objects": "Messier Catalogue",
+            "naked eye": "Naked Eye",
+            "ordered magnetic fields": "Ordered Magnetic Fields",
+            "Robert Hanbury Brown": "Robert Hanbury Brown",
+            "European Space Agency's XMM-Newton probe": "Xmm-Newton Orbiting Observatory",
+            "Andromeda": "Andromeda",
+            "M31": "Andromeda Galaxy",
+            "planet in 2009": "Planet In 2009",
+            "two spiral arms": "Two Spiral Arms",
+            "1.5×10^12 M☉": "1.5×10^12 M☉",
+            "Very Long Baseline Array": "Very Long Baseline Array",
+            "Walter Baade": "Walter Baade",
+            "green valley": "Green Valley",
+            "Merle Walker": "Merle Walker",
+            "Milky Way": "Milky Way Galaxy",
+            "Messier 31": "Andromeda Galaxy",
+            "P1": "P1",
+            "galactic halo": "Galactic Halo",
+            "10–15×10^10 M☉": "10–15×10^10 M☉",
+            "molecular hydrogen": "Hydrogen",
+            "NGC 224": "Andromeda Galaxy",
+            "radio burst emanating from a smaller black hole": "Radio Burst Emanating From A Smaller Black Hole",
+            "Immanuel Kant": "Immanuel Kant",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "Harlow Shapley": "Harlow Shapley",
+            "Vesto Slipher": "V. M. Slipher",
+            "3XMM J004232.1+411314": "3Xmm J004232.1+411314",
+            "NuSTAR space mission": "Nustar X-Ray Telescope",
+            "over 20 known dwarf galaxies": "Over 20 Known Dwarf Galaxies",
+            "Giant Elliptical Galaxy": "Giant Elliptical Galaxy",
+            "massive halo of hot gas": "Massive Halo Of Hot Gas",
+            "Giant Stream": "Giant Stream",
+            "M33": "Triangulum Galaxy (M33)",
+            "SDSO-1": "Sdso-1",
+            "Cepheid Variable Method": "Cepheid Variable Method",
+            "Triangulum Galaxy": "Triangulum Galaxy (M33)",
+            "P3": "P3",
+            "M32": "M32",
+            "Messier Catalogue": "Messier Catalogue",
+            "33 Andromedae": "33 Andromedae",
+            "Cepheid variable star": "Cepheid Variable Stars",
+            "static 10 kpc ring": "Static 10 Kpc Ring",
+            "neutral hydrogen": "Hydrogen",
+            "Infrared Surface Brightness Fluctuations": "Infrared Surface Brightness Fluctuations",
+            "Pegasus": "Pegasus",
+            "G76": "G76",
+            "Extragalactic Planet": "Extragalactic Planet",
+            "dust": "Dust",
+            "B023-G078": "B023-G078",
+            "Isaac Roberts": "Isaac Roberts"
+        }
+    ]
+}

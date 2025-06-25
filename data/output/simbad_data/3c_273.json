@@ -1,0 +1,72 @@
+{
+    "name": "3C 273",
+    "type": "BLL",
+    "ID": "@1940765",
+    "ICRS": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "12 29 06.6998257176  +02 03 08.597629980",
+        "notes": "(Opt ) A [0.0181 0.0129 90]",
+        "ref": "2020yCat.1350....0G"
+    },
+    "FK4": {
+        "ep": "B1950",
+        "eq": "1950",
+        "value": "12 26 33.2522453999  +02 19 43.42294301"
+    },
+    "Gal": {
+        "ep": "J2000",
+        "eq": "2000",
+        "value": "289.9508960628473  +64.359974904615"
+    },
+    "hierarchy counts": {
+        "parents": 1,
+        "children": 0,
+        "siblings": 0
+    },
+    "Proper motions(mas/yr)": {
+        "value": "-0.0230.098",
+        "notes": "[0.0270.01890]A",
+        "ref": "2020yCat.1350....0G"
+    },
+    "Parallax(mas)": {
+        "value": "0.0108",
+        "notes": "[0.0408] A",
+        "ref": " 2018yCat.1345....0G"
+    },
+    "Radial Velocity": {
+        "value": "43555",
+        "notes": "[150] C",
+        "ref": " 2022ApJS..261....2K"
+    },
+    "Redshift": {
+        "value": "0.15756751",
+        "notes": "[0.0005] C",
+        "ref": " 2022ApJS..261....2K"
+    },
+    "cz": {
+        "value": "47237.5511",
+        "notes": "[150] C",
+        "ref": " 2022ApJS..261....2K"
+    },
+    "Spectral type": {
+        "value": "~",
+        "ref": "~"
+    },
+    "Morphological type": {
+        "value": "E3",
+        "notes": "D",
+        "ref": "2025ApJ...978..115W"
+    },
+    "Angular size": {
+        "value": "~",
+        "notes": "   ~   ~ (~)  ~",
+        "ref": "~"
+    },
+    "identifiers": [
+        "SRGA J122906.1+020316",
+        "FL8Y J1229.0+0202",
+        "NVSS J122906+020308"
+    ],
+    "measures": "distance:1herschel:5ISO:9IUE:282PLX:3PM:4velocities:16XMM:23"
+}

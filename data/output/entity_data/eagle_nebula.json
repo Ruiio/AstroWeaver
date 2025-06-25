@@ -1,0 +1,93 @@
+{
+    "entity_name": "Eagle Nebula",
+    "infobox_attributes": {
+        "Emission nebula": "",
+        "Right ascension": "18 18 45.1 ICRS",
+        "Declination": "−13° 47′ 13″ ICRS",
+        "Distance": "5, 700±400 ly (1, 740±130 pc)",
+        "Apparent magnitude (V)": "6.4",
+        "Apparent dimensions (V)": "70 x 50 arcmins",
+        "Constellation": "Serpens",
+        "Radius": "70×55 (cluster 15) ly",
+        "Absolute magnitude (V)": "-8.21",
+        "Notable features": "1–2 million years old",
+        "Designations": "Messier 16, NGC 6611, Sharpless 49, RCW 165, Cr 375, Gum 83, Star Queen Nebula"
+    },
+    "consolidated_relationships": [
+        {
+            "Catalogued As": [
+                "Ic 4703",
+                "Ngc 6611"
+            ],
+            "Also Known As": [
+                "Star Queen Nebula"
+            ],
+            "Located In Constellation": [
+                "Serpens"
+            ],
+            "Discovered By": [
+                "Jean-Philippe De Cheseaux"
+            ],
+            "Contains": [
+                "Bok Globules",
+                "Eggs",
+                "Pillars Of Creation"
+            ],
+            "Located In": [
+                "Sagittarius Arm",
+                "Soul Nebula"
+            ],
+            "Contains Star": [
+                "Hd 168076"
+            ],
+            "Associated With": [
+                "Pillars"
+            ],
+            "Named By": [
+                "Robert Burnham Jr."
+            ],
+            "Photographed By": [
+                "Chandra X-Ray Observatory",
+                "Hubble Space Telescope",
+                "Spitzer Space Telescope"
+            ],
+            "Challenged By": [
+                "Past Supernova"
+            ]
+        },
+        {
+            "Catalogued As": "Catalogued As",
+            "Discovered By": "Discovered By",
+            "Located In": "Located In",
+            "Also Known As": "Also Known As",
+            "Located In Constellation": "Located In Constellation",
+            "Threatened By": "Challenged By",
+            "Contains Star": "Contains Star",
+            "Imaged By": "Photographed By",
+            "Associated With Cluster": "Associated With",
+            "Named By": "Named By",
+            "Contains": "Contains",
+            "Is Catalogued As": "Catalogued As"
+        },
+        {
+            "NGC 6611": "Ngc 6611",
+            "Jean-Philippe de Cheseaux": "Jean-Philippe De Cheseaux",
+            "HD 168076": "Hd 168076",
+            "past supernova": "Past Supernova",
+            "Messier 16": "Ngc 6611",
+            "Soul Nebula": "Soul Nebula",
+            "IC 4703": "Ic 4703",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "Pillars of Creation": "Pillars Of Creation",
+            "Spitzer Space Telescope": "Spitzer Space Telescope",
+            "Pillars": "Pillars",
+            "EGGs": "Eggs",
+            "Chandra observatory": "Chandra X-Ray Observatory",
+            "Serpens": "Serpens",
+            "Sagittarius Arm": "Sagittarius Arm",
+            "Robert Burnham Jr.": "Robert Burnham Jr.",
+            "Bok globules": "Bok Globules",
+            "Star Queen Nebula": "Star Queen Nebula"
+        }
+    ]
+}

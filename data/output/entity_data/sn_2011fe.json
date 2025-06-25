@@ -1,0 +1,74 @@
+{
+    "entity_name": "SN 2011fe",
+    "infobox_attributes": {
+        "Event type": "Supernova",
+        "Date": "24 August 2011",
+        "Constellation": "Ursa Major, Big Dipper",
+        "Right ascension": "14 03 05.8",
+        "Declination": "+54° 16′ 25″",
+        "Epoch": "J2000",
+        "Distance": "21 Mly",
+        "Redshift": "0.001208 ±5e-06",
+        "Host": "Pinwheel Galaxy (M101)",
+        "Peak apparent magnitude": "9.9",
+        "Other designations": "SN 2011fe"
+    },
+    "consolidated_relationships": [
+        {
+            "Discovered By": [
+                "Palomar Transient Factory"
+            ],
+            "Located In Constellation": [
+                "Canary Islands",
+                "Messier 101"
+            ],
+            "Type Of": [
+                "Type I Supernova"
+            ],
+            "Observed By": [
+                "Evla Radio Telescope",
+                "Hubble Space Telescope",
+                "Keck Observatory",
+                "Lick Observatory",
+                "Palomar Transient Factory"
+            ],
+            "Used For": [
+                "Standard Candle"
+            ],
+            "Helps Measure Distance To": [
+                "Galaxies"
+            ],
+            "Contributed To": [
+                "Dark Energy"
+            ],
+            "Refines Models Of": [
+                "Type I Supernova"
+            ]
+        },
+        {
+            "Located In": "Located In Constellation",
+            "Discovered By": "Discovered By",
+            "Contributes To Understanding Of": "Contributed To",
+            "Observed By": "Observed By",
+            "Type Of": "Type Of",
+            "Detected By": "Observed By",
+            "Used As": "Used For",
+            "Helps Measure Distance To": "Helps Measure Distance To",
+            "Refines Models Of": "Refines Models Of"
+        },
+        {
+            "dark energy": "Dark Energy",
+            "Keck Observatory": "Keck Observatory",
+            "EVLA radio telescope": "Evla Radio Telescope",
+            "standard candle": "Standard Candle",
+            "Hubble Space Telescope": "Hubble Space Telescope",
+            "Lick Observatory": "Lick Observatory",
+            "Messier 101": "Messier 101",
+            "host galaxies": "Galaxies",
+            "Type Ia supernova": "Type I Supernova",
+            "Palomar Transient Factory": "Palomar Transient Factory",
+            "Type Ia supernova events": "Type I Supernova",
+            "Canary Islands": "Canary Islands"
+        }
+    ]
+}

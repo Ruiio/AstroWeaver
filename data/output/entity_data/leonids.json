@@ -1,0 +1,146 @@
+{
+    "entity_name": "Leonids",
+    "infobox_attributes": {
+        "Leonids": "A Leonid meteor during the peak of the Leonids in 2009",
+        "Pronunciation": "/ ˈ l iː ən ɪ d z /",
+        "Discovery date": "902 AD (first record)",
+        "Parent body": "55P/Tempel–Tuttle",
+        "Constellation": "Leo",
+        "Right ascension": "10 17",
+        "Declination": "+21.6°",
+        "Occurs during": "3 November – 2 December",
+        "Date of peak": "17 November",
+        "Velocity": "70–71 km/s",
+        "Zenithal hourly rate": "15"
+    },
+    "consolidated_relationships": [
+        {
+            "Associated With": [
+                "1833 Meteor Storm",
+                "Moon",
+                "Tempel–Tuttle"
+            ],
+            "Radiates From": [
+                "Leo"
+            ],
+            "Creates": [
+                "Meteor Storms"
+            ],
+            "Peaks Around": [
+                "18 November"
+            ],
+            "Encountered": [
+                "Earth"
+            ],
+            "Originates From": [
+                "Tempel–Tuttle"
+            ],
+            "Observed In": [
+                "Europe",
+                "Journal Of Astronomical History And Heritage",
+                "North America"
+            ],
+            "Mentioned By": [
+                "Denison Olmsted",
+                "Joseph Smith",
+                "Native Americans"
+            ],
+            "Linked To Comet": [
+                "Tempel–Tuttle"
+            ],
+            "Observed By": [
+                "David J. Asher",
+                "Esko Lyytinen",
+                "Nasa Ames Research Center",
+                "Peter Jenniskens",
+                "Robert H. Mcnaught"
+            ],
+            "Studied By": [
+                "Kazan University",
+                "Kondrat'Eva",
+                "Reznikov"
+            ],
+            "Impact Observed On": [
+                "Moon"
+            ],
+            "Documented In": [
+                "Sky And Telescope",
+                "The Heavens On Fire: The Great Leonid Meteor Storms"
+            ],
+            "Produced By": [
+                "Tempel–Tuttle"
+            ],
+            "Attached To": [
+                "1833 Meteor Storm",
+                "1866 Storm",
+                "1966 Storm",
+                "1999 Storm",
+                "2001 Storm",
+                "2002 Storm"
+            ],
+            "Predicted By": [
+                "Mikhail Maslov",
+                "Peter Jenniskens"
+            ],
+            "Referenced In": [
+                "Stars Fell On Alabama"
+            ]
+        },
+        {
+            "Encountered By": "Encountered",
+            "Predicted By": "Predicted By",
+            "Impact Observed On": "Impact Observed On",
+            "Peaks Around": "Peaks Around",
+            "Documented In": "Documented In",
+            "Noted By": "Mentioned By",
+            "Observed By": "Observed By",
+            "Produced By": "Produced By",
+            "Mentioned In": "Referenced In",
+            "Radiates From": "Radiates From",
+            "Produces": "Creates",
+            "Associated With Comet": "Linked To Comet",
+            "Associated With": "Associated With",
+            "Studied By": "Studied By",
+            "Originates From": "Originates From",
+            "Linked To": "Attached To",
+            "Observed In": "Observed In"
+        },
+        {
+            "1833 meteor storm": "1833 Meteor Storm",
+            "1966 storm": "1966 Storm",
+            "18 November": "18 November",
+            "Kazan University": "Kazan University",
+            "Tempel–Tuttle": "Tempel–Tuttle",
+            "2002 storm": "2002 Storm",
+            "NASA Ames Research Center": "Nasa Ames Research Center",
+            "Leo": "Leo",
+            "Peter Jenniskens": "Peter Jenniskens",
+            "Robert H. McNaught": "Robert H. Mcnaught",
+            "Sky and Telescope": "Sky And Telescope",
+            "Reznikov": "Reznikov",
+            "Mikhail Maslov": "Mikhail Maslov",
+            "1833 Leonid shower": "1833 Meteor Storm",
+            "David J. Asher": "David J. Asher",
+            "Joseph Smith": "Joseph Smith",
+            "Kondrat'eva": "Kondrat'Eva",
+            "Leo constellation": "Leo",
+            "Tempel-Tuttle": "Tempel–Tuttle",
+            "North America": "North America",
+            "Native Americans": "Native Americans",
+            "Meteor storms": "Meteor Storms",
+            "Europe": "Europe",
+            "The Heavens on Fire: The Great Leonid Meteor Storms": "The Heavens On Fire: The Great Leonid Meteor Storms",
+            "1833 storm": "1833 Meteor Storm",
+            "Moon": "Moon",
+            "2001 storm": "2001 Storm",
+            "Stars Fell on Alabama": "Stars Fell On Alabama",
+            "Esko Lyytinen": "Esko Lyytinen",
+            "Earth": "Earth",
+            "Denison Olmsted": "Denison Olmsted",
+            "Journal of Astronomical History and Heritage": "Journal Of Astronomical History And Heritage",
+            "1866 storm": "1866 Storm",
+            "Comet Tempel-Tuttle": "Tempel–Tuttle",
+            "1999 storm": "1999 Storm"
+        }
+    ]
+}
