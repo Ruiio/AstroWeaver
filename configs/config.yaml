@@ -27,3 +27,12 @@ vector_db:
 # 管道运行配置
 pipeline:
   num_workers: 4 # 并行处理实体的线程数
+
+#minerU配置
+minerU:
+    api_url: "http://210.40.16.12:42181/file_parse"
+
+#文本切块大小配置
+chunk:
+  chunk_size: 1024
+  chunk_overlap: 30

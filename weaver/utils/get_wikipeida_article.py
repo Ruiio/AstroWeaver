@@ -44,4 +44,6 @@ def get_article_sections(title):
         extract_sections(section, sections=sections)
 
     return sections
-# print(get_article_sections("Mars"))
+for item in get_article_sections("Betelgeuse"):
+    print(item)
+    print('\n')
