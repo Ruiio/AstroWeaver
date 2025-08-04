@@ -138,7 +138,7 @@ def _parse_extraction_response(response_text: str) -> Optional[Dict[str, List[st
 
 def extract_relations_from_sections(
         entity_name: str,
-        sections: List[Dict[str, str]],
+        sections: List,
         llm_client: LLMClient,
         model_name: str
 ) -> Dict[str, set]:
@@ -155,13 +155,13 @@ def extract_relations_from_sections(
         一个聚合后的关系字典，格式为 {relation_name: {object_entity_1, object_entity_2}}.
     """
     batch_requests = []
-    for i, section in enumerate(sections):
-        content = section.get("content", "").strip()
+    for section in sections:
+        content = section
         if not content:
             continue
 
         prompt_messages = _get_extraction_prompt(entity_name, content)
-        request_id = f"section_{i}"
+        request_id = f"section_{content[:5]}"
         batch_requests.append(llm_client.prepare_batch_request(request_id, model_name, prompt_messages))
 
     if not batch_requests:

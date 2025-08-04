@@ -2,7 +2,6 @@
 
 import logging
 import asyncio
-from concurrent.futures import ThreadPoolExecutor
 from typing import List, Dict, Any
 
 from data_sources.simbad_client import SimbadClient

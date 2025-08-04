@@ -135,7 +135,7 @@ class WikipediaClient:
         self.session.headers.update({"User-Agent": user_agent})
         logger.info("WikipediaClient initialized.")
 
-    def get_article_sections(self, entity_name: str) -> Optional[List[Dict[str, str]]]:
+    def get_article_sections(self, entity_name: str) -> Optional[List]:
         """
         获取指定维基百科文章的所有章节及其内容。
         """
@@ -145,12 +145,12 @@ class WikipediaClient:
             sections = get_article_sections(entity_name)
             if not sections:
                 logger.warning(f"No sections found for '{entity_name}'.")
-                return None
+                return []
             logger.info(f"Found {len(sections)} sections for '{entity_name}'.")
             return sections
         except Exception as e:
             logger.error(f"Error fetching sections for '{entity_name}': {e}")
-            return None
+            return []
 
     def get_infobox(self, entity_name: str) -> Optional[Dict[str, str]]:
         """
@@ -239,8 +239,7 @@ if __name__ == '__main__':
     mars_sections = client.get_article_sections("Betelgeuse")
     if mars_sections:
         print(f"\n--- Sections for Betelgeuse (found {len(mars_sections)}) ---")
-        print(f"First section title: {mars_sections[0]['title']}")
-        print(f"First section content snippet: {mars_sections[0]['content'][:100]}...")
+        print(f"First section content snippet: {mars_sections[0][:100]}...")
 
     # 测试获取Infobox
     mars_infobox = client.get_infobox("Betelgeuse")

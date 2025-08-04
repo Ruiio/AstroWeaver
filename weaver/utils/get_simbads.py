@@ -224,6 +224,6 @@ def get_simbad_data(obj_name):
     return json_data
 
 
-#json_data = get_simbad_data("rigel")
-#references = getReference(json_data["bibcodes"])
-#print(references)
+# json_data = get_simbad_data("rigel")
+#
+# print(json_data)

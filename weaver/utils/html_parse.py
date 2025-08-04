@@ -23,9 +23,12 @@ def getWebContent(url):
         length_function = len,
     )
     texts = text_splitter.create_documents([cleaned_text])
-    return texts
+    truncked_texts = []
+    for item in texts:
+        truncked_texts.append(item.page_content)
+    return truncked_texts
 
 if __name__ == '__main__':
-    url = 'https://en.wikipedia.org/wiki/Betelgeuse'
+    url = 'https://ned.ipac.caltech.edu/level5/Glossary/Essay_barnes_disk.html'
     texts = getWebContent(url)
     print(texts)

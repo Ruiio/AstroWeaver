@@ -20,10 +20,7 @@ def get_article_sections(title):
 
     main_content = page.summary.strip()
     if main_content:
-        sections.append({
-            "title": "Introduction",
-            "content": main_content
-        })
+        sections.append(main_content)
 
     def extract_sections(section, prefix='', sections=None):
         section_title = f"{prefix}{section.title}"
@@ -32,10 +29,7 @@ def get_article_sections(title):
 
         content = section.text.strip()
         if content:
-            sections.append({
-                "title": section_title,
-                "content": content
-            })
+            sections.append(content)
 
         for subsection in section.sections:
             extract_sections(subsection, prefix=section_title + " > ", sections=sections)
@@ -44,6 +38,7 @@ def get_article_sections(title):
         extract_sections(section, sections=sections)
 
     return sections
-for item in get_article_sections("Betelgeuse"):
-    print(item)
-    print('\n')
+if __name__ == "__main__":
+    for item in get_article_sections("Betelgeuse"):
+        print(item)
+        print('\n')

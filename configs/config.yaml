@@ -3,7 +3,7 @@
 # API密钥和认证信息
 api_keys:
   llm: "sk-aeb0ed24d0c045e78d73fff879da5f07" # 你的LLM API密钥
-
+  X_API_KEY: "29790d8de82c9f9479d9cbccb4d20ad4720163d0"
 # 文件和目录路径
 paths:
   input_file: "data/input/astroEntity.xlsx"
@@ -13,6 +13,7 @@ paths:
 # 模型配置
 llm:
   base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # LLM API的URL
+  base_model: "deepseek-v3"
   extraction_model: "deepseek-v3" # 用于关系抽取的模型
   judge_model: "deepseek-v3"      # 用于规范化判断的模型
 
