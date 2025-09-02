@@ -1,5 +1,5 @@
 # astroWeaver/models/llm_models.py
-
+import asyncio
 import logging
 import json
 import time
@@ -8,6 +8,13 @@ from dataclasses import dataclass
 import concurrent.futures
 
 from openai import OpenAI, APIError
+
+try:
+    from zhipuai import ZhipuAI
+    ZHIPU_AVAILABLE = True
+except ImportError:
+    ZHIPU_AVAILABLE = False
+    ZhipuAI = None
 
 logger = logging.getLogger(__name__)
 
@@ -26,9 +33,10 @@ class BatchResponse:
 class LLMClient:
     """
     封装与LLM API的交互，支持标准请求和本地模拟的批处理请求。
+    支持阿里云（OpenAI兼容）和智谱AI两种客户端。
     """
 
-    def __init__(self, api_key: str, base_url: Optional[str] = None, max_workers: int = 5):
+    def __init__(self, api_key: str, base_url: Optional[str] = None, max_workers: int = 5, provider: str = "ali"):
         """
         初始化LLM客户端。
 
@@ -36,14 +44,50 @@ class LLMClient:
             api_key (str): API密钥。
             base_url (Optional[str]): API的基础URL。
             max_workers (int): 本地批处理时使用的最大并发线程数。
+            provider (str): LLM提供商，"ali" 或 "zhipu"。
         """
         if not api_key:
             raise ValueError("API key cannot be empty.")
 
-        self.client = OpenAI(api_key=api_key, base_url=base_url)
+        self.provider = provider
         self.max_workers = max_workers
-        logger.info(f"LLMClient initialized for base URL: {base_url or 'default OpenAI'}")
+        
+        if provider == "zhipu":
+            if not ZHIPU_AVAILABLE:
+                raise ImportError("ZhipuAI client not available. Please install: pip install zai")
+            self.zhipu_client = ZhipuAI(api_key=api_key)
+            self.client = None
+            logger.info(f"LLMClient initialized for ZhipuAI")
+        else:
+            # 默认使用OpenAI兼容客户端（阿里云等）
+            self.client = OpenAI(api_key=api_key, base_url=base_url)
+            self.zhipu_client = None
+            logger.info(f"LLMClient initialized for base URL: {base_url or 'default OpenAI'}")
+        
         logger.info(f"Local batch processing configured with max_workers={self.max_workers}")
+
+    async def make_request_async(
+            self,
+            model: str,
+            messages: List[Dict[str, str]],
+            temperature: float = 0.1
+    ) -> str:
+        """
+        异步执行聊天补全请求。
+
+        此方法通过在单独的线程中运行同步的 `make_request` 方法，
+        来防止阻塞 asyncio 事件循环。
+        """
+        # asyncio.to_thread 会在一个独立的线程中运行指定的阻塞函数，
+        # 并异步地返回结果。这正是我们需要的。
+        # 我们将 `self.make_request` 方法本身和它的所有参数传递进去。
+        response = await asyncio.to_thread(
+            self.make_request,
+            model=model,
+            messages=messages,
+            temperature=temperature
+        )
+        return response
 
     def make_request(
             self,
@@ -54,25 +98,78 @@ class LLMClient:
     ) -> str:
         """
         执行一个标准的、单次的聊天补全请求。
-        (此方法保持不变)
+        支持阿里云（OpenAI兼容）和智谱AI两种客户端。
         """
         try:
-            # 检查供应商是否支持 response_format
-            # 如果不支持，需要移除这个参数，并在返回后手动解析JSON
-            # 假设Dashscope兼容模式支持
-            response_format = {"type": "json_object"} if is_json else None
-
-            completion = self.client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                # 如果 response_format 不被支持，注释掉下面这行
-                # response_format=response_format
-            )
-            return completion.choices[0].message.content
-        except APIError as e:
+            if self.provider == "zhipu":
+                # 使用智谱AI客户端
+                response = self.zhipu_client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    max_tokens=4096,
+                    temperature=temperature
+                )
+                return response.choices[0].message.content
+            else:
+                # 使用OpenAI兼容客户端（阿里云等）
+                response_format = {"type": "json_object"} if is_json else None
+                completion = self.client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    temperature=temperature,
+                )
+                return completion.choices[0].message.content
+        except Exception as e:
             logger.error(f"LLM API request failed: {e}")
             raise
+
+
+def create_llm_client(config: Dict[str, Any]) -> LLMClient:
+    """
+    根据配置创建LLM客户端的工厂函数
+    
+    Args:
+        config: 配置字典
+    
+    Returns:
+        LLMClient实例
+    """
+    provider = config.get('llm', {}).get('provider', 'ali')
+    
+    if provider == 'zhipu':
+        api_key = config['api_keys']['zhipu_key']
+        return LLMClient(api_key=api_key, provider='zhipu')
+    else:
+        # 默认使用阿里云
+        api_key = config['api_keys']['ali_key']
+        base_url = config['llm']['ali']['base_url']
+        return LLMClient(api_key=api_key, base_url=base_url, provider='ali')
+
+
+def get_model_name(config: Dict[str, Any], model_type: str = 'base_model') -> str:
+    """
+    根据配置获取模型名称。
+    
+    Args:
+        config: 配置字典
+        model_type: 模型类型，如 'base_model', 'extraction_model', 'judge_model'
+        
+    Returns:
+        str: 模型名称
+    """
+    provider = config.get('llm', {}).get('provider', 'ali')
+    
+    if provider == 'zhipu':
+        zhipu_config = config.get('llm', {}).get('zhipu', {})
+        return zhipu_config.get(model_type, 'GLM-4-Flash-250414')
+    else:
+        ali_config = config.get('llm', {}).get('ali', {})
+        # 向后兼容：如果ali配置中没有，则使用根级别配置
+        return (ali_config.get(model_type) or 
+                config.get('llm', {}).get(model_type, 'deepseek-v3'))
+
+
+
 
     def prepare_batch_request(
             self,
@@ -94,7 +191,6 @@ class LLMClient:
                 "model": model,
                 "messages": messages,
                 "temperature": temperature,
-                "is_json": is_json
             }
         }
 

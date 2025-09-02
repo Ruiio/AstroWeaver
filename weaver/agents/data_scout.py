@@ -228,24 +228,24 @@ if __name__ == '__main__':
         orchestrator = Orchestrator(llm_client, data_scout)
 
         # --- 示例1: 一个需要头脑风暴的宽泛研究主题 ---
-        # topic = "Messier 78"
-        # print("\n" + "=" * 30 + f"\n🚀 EXECUTING RESEARCH TOPIC: '{topic}'\n" + "=" * 30)
-        # result = orchestrator.run(topic)
-        #
-        # if result:
-        #     print("\n✅ 主题研究成功！最终打包结果:")
-        #     print(f"  - 原始输入: {result.get('source_identifier')}")
-        #     print(f"  - 输入类型: {result.get('source_type')}")
-        #
-        #     print(f"  - 结构化数据条目数: {len(result.get('structured_data', {}))}")
-        #     print(f"  - 结构化数据: {(result.get('structured_data', {}))}")
-        #     print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
-        #     # 打印一些来源以展示多样性
-        #     if result.get('text_chunks'):
-        #         sources = set(chunk for chunk in result['text_chunks'])
-        #         print(f"  - 收集到的数据来源: {list(sources)[:5]}")
-        # else:
-        #     print("\n❌ 主题研究失败。")
+        topic = "M7"
+        print("\n" + "=" * 30 + f"\n🚀 EXECUTING RESEARCH TOPIC: '{topic}'\n" + "=" * 30)
+        result = orchestrator.run(topic)
+
+        if result:
+            print("\n✅ 主题研究成功！最终打包结果:")
+            print(f"  - 原始输入: {result.get('source_identifier')}")
+            print(f"  - 输入类型: {result.get('source_type')}")
+
+            print(f"  - 结构化数据条目数: {len(result.get('structured_data', {}))}")
+            print(f"  - 结构化数据: {(result.get('structured_data', {}))}")
+            print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
+            # 打印一些来源以展示多样性
+            if result.get('text_chunks'):
+                sources = set(chunk for chunk in result['text_chunks'])
+                print(f"  - 收集到的数据来源: {list(sources)[:5]}")
+        else:
+            print("\n❌ 主题研究失败。")
 
         # --- 示例2: 一个可以直接回答的直接问题 ---
     #     question = "What is the Chandrasekhar Limit?"
@@ -267,18 +267,18 @@ if __name__ == '__main__':
     # except Exception as e:
     #     print(f"\n❌ 运行中发生意外错误: {e}")
         # --- 示例3: 一个pdf文件---
-        file_path = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\RAKCR.pdf"
-        print("\n" + "=" * 30 + f"\n🚀 EXECUTING PDF FILE: '{file_path}'\n" + "=" * 30)
-        result = orchestrator.run(file_path)
-
-        if result:
-            print("\n✅ PDF处理成功！最终打包结果:")
-            print(f"  - 原始输入: {result.get('source_identifier')}")
-            print(f"  - 输入类型: {result.get('source_type')}")
-            print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
-            print(f"  - 文本片段示例: {result.get('text_chunks', [])[:5]}")
-        else:
-            print("\n❌ 直接问题处理失败。")
+        # file_path = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\RAKCR.pdf"
+        # print("\n" + "=" * 30 + f"\n🚀 EXECUTING PDF FILE: '{file_path}'\n" + "=" * 30)
+        # result = orchestrator.run(file_path)
+        #
+        # if result:
+        #     print("\n✅ PDF处理成功！最终打包结果:")
+        #     print(f"  - 原始输入: {result.get('source_identifier')}")
+        #     print(f"  - 输入类型: {result.get('source_type')}")
+        #     print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
+        #     print(f"  - 文本片段示例: {result.get('text_chunks', [])[:5]}")
+        # else:
+        #     print("\n❌ 直接问题处理失败。")
 
 
     except ValueError as e:

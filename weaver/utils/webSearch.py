@@ -26,7 +26,9 @@ def execute_web_query(query):
         if "organic" in data:
             for item in data["organic"]:  # 取前top_n条
                 if top_n>0:
-                    if "snippet" in item and "pdf" not in item["link"] and "abstract" not in  item["link"] and "articles" not in item["link"]:
+                    excluded_keywords = ("pdf", "abstract", "articles", "image", "view", "video")
+                    if "snippet" in item and not any(keyword in item["link"].lower() for keyword in excluded_keywords):
+                        # 您要执行的代码
                         links.append(item["link"])
                         top_n -= 1
         # 拼接文本
@@ -43,7 +45,7 @@ def execute_web_query(query):
       print(url)
       try:
         for text in getWebContent(url):
-          if "'Just a moment" not in text and "To ensure we keep this website safe" not in text:
+          if "'Just a moment" not in text and "To ensure we keep this website safe" not in text and "COOKIES" not in text:
             texts_trunck.append(text)
       except Exception as e:
         print(e)

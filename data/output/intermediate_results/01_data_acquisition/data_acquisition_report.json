@@ -1,0 +1,17 @@
+{
+  "stage": "data_acquisition",
+  "timestamp": "2025-09-02T16:24:59.061528",
+  "execution_time": 0,
+  "status": "completed",
+  "statistics": {
+    "total_items": 1,
+    "total_documents": 452,
+    "total_structured_data": 0,
+    "execution_time": 0
+  },
+  "details": {},
+  "output_files": [
+    "data_acquisition_result.json",
+    "documents.jsonl"
+  ]
+}
