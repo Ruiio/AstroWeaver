@@ -6,6 +6,12 @@ import re
 from typing import List, Dict, Any, Optional
 
 from ..models.llm_models import LLMClient  # 假设的LLM客户端封装
+from .extraction_architecture import (
+    ExtractionType, AttributeExtraction, RelationExtraction, ExtractionResult,
+    AttributeClassifier, EntityClassifier,
+    get_attribute_extraction_prompt, get_relation_extraction_prompt,
+    parse_attribute_response, parse_relation_response
+)
 
 logger = logging.getLogger(__name__)
 
@@ -136,6 +142,124 @@ def _parse_extraction_response(response_text: str) -> Optional[Dict[str, List[st
         return None
 
 
+def extract_multi_entity_attributes_from_sections(
+        sections: List,
+        llm_client: LLMClient,
+        model_name: str
+) -> List[AttributeExtraction]:
+    """
+    使用Batch API从文章章节中抽取所有实体的属性。
+
+    Args:
+        sections: 包含文章章节的列表。
+        llm_client: LLM客户端实例。
+        model_name: 用于抽取的LLM模型名称。
+
+    Returns:
+        属性抽取结果列表。
+    """
+    from .extraction_architecture import get_multi_entity_attribute_extraction_prompt, parse_multi_entity_attribute_response
+    
+    batch_requests = []
+    for i, section in enumerate(sections):
+        content = section
+        if not content:
+            continue
+
+        prompt_messages = get_multi_entity_attribute_extraction_prompt(content)
+        request_id = f"multi_attr_section_{i}"
+        batch_requests.append(llm_client.prepare_batch_request(request_id, model_name, prompt_messages))
+
+    if not batch_requests:
+        logger.info(f"No content found in sections. Skipping multi-entity attribute extraction.")
+        return []
+
+    logger.info(f"Submitting {len(batch_requests)} multi-entity attribute extraction requests via Batch API.")
+    batch_results = llm_client.submit_batch(batch_requests)
+
+    # 聚合所有章节的属性结果
+    all_attributes = []
+    for i, result in enumerate(batch_results):
+        if result.is_success():
+            parsed_entities = parse_multi_entity_attribute_response(result.response_text)
+            if parsed_entities:
+                for entity_data in parsed_entities:
+                    entity_name = entity_data["entity_name"]
+                    for attr in entity_data["attributes"]:
+                        attr_extraction = AttributeExtraction(
+                            entity=entity_name,
+                            attribute=attr["attribute"],
+                            value=attr["value"],
+                            confidence=attr["confidence"],
+                            source_text=sections[i][:200] if i < len(sections) else "",
+                            text_id=f"section_{i}"
+                        )
+                        all_attributes.append(attr_extraction)
+        else:
+            logger.error(f"Multi-entity attribute extraction batch request failed (ID: {result.request_id}). Error: {result.error}")
+
+    logger.info(f"Extracted {len(all_attributes)} attributes from {len(set(attr.entity for attr in all_attributes))} entities.")
+    return all_attributes
+
+
+def extract_attributes_from_sections(
+        entity_name: str,
+        sections: List,
+        llm_client: LLMClient,
+        model_name: str
+) -> List[AttributeExtraction]:
+    """
+    使用Batch API从文章章节中抽取实体属性。
+
+    Args:
+        entity_name: 核心实体的名称。
+        sections: 包含文章章节的列表。
+        llm_client: LLM客户端实例。
+        model_name: 用于抽取的LLM模型名称。
+
+    Returns:
+        属性抽取结果列表。
+    """
+    batch_requests = []
+    for i, section in enumerate(sections):
+        content = section
+        if not content:
+            continue
+
+        prompt_messages = get_attribute_extraction_prompt(entity_name, content)
+        request_id = f"attr_section_{i}"
+        batch_requests.append(llm_client.prepare_batch_request(request_id, model_name, prompt_messages))
+
+    if not batch_requests:
+        logger.info(f"No content found in sections for entity '{entity_name}'. Skipping attribute extraction.")
+        return []
+
+    logger.info(f"Submitting {len(batch_requests)} attribute extraction requests for '{entity_name}' via Batch API.")
+    batch_results = llm_client.submit_batch(batch_requests)
+
+    # 聚合所有章节的属性结果
+    all_attributes = []
+    for i, result in enumerate(batch_results):
+        if result.is_success():
+            parsed_attrs = parse_attribute_response(result.response_text)
+            if parsed_attrs:
+                for attr in parsed_attrs:
+                    attr_extraction = AttributeExtraction(
+                        entity=entity_name,
+                        attribute=attr["attribute"],
+                        value=attr["value"],
+                        confidence=attr["confidence"],
+                        source_text=sections[i][:200] if i < len(sections) else "",
+                        text_id=f"section_{i}"
+                    )
+                    all_attributes.append(attr_extraction)
+        else:
+            logger.error(f"Attribute extraction batch request failed for '{entity_name}' (ID: {result.request_id}). Error: {result.error}")
+
+    logger.info(f"Extracted {len(all_attributes)} attributes for '{entity_name}'.")
+    return all_attributes
+
+
 def extract_relations_from_sections(
         entity_name: str,
         sections: List,
@@ -144,6 +268,7 @@ def extract_relations_from_sections(
 ) -> Dict[str, set]:
     """
     使用Batch API从一篇文章的所有章节中抽取初步关系，并聚合结果。
+    现在使用新的关系抽取架构，过滤掉属性关系。
 
     Args:
         entity_name: 核心实体的名称。
@@ -155,35 +280,96 @@ def extract_relations_from_sections(
         一个聚合后的关系字典，格式为 {relation_name: {object_entity_1, object_entity_2}}.
     """
     batch_requests = []
-    for section in sections:
+    for i, section in enumerate(sections):
         content = section
         if not content:
             continue
 
-        prompt_messages = _get_extraction_prompt(entity_name, content)
-        request_id = f"section_{content[:5]}"
+        prompt_messages = get_relation_extraction_prompt(content, entity_name)
+        request_id = f"rel_section_{i}"
         batch_requests.append(llm_client.prepare_batch_request(request_id, model_name, prompt_messages))
 
     if not batch_requests:
-        logger.info(f"No content found in sections for entity '{entity_name}'. Skipping extraction.")
+        logger.info(f"No content found in sections for entity '{entity_name}'. Skipping relation extraction.")
         return {}
 
-    logger.info(f"Submitting {len(batch_requests)} extraction requests for '{entity_name}' via Batch API.")
+    logger.info(f"Submitting {len(batch_requests)} relation extraction requests for '{entity_name}' via Batch API.")
     batch_results = llm_client.submit_batch(batch_requests)
 
     # 聚合所有章节的结果
     aggregated_relations = {}
+    attribute_classifier = AttributeClassifier()
+    entity_classifier = EntityClassifier()
+    
     for result in batch_results:
         if result.is_success():
-            parsed_rels = _parse_extraction_response(result.response_text)
+            parsed_rels = parse_relation_response(result.response_text)
             if parsed_rels:
-                for rel, objs in parsed_rels.items():
-                    if rel not in aggregated_relations:
-                        aggregated_relations[rel] = set()
-                    aggregated_relations[rel].update(objs)
+                for rel in parsed_rels:
+                    # 额外过滤：确保不是属性关系
+                    if attribute_classifier.is_attribute_predicate(rel["predicate"]) or \
+                       attribute_classifier.is_attribute_value(rel["object"]):
+                        logger.debug(f"Filtered out attribute relation: {rel}")
+                        continue
+                    
+                    # 确保对象是实体
+                    if not entity_classifier.is_entity(rel["object"]):
+                        logger.debug(f"Filtered out non-entity object: {rel}")
+                        continue
+                    
+                    predicate = rel["predicate"]
+                    obj = rel["object"]
+                    
+                    if predicate not in aggregated_relations:
+                        aggregated_relations[predicate] = set()
+                    aggregated_relations[predicate].add(obj)
         else:
-            logger.error(f"Batch request failed for '{entity_name}' (ID: {result.request_id}). Error: {result.error}")
+            logger.error(f"Relation extraction batch request failed for '{entity_name}' (ID: {result.request_id}). Error: {result.error}")
 
     logger.info(f"Extracted {len(aggregated_relations)} unique raw relation types for '{entity_name}'.")
-    logging.info(f"Entity '{entity_name}': Extracted {len(aggregated_relations)} raw relations from all sections.")
     return aggregated_relations
+
+
+def extract_comprehensive_information(
+        entity_name: str,
+        sections: List,
+        llm_client: LLMClient,
+        model_name: str
+) -> ExtractionResult:
+    """
+    综合抽取实体的属性和关系信息。
+
+    Args:
+        entity_name: 核心实体的名称。
+        sections: 包含文章章节的列表。
+        llm_client: LLM客户端实例。
+        model_name: 用于抽取的LLM模型名称。
+
+    Returns:
+        包含属性和关系的完整抽取结果。
+    """
+    # 抽取属性
+    attributes = extract_attributes_from_sections(entity_name, sections, llm_client, model_name)
+    
+    # 抽取关系
+    relations_dict = extract_relations_from_sections(entity_name, sections, llm_client, model_name)
+    
+    # 转换关系格式
+    relations = []
+    for predicate, objects in relations_dict.items():
+        for obj in objects:
+            relation = RelationExtraction(
+                subject=entity_name,
+                predicate=predicate,
+                object=obj,
+                confidence=0.8,  # 默认置信度
+                source_text="",
+                text_id=""
+            )
+            relations.append(relation)
+    
+    return ExtractionResult(
+        attributes=attributes,
+        relations=relations,
+        is_relevant=len(attributes) > 0 or len(relations) > 0
+    )

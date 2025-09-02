@@ -10,7 +10,7 @@ from weaver.models.llm_models import LLMClient
 from weaver.utils.MinerU import parse_file
 from weaver.utils.config import config
 from weaver.utils.get_simbads import get_simbad_data
-from weaver.utils.webSearch import execute_web_query
+from weaver.utils.webSearch_enhanced import EnhancedWebSearcher
 
 # ==============================================================================
 # 0. 日志和配置 (与之前相同)
@@ -30,6 +30,7 @@ class DataScout:
     def __init__(self,wikiClient: WikipediaClient,minerUClient:MinerUClient):
         self.wikiClient = wikiClient
         self.minerUClient=minerUClient
+        self.web_searcher = EnhancedWebSearcher()
 
     def execute_simbad_search(self, query: str):
         return get_simbad_data(query)
@@ -38,7 +39,7 @@ class DataScout:
         return self.wikiClient.get_article_sections(query)
 
     def execute_web_search(self, query: str):
-        return execute_web_query(query)
+        return self.web_searcher.execute_web_query(query)
 
     def execute_info_box(self,query:str):
         return  self.wikiClient.get_infobox(query)
@@ -90,22 +91,19 @@ class Orchestrator:
     def _brainstorm_sub_queries(self, topic: str) -> List[str]:
         """对于一个宽泛的话题，使用LLM进行头脑风暴，生成一系列具体的研究问题。"""
         prompt = f"""
-        You are an expert astronomical researcher. Your task is to break down a broad research topic into a set of 3-5 specific, insightful sub-queries. These queries should cover different facets of the topic, such as its definition, history, key components, physical processes, and recent discoveries.
+        As an astronomical researcher, I need to explore the topic "{topic}" comprehensively. Help me generate 3-5 focused research questions that will uncover key information about this subject.
 
-        Broad research topic: "{topic}"
+        Each question should:
+        - Target specific entities, objects, or phenomena related to {topic}
+        - Include relevant astronomical terms, catalog names, or proper nouns when applicable
+        - Cover different aspects like physical properties, observational data, historical context, or recent findings
+        - Be specific enough to yield detailed, factual information
 
-        Generate a JSON object with a single key "research_questions", which contains a list of these specific query strings.
+        For example, if exploring "Betelgeuse", good questions would mention "Betelgeuse supernova predictions", "Orion constellation", "red supergiant characteristics", "Hipparcos parallax measurements", etc.
 
-        Example for "Supernovae":
-        {{
-          "research_questions": [
-            "What are the different types of supernovae (e.g., Type Ia, Type II)?",
-            "Describe the process of core-collapse in a massive star leading to a supernova.",
-            "What is the role of supernovae in galactic chemical enrichment?",
-            "Famous historical supernovae observations",
-            "Recent discoveries or news about supernovae"
-          ]
-        }}
+        Return your response as a JSON object with key "research_questions" containing the list of questions.
+
+        Topic to explore: {topic}
         """
         messages = [{"role": "system", "content": "You are a helpful assistant that only outputs valid JSON."},
                     {"role": "user", "content": prompt}]
@@ -228,24 +226,24 @@ if __name__ == '__main__':
         orchestrator = Orchestrator(llm_client, data_scout)
 
         # --- 示例1: 一个需要头脑风暴的宽泛研究主题 ---
-        # topic = "Messier 78"
-        # print("\n" + "=" * 30 + f"\n🚀 EXECUTING RESEARCH TOPIC: '{topic}'\n" + "=" * 30)
-        # result = orchestrator.run(topic)
-        #
-        # if result:
-        #     print("\n✅ 主题研究成功！最终打包结果:")
-        #     print(f"  - 原始输入: {result.get('source_identifier')}")
-        #     print(f"  - 输入类型: {result.get('source_type')}")
-        #
-        #     print(f"  - 结构化数据条目数: {len(result.get('structured_data', {}))}")
-        #     print(f"  - 结构化数据: {(result.get('structured_data', {}))}")
-        #     print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
-        #     # 打印一些来源以展示多样性
-        #     if result.get('text_chunks'):
-        #         sources = set(chunk for chunk in result['text_chunks'])
-        #         print(f"  - 收集到的数据来源: {list(sources)[:5]}")
-        # else:
-        #     print("\n❌ 主题研究失败。")
+        topic = "M7"
+        print("\n" + "=" * 30 + f"\n🚀 EXECUTING RESEARCH TOPIC: '{topic}'\n" + "=" * 30)
+        result = orchestrator.run(topic)
+
+        if result:
+            print("\n✅ 主题研究成功！最终打包结果:")
+            print(f"  - 原始输入: {result.get('source_identifier')}")
+            print(f"  - 输入类型: {result.get('source_type')}")
+
+            print(f"  - 结构化数据条目数: {len(result.get('structured_data', {}))}")
+            print(f"  - 结构化数据: {(result.get('structured_data', {}))}")
+            print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
+            # 打印一些来源以展示多样性
+            if result.get('text_chunks'):
+                sources = set(chunk for chunk in result['text_chunks'])
+                print(f"  - 收集到的数据来源: {list(sources)[:5]}")
+        else:
+            print("\n❌ 主题研究失败。")
 
         # --- 示例2: 一个可以直接回答的直接问题 ---
     #     question = "What is the Chandrasekhar Limit?"
@@ -267,18 +265,18 @@ if __name__ == '__main__':
     # except Exception as e:
     #     print(f"\n❌ 运行中发生意外错误: {e}")
         # --- 示例3: 一个pdf文件---
-        file_path = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\RAKCR.pdf"
-        print("\n" + "=" * 30 + f"\n🚀 EXECUTING PDF FILE: '{file_path}'\n" + "=" * 30)
-        result = orchestrator.run(file_path)
-
-        if result:
-            print("\n✅ PDF处理成功！最终打包结果:")
-            print(f"  - 原始输入: {result.get('source_identifier')}")
-            print(f"  - 输入类型: {result.get('source_type')}")
-            print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
-            print(f"  - 文本片段示例: {result.get('text_chunks', [])[:5]}")
-        else:
-            print("\n❌ 直接问题处理失败。")
+        # file_path = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\RAKCR.pdf"
+        # print("\n" + "=" * 30 + f"\n🚀 EXECUTING PDF FILE: '{file_path}'\n" + "=" * 30)
+        # result = orchestrator.run(file_path)
+        #
+        # if result:
+        #     print("\n✅ PDF处理成功！最终打包结果:")
+        #     print(f"  - 原始输入: {result.get('source_identifier')}")
+        #     print(f"  - 输入类型: {result.get('source_type')}")
+        #     print(f"  - 文本片段总数: {len(result.get('text_chunks', []))}")
+        #     print(f"  - 文本片段示例: {result.get('text_chunks', [])[:5]}")
+        # else:
+        #     print("\n❌ 直接问题处理失败。")
 
 
     except ValueError as e:

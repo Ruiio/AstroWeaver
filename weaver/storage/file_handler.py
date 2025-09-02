@@ -27,10 +27,9 @@ class FileHandler:
         self.entity_data_path = self.base_output_path / "entity_data"
         self.simbad_data_path = self.base_output_path / "simbad_data"
 
-        # 创建输出目录
-        self.entity_data_path.mkdir(parents=True, exist_ok=True)
-        self.simbad_data_path.mkdir(parents=True, exist_ok=True)
-        logger.info(f"Output directories initialized at: {self.base_output_path}")
+        # 创建基础输出目录
+        self.base_output_path.mkdir(parents=True, exist_ok=True)
+        logger.debug(f"Base output directory initialized at: {self.base_output_path}")
 
     def load_entity_list(self, file_path: str) -> List[str]:
         """
@@ -88,10 +87,12 @@ class FileHandler:
             entity_name (str): 实体名称。
             data (Dict[str, Any]): 实体的数据。
         """
+        # 只在需要保存数据时才创建目录
+        self.entity_data_path.mkdir(parents=True, exist_ok=True)
         safe_name = sanitize_filename(entity_name)
         file_path = self.entity_data_path / f"{safe_name}.json"
         self.save_json(file_path, data)
-        logger.info(f"Saved entity data for '{entity_name}' to {file_path}")
+        logger.debug(f"Saved entity data for '{entity_name}' to {file_path}")
 
     def save_simbad_data(self, entity_name: str, data: Dict[str, Any]):
         """
@@ -101,6 +102,8 @@ class FileHandler:
             entity_name (str): 实体名称。
             data (Dict[str, Any]): SIMBAD返回的数据。
         """
+        # 只在需要保存数据时才创建目录
+        self.simbad_data_path.mkdir(parents=True, exist_ok=True)
         safe_name = sanitize_filename(entity_name)
         file_path = self.simbad_data_path / f"{safe_name}.json"
         self.save_json(file_path, data)

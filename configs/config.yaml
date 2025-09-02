@@ -2,38 +2,76 @@
 
 # API密钥和认证信息
 api_keys:
-  llm: "sk-aeb0ed24d0c045e78d73fff879da5f07" # 你的LLM API密钥
+  ali_key: "your-ali-api-key-here"
+  zhipu_key: "5fa0b194a42f56e2872cede596275143.7DU2zLrk6thDrf3u"
+  llm: "sk-aeb0ed24d0c045e78d73fff879da5f07" # 默认LLM API密钥（向后兼容）
   X_API_KEY: "29790d8de82c9f9479d9cbccb4d20ad4720163d0"
 # 文件和目录路径
 paths:
   input_file: "data/input/astroEntity.xlsx"
   output_dir: "data/output"
   vector_db_path: "data/vectordb" # ChromaDB数据存储路径
-
+  extracted_triples_dir: "data/output/extracted_triples" # 提取的三元组保存目录
+  audited_triples_dir: "data/output/audited_triples" # 审核后的三元组保存目录
+# 审核器配置
+auditor:
+  confidence_threshold: 1 # 置信度阈值，高于此值的三元组被认为是高质量的
+  enable_vector_similarity: true # 是否启用向量相似度检查（需要向量数据库）
+  enable_llm_validation: true # 是否启用LLM验证（更准确但更慢）
 # 模型配置
 llm:
+  provider: "zhipu" # 选择LLM提供商: "ali" 或 "zhipu"
+  # 阿里云配置
+  ali:
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    base_model: "deepseek-v3"
+    extraction_model: "deepseek-v3"
+    judge_model: "deepseek-v3"
+  # 智谱AI配置
+  zhipu:
+    base_url: "https://open.bigmodel.cn/api/paas/v4"
+    base_model: "GLM-4-Flash-250414"
+    extraction_model: "GLM-4-Flash-250414"
+    judge_model: "GLM-4-Flash-250414"
+  # 向后兼容的配置（将被弃用）
   base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # LLM API的URL
   base_model: "deepseek-v3"
   extraction_model: "deepseek-v3" # 用于关系抽取的模型
   judge_model: "deepseek-v3"      # 用于规范化判断的模型
 
 embedding:
-  api_url: "http://210.40.16.12:45389" # 嵌入模型服务的URL
-
+  api_url: "http://210.40.16.12:33585" # 嵌入模型服务的URL
+neo4j:
+  uri: "bolt://210.40.16.12:58653"
+  user: "neo4j"
+  password: "12345678"
 # 向量数据库配置
 vector_db:
+
   similarity_threshold: 0.1 # 用于筛选候选者的相似度阈值
   top_k: 5                   # 检索最相似的候选者数量
+  relation_collection: "relations"
+  entity_collection: "entities"
 
 # 管道运行配置
 pipeline:
-  num_workers: 4 # 并行处理实体的线程数
+  num_workers: 2 # 并行处理实体的线程数
+  skip_audit: false # 是否跳过审核阶段
+  save_triples_to_file: true # 是否将三元组保存到文件
+  enable_memory_safe_mode: true # 是否启用内存安全模式
+
+# 性能优化配置
+performance:
+  max_concurrent_llm_calls: 3 # 降低并发LLM调用数，避免超时
+  batch_size: 10 # 减小批次大小，提高稳定性
+  llm_timeout: 30 # LLM调用超时时间（秒）
+  max_retries: 2 # 最大重试次数
 
 #minerU配置
 minerU:
-    api_url: "http://210.40.16.12:42181/file_parse"
+    api_url: "http://210.40.16.12:53611/file_parse"
 
 #文本切块大小配置
 chunk:
   chunk_size: 1024
-  chunk_overlap: 30
+  chunk_overlap: 80
