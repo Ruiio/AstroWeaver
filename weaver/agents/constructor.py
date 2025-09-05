@@ -148,7 +148,7 @@ class GraphArchitect:
             try:
                 # 注意：这里假设您的LLMClient有一个异步方法
                 response_str = await self.llm_client.make_request_async(
-                    model=self.config.get('llm', {}).get('zhipu', {}).get('base_model', 'GLM-4-Flash-250414'),
+                    model=self.config.get('llm', {}).get('base_model', 'gpt-4-turbo'),
                     messages=prompt
                 )
                 # 移除可能的Markdown代码块标记

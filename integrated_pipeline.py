@@ -58,16 +58,9 @@ logger = logging.getLogger(__name__)
 class IntegratedPipeline:
     """整合版Pipeline类"""
     
-    def __init__(self, config_path: str, skip_audit: bool = False, multi_entity_mode: bool = False):
-        """初始化整合版Pipeline
-        
-        Args:
-            config_path: 配置文件路径
-            skip_audit: 是否跳过审计阶段
-            multi_entity_mode: 是否启用多实体属性抽取模式
-        """
+    def __init__(self, config_path: str, skip_audit: bool = False):
+        """初始化整合版Pipeline"""
         self.config = load_config(config_path)
-        self.multi_entity_mode = multi_entity_mode
         
         # 设置日志
         setup_logging(
@@ -269,130 +262,6 @@ class IntegratedPipeline:
             self.logger.error(f"生成{stage}阶段报告失败: {e}")
             return None
     
-    def check_intermediate_results(self) -> Dict[str, Any]:
-        """检查中间结果文件，确定可以从哪个阶段恢复"""
-        recovery_info = {
-            'can_resume': False,
-            'resume_from_stage': None,
-            'available_data': {}
-        }
-        
-        # 检查各阶段的输出文件
-        stages_to_check = [
-            ('stage_1_data_acquisition', '01_data_acquisition', 'data_acquisition_result.json'),
-            ('stage_2_information_extraction', '02_information_extraction', 'high_confidence_triples.jsonl'),
-            ('stage_3_knowledge_auditing', '03_knowledge_auditing', 'high_confidence_triples.jsonl'),
-            ('stage_4_canonicalization', '04_canonicalization', 'canonicalized_triples.jsonl')
-        ]
-        
-        for stage_name, stage_dir, key_file in stages_to_check:
-            stage_path = self.intermediate_dir / stage_dir
-            key_file_path = stage_path / key_file
-            
-            if key_file_path.exists():
-                recovery_info['available_data'][stage_name] = {
-                    'stage_dir': stage_path,
-                    'key_file': key_file_path,
-                    'file_size': key_file_path.stat().st_size
-                }
-                recovery_info['can_resume'] = True
-                recovery_info['resume_from_stage'] = stage_name
-        
-        return recovery_info
-    
-    def load_intermediate_data(self, stage_name: str, file_path: Path) -> List[Dict[str, Any]]:
-        """从中间结果文件加载数据"""
-        data = []
-        
-        try:
-            if file_path.suffix == '.jsonl':
-                # JSONL格式
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    for line in f:
-                        if line.strip():
-                            data.append(json.loads(line.strip()))
-            elif file_path.suffix == '.json':
-                # JSON格式
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    loaded_data = json.load(f)
-                    if isinstance(loaded_data, list):
-                        data = loaded_data
-                    elif isinstance(loaded_data, dict) and 'documents' in loaded_data:
-                        data = loaded_data['documents']
-                    else:
-                        data = [loaded_data]
-            
-            self.logger.info(f"从 {file_path} 加载了 {len(data)} 条记录")
-            return data
-            
-        except Exception as e:
-            self.logger.error(f"加载中间数据失败: {e}")
-            return []
-    
-    async def _finalize_pipeline(self, success: bool, duration: float) -> bool:
-        """完成Pipeline的最终统计和报告生成"""
-        self.logger.info("\n" + "="*80)
-        self.logger.info("🎉 整合版Pipeline执行完成")
-        self.logger.info("="*80)
-        self.logger.info(f"总耗时: {duration:.2f}秒")
-        self.logger.info(f"\n📊 执行统计:")
-        self.logger.info(f"  - 处理实体数: {self.stats['total_entities']}")
-        self.logger.info(f"  - 获取文档数: {self.stats['total_documents']}")
-        self.logger.info(f"  - 提取三元组数: {self.stats['total_extracted_triples']}")
-        self.logger.info(f"  - 高置信度三元组数: {self.stats['high_confidence_triples']}")
-        self.logger.info(f"  - 低置信度三元组数: {self.stats['low_confidence_triples']}")
-        self.logger.info(f"  - 规范化三元组数: {self.stats['canonicalized_triples']}")
-        self.logger.info(f"  - 插入图数据库三元组数: {self.stats['inserted_triples']}")
-        
-        # 保存最终统计到根目录
-        final_stats = {
-            'pipeline_stats': self.stats,
-            'execution_time': duration,
-            'timestamp': self.timestamp,
-            'success': success
-        }
-        
-        # 保存到intermediate_results根目录
-        final_stats_file = self.intermediate_dir / 'pipeline_summary.json'
-        with open(final_stats_file, 'w', encoding='utf-8') as f:
-            json.dump(final_stats, f, ensure_ascii=False, indent=2)
-        
-        # 生成总体pipeline报告
-        pipeline_report = {
-            'pipeline_name': 'AstroWeaver Integrated Pipeline',
-            'execution_timestamp': self.timestamp,
-            'total_execution_time': duration,
-            'success': success,
-            'stages_completed': [
-                'data_acquisition',
-                'information_extraction', 
-                'knowledge_auditing',
-                'canonicalization',
-                'graph_construction'
-            ],
-            'final_statistics': self.stats,
-            'stage_directories': {
-                stage: str(path) for stage, path in self.stage_dirs.items()
-            },
-            'output_summary': {
-                'total_entities_processed': self.stats['total_entities'],
-                'documents_acquired': self.stats['total_documents'],
-                'triples_extracted': self.stats['total_extracted_triples'],
-                'high_confidence_triples': self.stats['high_confidence_triples'],
-                'canonicalized_triples': self.stats['canonicalized_triples'],
-                'triples_inserted_to_graph': self.stats['inserted_triples']
-            }
-        }
-        
-        pipeline_report_file = self.intermediate_dir / 'pipeline_report.json'
-        with open(pipeline_report_file, 'w', encoding='utf-8') as f:
-            json.dump(pipeline_report, f, ensure_ascii=False, indent=2)
-        
-        self.logger.info(f"📋 Pipeline总体报告已生成: {pipeline_report_file}")
-        self.logger.info(f"📊 Pipeline统计已保存: {final_stats_file}")
-        
-        return success
-    
     async def stage_1_data_acquisition(self, input_file: str) -> List[Dict[str, Any]]:
         """阶段1: 数据获取"""
         self.logger.info("\n" + "="*50)
@@ -440,10 +309,6 @@ class IntegratedPipeline:
                 else:
                     # 其他类型直接转为字符串处理
                     items = [{'type': 'topic', 'value': str(data)}]
-                
-                # 提取第一个实体名称用于后续抽取
-                if items:
-                    self.input_entity_name = items[0]['value']
             elif input_path.suffix.lower() == '.txt':
                 # 文本文件处理
                 with open(input_path, 'r', encoding='utf-8') as f:
@@ -566,38 +431,13 @@ class IntegratedPipeline:
                 self.logger.info(f"\n📦 提取批次 {batch_num}/{total_batches} ({len(batch)} 个文档)")
                 
                 try:
-                    # 使用新的综合抽取方法，区分属性和关系
-                    # 检查是否启用多实体属性抽取模式
-                    multi_entity_mode = getattr(self, 'multi_entity_mode', False)
+                    # 使用增强版信息提取器处理批次
+                    batch_triples = await self.agents['extractor'].extract_from_text_blocks(
+                        batch
+                    )
+                    all_triples.extend(batch_triples)
                     
-                    if multi_entity_mode:
-                        # 多实体模式：抽取所有实体的属性
-                        extraction_result = await self.agents['extractor'].extract_comprehensive_information(
-                            batch, multi_entity_mode=True
-                        )
-                    else:
-                        # 单实体模式：只抽取指定实体的属性
-                        entity_name = "astronomy"  # 默认实体名称
-                        if hasattr(self, 'input_entity_name') and self.input_entity_name:
-                            entity_name = self.input_entity_name
-                        
-                        extraction_result = await self.agents['extractor'].extract_comprehensive_information(
-                            batch, entity_name=entity_name, multi_entity_mode=False
-                        )
-                    
-                    # 分别处理属性和关系
-                    batch_attributes = extraction_result['attributes']
-                    batch_relations = extraction_result['relations']
-                    
-                    # 只将关系三元组加入到all_triples中（用于后续规范化）
-                    all_triples.extend(batch_relations)
-                    
-                    # 记录属性抽取结果（但不进入规范化流程）
-                    if not hasattr(self, 'all_attributes'):
-                        self.all_attributes = []
-                    self.all_attributes.extend(batch_attributes)
-                    
-                    self.logger.info(f"批次 {batch_num} 提取到 {len(batch_relations)} 个关系三元组, {len(batch_attributes)} 个属性")
+                    self.logger.info(f"批次 {batch_num} 提取到 {len(batch_triples)} 个三元组")
                     
                     # 内存清理
                     if batch_num % 5 == 0:
@@ -607,22 +447,15 @@ class IntegratedPipeline:
                     self.logger.error(f"批次 {batch_num} 提取失败: {e}")
                     continue
             
-            # 获取属性数据（如果存在）
-            all_attributes = getattr(self, 'all_attributes', [])
+            self.stats['total_extracted_triples'] = len(all_triples)
             
-            self.stats['total_extracted_relations'] = len(all_triples)
-            self.stats['total_extracted_attributes'] = len(all_attributes)
-            
-            # 保存中间结果，区分属性和关系
+            # 保存中间结果
             extraction_result = {
-                'relations': all_triples,  # 只有关系会进入规范化流程
-                'attributes': all_attributes,  # 属性单独保存，不进入规范化
+                'triples': all_triples,
                 'stats': {
                     'total_documents': len(documents),
-                    'total_relations': len(all_triples),
-                    'total_attributes': len(all_attributes),
-                    'avg_relations_per_doc': len(all_triples) / len(documents) if documents else 0,
-                    'avg_attributes_per_doc': len(all_attributes) / len(documents) if documents else 0
+                    'total_triples': len(all_triples),
+                    'avg_triples_per_doc': len(all_triples) / len(documents) if documents else 0
                 }
             }
             
@@ -633,10 +466,8 @@ class IntegratedPipeline:
             
             # 创建source_text映射表
             source_texts = {}
-            optimized_relations = []
-            optimized_attributes = []
+            optimized_triples = []
             
-            # 处理关系三元组
             for triple in all_triples:
                 # 确保保留完整的source_text而非preview
                 source_text = triple.get('source_text', '')
@@ -653,55 +484,19 @@ class IntegratedPipeline:
                     source_id = hashlib.md5(source_text.encode('utf-8')).hexdigest()[:16]
                     source_texts[source_id] = source_text
                     
-                    # 创建优化的关系三元组（不包含完整source_text）
+                    # 创建优化的三元组（不包含完整source_text）
                     optimized_triple = {k: v for k, v in triple.items() if k not in ['source_text', 'source_text_preview']}
                     optimized_triple['source_id'] = source_id
-                    optimized_relations.append(optimized_triple)
+                    optimized_triples.append(optimized_triple)
                 else:
                     # 如果没有source_text，保持原样
-                    optimized_relations.append(triple)
+                    optimized_triples.append(triple)
             
-            # 处理属性
-            for attr in all_attributes:
-                # 确保保留完整的source_text而非preview
-                source_text = attr.get('source_text', '')
-                if not source_text and 'source_text_preview' in attr:
-                    # 如果只有preview，尝试从原始文档中恢复完整文本
-                    if 'source_block_index' in attr:
-                        block_idx = attr['source_block_index']
-                        if block_idx < len(documents):
-                            source_text = documents[block_idx].get('content', attr.get('source_text_preview', ''))
-                
-                # 生成source_text的唯一ID
-                if source_text:
-                    import hashlib
-                    source_id = hashlib.md5(source_text.encode('utf-8')).hexdigest()[:16]
-                    source_texts[source_id] = source_text
-                    
-                    # 创建优化的属性（不包含完整source_text）
-                    optimized_attr = {k: v for k, v in attr.items() if k not in ['source_text', 'source_text_preview']}
-                    optimized_attr['source_id'] = source_id
-                    optimized_attributes.append(optimized_attr)
-                else:
-                    # 如果没有source_text，保持原样
-                    optimized_attributes.append(attr)
-            
-            # 分别保存关系和属性
-            relations_file = stage_dir / "extracted_relations.jsonl"
-            with open(relations_file, 'w', encoding='utf-8') as f:
-                for relation in optimized_relations:
-                    f.write(json.dumps(relation, ensure_ascii=False) + '\n')
-            
-            attributes_file = stage_dir / "extracted_attributes.jsonl"
-            with open(attributes_file, 'w', encoding='utf-8') as f:
-                for attribute in optimized_attributes:
-                    f.write(json.dumps(attribute, ensure_ascii=False) + '\n')
-            
-            # 保持向后兼容性，仍然保存原来的extracted_triples.jsonl（只包含关系）
+            # 保存优化的三元组
             jsonl_file = stage_dir / "extracted_triples.jsonl"
             with open(jsonl_file, 'w', encoding='utf-8') as f:
-                for relation in optimized_relations:
-                    f.write(json.dumps(relation, ensure_ascii=False) + '\n')
+                for triple in optimized_triples:
+                    f.write(json.dumps(triple, ensure_ascii=False) + '\n')
             
             # 保存source_text映射表
             source_texts_file = stage_dir / "source_texts.json"
@@ -716,7 +511,7 @@ class IntegratedPipeline:
             
             for i, original_triple in enumerate(all_triples):
                 confidence = original_triple.get('confidence', 0)
-                optimized_triple = optimized_relations[i]
+                optimized_triple = optimized_triples[i]
                 
                 if confidence >= self.confidence_threshold:
                     high_conf_triples.append(original_triple)
@@ -740,12 +535,10 @@ class IntegratedPipeline:
             # 生成agent报告
             stats = {
                 'total_documents': len(documents),
-                'total_relations': len(all_triples),
-                'total_attributes': len(all_attributes),
-                'high_confidence_relations': len(high_conf_triples),
-                'low_confidence_relations': len(low_conf_triples),
-                'avg_relations_per_doc': len(all_triples) / len(documents) if documents else 0,
-                'avg_attributes_per_doc': len(all_attributes) / len(documents) if documents else 0,
+                'total_triples': len(all_triples),
+                'high_confidence_triples': len(high_conf_triples),
+                'low_confidence_triples': len(low_conf_triples),
+                'avg_triples_per_doc': len(all_triples) / len(documents) if documents else 0,
                 'execution_time': 0
             }
             details = {
@@ -756,15 +549,10 @@ class IntegratedPipeline:
             
             self.logger.info(f"\n✅ 信息提取完成:")
             self.logger.info(f"  - 处理文档数: {len(documents)}")
-            self.logger.info(f"  - 提取关系三元组数: {len(all_triples)}")
-            self.logger.info(f"  - 提取属性数: {len(all_attributes)}")
-            self.logger.info(f"  - 平均每文档关系数: {len(all_triples) / len(documents) if documents else 0:.2f}")
-            self.logger.info(f"  - 平均每文档属性数: {len(all_attributes) / len(documents) if documents else 0:.2f}")
-            self.logger.info(f"  - 关系文件: extracted_relations.jsonl")
-            self.logger.info(f"  - 属性文件: extracted_attributes.jsonl")
-            self.logger.info(f"  - 注意: 只有关系会进入后续的规范化流程")
+            self.logger.info(f"  - 提取三元组数: {len(all_triples)}")
+            self.logger.info(f"  - 平均每文档三元组数: {len(all_triples) / len(documents) if documents else 0:.2f}")
             
-            return all_triples  # 返回关系三元组用于后续规范化
+            return all_triples
             
         except Exception as e:
             self.logger.error(f"信息提取阶段失败: {e}")
@@ -992,29 +780,9 @@ class IntegratedPipeline:
             
             self.stats['canonicalized_triples'] = len(canonicalized_triples)
             
-            # 读取规范化映射文件
-            mapping_files = list(Path("data/output").glob(f"canonicalization_mappings_optimized_*.json"))
+            # 初始化映射字典（规范化器内部处理，这里暂时为空）
             relation_map = {}
             entity_map = {}
-            
-            if mapping_files:
-                # 获取最新的映射文件
-                latest_mapping_file = max(mapping_files, key=lambda x: x.stat().st_mtime)
-                
-                try:
-                    with open(latest_mapping_file, 'r', encoding='utf-8') as f:
-                        mapping_data = json.load(f)
-                        relation_map = mapping_data.get('relation_mappings', {})
-                        entity_map = mapping_data.get('entity_mappings', {})
-                        
-                    self.logger.info(f"成功读取映射文件: {latest_mapping_file}")
-                    self.logger.info(f"关系映射数量: {len(relation_map)}, 实体映射数量: {len(entity_map)}")
-                except Exception as e:
-                    self.logger.error(f"读取映射文件失败: {e}")
-                    relation_map = {}
-                    entity_map = {}
-            else:
-                self.logger.warning("未找到规范化映射文件，使用空映射")
             
             # 保存中间结果
             canonicalization_result = {
@@ -1120,91 +888,18 @@ class IntegratedPipeline:
             # 只插入高置信度的规范化三元组
             self.logger.info(f"开始将 {len(canonicalized_triples)} 个规范化三元组插入图数据库")
             
-            # 准备属性数据
-            structured_data = {}
-            if hasattr(self, 'all_attributes') and self.all_attributes:
-                # 将属性数据转换为GraphArchitect期望的格式
-                entity_attributes = {}
-                filtered_count = 0
-                total_count = 0
-                
-                for attr in self.all_attributes:
-                    try:
-                        total_count += 1
-                        
-                        # 检查置信度，只保留>=0.9的高置信度属性
-                        confidence = attr.get('confidence', 0.0)
-                        if confidence < 0.9:
-                            continue
-                        
-                        # 解析entity字段（可能是JSON字符串或字典字符串）
-                        entity_info = attr.get('entity', '')
-                        if isinstance(entity_info, str) and entity_info.startswith('{'):
-                            try:
-                                # 尝试JSON解析
-                                entity_data = json.loads(entity_info)
-                                entity_name = entity_data.get('entity_name', '')
-                            except json.JSONDecodeError:
-                                # 如果JSON解析失败，尝试使用eval（安全地解析Python字典字符串）
-                                try:
-                                    entity_data = eval(entity_info)
-                                    if isinstance(entity_data, dict):
-                                        entity_name = entity_data.get('entity_name', '')
-                                    else:
-                                        entity_name = str(entity_info)
-                                except:
-                                    entity_name = str(entity_info)
-                        else:
-                            entity_name = str(entity_info)
-                        
-                        if entity_name:
-                            if entity_name not in entity_attributes:
-                                entity_attributes[entity_name] = {}
-                            
-                            # 处理属性名：去除attributes_前缀，排除text_id和source_id
-                            attribute_key = attr.get('attribute', '')
-                            attribute_value = attr.get('value', '')
-                            
-                            # 排除text_id和source_id
-                            if attribute_key.lower() in ['text_id', 'source_id']:
-                                continue
-                            
-                            # 去除attributes_前缀
-                            if attribute_key.startswith('attributes_'):
-                                attribute_key = attribute_key[len('attributes_'):]
-                            
-                            if attribute_key and attribute_value:
-                                # 属性名去重：如果已存在相同属性名，保留置信度更高的
-                                if attribute_key in entity_attributes[entity_name]:
-                                    # 暂时跳过去重逻辑，直接覆盖
-                                    pass
-                                
-                                entity_attributes[entity_name][attribute_key] = attribute_value
-                                filtered_count += 1
-                    
-                    except Exception as e:
-                        self.logger.warning(f"处理属性数据时出错: {e}, 属性: {attr}")
-                        continue
-                
-                structured_data = entity_attributes
-                self.logger.info(f"从 {total_count} 个属性中过滤出 {filtered_count} 个高置信度属性（>=0.9），准备了 {len(structured_data)} 个实体的属性数据")
-            else:
-                self.logger.info("没有找到属性数据，使用空的structured_data")
-            
             # 使用图构建器插入数据
-            entity_map = await self.agents['constructor'].build_and_persist(
+            await self.agents['constructor'].build_and_persist(
                 normalized_triples=canonicalized_triples,
-                structured_data=structured_data,
+                structured_data={},  # 结构化数据可以为空
                 output_filename=f"graph_construction_{self.timestamp}.json"
             )
             
             self.stats['inserted_triples'] = len(canonicalized_triples)
-            self.stats['total_entities'] = len(entity_map)
             
             # 保存最终结果
             final_result = {
                 'inserted_triples': canonicalized_triples,
-                'entity_map': entity_map,
                 'stats': self.stats,
                 'timestamp': self.timestamp
             }
@@ -1256,131 +951,6 @@ class IntegratedPipeline:
             await self.initialize_clients()
             await self.initialize_agents()
             
-            # 检查是否可以从中间结果恢复
-            recovery_info = self.check_intermediate_results()
-            
-            if recovery_info['can_resume']:
-                self.logger.info(f"🔄 检测到中间结果文件，可以从 {recovery_info['resume_from_stage']} 阶段恢复")
-                
-                # 根据最后完成的阶段决定从哪里开始
-                resume_stage = recovery_info['resume_from_stage']
-                
-                if resume_stage == 'stage_3_knowledge_auditing':
-                    # 从规范化阶段开始
-                    self.logger.info("从规范化阶段开始恢复执行")
-                    stage_info = recovery_info['available_data']['stage_3_knowledge_auditing']
-                    high_confidence_triples = self.load_intermediate_data('stage_3_knowledge_auditing', stage_info['key_file'])
-                    
-                    # 尝试加载属性数据（从信息提取阶段）
-                    if 'stage_2_information_extraction' in recovery_info['available_data']:
-                        extraction_stage_info = recovery_info['available_data']['stage_2_information_extraction']
-                        attributes_file = extraction_stage_info['stage_dir'] / 'extracted_attributes.jsonl'
-                        if attributes_file.exists():
-                            self.all_attributes = self.load_intermediate_data('stage_2_information_extraction', attributes_file)
-                            self.logger.info(f"从中间结果加载了 {len(self.all_attributes)} 个属性")
-                        else:
-                            self.all_attributes = []
-                            self.logger.info("未找到属性数据文件，使用空属性列表")
-                    else:
-                        self.all_attributes = []
-                        self.logger.info("未找到信息提取阶段数据，使用空属性列表")
-                    
-                    if high_confidence_triples:
-                        self.stats['high_confidence_triples'] = len(high_confidence_triples)
-                        self.logger.info(f"从中间结果加载了 {len(high_confidence_triples)} 个高置信度三元组")
-                        
-                        # 直接跳转到规范化阶段
-                        canonicalized_triples = await self.stage_4_canonicalization(high_confidence_triples)
-                        success = await self.stage_5_graph_construction(canonicalized_triples)
-                        
-                        # 跳转到最终统计部分
-                        end_time = time.time()
-                        duration = end_time - start_time
-                        return await self._finalize_pipeline(success, duration)
-                    else:
-                        self.logger.warning("无法从中间结果加载数据，将执行完整流程")
-                
-                elif resume_stage == 'stage_2_information_extraction':
-                    # 从知识审核阶段开始
-                    self.logger.info("从知识审核阶段开始恢复执行")
-                    stage_info = recovery_info['available_data']['stage_2_information_extraction']
-                    
-                    # 检查是否有extracted_relations.jsonl文件（新架构）
-                    relations_file = stage_info['stage_dir'] / 'extracted_relations.jsonl'
-                    if relations_file.exists():
-                        triples = self.load_intermediate_data('stage_2_information_extraction', relations_file)
-                    else:
-                        # 回退到旧的high_confidence_triples.jsonl
-                        triples = self.load_intermediate_data('stage_2_information_extraction', stage_info['key_file'])
-                    
-                    # 加载属性数据
-                    attributes_file = stage_info['stage_dir'] / 'extracted_attributes.jsonl'
-                    if attributes_file.exists():
-                        self.all_attributes = self.load_intermediate_data('stage_2_information_extraction', attributes_file)
-                        self.logger.info(f"从中间结果加载了 {len(self.all_attributes)} 个属性")
-                    else:
-                        self.all_attributes = []
-                        self.logger.info("未找到属性数据文件，使用空属性列表")
-                    
-                    if triples:
-                        self.stats['total_extracted_triples'] = len(triples)
-                        self.logger.info(f"从中间结果加载了 {len(triples)} 个三元组")
-                        
-                        # 执行知识审核阶段
-                        if self.skip_audit:
-                            self.logger.info("⏭️ 跳过知识审核阶段")
-                            high_confidence_triples = triples
-                            low_confidence_triples = []
-                            self.stats['high_confidence_triples'] = len(high_confidence_triples)
-                            self.stats['low_confidence_triples'] = 0
-                        else:
-                            high_confidence_triples, low_confidence_triples = await self.stage_3_knowledge_auditing(triples)
-                        
-                        # 继续执行后续阶段
-                        canonicalized_triples = await self.stage_4_canonicalization(high_confidence_triples)
-                        success = await self.stage_5_graph_construction(canonicalized_triples)
-                        
-                        # 跳转到最终统计部分
-                        end_time = time.time()
-                        duration = end_time - start_time
-                        return await self._finalize_pipeline(success, duration)
-                    else:
-                        self.logger.warning("无法从中间结果加载数据，将执行完整流程")
-                
-                elif resume_stage == 'stage_4_canonicalization':
-                    # 从图谱构建阶段开始
-                    self.logger.info("从图谱构建阶段开始恢复执行")
-                    stage_info = recovery_info['available_data']['stage_4_canonicalization']
-                    canonicalized_triples = self.load_intermediate_data('stage_4_canonicalization', stage_info['key_file'])
-                    
-                    # 尝试加载属性数据（从信息提取阶段）
-                    if 'stage_2_information_extraction' in recovery_info['available_data']:
-                        extraction_stage_info = recovery_info['available_data']['stage_2_information_extraction']
-                        attributes_file = extraction_stage_info['stage_dir'] / 'extracted_attributes.jsonl'
-                        if attributes_file.exists():
-                            self.all_attributes = self.load_intermediate_data('stage_2_information_extraction', attributes_file)
-                            self.logger.info(f"从中间结果加载了 {len(self.all_attributes)} 个属性")
-                        else:
-                            self.all_attributes = []
-                            self.logger.info("未找到属性数据文件，使用空属性列表")
-                    else:
-                        self.all_attributes = []
-                        self.logger.info("未找到信息提取阶段数据，使用空属性列表")
-                    
-                    if canonicalized_triples:
-                        self.stats['canonicalized_triples'] = len(canonicalized_triples)
-                        self.logger.info(f"从中间结果加载了 {len(canonicalized_triples)} 个规范化三元组")
-                        
-                        # 直接跳转到图谱构建阶段
-                        success = await self.stage_5_graph_construction(canonicalized_triples)
-                        
-                        # 跳转到最终统计部分
-                        end_time = time.time()
-                        duration = end_time - start_time
-                        return await self._finalize_pipeline(success, duration)
-                    else:
-                        self.logger.warning("无法从中间结果加载数据，将执行完整流程")
-            
             # 检查输入文件类型
             input_path = Path(input_file)
             
@@ -1430,7 +1000,67 @@ class IntegratedPipeline:
             end_time = time.time()
             duration = end_time - start_time
             
-            return await self._finalize_pipeline(success, duration)
+            self.logger.info("\n" + "="*80)
+            self.logger.info("🎉 整合版Pipeline执行完成")
+            self.logger.info("="*80)
+            self.logger.info(f"总耗时: {duration:.2f}秒")
+            self.logger.info(f"\n📊 执行统计:")
+            self.logger.info(f"  - 处理实体数: {self.stats['total_entities']}")
+            self.logger.info(f"  - 获取文档数: {self.stats['total_documents']}")
+            self.logger.info(f"  - 提取三元组数: {self.stats['total_extracted_triples']}")
+            self.logger.info(f"  - 高置信度三元组数: {self.stats['high_confidence_triples']}")
+            self.logger.info(f"  - 低置信度三元组数: {self.stats['low_confidence_triples']}")
+            self.logger.info(f"  - 规范化三元组数: {self.stats['canonicalized_triples']}")
+            self.logger.info(f"  - 插入图数据库三元组数: {self.stats['inserted_triples']}")
+            
+            # 保存最终统计到根目录
+            final_stats = {
+                'pipeline_stats': self.stats,
+                'execution_time': duration,
+                'timestamp': self.timestamp,
+                'success': success
+            }
+            
+            # 保存到intermediate_results根目录
+            final_stats_file = self.intermediate_dir / 'pipeline_summary.json'
+            with open(final_stats_file, 'w', encoding='utf-8') as f:
+                json.dump(final_stats, f, ensure_ascii=False, indent=2)
+            
+            # 生成总体pipeline报告
+            pipeline_report = {
+                'pipeline_name': 'AstroWeaver Integrated Pipeline',
+                'execution_timestamp': self.timestamp,
+                'total_execution_time': duration,
+                'success': success,
+                'stages_completed': [
+                    'data_acquisition',
+                    'information_extraction', 
+                    'knowledge_auditing',
+                    'canonicalization',
+                    'graph_construction'
+                ],
+                'final_statistics': self.stats,
+                'stage_directories': {
+                    stage: str(path) for stage, path in self.stage_dirs.items()
+                },
+                'output_summary': {
+                    'total_entities_processed': self.stats['total_entities'],
+                    'documents_acquired': self.stats['total_documents'],
+                    'triples_extracted': self.stats['total_extracted_triples'],
+                    'high_confidence_triples': self.stats['high_confidence_triples'],
+                    'canonicalized_triples': self.stats['canonicalized_triples'],
+                    'triples_inserted_to_graph': self.stats['inserted_triples']
+                }
+            }
+            
+            pipeline_report_file = self.intermediate_dir / 'pipeline_report.json'
+            with open(pipeline_report_file, 'w', encoding='utf-8') as f:
+                json.dump(pipeline_report, f, ensure_ascii=False, indent=2)
+            
+            self.logger.info(f"📋 Pipeline总体报告已生成: {pipeline_report_file}")
+            self.logger.info(f"📊 Pipeline统计已保存: {final_stats_file}")
+            
+            return success
             
         except Exception as e:
             self.logger.error(f"Pipeline执行失败: {e}")
@@ -1469,7 +1099,6 @@ async def main():
     parser.add_argument('--config', default='configs/config.yaml', help='配置文件路径')
     parser.add_argument('--log-level', default='INFO', help='日志级别')
     parser.add_argument('--skip-audit', action='store_true', help='跳过知识审核阶段')
-    parser.add_argument('--multi-entity', action='store_true', help='启用多实体属性抽取模式')
     
     args = parser.parse_args()
     
@@ -1478,7 +1107,7 @@ async def main():
     
     try:
         # 创建并运行Pipeline
-        pipeline = IntegratedPipeline(args.config, skip_audit=args.skip_audit, multi_entity_mode=args.multi_entity)
+        pipeline = IntegratedPipeline(args.config, skip_audit=args.skip_audit)
         success = await pipeline.run_pipeline(args.input_file)
         
         if success:
