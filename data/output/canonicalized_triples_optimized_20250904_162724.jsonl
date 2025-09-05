@@ -1,0 +1,658 @@
+{"subject": "Juno Jupiter probe", "predicate": "analyzed", "object": "Jupiter’s atmosphere", "confidence": 0.9, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "maps", "object": "Jupiter’s magnetic fields", "confidence": 0.85, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "maps", "object": "Jupiter’s gravity fields", "confidence": 0.85, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "explored", "object": "Jupiter’s magnetosphere", "confidence": 0.9, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "analyzed", "object": "Jupiter’s auroras", "confidence": 0.85, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "continues studies", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "explored", "object": "Jovian system", "confidence": 0.85, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "meets", "object": "Ganymede", "confidence": 0.8, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "meets", "object": "Europa", "confidence": 0.8, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "meets", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000000", "source_id": "5dd24ed9c6fda45c"}
+{"subject": "Juno Jupiter probe", "predicate": "explored", "object": "Jupiter", "confidence": 0.9, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "Juno Jupiter probe", "predicate": "analyzed", "object": "Jovian rings", "confidence": 0.8, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "Juno Jupiter probe", "predicate": "analyzed", "object": "inner moons", "confidence": 0.8, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "close flybys", "predicate": "of", "object": "moons", "confidence": 0.7, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "clues", "predicate": "about", "object": "formation of planets", "confidence": 0.7, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "second spacecraft", "predicate": "orbited", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "Galileo orbiter", "predicate": "orbited", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "Juno Jupiter probe", "predicate": "orbited", "object": "Jupiter", "confidence": 0.9, "text_id": "text_000003", "source_id": "d487f21dce5e682a"}
+{"subject": "Callisto", "predicate": "orbited", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000003", "source_id": "d487f21dce5e682a"}
+{"subject": "Juno Jupiter probe", "predicate": "planned", "object": "Period Reduction Maneuver", "confidence": 0.7, "text_id": "text_000003", "source_id": "d487f21dce5e682a"}
+{"subject": "NASA", "predicate": "extended", "object": "Juno Jupiter probe", "confidence": 0.8, "text_id": "text_000003", "source_id": "d487f21dce5e682a"}
+{"subject": "Juno Jupiter probe", "predicate": "reoriented", "object": "Sun", "confidence": 0.8, "text_id": "text_000004", "source_id": "a1d0295a0ffd4d0f"}
+{"subject": "Jupiter", "predicate": "close approach", "object": "Juno Jupiter probe", "confidence": 0.8, "text_id": "text_000004", "source_id": "a1d0295a0ffd4d0f"}
+{"subject": "Juno Jupiter probe", "predicate": "powered_down", "object": "non-critical systems", "confidence": 0.8, "text_id": "text_000004", "source_id": "a1d0295a0ffd4d0f"}
+{"subject": "Juno Jupiter probe", "predicate": "had", "object": "JIRAM", "confidence": 0.8, "text_id": "text_000004", "source_id": "a1d0295a0ffd4d0f"}
+{"subject": "Juno Jupiter probe", "predicate": "faced", "object": "Sun", "confidence": 0.8, "text_id": "text_000004", "source_id": "a1d0295a0ffd4d0f"}
+{"subject": "Juno Jupiter probe", "predicate": "orbited", "object": "Jupiter", "confidence": 0.9, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "Juno Jupiter probe", "predicate": "will_learn", "object": "Jupiter's_structure", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "Juno Jupiter probe", "predicate": "will_learn", "object": "Jupiter's_structure", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "spacecraft", "predicate": "will_deorbit", "object": "Jupiter's_structure", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "NASA", "predicate": "extended", "object": "mission", "confidence": 0.9, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "NASA", "predicate": "guidelines", "object": "planetary_protection", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "Juno Jupiter probe", "predicate": "launched", "object": "Atlas V rocket", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1571a09252945d"}
+{"subject": "Juno Jupiter probe", "predicate": "used", "object": "X band", "confidence": 0.8, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "Juno Jupiter probe", "predicate": "used", "object": "Deep Space Network", "confidence": 0.9, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "Juno Jupiter probe", "predicate": "used", "object": "Gravity Science experiment", "confidence": 0.8, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "Juno Jupiter probe", "predicate": "used", "object": "X-band Doppler tracking", "confidence": 0.8, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "Juno Jupiter probe", "predicate": "used", "object": "X band", "confidence": 0.8, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "hypergolic propellant", "predicate": "manufactured_by", "object": "Moog Inc", "confidence": 0.8, "text_id": "text_000008", "source_id": "f8a7bd0dcfa6927c"}
+{"subject": "Europa Orbiter Mission", "predicate": "designed", "object": "NASA", "confidence": 0.7, "text_id": "text_000009", "source_id": "76fc5f9d34bc33c2"}
+{"subject": "Doppler measurements", "predicate": "are_supported_by", "object": "spacecraft telecommunications subsystem", "confidence": 0.9, "text_id": "text_000001", "source_id": "047c980186b4760a"}
+{"subject": "spacecraft", "predicate": "includes", "object": "Ka-band translator", "confidence": 0.7, "text_id": "text_000001", "source_id": "047c980186b4760a"}
+{"subject": "Juno Jupiter probe", "predicate": "gets", "object": "British boost", "confidence": 0.8, "text_id": "text_000001", "source_id": "047c980186b4760a"}
+{"subject": "Neptune", "predicate": "orbited", "object": "Sun", "confidence": 0.9, "text_id": "text_000003", "source_id": "37914b9de770c3a5"}
+{"subject": "Pluto", "predicate": "might_not_be_alone", "object": "rotating cloud of small, icy bodies", "confidence": 0.7, "text_id": "text_000004", "source_id": "2da25b218b12aaf8"}
+{"subject": "Armin O. Leuschner", "predicate": "proposed", "object": "long-period planetary objects", "confidence": 0.8, "text_id": "text_000005", "source_id": "c91990f97c3d238b"}
+{"subject": "Gerard Kuiper", "predicate": "held responsible for", "object": "scattered disc", "confidence": 0.8, "text_id": "text_000005", "source_id": "c91990f97c3d238b"}
+{"subject": "Fred Whipple", "predicate": "thought", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000005", "source_id": "c91990f97c3d238b"}
+{"subject": "Tremaine", "predicate": "renames", "object": "rotating cloud of small, icy bodies", "confidence": 0.85, "text_id": "text_000005", "source_id": "c91990f97c3d238b"}
+{"subject": "David Jewitt", "predicate": "worked_at", "object": "MIT", "confidence": 0.8, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Jane Luu", "predicate": "worked_at", "object": "University of Hawaii", "confidence": 0.8, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Jewitt and Luu", "predicate": "used", "object": "Kitt Peak National Observatory", "confidence": 0.7, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Jewitt and Luu", "predicate": "used", "object": "Cerro Tololo Inter-American Observatory", "confidence": 0.7, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Jewitt and Luu", "predicate": "searches_for", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Plutonian system", "confidence": 0.8, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Neptune", "predicate": "migrated_inwards", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "scattered disc", "predicate": "was_created_by", "object": "Neptune migration", "confidence": 0.7, "text_id": "text_000006", "source_id": "c8c4c97ca823d694"}
+{"subject": "Neptune", "predicate": "exerts_influence_on", "object": "rotating cloud of small, icy bodies", "confidence": 0.9, "text_id": "text_000008", "source_id": "8420b75c9269cd73"}
+{"subject": "orbits", "predicate": "in", "object": "regions", "confidence": 0.7, "text_id": "text_000008", "source_id": "8420b75c9269cd73"}
+{"subject": "Neptune", "predicate": "interacted_with", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000009", "source_id": "31ac6323e0cb65eb"}
+{"subject": "scattered disc population", "predicate": "scatter", "object": "during_migration_of_giant_planets", "confidence": 0.8, "text_id": "text_000009", "source_id": "31ac6323e0cb65eb"}
+{"subject": "Plutinos", "predicate": "was_observed_by", "object": "Neptune", "confidence": 0.7, "text_id": "text_000000", "source_id": "e8cdeadd7a5d2573"}
+{"subject": "Plutinos", "predicate": "reached_resonance_with", "object": "Neptune", "confidence": 0.9, "text_id": "text_000000", "source_id": "e8cdeadd7a5d2573"}
+{"subject": "Neptune_trojans", "predicate": "reached_resonance_with", "object": "Neptune", "confidence": 0.9, "text_id": "text_000000", "source_id": "e8cdeadd7a5d2573"}
+{"subject": "objects", "predicate": "decline_beyond", "object": "Kuiper cliff", "confidence": 0.85, "text_id": "text_000001", "source_id": "e04031c8cf7cca2a"}
+{"subject": "TNO data", "predicate": "analyzed", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000001", "source_id": "e04031c8cf7cca2a"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "can_be_compared_with", "object": "rotating cloud of small, icy bodies", "confidence": 0.75, "text_id": "text_000001", "source_id": "e04031c8cf7cca2a"}
+{"subject": "5:6 mean-motion resonance", "predicate": "associated_with", "object": "Jupiter", "confidence": 0.85, "text_id": "text_000001", "source_id": "e04031c8cf7cca2a"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "formed", "object": "protoplanetary disc", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "are_part_of", "object": "rotating cloud of small, icy bodies", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "larger_bodies", "predicate": "formed", "object": "fragmentation_of_clouds", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planet", "predicate": "migrated_inwards", "object": "Planet", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planet", "predicate": "migrated_inwards", "object": "Uranus", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planet", "predicate": "migrated_inwards", "object": "Neptune", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Jupiter", "predicate": "migrated_inwards", "object": "Solar System", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Jupiter", "predicate": "reached_resonance_with", "object": "Planet", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Uranus", "predicate": "scatter", "object": "Jupiter-Saturn_resonance", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Neptune", "predicate": "scatter", "object": "Jupiter-Saturn_resonance", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planetesimals", "predicate": "evolved_from", "object": "cold_belt", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planetesimals", "predicate": "migrated_inwards", "object": "Jupiter_trojans", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planetesimals", "predicate": "migrated_inwards", "object": "irregular_satellites", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planetesimals", "predicate": "migrated_inwards", "object": "outer_belt_asteroids", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Planetesimals", "predicate": "from", "object": "Solar System", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "population_was_reduced_by", "object": "Jupiter", "confidence": 0.85, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Nice_model", "predicate": "reproduces", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Nice_model", "predicate": "fails_to_account_for", "object": "objects_in_Kuiper_belt", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Solar System", "predicate": "began_with", "object": "five_giant_planets", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "ice_giant", "predicate": "migrated_inwards", "object": "Solar System", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "ice_giant", "predicate": "migrated_inwards", "object": "Jupiter_crossing_orbit", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "ice_giant", "predicate": "originate_from", "object": "Solar System", "confidence": 0.8, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "hot_belt", "predicate": "formed", "object": "cold_belt", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "Neptune", "predicate": "helped", "object": "cold_belt", "confidence": 0.75, "text_id": "text_000002", "source_id": "77499a38681633a5"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "from", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000003", "source_id": "5e4b1da7a3ec5cfa"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "exerts_influence_on", "object": "motion_of_planets", "confidence": 0.9, "text_id": "text_000004", "source_id": "68db58b6008d72ce"}
+{"subject": "dynamically cold population", "predicate": "presents_problem_for", "object": "models_of_Solar_System's_formation", "confidence": 0.8, "text_id": "text_000004", "source_id": "68db58b6008d72ce"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "cannot_see", "object": "telescopes on Earth", "confidence": 0.8, "text_id": "text_000004", "source_id": "68db58b6008d72ce"}
+{"subject": "Hubble_Space Telescope", "predicate": "cannot_see", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000004", "source_id": "68db58b6008d72ce"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "are_deficient_compared_to", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000004", "source_id": "68db58b6008d72ce"}
+{"subject": "scattered disc", "predicate": "overlaps_with", "object": "rotating cloud of small, icy bodies", "confidence": 0.9, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "in", "object": "primordial belt", "confidence": 0.85, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "SDOs", "predicate": "in", "object": "primordial belt", "confidence": 0.85, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "gravitational interactions", "predicate": "are_sent_into", "object": "objects_in_Kuiper_belt", "confidence": 0.7, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "gravitational interactions", "predicate": "are_sent_into", "object": "SDOs", "confidence": 0.7, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "Neptune", "predicate": "interacted_with", "object": "SDOs", "confidence": 0.75, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "orbited", "object": "rotating cloud of small, icy bodies", "confidence": 0.85, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "scattered disc", "predicate": "includes", "object": "SDOs", "confidence": 0.8, "text_id": "text_000005", "source_id": "4d6f1312edf65fd6"}
+{"subject": "Neptune", "predicate": "captured", "object": "Uranus", "confidence": 0.9, "text_id": "text_000006", "source_id": "6b9e2dd4594f91c2"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "are_smaller_than", "object": "Pluto", "confidence": 0.9, "text_id": "text_000007", "source_id": "593b368aa1dc4ec4"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "have", "object": "natural_satellites", "confidence": 0.8, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "Ceres", "predicate": "was_considered", "object": "Planet", "confidence": 0.7, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "IAU", "predicate": "defined", "object": "Planet", "confidence": 0.85, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "Salacia", "predicate": "proposed", "object": "as_dwarf_planet", "confidence": 0.7, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "Máni", "predicate": "proposed", "object": "as_dwarf_planet", "confidence": 0.7, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "Aya", "predicate": "proposed", "object": "as_dwarf_planet", "confidence": 0.7, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "Ixion", "predicate": "proposed", "object": "as_dwarf_planet", "confidence": 0.7, "text_id": "text_000008", "source_id": "66030a2347058c01"}
+{"subject": "New Horizons spacecraft", "predicate": "explored", "object": "rotating cloud of small, icy bodies", "confidence": 0.9, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Pluto", "confidence": 0.9, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "New Horizons spacecraft", "predicate": "analyzed", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "New Horizons spacecraft", "predicate": "was_downloaded", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "Ralph_instrument", "predicate": "confirmed", "object": "Arrokoth's_red_color", "confidence": 0.7, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "Thales Alenia Space", "predicate": "analyzed", "object": "orbiter_mission", "confidence": 0.7, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "Alan Stern", "predicate": "proposed", "object": "missions", "confidence": 0.7, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Quaoar", "confidence": 0.9, "text_id": "text_000001", "source_id": "15704dd63a23c30e"}
+{"subject": "mission", "predicate": "used", "object": "SLS", "confidence": 0.75, "text_id": "text_000001", "source_id": "15704dd63a23c30e"}
+{"subject": "mission", "predicate": "made flyby of", "object": "Jupiter", "confidence": 0.75, "text_id": "text_000001", "source_id": "15704dd63a23c30e"}
+{"subject": "orbiter_mission", "predicate": "reaches", "object": "Ixion", "confidence": 0.85, "text_id": "text_000001", "source_id": "15704dd63a23c30e"}
+{"subject": "protoplanetary disc", "predicate": "surrounds", "object": "stars", "confidence": 0.9, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "protoplanetary disc", "predicate": "are_like", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "categories", "predicate": "includes", "object": "wide belts", "confidence": 0.8, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "categories", "predicate": "includes", "object": "narrow belts", "confidence": 0.8, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "infrared excess", "predicate": "suggest", "object": "objects_in_Kuiper_belt", "confidence": 0.7, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "debris discs", "predicate": "surrounds", "object": "stars", "confidence": 0.85, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "images", "predicate": "was_observed_by", "object": "Hubble_Space Telescope", "confidence": 0.9, "text_id": "text_000002", "source_id": "e19700251e9c7177"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "includes", "object": "Planet Nine", "confidence": 0.7, "text_id": "text_000003", "source_id": "53398436b90d8fa8"}
+{"subject": "Hubble_Space Telescope", "predicate": "used", "object": "Marc Buie", "confidence": 0.8, "text_id": "text_000004", "source_id": "b17ec5ae7286f57b"}
+{"subject": "New Horizons spacecraft", "predicate": "targets", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000004", "source_id": "b17ec5ae7286f57b"}
+{"subject": "Hubble_Space Telescope", "predicate": "was_observed_by", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000005", "source_id": "f63097d92385b7a0"}
+{"subject": "NASA", "predicate": "announced", "object": "Arrokoth as a potential target of the New Horizons probe", "confidence": 0.8, "text_id": "text_000005", "source_id": "f63097d92385b7a0"}
+{"subject": "objects", "predicate": "was_nicknamed", "object": "Thule", "confidence": 0.9, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "Thule", "predicate": "was_selected_by", "object": "NASA", "confidence": 0.8, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "New Horizons spacecraft", "predicate": "was_nicknamed", "object": "Ultima", "confidence": 0.8, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "New Horizons spacecraft", "predicate": "was_nicknamed", "object": "Thule", "confidence": 0.8, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "nickname", "predicate": "criticized_use_of", "object": "Newsweek columnist", "confidence": 0.8, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "Newsweek columnist", "predicate": "criticized_use_of", "object": "Thule", "confidence": 0.7, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "New York Times", "predicate": "quoted", "object": "scientists and historians", "confidence": 0.8, "text_id": "text_000006", "source_id": "3ca7c308b7f72090"}
+{"subject": "New Horizons spacecraft", "predicate": "chose", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "KBO 2014 MU69", "predicate": "represents", "object": "Powhatan people", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "Hubble_Space Telescope", "predicate": "was involved in", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "APL", "predicate": "was involved in", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "Hubble_Space Telescope", "predicate": "was operated from", "object": "Tidewater region of Maryland", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "APL", "predicate": "was operated from", "object": "Tidewater region of Maryland", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "New Horizons spacecraft", "predicate": "proposed", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "IAU", "predicate": "accepted", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "New Horizons spacecraft", "predicate": "announced", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "Minor Planet Center", "predicate": "accepted", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "New Horizons spacecraft", "predicate": "intended", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000007", "source_id": "00329ffb783e802e"}
+{"subject": "KBO 2014 MU69", "predicate": "experiences_impact_events", "object": "rotating cloud of small, icy bodies", "confidence": 0.85, "text_id": "text_000000", "source_id": "6465f061be86b74e"}
+{"subject": "Akasa Linea", "predicate": "connects", "object": "Weeyo", "confidence": 0.8, "text_id": "text_000001", "source_id": "ccfd1f6762631edc"}
+{"subject": "Akasa Linea", "predicate": "connects", "object": "Wenu Lobus", "confidence": 0.8, "text_id": "text_000001", "source_id": "ccfd1f6762631edc"}
+{"subject": "Sky", "predicate": "was_nicknamed", "object": "Weeyo Lobus", "confidence": 0.8, "text_id": "text_000001", "source_id": "ccfd1f6762631edc"}
+{"subject": "Kaʼan Arcus", "predicate": "was_nicknamed", "object": "Wenu Lobus", "confidence": 0.8, "text_id": "text_000001", "source_id": "ccfd1f6762631edc"}
+{"subject": "KBO 2014 MU69", "predicate": "orbited", "object": "Sun", "confidence": 1.0, "text_id": "text_000003", "source_id": "fc53977e9fadef61"}
+{"subject": "Neptune", "predicate": "does_not_perturb", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000003", "source_id": "fc53977e9fadef61"}
+{"subject": "Deep Ecliptic Survey", "predicate": "simulates", "object": "Arrokoth's orbit", "confidence": 0.85, "text_id": "text_000003", "source_id": "fc53977e9fadef61"}
+{"subject": "Minor Planet Center", "predicate": "assigns_number", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000003", "source_id": "fc53977e9fadef61"}
+{"subject": "Hubble_Space Telescope", "predicate": "was_observed_by", "object": "KBO 2014 MU69", "confidence": 0.85, "text_id": "text_000003", "source_id": "fc53977e9fadef61"}
+{"subject": "New Horizons spacecraft", "predicate": "approaches", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000004", "source_id": "409865cf7bc0d8c6"}
+{"subject": "KBO 2014 MU69", "predicate": "faced", "object": "Sun", "confidence": 0.7, "text_id": "text_000004", "source_id": "409865cf7bc0d8c6"}
+{"subject": "progenitor objects", "predicate": "formed", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000006", "source_id": "d678a058155f9e87"}
+{"subject": "KBO 2014 MU69", "predicate": "formed", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000006", "source_id": "d678a058155f9e87"}
+{"subject": "larger object", "predicate": "formed", "object": "coalescence of smaller planetesimal units", "confidence": 0.8, "text_id": "text_000006", "source_id": "d678a058155f9e87"}
+{"subject": "progenitor objects", "predicate": "fuse", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000007", "source_id": "b4a64d9a52b79fcd"}
+{"subject": "KBO 2014 MU69", "predicate": "faced", "object": "Sun", "confidence": 0.8, "text_id": "text_000007", "source_id": "b4a64d9a52b79fcd"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "New Horizons spacecraft", "predicate": "searches_for", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "New Horizons spacecraft", "predicate": "began", "object": "Hubble_Space Telescope", "confidence": 0.8, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "Marc Buie", "predicate": "identified", "object": "KBO 2014 MU69", "confidence": 0.85, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "New Horizons spacecraft", "predicate": "ruled_out", "object": "Three candidate targets", "confidence": 0.75, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "NASA", "predicate": "was_selected_by", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "New Horizons spacecraft", "predicate": "combined_with", "object": "Hubble_Space Telescope", "confidence": 0.8, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "New Horizons spacecraft", "predicate": "combined_with", "object": "Gaia space observatory", "confidence": 0.8, "text_id": "text_000008", "source_id": "473f70acf5f53834"}
+{"subject": "KBO 2014 MU69", "predicate": "performed_occultations_of", "object": "background stars", "confidence": 0.9, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "New Horizons spacecraft", "predicate": "formed", "object": "KBO Chasers team", "confidence": 0.8, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "KBO Chasers team", "predicate": "led_by", "object": "Marc Buie", "confidence": 0.85, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "Hubble_Space Telescope", "predicate": "revealed", "object": "telescopes were placed in the wrong location", "confidence": 0.8, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "SOFIA observations", "predicate": "combined_with", "object": "mobile telescopes observations", "confidence": 0.85, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "2018 occultation", "predicate": "occurred", "object": "South_Atlantic", "confidence": 0.9, "text_id": "text_000000", "source_id": "09dff232910e015c"}
+{"subject": "2018 occultation", "predicate": "occurred", "object": "Indian_Ocean", "confidence": 0.9, "text_id": "text_000000", "source_id": "09dff232910e015c"}
+{"subject": "4 August 2018 event", "predicate": "gathered_media_attention", "object": "Senegal", "confidence": 0.7, "text_id": "text_000000", "source_id": "09dff232910e015c"}
+{"subject": "event", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000000", "source_id": "09dff232910e015c"}
+{"subject": "NASA", "predicate": "confirmed", "object": "star dipped", "confidence": 0.7, "text_id": "text_000000", "source_id": "09dff232910e015c"}
+{"subject": "New Horizons spacecraft", "predicate": "targets", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Pluto", "confidence": 0.8, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "KBO 2014 MU69", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "KBO 2014 MU69", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "KBO 2014 MU69", "predicate": "was observed from", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000001", "source_id": "b4864d757d086f40"}
+{"subject": "New Horizons spacecraft", "predicate": "manufactured_by", "object": "APL", "confidence": 0.8, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "manufactured_by", "object": "Southwest Research Institute (SwRI)", "confidence": 0.8, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "led_by", "object": "Alan Stern", "confidence": 0.85, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Plutonian system", "confidence": 0.9, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "achieved_escape_velocity_needed_to_leave", "object": "Solar System", "confidence": 0.8, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "launched", "object": "Atlas V rocket", "confidence": 0.85, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "close approach", "object": "Jupiter", "confidence": 0.9, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "was_collected", "object": "planet's atmosphere", "confidence": 0.75, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "was_collected", "object": "moons", "confidence": 0.75, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "was_collected", "object": "planet's magnetosphere", "confidence": 0.75, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "was_brought_back_online_for", "object": "Pluto flyby", "confidence": 0.85, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "New Horizons spacecraft", "predicate": "flew_above", "object": "Pluto", "confidence": 0.9, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "Pluto", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.9, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "hydrogen wall", "predicate": "was_observed_by", "object": "Voyager spacecraft", "confidence": 0.75, "text_id": "text_000003", "source_id": "c287f2f9e00f338a"}
+{"subject": "Robert Staehle", "predicate": "was_nicknamed", "object": "Clyde Tombaugh", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "JPL", "predicate": "led_by", "object": "New Horizons spacecraft", "confidence": 0.7, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Stamatios \"Tom\" Krimigis", "predicate": "formed", "object": "New Horizons spacecraft", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Alan Stern", "predicate": "formed", "object": "New Horizons spacecraft", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "New Horizons proposal", "predicate": "submitted_to", "object": "NASA", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "POSSE", "predicate": "led_by", "object": "Larry W. Esposito", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "POSSE", "predicate": "are_supported_by", "object": "JPL", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "POSSE", "predicate": "are_supported_by", "object": "Lockheed Martin", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "POSSE", "predicate": "are_supported_by", "object": "University of California", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "APL", "predicate": "are_supported_by", "object": "Pluto Kuiper Express developers", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "APL", "predicate": "are_supported_by", "object": "Goddard Space Flight Center", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "APL", "predicate": "are_supported_by", "object": "Stanford University", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "APL", "predicate": "created_maps_of", "object": "NEAR Shoemaker", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "NEAR Shoemaker", "predicate": "landed_on", "object": "Ceres", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Bush administration", "predicate": "appointed", "object": "Sean O'Keefe", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Sean O'Keefe", "predicate": "was_not_supportive_of", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "NASA", "predicate": "canceled", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Ed Weiler", "predicate": "prompted", "object": "Stern", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Planetary Science Decadal Survey", "predicate": "compiled_by", "object": "United States National Research Council", "confidence": 0.9, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Stern's team", "predicate": "began", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "Alice Bowman", "predicate": "become", "object": "Mission Operations Manager", "confidence": 0.8, "text_id": "text_000004", "source_id": "856ad1ba8e194709"}
+{"subject": "New Horizons spacecraft", "predicate": "was_built_by", "object": "Southwest Research Institute (SwRI)", "confidence": 0.9, "text_id": "text_000005", "source_id": "6705fd330c7123ff"}
+{"subject": "New Horizons spacecraft", "predicate": "was_built_by", "object": "APL", "confidence": 0.9, "text_id": "text_000005", "source_id": "6705fd330c7123ff"}
+{"subject": "Naval Observatory Flagstaff Station", "predicate": "was_site_for", "object": "discovery of Pluto's moon Charon", "confidence": 0.8, "text_id": "text_000005", "source_id": "6705fd330c7123ff"}
+{"subject": "New Horizons spacecraft", "predicate": "planned", "object": "Planet", "confidence": 0.8, "text_id": "text_000005", "source_id": "6705fd330c7123ff"}
+{"subject": "spacecraft", "predicate": "carries", "object": "USPS stamp", "confidence": 0.8, "text_id": "text_000006", "source_id": "25f26e02f56e61b5"}
+{"subject": "spacecraft", "predicate": "carries", "object": "Flag of the United States", "confidence": 0.8, "text_id": "text_000006", "source_id": "25f26e02f56e61b5"}
+{"subject": "spacecraft", "predicate": "carries", "object": "Clyde Tombaugh's ashes", "confidence": 0.9, "text_id": "text_000006", "source_id": "25f26e02f56e61b5"}
+{"subject": "spacecraft", "predicate": "carries", "object": "Florida state quarter coin", "confidence": 0.8, "text_id": "text_000006", "source_id": "25f26e02f56e61b5"}
+{"subject": "spacecraft", "predicate": "carries", "object": "Maryland state quarter", "confidence": 0.8, "text_id": "text_000006", "source_id": "25f26e02f56e61b5"}
+{"subject": "Plutonian system", "predicate": "formation_understood_by", "object": "mission", "confidence": 0.9, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "formation_understood_by", "object": "mission", "confidence": 0.9, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Solar System", "predicate": "formation_understood_by", "object": "mission", "confidence": 0.9, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "gathered_data_at", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Plutonian system", "predicate": "gathered_data_at", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "was_observed_by", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "New Horizons spacecraft", "predicate": "gathered_data_at", "object": "Pluto", "confidence": 0.9, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Mariner", "predicate": "gathered_data_at", "object": "Mars", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "surface_composed_of", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto's_atmosphere", "predicate": "behavior_studied_by", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "searches_for", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "solar_wind_particles", "predicate": "interacted_with", "object": "Pluto's_atmosphere", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "surface_mapped_by", "object": "mission", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "discovery of Pluto's moon Charon", "predicate": "surface_mapped_by", "object": "mission", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "geology_characterized_by", "object": "mission", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "discovery of Pluto's moon Charon", "predicate": "geology_characterized_by", "object": "mission", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "escape_rate_measured_by", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "rings_searched_for_by", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "Pluto", "predicate": "searches_for", "object": "mission", "confidence": 0.7, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "was_observed_by", "object": "mission", "confidence": 0.8, "text_id": "text_000007", "source_id": "6474025c69680763"}
+{"subject": "teams", "predicate": "in", "object": "Ulysses spacecraft", "confidence": 0.9, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "Ulysses spacecraft", "predicate": "traveled_through", "object": "scattered disc", "confidence": 0.9, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "spacecraft", "predicate": "used", "object": "Titanium", "confidence": 0.9, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "structure", "predicate": "requires", "object": "mass distribution for spinning spacecraft", "confidence": 0.8, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "RTG", "predicate": "adds", "object": "warmth to the spacecraft", "confidence": 0.9, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "spacecraft", "predicate": "must_prevent_overheating", "object": "in the inner Solar System", "confidence": 0.8, "text_id": "text_000008", "source_id": "bbb8363f630be531"}
+{"subject": "New Horizons spacecraft", "predicate": "performs", "object": "Jupiter flyby", "confidence": 0.9, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "backup direct flight", "predicate": "targets", "object": "Pluto", "confidence": 0.8, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "backup direct flight", "predicate": "exerts_influence_on", "object": "objects_in_Kuiper_belt", "confidence": 0.7, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "New Horizons spacecraft", "predicate": "used", "object": "star cameras", "confidence": 0.85, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "star cameras", "predicate": "are_mounted_on", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "New Horizons spacecraft", "predicate": "used", "object": "Adcole Sun sensors", "confidence": 0.8, "text_id": "text_000009", "source_id": "0029a139b14b4a44"}
+{"subject": "spacecraft", "predicate": "carries", "object": "Command and Data Handling system", "confidence": 0.9, "text_id": "text_000001", "source_id": "262b7e27d5f1355f"}
+{"subject": "spacecraft", "predicate": "carries", "object": "guidance and control systems", "confidence": 0.9, "text_id": "text_000001", "source_id": "262b7e27d5f1355f"}
+{"subject": "spacecraft", "predicate": "used", "object": "Mongoose-V", "confidence": 0.9, "text_id": "text_000001", "source_id": "262b7e27d5f1355f"}
+{"subject": "New Horizons spacecraft", "predicate": "runs", "object": "Nucleus RTOS operating system", "confidence": 0.9, "text_id": "text_000001", "source_id": "262b7e27d5f1355f"}
+{"subject": "spacecraft", "predicate": "communicates_with", "object": "X band", "confidence": 0.9, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "Pluto", "predicate": "cause", "object": "spacecraft", "confidence": 0.7, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "Deep Space Network", "predicate": "relays_commands", "object": "spacecraft", "confidence": 0.9, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "TWTAs", "predicate": "are_mounted_on", "object": "spacecraft", "confidence": 0.7, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "system", "predicate": "can_control", "object": "TWTAs", "confidence": 0.8, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "New Horizons spacecraft", "predicate": "transmitted_data", "object": "Planet", "confidence": 0.8, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "LORRI images", "predicate": "are_converted_to", "object": "JPEG images", "confidence": 0.8, "text_id": "text_000004", "source_id": "751372df4cd7239c"}
+{"subject": "Alice", "predicate": "analyzed", "object": "Pluto's_atmosphere", "confidence": 0.9, "text_id": "text_000007", "source_id": "b25d0f0531e56379"}
+{"subject": "New Horizons spacecraft", "predicate": "carries", "object": "Alice", "confidence": 0.8, "text_id": "text_000007", "source_id": "b25d0f0531e56379"}
+{"subject": "LEISA", "predicate": "renames", "object": "Lisa Hardaway Infrared Mapping Spectrometer", "confidence": 0.8, "text_id": "text_000008", "source_id": "316814162cd35292"}
+{"subject": "VBSDC", "predicate": "contributes_to", "object": "understanding of the dust spectra of the Solar System", "confidence": 0.8, "text_id": "text_000009", "source_id": "0b48602e0d97927f"}
+{"subject": "understanding of the dust spectra of the Solar System", "predicate": "can_be_compared_with", "object": "observations of other stars", "confidence": 0.8, "text_id": "text_000009", "source_id": "0b48602e0d97927f"}
+{"subject": "film", "predicate": "gathered_data_at", "object": "Emmy Award", "confidence": 0.8, "text_id": "text_000009", "source_id": "0b48602e0d97927f"}
+{"subject": "REX circuit boards", "predicate": "are_like", "object": "spacecraft telecommunications subsystem", "confidence": 0.8, "text_id": "text_000000", "source_id": "9e1105704bb27362"}
+{"subject": "New Horizons spacecraft", "predicate": "arrived", "object": "Kennedy Space Center", "confidence": 0.9, "text_id": "text_000001", "source_id": "57c87983dd8ebec8"}
+{"subject": "New Horizons spacecraft", "predicate": "passed around", "object": "Moon's orbit", "confidence": 0.8, "text_id": "text_000001", "source_id": "57c87983dd8ebec8"}
+{"subject": "launch", "predicate": "dedicated_to", "object": "Daniel Sarokon", "confidence": 0.9, "text_id": "text_000001", "source_id": "57c87983dd8ebec8"}
+{"subject": "spacecraft", "predicate": "passed around", "object": "Mars", "confidence": 0.9, "text_id": "text_000003", "source_id": "f874dc9abb91ff52"}
+{"subject": "spacecraft", "predicate": "moved_away_from", "object": "Sun", "confidence": 0.8, "text_id": "text_000003", "source_id": "f874dc9abb91ff52"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "objects_in_Kuiper_belt", "confidence": 0.7, "text_id": "text_000004", "source_id": "1db08debc55c0ec5"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Pluto", "confidence": 0.75, "text_id": "text_000004", "source_id": "1db08debc55c0ec5"}
+{"subject": "LORRI", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000005", "source_id": "4f1ff1bf6a84c945"}
+{"subject": "New Horizons spacecraft", "predicate": "was_heading_towards", "object": "Pluto", "confidence": 0.85, "text_id": "text_000005", "source_id": "4f1ff1bf6a84c945"}
+{"subject": "New Horizons spacecraft", "predicate": "was_heading_towards", "object": "objects_in_Kuiper_belt", "confidence": 0.75, "text_id": "text_000005", "source_id": "4f1ff1bf6a84c945"}
+{"subject": "New Horizons spacecraft", "predicate": "used", "object": "LORRI", "confidence": 0.9, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Callisto", "confidence": 0.7, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Jovian rings", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_collected", "object": "planet's magnetosphere", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Little_Red_Spot", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Jupiter's_structure", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "analyzed", "object": "Jupiter's_structure", "confidence": 0.7, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "served_as_rehearsal_for", "object": "Pluto flyby", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "communicates_with", "object": "Planet", "confidence": 0.8, "text_id": "text_000006", "source_id": "eb21c835b2094241"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Galilean moons", "confidence": 0.9, "text_id": "text_000007", "source_id": "8566ccb899043c59"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000007", "source_id": "8566ccb899043c59"}
+{"subject": "LEISA", "predicate": "analyzed", "object": "Callisto's_surface", "confidence": 0.9, "text_id": "text_000007", "source_id": "8566ccb899043c59"}
+{"subject": "New Horizons spacecraft", "predicate": "passed around", "object": "Jupiter", "confidence": 0.9, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "New Horizons spacecraft", "predicate": "traveled_through", "object": "Pluto", "confidence": 0.9, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "Redundant components", "predicate": "powered_down", "object": "guidance and control systems", "confidence": 0.7, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "Deep Space Network", "predicate": "free_for", "object": "other missions", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "onboard computer", "predicate": "monitored", "object": "backup direct flight", "confidence": 0.9, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "signal", "predicate": "transmitted_data", "object": "Planet", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "New Horizons spacecraft", "predicate": "activated_for", "object": "systems", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "astronomers", "predicate": "announced", "object": "discovery of two new moons", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "discovery of two new moons", "predicate": "in", "object": "Plutonian system", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "mission planners", "predicate": "contemplated", "object": "probe running into unseen debris", "confidence": 0.7, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "New Horizons spacecraft", "predicate": "could_have_used", "object": "SHBOTs", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "SWAP", "predicate": "are_part_of", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "PEPSSI", "predicate": "are_part_of", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "VBSDC", "predicate": "are_part_of", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000008", "source_id": "0268f91a4f7bc946"}
+{"subject": "New Horizons spacecraft", "predicate": "flew_above", "object": "Neptune", "confidence": 0.9, "text_id": "text_000009", "source_id": "1fbe6816fc512d32"}
+{"subject": "craft", "predicate": "arrived", "object": "Pluto", "confidence": 0.85, "text_id": "text_000000", "source_id": "4f499b928fb0d290"}
+{"subject": "astronomers", "predicate": "analyzed", "object": "Pluto's location and orbit around the Sun", "confidence": 0.8, "text_id": "text_000000", "source_id": "4f499b928fb0d290"}
+{"subject": "Atacama Large Millimeter/submillimeter Array", "predicate": "helped", "object": "New Horizons spacecraft", "confidence": 0.75, "text_id": "text_000000", "source_id": "4f499b928fb0d290"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000001", "source_id": "c7f5ac3b7d0deff9"}
+{"subject": "software anomaly", "predicate": "cause", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000002", "source_id": "612c597d2e709dc0"}
+{"subject": "safe mode", "predicate": "prevented", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000002", "source_id": "612c597d2e709dc0"}
+{"subject": "two tasks", "predicate": "overloaded", "object": "onboard computer", "confidence": 0.8, "text_id": "text_000002", "source_id": "612c597d2e709dc0"}
+{"subject": "distress call", "predicate": "was_downloaded", "object": "Planet", "confidence": 0.8, "text_id": "text_000002", "source_id": "612c597d2e709dc0"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Pluto", "confidence": 0.95, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "Telemetry data", "predicate": "was_received", "object": "Planet", "confidence": 0.9, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "New Horizons spacecraft", "predicate": "point at", "object": "Plutonian system", "confidence": 0.85, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "Debris", "predicate": "could_have_destroyed", "object": "New Horizons spacecraft", "confidence": 0.75, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "Debris", "predicate": "could_have_destroyed", "object": "communication-systems", "confidence": 0.75, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "Data set", "predicate": "was_downloaded", "object": "Planet", "confidence": 0.8, "text_id": "text_000003", "source_id": "5fb7abcde4fdcac0"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Plutonian system", "confidence": 0.9, "text_id": "text_000004", "source_id": "d4410ad1ac1c6566"}
+{"subject": "New Horizons spacecraft", "predicate": "close approach", "object": "Pluto", "confidence": 0.9, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "New Horizons spacecraft", "predicate": "passed around", "object": "discovery of Pluto's moon Charon", "confidence": 0.8, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "New Horizons spacecraft", "predicate": "mapped", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "New Horizons spacecraft", "predicate": "mapped", "object": "discovery of Pluto's moon Charon", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "MVIC", "predicate": "created_maps_of", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "LEISA", "predicate": "created_maps_of", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "REX", "predicate": "performed_passive_radio_science_on", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "REX", "predicate": "performed_passive_radio_science_on", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "Alice", "predicate": "performed_occultations_of", "object": "background stars", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "spacecraft", "predicate": "exerts_influence_on", "object": "Pluto", "confidence": 0.8, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "radio_signal", "predicate": "exhibited_doppler_shift", "object": "spacecraft", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "Sun", "predicate": "provided_backlighting_for", "object": "discovery of Pluto's moon Charon", "confidence": 0.7, "text_id": "text_000005", "source_id": "97e65b2387a98d78"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Pluto", "confidence": 0.9, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "was_collected", "object": "Plutinos", "confidence": 0.8, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "transmitted_data", "object": "Planet", "confidence": 0.9, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "Plutinos", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "communicates_with", "object": "Deep Space Network", "confidence": 0.7, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "was_positioned_relative_to", "object": "Sun", "confidence": 0.9, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "was_heading_towards", "object": "constellation Sagittarius", "confidence": 0.8, "text_id": "text_000007", "source_id": "1913944f68ba0d90"}
+{"subject": "New Horizons spacecraft", "predicate": "requested", "object": "mission extension", "confidence": 0.9, "text_id": "text_000008", "source_id": "1540209370a6f4d7"}
+{"subject": "New Horizons spacecraft", "predicate": "was_received", "object": "mission extension", "confidence": 0.9, "text_id": "text_000008", "source_id": "1540209370a6f4d7"}
+{"subject": "New Horizons spacecraft", "predicate": "explored", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000008", "source_id": "1540209370a6f4d7"}
+{"subject": "mission planners", "predicate": "searches_for", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000009", "source_id": "abd8bcf3284cb969"}
+{"subject": "spacecraft", "predicate": "interacted_with", "object": "Pluto", "confidence": 0.9, "text_id": "text_000009", "source_id": "abd8bcf3284cb969"}
+{"subject": "cone", "predicate": "evolved_from", "object": "Pluto", "confidence": 0.8, "text_id": "text_000009", "source_id": "abd8bcf3284cb969"}
+{"subject": "Desirable_KBOs", "predicate": "have", "object": "moons", "confidence": 0.8, "text_id": "text_000009", "source_id": "abd8bcf3284cb969"}
+{"subject": "moons", "predicate": "imparts_wobble", "object": "Desirable_KBOs", "confidence": 0.7, "text_id": "text_000009", "source_id": "abd8bcf3284cb969"}
+{"subject": "New Horizons KBO Search", "predicate": "used", "object": "telescopes on Earth", "confidence": 0.9, "text_id": "text_000000", "source_id": "625b3d58e6814aa9"}
+{"subject": "telescopes on Earth", "predicate": "includes", "object": "Magellan Telescopes", "confidence": 0.85, "text_id": "text_000000", "source_id": "625b3d58e6814aa9"}
+{"subject": "telescopes on Earth", "predicate": "includes", "object": "Subaru Observatory", "confidence": 0.85, "text_id": "text_000000", "source_id": "625b3d58e6814aa9"}
+{"subject": "telescopes on Earth", "predicate": "includes", "object": "Canada–France–Hawaii Telescope", "confidence": 0.85, "text_id": "text_000000", "source_id": "625b3d58e6814aa9"}
+{"subject": "public", "predicate": "participates_in", "object": "Ice Hunters", "confidence": 0.8, "text_id": "text_000000", "source_id": "625b3d58e6814aa9"}
+{"subject": "All objects", "predicate": "in", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000001", "source_id": "509c95eb1062a4d7"}
+{"subject": "All objects", "predicate": "were_different_from", "object": "Pluto", "confidence": 0.85, "text_id": "text_000001", "source_id": "509c95eb1062a4d7"}
+{"subject": "PT2", "predicate": "was_out_of_running", "object": "Pluto flyby", "confidence": 0.7, "text_id": "text_000001", "source_id": "509c95eb1062a4d7"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "analyzed", "object": "rotating cloud of small, icy bodies", "confidence": 0.85, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Haumea", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Eris", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Planet", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Ixion", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Máni", "confidence": 0.8, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Uranus", "confidence": 0.85, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "close approach", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000003", "source_id": "3524a612b2ab8599"}
+{"subject": "New Horizons spacecraft", "predicate": "targets", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000005", "source_id": "11170b7b270c4a39"}
+{"subject": "New Horizons spacecraft", "predicate": "encountered", "object": "Pluto", "confidence": 0.7, "text_id": "text_000005", "source_id": "11170b7b270c4a39"}
+{"subject": "targeting maneuvers", "predicate": "sent_towards", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000005", "source_id": "11170b7b270c4a39"}
+{"subject": "official_approach_phase", "predicate": "began", "object": "New Horizons spacecraft", "confidence": 0.7, "text_id": "text_000006", "source_id": "024378c5df52e571"}
+{"subject": "New Horizons spacecraft", "predicate": "detected", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000006", "source_id": "024378c5df52e571"}
+{"subject": "data", "predicate": "was_collected", "object": "Inner Core", "confidence": 0.85, "text_id": "text_000007", "source_id": "1107d71c8f56b6cb"}
+{"subject": "data", "predicate": "arrived", "object": "Planet", "confidence": 0.8, "text_id": "text_000007", "source_id": "1107d71c8f56b6cb"}
+{"subject": "New Horizons spacecraft", "predicate": "transmitted_data", "object": "Planet", "confidence": 0.9, "text_id": "text_000008", "source_id": "fbcd2961249ee3a3"}
+{"subject": "remainder_of_data", "predicate": "was_downloaded", "object": "Planet", "confidence": 0.85, "text_id": "text_000008", "source_id": "fbcd2961249ee3a3"}
+{"subject": "New Horizons spacecraft", "predicate": "used", "object": "telescopes on Earth", "confidence": 0.9, "text_id": "text_000009", "source_id": "ff9f20e7e33218f2"}
+{"subject": "New Horizons spacecraft", "predicate": "used", "object": "telescopes on Earth", "confidence": 0.9, "text_id": "text_000009", "source_id": "ff9f20e7e33218f2"}
+{"subject": "New Horizons spacecraft", "predicate": "analyzed", "object": "rotating cloud of small, icy bodies", "confidence": 0.7, "text_id": "text_000009", "source_id": "ff9f20e7e33218f2"}
+{"subject": "New Horizons spacecraft", "predicate": "passed around", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "New Horizons spacecraft", "predicate": "searches_for", "object": "objects_in_Kuiper_belt", "confidence": 0.7, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "Subaru Observatory", "predicate": "used", "object": "New Horizons spacecraft", "confidence": 0.75, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "New Horizons spacecraft", "predicate": "will_imaging", "object": "Uranus", "confidence": 0.8, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "New Horizons spacecraft", "predicate": "will_imaging", "object": "Neptune", "confidence": 0.8, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "New Horizons' Star 48B third stage", "predicate": "arrived", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000001", "source_id": "42a069cf7e958d9a"}
+{"subject": "discovery of Pluto's moon Charon", "predicate": "orbited", "object": "Pluto", "confidence": 0.8, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "New Horizons spacecraft", "predicate": "encountered", "object": "discovery of Pluto's moon Charon", "confidence": 0.9, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "New Horizons spacecraft", "predicate": "described_in", "object": "Springer", "confidence": 0.7, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "New Horizons spacecraft", "predicate": "described_in", "object": "Picador", "confidence": 0.7, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "NASA", "predicate": "are_sent_into", "object": "New Horizons spacecraft", "confidence": 0.8, "text_id": "text_000003", "source_id": "de37c3e0364e6ad9"}
+{"subject": "scientists", "predicate": "was_observed_by", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000005", "source_id": "3b27c4d627582049"}
+{"subject": "KBO 2014 MU69", "predicate": "occluded", "object": "background stars", "confidence": 0.8, "text_id": "text_000005", "source_id": "3b27c4d627582049"}
+{"subject": "lobi", "predicate": "were_outlined_by", "object": "scientists", "confidence": 0.8, "text_id": "text_000005", "source_id": "3b27c4d627582049"}
+{"subject": "lobi", "predicate": "proposed", "object": "coalescence_of_a_cloud_of_icy_particles", "confidence": 0.7, "text_id": "text_000005", "source_id": "3b27c4d627582049"}
+{"subject": "KBO 2014 MU69", "predicate": "faced", "object": "Sun", "confidence": 0.8, "text_id": "text_000008", "source_id": "f84cdcb903024e52"}
+{"subject": "photon-induced sputtering", "predicate": "exerts_influence_on", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000008", "source_id": "f84cdcb903024e52"}
+{"subject": "telescopes on Earth", "predicate": "was_observed_by", "object": "Stellar Occultations", "confidence": 0.8, "text_id": "text_000008", "source_id": "f84cdcb903024e52"}
+{"subject": "results", "predicate": "were_presented_at", "object": "Meeting_of_the_AAS_Division_for_Planetary_Sciences", "confidence": 0.8, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "concept", "predicate": "described_in", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "KBO 2014 MU69", "predicate": "made flyby of", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "2018 occultation", "predicate": "were_predicted_for", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "2018 occultation", "predicate": "occurred", "object": "South_Atlantic", "confidence": 0.8, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "2018 occultation", "predicate": "occurred", "object": "Indian_Ocean", "confidence": 0.8, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "4 August 2018 event", "predicate": "occurred", "object": "Senegal", "confidence": 0.9, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "4 August 2018 event", "predicate": "occurred", "object": "Colombia", "confidence": 0.9, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "event", "predicate": "gathered_media_attention", "object": "Senegal", "confidence": 0.8, "text_id": "text_000009", "source_id": "910f1985a0828977"}
+{"subject": "NASA", "predicate": "confirmed", "object": "star", "confidence": 0.8, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "KBO 2014 MU69", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.9, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "KBO 2014 MU69", "predicate": "created_maps_of", "object": "NASA", "confidence": 0.8, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "surveys", "predicate": "detected", "object": "moonlets", "confidence": 0.7, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "search", "predicate": "continues studies", "object": "moons", "confidence": 0.7, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "New Horizons spacecraft", "predicate": "captured", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000001", "source_id": "8e23df2f9adc65ee"}
+{"subject": "LORRI", "predicate": "captured", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000001", "source_id": "8e23df2f9adc65ee"}
+{"subject": "MVIC", "predicate": "captured", "object": "KBO 2014 MU69", "confidence": 0.7, "text_id": "text_000001", "source_id": "8e23df2f9adc65ee"}
+{"subject": "New Horizons spacecraft", "predicate": "explored", "object": "Thule", "confidence": 0.9, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "Thule", "predicate": "described_in", "object": "Press Briefing", "confidence": 0.8, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "KBO 2014 MU69", "predicate": "was_observed_by", "object": "New Horizons spacecraft", "confidence": 0.9, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "KBO 2014 MU69", "predicate": "was_observed_by", "object": "Stellar Occultations", "confidence": 0.85, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "KBO 2014 MU69", "predicate": "identified", "object": "KBO 2014 MU69", "confidence": 0.95, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "KBO 2014 MU69", "predicate": "photometry_performed_on", "object": "Hofgartner et al.", "confidence": 0.8, "text_id": "text_000002", "source_id": "cd18db5b8f73155b"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "KBO 2014 MU69", "confidence": 0.9, "text_id": "text_000003", "source_id": "ba5da9f727b52e0a"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Thule", "confidence": 0.9, "text_id": "text_000004", "source_id": "5a7bcd2b1ebdf31f"}
+{"subject": "New Horizons spacecraft", "predicate": "explored", "object": "Pluto", "confidence": 0.8, "text_id": "text_000004", "source_id": "5a7bcd2b1ebdf31f"}
+{"subject": "New Horizons spacecraft", "predicate": "explored", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000004", "source_id": "5a7bcd2b1ebdf31f"}
+{"subject": "NASA", "predicate": "renames", "object": "New Horizons Target", "confidence": 0.9, "text_id": "text_000005", "source_id": "20c6729a0657ec81"}
+{"subject": "NASA", "predicate": "renames", "object": "Object", "confidence": 0.9, "text_id": "text_000005", "source_id": "20c6729a0657ec81"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "objects_in_Kuiper_belt", "confidence": 0.85, "text_id": "text_000005", "source_id": "20c6729a0657ec81"}
+{"subject": "EPSC-DPS Joint Meeting", "predicate": "hosted", "object": "New Horizons Flyby Results", "confidence": 0.75, "text_id": "text_000006", "source_id": "58a6024cf8c90370"}
+{"subject": "European Planetary Science Congress", "predicate": "hosted", "object": "EPSC-DPS Joint Meeting", "confidence": 0.8, "text_id": "text_000006", "source_id": "58a6024cf8c90370"}
+{"subject": "New Horizons spacecraft", "predicate": "targets", "object": "KBO 2014 MU69", "confidence": 0.8, "text_id": "text_000007", "source_id": "def3e8909cde18d6"}
+{"subject": "KBO 2014 MU69", "predicate": "evolved_from", "object": "Planetesimals", "confidence": 0.7, "text_id": "text_000008", "source_id": "f89d44c96c4db03d"}
+{"subject": "H 2 S", "predicate": "exerts_influence_on", "object": "Near-infrared Spectrum", "confidence": 0.7, "text_id": "text_000009", "source_id": "776b57ffc6191b81"}
+{"subject": "New Horizons spacecraft", "predicate": "was_observed_by", "object": "Thule", "confidence": 0.9, "text_id": "text_000001", "source_id": "89d48f282399879f"}
+{"subject": "Alan Stern", "predicate": "wrote", "object": "The PI's Perspective. Looking Back. Looking Forward", "confidence": 0.7, "text_id": "text_000001", "source_id": "89d48f282399879f"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "Thule", "confidence": 0.9, "text_id": "text_000003", "source_id": "e527d08f437e32ea"}
+{"subject": "KBO 2014 MU69", "predicate": "also known as", "object": "Thule", "confidence": 0.7, "text_id": "text_000003", "source_id": "e527d08f437e32ea"}
+{"subject": "Thule", "predicate": "identified", "object": "KBO 2014 MU69", "confidence": 0.95, "text_id": "text_000004", "source_id": "61df80726998931c"}
+{"subject": "New Horizons spacecraft", "predicate": "revealed", "object": "Thule", "confidence": 0.8, "text_id": "text_000005", "source_id": "f75b9113235d460b"}
+{"subject": "New Horizons spacecraft", "predicate": "targets", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000006", "source_id": "a8abbffa149702d6"}
+{"subject": "Hubble_Space Telescope", "predicate": "searches_for", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000006", "source_id": "a8abbffa149702d6"}
+{"subject": "New Horizons spacecraft", "predicate": "made flyby of", "object": "objects_in_Kuiper_belt", "confidence": 0.8, "text_id": "text_000006", "source_id": "a8abbffa149702d6"}
+{"subject": "the Oort cloud", "predicate": "from", "object": "original protosolar cloud", "confidence": 0.9, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "Jupiter-family comets", "predicate": "from", "object": "original protosolar cloud", "confidence": 0.9, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "the Oort cloud", "predicate": "evolved_from", "object": "formation of planets", "confidence": 0.8, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "the Oort cloud", "predicate": "formed", "object": "process that formed the planets", "confidence": 0.7, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "the Oort cloud", "predicate": "modified_to_make_more_circular", "object": "perturbations from passing stars", "confidence": 0.7, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "the Oort cloud", "predicate": "modified_to_make_more_circular", "object": "perturbations_from_giant_molecular_clouds", "confidence": 0.7, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "Jupiter", "predicate": "exerts_influence_on", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000001", "source_id": "5d31e187eefbe732"}
+{"subject": "Comet-like Bodies", "predicate": "arrived", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000002", "source_id": "9b33a18906ca4996"}
+{"subject": "Tyche", "predicate": "cause", "object": "Jupiter", "confidence": 0.7, "text_id": "text_000002", "source_id": "9b33a18906ca4996"}
+{"subject": "scattered disc", "predicate": "beyond", "object": "Neptune", "confidence": 0.9, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "Williams", "predicate": "wrote", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "Morbidelli", "predicate": "wrote", "object": "Origin and dynamical evolution of comets and their reservoirs of water ammonia and methane", "confidence": 0.8, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "van der Kruit", "predicate": "wrote", "object": "A Biography of Jan Hendrik Oort", "confidence": 0.7, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "Redd", "predicate": "wrote", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "the Oort cloud", "predicate": "determines", "object": "flux of comets", "confidence": 0.7, "text_id": "text_000005", "source_id": "7b401cc08e5a2cbb"}
+{"subject": "Comet-like Bodies", "predicate": "flew_above", "object": "Solar System", "confidence": 0.8, "text_id": "text_000005", "source_id": "7b401cc08e5a2cbb"}
+{"subject": "Ecliptic Comets", "predicate": "are_like", "object": "Comet-like Bodies", "confidence": 0.9, "text_id": "text_000005", "source_id": "7b401cc08e5a2cbb"}
+{"subject": "Comet Populations", "predicate": "and", "object": "Cometary Dynamics", "confidence": 0.9, "text_id": "text_000006", "source_id": "ed23c633d6b49745"}
+{"subject": "The Orbits", "predicate": "of", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000006", "source_id": "ed23c633d6b49745"}
+{"subject": "perturbations from passing stars", "predicate": "of", "object": "Nearby Parabolic Orbits", "confidence": 0.7, "text_id": "text_000006", "source_id": "ed23c633d6b49745"}
+{"subject": "The structure", "predicate": "of", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000006", "source_id": "ed23c633d6b49745"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "to", "object": "Cometary Nucleus", "confidence": 0.7, "text_id": "text_000006", "source_id": "ed23c633d6b49745"}
+{"subject": "Comet showers", "predicate": "are_related_to", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000007", "source_id": "a6c036ac0832a359"}
+{"subject": "Halley-Type Comets", "predicate": "originate_from", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000007", "source_id": "a6c036ac0832a359"}
+{"subject": "Planetary Sciences", "predicate": "includes", "object": "U.S. –U.S.S.R. Workshop", "confidence": 0.9, "text_id": "text_000007", "source_id": "a6c036ac0832a359"}
+{"subject": "Sun", "predicate": "steals", "object": "Comet-like Bodies", "confidence": 0.85, "text_id": "text_000008", "source_id": "406318575090a92a"}
+{"subject": "the Oort cloud", "predicate": "populated_by", "object": "Comet-like Bodies", "confidence": 0.9, "text_id": "text_000009", "source_id": "8969eec96c87b1a9"}
+{"subject": "scattered disc population", "predicate": "originate_from", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000009", "source_id": "8969eec96c87b1a9"}
+{"subject": "the Oort cloud", "predicate": "formed", "object": "Comet-like Bodies", "confidence": 0.7, "text_id": "text_000009", "source_id": "8969eec96c87b1a9"}
+{"subject": "Embedded star clusters", "predicate": "and", "object": "formation_of_Oort_cloud", "confidence": 0.7, "text_id": "text_000000", "source_id": "2106e573c5c092a9"}
+{"subject": "Many famous comets", "predicate": "from", "object": "Solar System", "confidence": 0.8, "text_id": "text_000000", "source_id": "2106e573c5c092a9"}
+{"subject": "Comet-like Bodies", "predicate": "evolved_from", "object": "scattered disc", "confidence": 0.7, "text_id": "text_000000", "source_id": "2106e573c5c092a9"}
+{"subject": "Comet-like Bodies", "predicate": "are_population_of", "object": "Solar System", "confidence": 0.85, "text_id": "text_000001", "source_id": "571fc4fc9894808c"}
+{"subject": "Planet", "predicate": "stretches", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000003", "source_id": "9e7ed7fccb511ba6"}
+{"subject": "Planetesimals", "predicate": "evolved_from", "object": "Galactic Tide", "confidence": 0.9, "text_id": "text_000005", "source_id": "fffe8316f4003975"}
+{"subject": "the Oort cloud", "predicate": "flux_variation", "object": "Planet", "confidence": 0.8, "text_id": "text_000005", "source_id": "fffe8316f4003975"}
+{"subject": "the Oort cloud", "predicate": "flux_variation", "object": "Jupiter", "confidence": 0.8, "text_id": "text_000005", "source_id": "fffe8316f4003975"}
+{"subject": "New Comets", "predicate": "perihelion_evolution", "object": "Galactic Tide", "confidence": 0.85, "text_id": "text_000005", "source_id": "fffe8316f4003975"}
+{"subject": "Solar System", "predicate": "meets", "object": "Solar Neighbourhood", "confidence": 0.7, "text_id": "text_000005", "source_id": "fffe8316f4003975"}
+{"subject": "star", "predicate": "made flyby of", "object": "Solar System", "confidence": 0.8, "text_id": "text_000006", "source_id": "1582789714581c82"}
+{"subject": "Planetesimals", "predicate": "scatter", "object": "Planet", "confidence": 0.7, "text_id": "text_000006", "source_id": "1582789714581c82"}
+{"subject": "WISE", "predicate": "searches_for", "object": "Tyche", "confidence": 0.8, "text_id": "text_000007", "source_id": "03684ea1fe13e05f"}
+{"subject": "the Oort cloud", "predicate": "about", "object": "the Oort cloud", "confidence": 0.9, "text_id": "text_000008", "source_id": "d0c0bb7d12be6b63"}
+{"subject": "the Oort cloud", "predicate": "structure of", "object": "Solar System", "confidence": 0.9, "text_id": "text_000008", "source_id": "d0c0bb7d12be6b63"}
+{"subject": "hypothesis", "predicate": "from", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000008", "source_id": "d0c0bb7d12be6b63"}
+{"subject": "the Oort cloud", "predicate": "supply", "object": "Short-period comets", "confidence": 0.8, "text_id": "text_000009", "source_id": "986795ec1d90c9ce"}
+{"subject": "Solar System", "predicate": "birth", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "scatter", "object": "Solar System", "confidence": 0.8, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "coaxed", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "galactic forces", "predicate": "align", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "spiral formation", "predicate": "endure", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "break down", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "pattern", "predicate": "align", "object": "what_has_been_learned_about_faint_comets", "confidence": 0.9, "text_id": "text_000001", "source_id": "ff090e41216d3093"}
+{"subject": "stable_spiral", "predicate": "implies", "object": "interplay_between_our_star_and_the_Milky_Way", "confidence": 0.85, "text_id": "text_000001", "source_id": "ff090e41216d3093"}
+{"subject": "the Oort cloud", "predicate": "surrounds", "object": "Sun", "confidence": 0.9, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "proposed", "object": "Jan Oort", "confidence": 0.9, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "surrounds", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "surrounds", "object": "outer Oort cloud", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "outer Oort cloud", "predicate": "surrounds", "object": "Solar System", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "defined", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "material", "predicate": "originate_from", "object": "in the inner Solar System", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "Comet-like Bodies", "predicate": "are_sent_into", "object": "in the inner Solar System", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "Short-period comets", "predicate": "originate_from", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "Short-period comets", "predicate": "originate_from", "object": "spherical cloud", "confidence": 0.7, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "material", "predicate": "migrated_inwards", "object": "Sun", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "material", "predicate": "scatter", "object": "gravitational influence of the giant planets", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "are_consumed_by", "object": "Sun", "confidence": 0.8, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "the Oort cloud", "predicate": "serves_function_for", "object": "Jupiter-family comets", "confidence": 0.7, "text_id": "text_000002", "source_id": "9524919c03d16cb9"}
+{"subject": "Ecliptic Comets", "predicate": "are_also_known_as", "object": "Short-period comets", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "nearly isotropic comets", "predicate": "are_also_known_as", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "very_large orbits", "predicate": "are_thousands_AU_from", "object": "Sun", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "Armin Otto Leuschner", "predicate": "proposed", "object": "many_comets_move_in_elliptical_orbits", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "many_comets_move_in_elliptical_orbits", "predicate": "would_return_to", "object": "in the inner Solar System", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "Ernst Öpik", "predicate": "proposed", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "Jan Oort", "predicate": "revived", "object": "concentration_of_long-period_comets", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "concentration_of_long-period_comets", "predicate": "was_to_resolve", "object": "paradox_about_origin_of_comets", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "concentration_of_long-period_comets", "predicate": "cannot_have_orbits", "object": "that_approach_Sun_since_protoplanetary_disc_condensation", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "the Oort cloud", "predicate": "analyzed", "object": "tables_of_ephemerides_for_long-period_comets", "confidence": 0.8, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "tables_of_ephemerides_for_long-period_comets", "predicate": "showed_concentration_of", "object": "concentration_of_long-period_comets", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "spherical_isotropic_distribution", "predicate": "was_suggested_by", "object": "concentration_of_long-period_comets", "confidence": 0.7, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "outer Oort cloud", "predicate": "are_weakly_bound_to", "object": "Sun", "confidence": 0.85, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "small_perturbations", "predicate": "inject", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "small_perturbations", "predicate": "from", "object": "nearby stars", "confidence": 0.75, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "small_perturbations", "predicate": "from", "object": "Milky Way", "confidence": 0.75, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "the Oort cloud", "predicate": "includes", "object": "D-type_asteroids", "confidence": 0.7, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "concentration_of_long-period_comets", "predicate": "originate_from", "object": "original protosolar cloud", "confidence": 0.85, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "Jupiter-family comets", "predicate": "originate_from", "object": "original protosolar cloud", "confidence": 0.85, "text_id": "text_000004", "source_id": "114c1ce24739d43f"}
+{"subject": "the Oort cloud", "predicate": "developed_after", "object": "Planet", "confidence": 0.9, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "initially_coalesced", "object": "protoplanetary disc", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "migrated_inwards", "object": "Sun", "confidence": 0.85, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "modified_to_make_more_circular", "object": "perturbations from passing stars", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "modified_to_make_more_circular", "object": "perturbations_from_giant_molecular_clouds", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "detached_from", "object": "gas giant region", "confidence": 0.85, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "possibly_product_of", "object": "exchange_of_materials_between_Sun_and_sibling_stars", "confidence": 0.75, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "did_not_form_in_close_proximity_to", "object": "Sun", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "scattered disc", "predicate": "travel_outward_toward", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "scattered disc", "predicate": "shifted_inward_to", "object": "Jupiter's_orbit", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "scattered disc", "predicate": "migrated_inwards", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "Comet-like Bodies", "predicate": "could_have_destroyed", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "cometary_orbits", "predicate": "modified_to_make_more_circular", "object": "gravitational_interaction_with_nearby_stars", "confidence": 0.85, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "early_stars", "predicate": "played_a_role_in", "object": "formation_of_Oort_cloud", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "subject_of", "object": "captured_comets_from_other_stars", "confidence": 0.9, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "from", "object": "protoplanetary disc", "confidence": 0.85, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "addresses", "object": "theoretical_tension_in_explaining_observed_ratio_of_outer_Oort_cloud_to_scattered_disc_objects", "confidence": 0.8, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "the Oort cloud", "predicate": "increases_chances_of", "object": "Planet Nine", "confidence": 0.85, "text_id": "text_000005", "source_id": "0aa55f38dd97f567"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "formed", "object": "the formation of the Solar system", "confidence": 0.9, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "are stored in", "object": "rotating cloud of small, icy bodies", "confidence": 0.8, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "are stored in", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Short-period comets", "predicate": "from", "object": "rotating cloud of small, icy bodies", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Very long-period comets", "predicate": "from", "object": "outer Oort cloud", "confidence": 0.8, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "rotating cloud of small, icy bodies", "predicate": "originate_from", "object": "outer Oort cloud", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Centaurs", "predicate": "are_sent_into", "object": "in the inner Solar System", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Centaurs", "predicate": "become", "object": "Short-period comets", "confidence": 0.8, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Short-period comets", "predicate": "are divided into", "object": "Jupiter-family comets", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Short-period comets", "predicate": "are divided into", "object": "Jupiter-family comets", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Jupiter-family comets", "predicate": "thought", "object": "gravitational influence of the giant planets", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "the Oort cloud", "predicate": "noted that", "object": "the number of returning comets was far less than his model predicted", "confidence": 0.8, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Dynamical studies of hypothetical Oort cloud comets", "predicate": "estimate that", "object": "their occurrence in the outer-planet region would be higher than in the inner-planet region", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Jupiter", "predicate": "acts as", "object": "a barrier, trapping incoming comets", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Jupiter", "predicate": "cause", "object": "comets to collide with it", "confidence": 0.7, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Sun", "predicate": "exerts_influence_on", "object": "the Oort cloud", "confidence": 0.7, "text_id": "text_000008", "source_id": "42c3663690f7a2e4"}
+{"subject": "Galactic Tide", "predicate": "compresses", "object": "the Oort cloud", "confidence": 0.75, "text_id": "text_000008", "source_id": "42c3663690f7a2e4"}
+{"subject": "Galactic Tide", "predicate": "exerts_influence_on", "object": "Planetesimals", "confidence": 0.7, "text_id": "text_000008", "source_id": "42c3663690f7a2e4"}
+{"subject": "Sun", "predicate": "interacted_with", "object": "the Oort cloud", "confidence": 0.9, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Sun", "predicate": "approaches", "object": "Solar System", "confidence": 0.7, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Gliese 710", "predicate": "exerts_influence_on", "object": "the Oort cloud", "confidence": 0.85, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "WISE", "predicate": "ruled_out", "object": "Tyche", "confidence": 0.8, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Voyager spacecraft", "predicate": "will reach", "object": "the Oort cloud", "confidence": 0.9, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "Voyager spacecraft", "predicate": "will stop functioning", "object": "Solar System", "confidence": 0.8, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "New Horizons spacecraft", "predicate": "will stop functioning", "object": "Solar System", "confidence": 0.8, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "TAU", "predicate": "searches_for", "object": "the Oort cloud", "confidence": 0.8, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "Whipple Mission", "predicate": "detected", "object": "the Oort cloud", "confidence": 0.9, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "Whipple Mission", "predicate": "detected", "object": "objects_in_Kuiper_belt", "confidence": 0.9, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "Kepler space telescope", "predicate": "detected", "object": "the Oort cloud", "confidence": 0.75, "text_id": "text_000000", "source_id": "286c0b95bc4fd51b"}
+{"subject": "List of trans-Neptunian objects", "predicate": "includes", "object": "Pluto", "confidence": 0.8, "text_id": "text_000001", "source_id": "5b84acbbda3c9320"}
+{"subject": "objects_in_Kuiper_belt", "predicate": "includes", "object": "Pluto", "confidence": 0.9, "text_id": "text_000001", "source_id": "5b84acbbda3c9320"}
+{"subject": "the Oort cloud", "predicate": "are_related_to", "object": "the Oort cloud", "confidence": 0.9, "text_id": "text_000002", "source_id": "d83b66741d11ff31"}
+{"subject": "Parker Solar Probe", "predicate": "explored", "object": "Sun-Earth system", "confidence": 0.9, "text_id": "text_000003", "source_id": "860018d5f19778ad"}
+{"subject": "APL", "predicate": "designed", "object": "Parker Solar Probe", "confidence": 0.8, "text_id": "text_000003", "source_id": "860018d5f19778ad"}
+{"subject": "APL", "predicate": "was_built_by", "object": "Parker Solar Probe", "confidence": 0.8, "text_id": "text_000003", "source_id": "860018d5f19778ad"}
+{"subject": "APL", "predicate": "operates", "object": "Parker Solar Probe", "confidence": 0.8, "text_id": "text_000003", "source_id": "860018d5f19778ad"}
+{"subject": "Parker Solar Probe", "predicate": "makes_observations", "object": "Sun", "confidence": 0.9, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "gravity_assists", "predicate": "from", "object": "Planet", "confidence": 0.8, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "Parker Solar Probe", "predicate": "approaches", "object": "Sun", "confidence": 0.9, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "Parker Solar Probe", "predicate": "made flyby of", "object": "Sun", "confidence": 0.9, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "NASA", "predicate": "launched", "object": "Parker Solar Probe", "confidence": 0.9, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "APL", "predicate": "designed", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "spacecraft", "predicate": "renames", "object": "Eugene Newman Parker", "confidence": 0.8, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "NASA", "predicate": "awarded", "object": "Collier Trophy", "confidence": 0.8, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "teams", "predicate": "from", "object": "NASA", "confidence": 0.7, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "teams", "predicate": "from", "object": "Johns Hopkins", "confidence": 0.7, "text_id": "text_000004", "source_id": "c51edd751cf4a4c2"}
+{"subject": "Eugene Newman Parker", "predicate": "proposed", "object": "Parker Solar Probe", "confidence": 0.8, "text_id": "text_000005", "source_id": "d6a515d68b769a5a"}
+{"subject": "reaction wheels", "predicate": "reposition", "object": "spacecraft", "confidence": 0.7, "text_id": "text_000006", "source_id": "6d9a8c395bb9d3bb"}
+{"subject": "secondary array", "predicate": "powers", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000006", "source_id": "6d9a8c395bb9d3bb"}
+{"subject": "near Sun radiation environment", "predicate": "predicted to cause", "object": "spacecraft charging effects", "confidence": 0.7, "text_id": "text_000007", "source_id": "b4727edf2969962f"}
+{"subject": "Parker Solar Probe", "predicate": "passed around", "object": "Sun", "confidence": 0.8, "text_id": "text_000007", "source_id": "b4727edf2969962f"}
+{"subject": "gravity", "predicate": "cause", "object": "spacecraft to accelerate", "confidence": 0.8, "text_id": "text_000007", "source_id": "b4727edf2969962f"}
+{"subject": "gravity", "predicate": "cause", "object": "spacecraft to slow down", "confidence": 0.8, "text_id": "text_000007", "source_id": "b4727edf2969962f"}
+{"subject": "highly elliptical orbit", "predicate": "and", "object": "Sun's strong gravity", "confidence": 0.7, "text_id": "text_000007", "source_id": "b4727edf2969962f"}
+{"subject": "gravity_assists", "predicate": "set", "object": "spacecraft", "confidence": 0.9, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "spacecraft", "predicate": "passed around", "object": "Sun", "confidence": 0.9, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "beacon transmission", "predicate": "created_maps_of", "object": "spacecraft", "confidence": 0.8, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "beacon transmission", "predicate": "was_downloaded", "object": "Planet", "confidence": 0.8, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "beacon transmission", "predicate": "was_downloaded", "object": "Planet", "confidence": 0.8, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "transmitters", "predicate": "point at", "object": "Planet", "confidence": 0.8, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "heat shield", "predicate": "will remain", "object": "Sun", "confidence": 0.8, "text_id": "text_000008", "source_id": "39b3f896e1b75148"}
+{"subject": "HeliOSPP", "predicate": "provides_input", "object": "Science Working Group", "confidence": 0.9, "text_id": "text_000009", "source_id": "8c6fdb587ba94238"}
+{"subject": "HeliOSPP", "predicate": "provides_input", "object": "SPP Project", "confidence": 0.9, "text_id": "text_000009", "source_id": "8c6fdb587ba94238"}
+{"subject": "Parker Solar Probe", "predicate": "launched", "object": "Planet", "confidence": 0.9, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "performed", "object": "Venus flyby", "confidence": 0.9, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "was_observed_by", "object": "Science Phase", "confidence": 0.85, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "communicates_with", "object": "Planet", "confidence": 0.7, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "encountered", "object": "Planet", "confidence": 0.9, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Planet", "predicate": "orbited", "object": "Sun", "confidence": 0.85, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "reduced_speed", "object": "Venus flyby", "confidence": 0.8, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "orbited", "object": "Sun", "confidence": 0.9, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Science Phase", "predicate": "occurred", "object": "Parker Solar Probe", "confidence": 0.85, "text_id": "text_000000", "source_id": "67bad604d3b124bd"}
+{"subject": "Parker Solar Probe", "predicate": "measured", "object": "Sun's magnetic field", "confidence": 0.85, "text_id": "text_000002", "source_id": "a45f6bbe848ce97d"}
+{"subject": "Parker Solar Probe", "predicate": "encountered", "object": "Alfvén surface", "confidence": 0.85, "text_id": "text_000002", "source_id": "a45f6bbe848ce97d"}
+{"subject": "Peter Berrett", "predicate": "participates_in", "object": "Sungrazer project", "confidence": 0.8, "text_id": "text_000002", "source_id": "a45f6bbe848ce97d"}
+{"subject": "Parker Solar Probe", "predicate": "detected", "object": "Kelvin-Helmholtz instability", "confidence": 0.8, "text_id": "text_000002", "source_id": "a45f6bbe848ce97d"}
+{"subject": "PSP", "predicate": "cooperated_with", "object": "SolO", "confidence": 0.9, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "PSP", "predicate": "cooperated_with", "object": "SolO", "confidence": 0.9, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "SolO", "predicate": "was_observed_by", "object": "Sun", "confidence": 0.8, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "PSP", "predicate": "was_observed_by", "object": "Sun's corona", "confidence": 0.8, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "SolO", "predicate": "was_observed_by", "object": "Sun", "confidence": 0.8, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "PSP", "predicate": "can_be_compared_with", "object": "SolO", "confidence": 0.7, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "SolO", "predicate": "coordinated_observations_with", "object": "SOHO", "confidence": 0.7, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "SolO", "predicate": "coordinated_observations_with", "object": "STEREO-A", "confidence": 0.7, "text_id": "text_000003", "source_id": "6e0a8c273a1ca4d1"}
+{"subject": "NASA scientific research program", "predicate": "includes", "object": "heliophysics missions", "confidence": 0.9, "text_id": "text_000004", "source_id": "e3f8fb3c1b4575f9"}
+{"subject": "NASA scientific research program", "predicate": "includes", "object": "Spacecraft thermal control", "confidence": 0.85, "text_id": "text_000004", "source_id": "e3f8fb3c1b4575f9"}
+{"subject": "Parker Solar Probe", "predicate": "was_observed_by", "object": "stream_interaction_regions", "confidence": 0.8, "text_id": "text_000005", "source_id": "88b52cf22758baaf"}

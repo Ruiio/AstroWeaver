@@ -1,0 +1,23 @@
+{
+  "stage": "knowledge_auditing",
+  "timestamp": "2025-09-04T16:23:13.097587",
+  "execution_time": 0,
+  "status": "completed",
+  "statistics": {
+    "total_input_triples": 712,
+    "high_confidence_count": 658,
+    "low_confidence_count": 54,
+    "high_confidence_rate": 0.9241573033707865,
+    "execution_time": 0
+  },
+  "details": {
+    "confidence_threshold": 1,
+    "audit_method": "enhanced_knowledge_auditor"
+  },
+  "output_files": [
+    "audited_high_confidence_triples.jsonl",
+    "audited_low_confidence_triples.jsonl",
+    "knowledge_auditing_result.json",
+    "source_texts.json"
+  ]
+}

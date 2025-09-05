@@ -1,0 +1,37 @@
+{
+  "pipeline_name": "AstroWeaver Integrated Pipeline",
+  "execution_timestamp": "20250904_162312",
+  "total_execution_time": 862.2972784042358,
+  "success": true,
+  "stages_completed": [
+    "data_acquisition",
+    "information_extraction",
+    "knowledge_auditing",
+    "canonicalization",
+    "graph_construction"
+  ],
+  "final_statistics": {
+    "total_entities": 422,
+    "total_documents": 0,
+    "total_extracted_triples": 712,
+    "high_confidence_triples": 658,
+    "low_confidence_triples": 54,
+    "canonicalized_triples": 658,
+    "inserted_triples": 658
+  },
+  "stage_directories": {
+    "data_acquisition": "data\\output\\intermediate_results\\01_data_acquisition",
+    "information_extraction": "data\\output\\intermediate_results\\02_information_extraction",
+    "knowledge_auditing": "data\\output\\intermediate_results\\03_knowledge_auditing",
+    "canonicalization": "data\\output\\intermediate_results\\04_canonicalization",
+    "graph_construction": "data\\output\\intermediate_results\\05_graph_construction"
+  },
+  "output_summary": {
+    "total_entities_processed": 422,
+    "documents_acquired": 0,
+    "triples_extracted": 712,
+    "high_confidence_triples": 658,
+    "canonicalized_triples": 658,
+    "triples_inserted_to_graph": 658
+  }
+}

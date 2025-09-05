@@ -1,0 +1,28 @@
+{
+  "stage": "graph_construction",
+  "timestamp": "2025-09-04T16:37:34.843026",
+  "execution_time": 0,
+  "status": "completed",
+  "statistics": {
+    "inserted_triples": 658,
+    "total_pipeline_stats": {
+      "total_entities": 422,
+      "total_documents": 0,
+      "total_extracted_triples": 712,
+      "high_confidence_triples": 658,
+      "low_confidence_triples": 54,
+      "canonicalized_triples": 658,
+      "inserted_triples": 658
+    },
+    "execution_time": 0
+  },
+  "details": {
+    "graph_constructor": "GraphArchitect",
+    "database": "Neo4j",
+    "connection_uri": "bolt://210.40.16.12:58653"
+  },
+  "output_files": [
+    "graph_construction_result.json",
+    "inserted_triples.jsonl"
+  ]
+}

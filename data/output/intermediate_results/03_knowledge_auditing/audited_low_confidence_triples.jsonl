@@ -1,0 +1,54 @@
+{"subject": "moons", "predicate": "includes", "object": "Thebe", "confidence": 0.6, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "moons", "predicate": "includes", "object": "Amalthea", "confidence": 0.6, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "moons", "predicate": "includes", "object": "Adrastea", "confidence": 0.6, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "moons", "predicate": "includes", "object": "Metis", "confidence": 0.6, "text_id": "text_000001", "source_id": "50739d8a5ce1adb4"}
+{"subject": "Period Reduction Maneuver", "predicate": "would_drop", "object": "Juno", "confidence": 0.6, "text_id": "text_000003", "source_id": "d487f21dce5e682a"}
+{"subject": "NASA", "predicate": "awarded", "object": "New Discovery Program", "confidence": 0.5, "text_id": "text_000009", "source_id": "76fc5f9d34bc33c2"}
+{"subject": "great global shots", "predicate": "will_be_downonto", "object": "Jupiter's poles", "confidence": 0.6, "text_id": "text_000001", "source_id": "047c980186b4760a"}
+{"subject": "speculations", "predicate": "nature", "object": "Kuiper belt", "confidence": 0.5, "text_id": "text_000004", "source_id": "2da25b218b12aaf8"}
+{"subject": "objects", "predicate": "must_migrate", "object": "region", "confidence": 0.6, "text_id": "text_000008", "source_id": "8420b75c9269cd73"}
+{"subject": "objects", "predicate": "are_swept_up_by", "object": "Neptune", "confidence": 0.6, "text_id": "text_000000", "source_id": "e8cdeadd7a5d2573"}
+{"subject": "objects", "predicate": "are_ejected_by", "object": "Neptune", "confidence": 0.6, "text_id": "text_000000", "source_id": "e8cdeadd7a5d2573"}
+{"subject": "missions", "predicate": "would_flyby", "object": "Uranus", "confidence": 0.6, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "missions", "predicate": "would_flyby", "object": "Neptune", "confidence": 0.6, "text_id": "text_000000", "source_id": "ac47e745efc4e805"}
+{"subject": "Arrokoth", "predicate": "was accompagnied_by", "object": "orbiting moonlet", "confidence": 0.65, "text_id": "text_000009", "source_id": "2847ebfa6353d72a"}
+{"subject": "cameras", "predicate": "record_data_when", "object": "entire probe turns", "confidence": 0.6, "text_id": "text_000002", "source_id": "2600e0cb61dcf5f1"}
+{"subject": "Ralph telescope", "predicate": "was_named_after", "object": "Alice's husband on The Honeymooners", "confidence": 0.6, "text_id": "text_000008", "source_id": "316814162cd35292"}
+{"subject": "Ralph telescope", "predicate": "was_designed_after", "object": "Alice", "confidence": 0.6, "text_id": "text_000008", "source_id": "316814162cd35292"}
+{"subject": "New Horizons", "predicate": "will_take_picture_of", "object": "Earth", "confidence": 0.6, "text_id": "text_000000", "source_id": "c0ab07055c1b4e3e"}
+{"subject": "New Horizons", "predicate": "described_in", "object": "Acta Astronautica", "confidence": 0.6, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "New Horizons", "predicate": "described_in", "object": "Historical Studies in the Natural Sciences", "confidence": 0.6, "text_id": "text_000002", "source_id": "edfe0e7e2611406a"}
+{"subject": "impact events", "predicate": "occur on", "object": "Arrokoth", "confidence": 0.6, "text_id": "text_000008", "source_id": "f84cdcb903024e52"}
+{"subject": "Occultation", "predicate": "occurs with", "object": "Arrokoth", "confidence": 0.6, "text_id": "text_000008", "source_id": "f84cdcb903024e52"}
+{"subject": "Hubble", "predicate": "excluded", "object": "satellites", "confidence": 0.6, "text_id": "text_000000", "source_id": "68de3e4b9f1b6f2a"}
+{"subject": "Siebert", "predicate": "interpreted", "object": "Strachey's handwriting", "confidence": 0.5, "text_id": "text_000001", "source_id": "8e23df2f9adc65ee"}
+{"subject": "MU69", "predicate": "became_contact_with", "object": "Kozai-Lidov oscillations", "confidence": 0.6, "text_id": "text_000008", "source_id": "f89d44c96c4db03d"}
+{"subject": "MU69", "predicate": "affected_by", "object": "nebular drag", "confidence": 0.6, "text_id": "text_000008", "source_id": "f89d44c96c4db03d"}
+{"subject": "Minor Planet Ephemeris Service", "predicate": "provides data for", "object": "Minor Planet Center", "confidence": 0.6, "text_id": "text_000003", "source_id": "e527d08f437e32ea"}
+{"subject": "SOFIA", "predicate": "supports", "object": "New Horizons", "confidence": 0.6, "text_id": "text_000006", "source_id": "a8abbffa149702d6"}
+{"subject": "Whipple", "predicate": "wrote", "object": "A Review of Cometary Sciences", "confidence": 0.6, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "Whipple", "predicate": "wrote", "object": "The Oort Cloud", "confidence": 0.6, "text_id": "text_000003", "source_id": "4e633e0c0b1a1cf6"}
+{"subject": "Edgeworth-Kuiper Belt", "predicate": "reviewed_by", "object": "First Decadal Review", "confidence": 0.6, "text_id": "text_000009", "source_id": "8969eec96c87b1a9"}
+{"subject": "Oort cloud", "predicate": "and", "object": "Scattered Disc", "confidence": 0.6, "text_id": "text_000000", "source_id": "2106e573c5c092a9"}
+{"subject": "Oort Cloud", "predicate": "formed", "object": "comets", "confidence": 0.5, "text_id": "text_000002", "source_id": "16511d35ac1d3bab"}
+{"subject": "Cometary Reservoirs", "predicate": "related_to", "object": "Oort Cloud", "confidence": 0.4, "text_id": "text_000002", "source_id": "16511d35ac1d3bab"}
+{"subject": "Inner Oort cloud", "predicate": "formation", "object": "embedded star cluster", "confidence": 0.6, "text_id": "text_000003", "source_id": "9e7ed7fccb511ba6"}
+{"subject": "Stars", "predicate": "close_approach", "object": "Oort Cloud", "confidence": 0.6, "text_id": "text_000006", "source_id": "1582789714581c82"}
+{"subject": "Comet Cloud Candidates", "predicate": "formation", "object": "Scattering of Planetesimals by a Planet", "confidence": 0.6, "text_id": "text_000006", "source_id": "1582789714581c82"}
+{"subject": "New Horizons", "predicate": "salutes", "object": "Voyager", "confidence": 0.6, "text_id": "text_000007", "source_id": "03684ea1fe13e05f"}
+{"subject": "Oort Cloud", "predicate": "shaped", "object": "Solar System", "confidence": 0.6, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "comets", "predicate": "yank", "object": "neighboring stars", "confidence": 0.6, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "hidden pattern", "predicate": "circle", "object": "Sun", "confidence": 0.5, "text_id": "text_000000", "source_id": "e44baea556964c56"}
+{"subject": "unstable_orbits", "predicate": "will_be_pulled_away_by", "object": "passing_star", "confidence": 0.6, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "unstable_orbits", "predicate": "will_collide_with", "object": "Sun_or_a_planet", "confidence": 0.6, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "unstable_orbits", "predicate": "will_be_ejected_from", "object": "Solar_System", "confidence": 0.6, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "relatively_rare_comets", "predicate": "went_through", "object": "one_or_more_orbits_into_inner_Solar_System", "confidence": 0.6, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "orbits_drawn_inward", "predicate": "were_drawn_by", "object": "gravity_of_planets", "confidence": 0.6, "text_id": "text_000003", "source_id": "44bca830a722b3cb"}
+{"subject": "Hypotheses for cometary fading", "predicate": "include", "object": "the destruction of comets due to tidal stresses", "confidence": 0.6, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "Hypotheses for cometary fading", "predicate": "include", "object": "the loss of all volatiles, rendering some comets invisible", "confidence": 0.6, "text_id": "text_000006", "source_id": "b172798b691f38ab"}
+{"subject": "galactic tide", "predicate": "contributed_to_formation_of", "object": "Oort cloud", "confidence": 0.65, "text_id": "text_000008", "source_id": "42c3663690f7a2e4"}
+{"subject": "Scholz's Star", "predicate": "passed_through", "object": "outer Oort cloud", "confidence": 0.6, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Nemesis", "predicate": "passes_through", "object": "Oort cloud", "confidence": 0.4, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Nemesis", "predicate": "bombards", "object": "inner Solar System", "confidence": 0.4, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "Tyche", "predicate": "orbits", "object": "Sun", "confidence": 0.3, "text_id": "text_000009", "source_id": "441e211f284b13d3"}
+{"subject": "List of possible dwarf planets", "predicate": "includes", "object": "Pluto", "confidence": 0.6, "text_id": "text_000001", "source_id": "5b84acbbda3c9320"}

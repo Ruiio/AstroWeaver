@@ -1,0 +1,14 @@
+{
+  "pipeline_stats": {
+    "total_entities": 422,
+    "total_documents": 0,
+    "total_extracted_triples": 712,
+    "high_confidence_triples": 658,
+    "low_confidence_triples": 54,
+    "canonicalized_triples": 658,
+    "inserted_triples": 658
+  },
+  "execution_time": 862.2972784042358,
+  "timestamp": "20250904_162312",
+  "success": true
+}

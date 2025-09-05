@@ -1,0 +1,29 @@
+{
+  "stage": "information_extraction",
+  "timestamp": "2025-09-04T15:45:12.417104",
+  "execution_time": 0,
+  "status": "completed",
+  "statistics": {
+    "total_documents": 176,
+    "total_relations": 712,
+    "total_attributes": 3576,
+    "high_confidence_relations": 1,
+    "low_confidence_relations": 711,
+    "avg_relations_per_doc": 4.045454545454546,
+    "avg_attributes_per_doc": 20.318181818181817,
+    "execution_time": 0
+  },
+  "details": {
+    "confidence_threshold": 1,
+    "batch_size": 10
+  },
+  "output_files": [
+    "extracted_attributes.jsonl",
+    "extracted_relations.jsonl",
+    "extracted_triples.jsonl",
+    "high_confidence_triples.jsonl",
+    "information_extraction_result.json",
+    "low_confidence_triples.jsonl",
+    "source_texts.json"
+  ]
+}

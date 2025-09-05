@@ -1,0 +1,24 @@
+{
+  "stage": "canonicalization",
+  "timestamp": "2025-09-04T16:27:24.115638",
+  "execution_time": 0,
+  "status": "completed",
+  "statistics": {
+    "input_triples": 658,
+    "output_triples": 658,
+    "relation_mappings": 442,
+    "entity_mappings": 596,
+    "canonicalization_rate": 1.0,
+    "execution_time": 0
+  },
+  "details": {
+    "canonicalizer": "OptimizedCanonicalization",
+    "method": "batch_optimized"
+  },
+  "output_files": [
+    "canonicalization_result.json",
+    "canonicalized_triples.jsonl",
+    "entity_mappings.json",
+    "relation_mappings.json"
+  ]
+}
