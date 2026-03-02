@@ -174,10 +174,7 @@ class IntegratedPipeline:
             # 数据源客户端
             self.clients['wikipedia'] = WikipediaClient()
             self.clients['mineru'] = MinerUClient()
-            proxies = self.config.get('proxies', {
-                'http': 'http://localhost:7890',
-                'https': 'http://localhost:7890'
-            })
+            proxies = self.config.get('proxies', {})
             self.clients['wikidata'] = SimpleWikidataClient(proxies=proxies)
             self.logger.info("✅ Wikidata客户端初始化完成")
             self.logger.info("✅ 所有客户端初始化完成")

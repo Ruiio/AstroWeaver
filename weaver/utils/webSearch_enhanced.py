@@ -227,6 +227,7 @@ class EnhancedWebSearcher:
         top_links = links[:max_results]
 
         all_texts = []
+        fallback_blocks = []
         successful_extractions = 0
 
         for link_info in top_links:
@@ -238,6 +239,7 @@ class EnhancedWebSearcher:
             try:
                 texts = self.html_parser.get_web_content(url)
                 if texts:
+                    valid_count = 0
                     for text in texts:
                         if isinstance(text, str) and len(text.strip()) > 50:
                             all_texts.append({
@@ -247,32 +249,44 @@ class EnhancedWebSearcher:
                                 "page_title": link_info.get('title', ''),
                                 "search_engine": link_info.get('engine', '')
                             })
-                    successful_extractions += 1
-                    logger.info(f"成功从 {url} 提取 {len(texts)} 个文本块")
+                            valid_count += 1
+                    if valid_count > 0:
+                        successful_extractions += 1
+                        logger.info(f"成功从 {url} 提取 {valid_count} 个文本块")
+                    else:
+                        logger.warning(f"从 {url} 未提取到有意义的内容")
                 else:
                     logger.warning(f"从 {url} 未提取到内容")
             except Exception as e:
                 logger.error(f"处理URL {url} 时出错: {e}")
-                continue
 
-        # 兜底：若正文抓取失败，回退使用标题+摘要，避免整阶段零产出
-        if not all_texts:
-            fallback_blocks = []
-            for link_info in top_links:
-                title = (link_info.get('title') or '').strip()
-                snippet = (link_info.get('snippet') or '').strip()
-                url = link_info.get('url', '')
-                if len(snippet) >= 30:
-                    fallback_blocks.append({
-                        "text": f"{title}\n{snippet}",
-                        "source_type": "web_snippet",
-                        "source_url": url,
-                        "page_title": title,
-                        "search_engine": link_info.get('engine', '')
-                    })
-            if fallback_blocks:
-                logger.warning(f"正文抓取为空，已使用搜索摘要兜底: {len(fallback_blocks)} 条")
-                all_texts = fallback_blocks
+            # 单链接兜底：只要正文抓取失败，就补一个标题+摘要块
+            title = (link_info.get('title') or '').strip()
+            snippet = (link_info.get('snippet') or '').strip()
+            if len(snippet) >= 20:
+                fallback_blocks.append({
+                    "text": f"{title}\n{snippet}",
+                    "source_type": "web_snippet",
+                    "source_url": url,
+                    "page_title": title,
+                    "search_engine": link_info.get('engine', '')
+                })
+
+        # 先返回正文，若正文不足则补摘要，提高召回稳定性
+        if len(all_texts) < max_results and fallback_blocks:
+            used_urls = {item.get('source_url', '') for item in all_texts}
+            for fb in fallback_blocks:
+                if fb.get('source_url', '') in used_urls:
+                    continue
+                all_texts.append(fb)
+                if len(all_texts) >= max_results:
+                    break
+            logger.info(f"摘要补齐后文本块数量: {len(all_texts)}")
+
+        # 全空兜底
+        if not all_texts and fallback_blocks:
+            logger.warning(f"正文抓取为空，已使用搜索摘要兜底: {len(fallback_blocks)} 条")
+            all_texts = fallback_blocks[:max_results]
 
         logger.info(f"搜索完成: 成功处理 {successful_extractions}/{len(top_links)} 个链接，获得 {len(all_texts)} 个文本块")
         return all_texts

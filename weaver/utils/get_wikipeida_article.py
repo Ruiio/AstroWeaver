@@ -1,5 +1,3 @@
-import os
-
 import wikipediaapi
 
 wiki_wiki = wikipediaapi.Wikipedia('MyProject', 'en')
@@ -8,9 +6,6 @@ def get_article_sections(title):
     """
     获取维基百科文章内容并按章节提取。
     """
-    # 设置代理环境变量
-    os.environ['HTTP_PROXY'] = 'http://127.0.0.1:7890'
-    os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7890'
     page = wiki_wiki.page(title)
     if not page.exists():
         print(f"Article '{title}' does not exist.")
