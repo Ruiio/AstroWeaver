@@ -3,9 +3,9 @@
 # API密钥和认证信息
 api_keys:
   ali_key: "your-ali-api-key-here"
-  zhipu_key: "5fa0b194a42f56e2872cede596275143.7DU2zLrk6thDrf3u"
-  llm: "sk-aeb0ed24d0c045e78d73fff879da5f07" # 默认LLM API密钥（向后兼容）
-  X_API_KEY: "29790d8de82c9f9479d9cbccb4d20ad4720163d0"
+  zhipu_key: "your-ali-api-key-here"
+  llm: "your-ali-api-key-here" # 默认LLM API密钥（向后兼容）
+  X_API_KEY: "your-ali-api-key-here"
 # 文件和目录路径
 paths:
   input_file: "data/input/astroEntity.xlsx"
@@ -40,9 +40,9 @@ llm:
   judge_model: "deepseek-v3"      # 用于规范化判断的模型
 
 embedding:
-  api_url: "http://210.40.16.12:33585" # 嵌入模型服务的URL
+  api_url: "嵌入模型服务的URL" # 嵌入模型服务的URL
 neo4j:
-  uri: "bolt://210.40.16.12:58653"
+  uri: "bolt://xxxxxxxxxxx"
   user: "neo4j"
   password: "12345678"
 # 向量数据库配置
@@ -69,7 +69,7 @@ performance:
 
 #minerU配置
 minerU:
-    api_url: "http://210.40.16.12:53611/file_parse"
+    api_url: "http://xxxxxxxxxxxxe"
 
 #文本切块大小配置
 chunk:
