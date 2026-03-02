@@ -180,6 +180,113 @@ class IntegratedPipeline:
         self.logger.info(f"置信度阈值: {self.confidence_threshold}")
         self.logger.info(f"跳过审核阶段: {self.skip_audit}")
         self.logger.info(f"中间结果保存目录: {self.intermediate_dir}")
+
+    @staticmethod
+    def _safe_load_json(path: Path, default):
+        try:
+            if path.exists():
+                with open(path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception:
+            return default
+        return default
+
+    def _infer_source_authority(self, source_url: str = '', source_type: str = '') -> str:
+        url = (source_url or '').lower()
+        st = (source_type or '').lower()
+
+        if 'simbad' in url or 'simbad.cds.unistra.fr' in url:
+            return 'simbad'
+        if ('arxiv.org' in url or 'doi.org' in url or 'nature.com' in url or
+            'science.org' in url or 'iopscience.iop.org' in url or 'academic.oup.com' in url):
+            return 'academic_paper'
+        if 'wikipedia.org' in url:
+            return 'wikipedia'
+        if st == 'news' or any(x in url for x in ['news', 'reuters.com', 'apnews.com', 'xinhuanet.com']):
+            return 'web_news'
+        return 'general_web'
+
+    def _enrich_triples_for_conflict_resolution(self, triples: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """为三元组补充冲突融合需要的元数据：来源权威、时间戳、CS分数。"""
+        if not triples:
+            return triples
+
+        graph_cfg = self.config.get('graph_conflict', {})
+        w1 = float(graph_cfg.get('w1', 0.7))
+        w2 = float(graph_cfg.get('w2', 0.3))
+        authority_weights = graph_cfg.get('authority_weights', {
+            'simbad': 1.0,
+            'academic_paper': 0.9,
+            'wikipedia': 0.7,
+            'web_news': 0.5,
+            'general_web': 0.6
+        })
+
+        # 构建 source_id -> 元数据 映射（优先来自 stage1 文档）
+        source_meta = {}
+        docs_file = self.output_dir / 'intermediate_results' / '01_data_acquisition' / 'documents.jsonl'
+        if docs_file.exists():
+            try:
+                import hashlib
+                with open(docs_file, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        doc = json.loads(line)
+                        txt = doc.get('text') or doc.get('content') or ''
+                        candidates = [txt]
+                        if isinstance(txt, str) and len(txt) > 200:
+                            candidates.append(txt[:200])
+                        for c in candidates:
+                            if not c:
+                                continue
+                            sid = hashlib.md5(c.encode('utf-8')).hexdigest()[:16]
+                            source_meta[sid] = {
+                                'source_url': doc.get('source_url', ''),
+                                'page_title': doc.get('page_title', ''),
+                                'source_type': doc.get('source_type', 'web'),
+                                'origin_type': doc.get('origin_type', ''),
+                                'origin_value': doc.get('origin_value', ''),
+                            }
+            except Exception as e:
+                self.logger.warning(f"构建 source_meta 失败: {e}")
+
+        now_ts = time.time()
+        enriched = []
+        for t in triples:
+            nt = dict(t)
+            sid = nt.get('source_id', '')
+            meta = source_meta.get(sid, {})
+
+            source_url = nt.get('source_url') or meta.get('source_url', '')
+            source_type = nt.get('source_type') or meta.get('source_type', 'web')
+            source_authority = nt.get('source_authority') or self._infer_source_authority(source_url, source_type)
+            authority_score = float(authority_weights.get(source_authority, authority_weights.get('general_web', 0.6)))
+
+            ts_val = nt.get('timestamp')
+            if ts_val is None:
+                ts_val = now_ts
+            try:
+                ts_val = float(ts_val)
+            except Exception:
+                ts_val = now_ts
+            normalized_t = max(0.0, min(1.0, ts_val / now_ts if now_ts > 0 else 1.0))
+
+            confidence_score = w1 * authority_score + w2 * normalized_t
+
+            nt['source_authority'] = source_authority
+            nt['authority_score'] = authority_score
+            nt['timestamp'] = ts_val
+            nt['confidence_score'] = confidence_score
+            if source_url:
+                nt['source_url'] = source_url
+            if meta.get('page_title'):
+                nt['page_title'] = meta.get('page_title')
+
+            enriched.append(nt)
+
+        return enriched
     
     async def initialize_clients(self):
         """初始化所有客户端"""
@@ -1843,6 +1950,9 @@ class IntegratedPipeline:
             # =================================================================================
             # 步骤 4: 执行插入
             # =================================================================================
+            # 为冲突融合补充权威度/时间戳/CS
+            canonicalized_triples = self._enrich_triples_for_conflict_resolution(canonicalized_triples)
+
             self.logger.info(f"开始调用 GraphArchitect 构建图谱...")
             self.logger.info(f"  - 三元组数量: {len(canonicalized_triples)} (含合成)")
             self.logger.info(f"  - 实体属性集: {len(structured_data)} 个实体")
