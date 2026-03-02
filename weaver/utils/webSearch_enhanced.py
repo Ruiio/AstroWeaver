@@ -1,3 +1,4 @@
+import os
 import re
 import requests
 import json
@@ -16,6 +17,14 @@ class EnhancedWebSearcher:
     def __init__(self):
         self.html_parser = EnhancedHTMLParser()
         web_search_cfg = config.get("web_search", {}) if isinstance(config, dict) else {}
+        self.web_provider = web_search_cfg.get("provider", "open_websearch")
+
+        # Serper 配置
+        api_keys_cfg = config.get("api_keys", {}) if isinstance(config, dict) else {}
+        self.serper_url = web_search_cfg.get("serper_url", "https://google.serper.dev/search")
+        self.serper_key = os.getenv("ASTROWEAVER_SERPER_KEY") or api_keys_cfg.get("serper_key", "")
+
+        # open-webSearch 配置
         self.open_websearch_url = web_search_cfg.get("open_websearch_url", "http://127.0.0.1:3001/mcp")
         self.open_websearch_engines = web_search_cfg.get("engines", ["bing"])
 
@@ -385,6 +394,62 @@ class EnhancedWebSearcher:
         logger.info(f"open-webSearch 查询 '{query}' 返回 {len(links)} 个可用链接（未命中优质域名，回退全量）")
         return self._extract_texts_from_links(links, max_results)
 
+    def _search_with_serper(self, query: str, max_results: int = 5) -> List[dict]:
+        """通过 Serper Google Search API 执行搜索。"""
+        if not self.serper_key:
+            raise RuntimeError("Serper API key 未配置（ASTROWEAVER_SERPER_KEY）")
+
+        headers = {
+            'X-API-KEY': self.serper_key,
+            'Content-Type': 'application/json'
+        }
+        payload = {
+            'q': query,
+            'num': max(max_results * 6, 10)
+        }
+
+        response = requests.post(self.serper_url, headers=headers, json=payload, timeout=30)
+        if response.status_code == 400:
+            # Serper 对复杂操作符/站点约束较敏感，退化为更简单查询重试
+            simplified_query = re.sub(r"\bsite:[^\s]+", "", query)
+            simplified_query = re.sub(r"\bOR\b|\(|\)", " ", simplified_query, flags=re.IGNORECASE)
+            simplified_query = re.sub(r"\s+", " ", simplified_query).strip()
+            if simplified_query and simplified_query != query:
+                payload['q'] = simplified_query
+                response = requests.post(self.serper_url, headers=headers, json=payload, timeout=30)
+
+        response.raise_for_status()
+        response_data = response.json()
+
+        organic = response_data.get('organic', []) or []
+        links = []
+        for item in organic:
+            page_url = item.get('link', '')
+            if page_url and self._is_valid_url(page_url):
+                title = item.get('title', '')
+                snippet = item.get('snippet', '')
+                links.append({
+                    'url': page_url,
+                    'title': title,
+                    'snippet': snippet,
+                    'engine': 'serper',
+                    'score': self._score_url(page_url, title, snippet)
+                })
+
+        # Serper 下强制白名单优先，避免低质站点污染
+        preferred_links = []
+        for link in links:
+            try:
+                domain = urlparse(link.get('url', '')).netloc.lower()
+            except Exception:
+                domain = ''
+            if any(preferred in domain for preferred in self.preferred_domains) or domain.endswith('.edu') or domain.endswith('.gov'):
+                preferred_links.append(link)
+
+        final_links = preferred_links if preferred_links else links
+        logger.info(f"serper 查询 '{query}' 返回 {len(links)} 个可用链接，白名单命中 {len(preferred_links)} 个")
+        return self._extract_texts_from_links(final_links, max_results)
+
     def _search_with_bocha(self, query: str, max_results: int = 5) -> List[dict]:
         """通过原 bocha API 执行搜索（兼容保留）。"""
         url = "https://api.bochaai.com/v1/web-search"
@@ -424,7 +489,24 @@ class EnhancedWebSearcher:
         return self._extract_texts_from_links(links, max_results)
 
     def execute_web_query(self, query: str, max_results: int = 5) -> List[dict]:
-        """执行网络搜索并返回高质量文本内容（优先 open-webSearch）。"""
+        """执行网络搜索并返回高质量文本内容。"""
+        provider = (self.web_provider or "open_websearch").lower()
+
+        if provider == "serper":
+            try:
+                return self._search_with_serper(query, max_results)
+            except Exception as e:
+                logger.error(f"serper 搜索失败，回退 open-webSearch: {e}")
+                try:
+                    return self._search_with_open_websearch(query, max_results)
+                except Exception as e2:
+                    logger.error(f"open-webSearch 搜索失败，回退 bocha: {e2}")
+                    try:
+                        return self._search_with_bocha(query, max_results)
+                    except Exception as e3:
+                        logger.error(f"bocha 搜索也失败: {e3}")
+                        return []
+
         try:
             return self._search_with_open_websearch(query, max_results)
         except Exception as e:

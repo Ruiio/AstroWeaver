@@ -8,6 +8,7 @@ api_keys:
   llm: "${ASTROWEAVER_LLM_KEY}" # 默认LLM API密钥（向后兼容）
   X_API_KEY: "${ASTROWEAVER_X_API_KEY}" # bochaai API密钥
   closeai_key: "${ASTROWEAVER_CLOSEAI_KEY}"
+  serper_key: "${ASTROWEAVER_SERPER_KEY}" # Serper API Key
 # 文件和目录路径
 paths:
   input_file: "data/input/astroEntity.xlsx"
@@ -99,5 +100,7 @@ chunk:
 
 # Web 搜索配置
 web_search:
+  provider: "serper" # serper | open_websearch
+  serper_url: "https://google.serper.dev/search"
   open_websearch_url: "http://127.0.0.1:3001/mcp"
   engines: ["bing"]
