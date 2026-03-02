@@ -23,7 +23,11 @@ class EnhancedWebSearcher:
         self.excluded_domains = {
             'pinterest.com', 'instagram.com', 'facebook.com', 'twitter.com',
             'linkedin.com', 'youtube.com', 'tiktok.com', 'reddit.com',
-            'quora.com', 'yahoo.com', 'bing.com', 'google.com', 'dictionary.cambridge.org', 'iciba.com', 'collinsdictionary.com', 'merriam-webster.com', 'dictionary.com', 'vocabulary.com', 'wordreference.com'
+            'quora.com', 'yahoo.com', 'bing.com', 'google.com',
+            'dictionary.cambridge.org', 'iciba.com', 'collinsdictionary.com', 'merriam-webster.com', 'dictionary.com', 'vocabulary.com', 'wordreference.com',
+            # 低质量/噪声站点（天文主题下常出现但相关性较低）
+            'zhidao.baidu.com', 'baike.baidu.com', 'zhihu.com', 'dict.eudic.net',
+            'englishtour.cn', 'koolearn.com', 'bbs.pubg.game.daum.net', 'daum.net'
         }
         
         self.excluded_keywords = {
