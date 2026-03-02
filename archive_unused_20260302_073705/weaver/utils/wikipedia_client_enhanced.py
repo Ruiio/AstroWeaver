@@ -21,11 +21,28 @@ class EnhancedWikipediaClient:
             'Connection': 'keep-alive',
         })
         
-        # 设置代理
-        self.session.proxies = {
-            'http': 'http://127.0.0.1:7890',
-            'https': 'http://127.0.0.1:7890'
-        }
+        # 设置代理，并添加无代理回退机制
+        self.use_proxy = True
+        self.proxy_url = 'http://127.0.0.1:7890'
+        try:
+            # 先测试代理是否可用
+            test_session = requests.Session()
+            test_session.proxies = {
+                'http': self.proxy_url,
+                'https': self.proxy_url
+            }
+            test_session.get('https://www.wikipedia.org', timeout=5)
+            # 代理可用，设置代理
+            self.session.proxies = {
+                'http': self.proxy_url,
+                'https': self.proxy_url
+            }
+            logger.info("代理服务器连接成功，使用代理模式")
+        except Exception as e:
+            # 代理不可用，不使用代理
+            self.use_proxy = False
+            self.session.proxies = {}
+            logger.warning(f"代理服务器连接失败，将使用直接连接模式: {str(e)}")
         
         # 需要排除的HTML标签和属性
         self.excluded_tags = {

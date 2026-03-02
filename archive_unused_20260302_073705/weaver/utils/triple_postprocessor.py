@@ -4,14 +4,16 @@ from typing import List, Dict, Any, Set, Tuple, Optional
 from collections import defaultdict, Counter
 import json
 from pathlib import Path
+from .config import config
 
 logger = logging.getLogger(__name__)
 
 class TriplePostProcessor:
     """增强的三元组后处理器，用于过滤无效和重复的三元组，提升数据质量"""
     
-    def __init__(self, config: Optional[Dict] = None):
-        self.config = config or {}
+    def __init__(self, config_param: Optional[Dict] = None):
+        from .config import config as global_config
+        self.config = config_param or global_config or {}
         
         # 无效值模式
         self.invalid_patterns = {
@@ -47,7 +49,7 @@ class TriplePostProcessor:
         self.max_length = 200
         
         # 置信度阈值
-        self.min_confidence = 0.3
+        self.min_confidence = self.config.get('confidence', {}).get('min_confidence', 0.3)
         
         # 统计信息
         self.stats = {
@@ -272,7 +274,7 @@ class TriplePostProcessor:
             try:
                 normalized['confidence'] = float(normalized['confidence'])
             except (ValueError, TypeError):
-                normalized['confidence'] = 0.5  # 默认置信度
+                normalized['confidence'] = self.config.get('confidence', {}).get('default_normalization', 0.5)  # 默认置信度
         
         # 清理source_text
         if 'source_text' in normalized and normalized['source_text']:
@@ -350,7 +352,7 @@ class TriplePostProcessor:
                 analysis['object_distribution'][obj] += 1
             
             # 置信度分析
-            confidence = triple.get('confidence', 0.5)
+            confidence = triple.get('confidence', self.config.get('confidence', {}).get('default_normalization', 0.5))
             if isinstance(confidence, (int, float)):
                 if confidence < 0.3:
                     analysis['low_confidence'] += 1
