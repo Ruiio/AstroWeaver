@@ -39,9 +39,9 @@ llm:
   # 智谱AI配置
   zhipu:
     base_url: "https://open.bigmodel.cn/api/paas/v4"
-    base_model: "glm-4.7-flash"
-    extraction_model: "glm-4.7-flash"
-    judge_model: "glm-4.7-flash"
+    base_model: "glm-4.7"
+    extraction_model: "glm-4.7"
+    judge_model: "glm-4.7"
   # NVIDIA（OpenAI兼容）配置
   nvidia:
     base_url: "https://integrate.api.nvidia.com/v1"
