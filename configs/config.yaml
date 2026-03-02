@@ -100,4 +100,4 @@ chunk:
 # Web 搜索配置
 web_search:
   open_websearch_url: "http://127.0.0.1:3001/mcp"
-  engines: ["duckduckgo", "bing"]
+  engines: ["bing"]

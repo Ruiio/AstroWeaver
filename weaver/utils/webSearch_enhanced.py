@@ -17,7 +17,10 @@ class EnhancedWebSearcher:
         self.html_parser = EnhancedHTMLParser()
         web_search_cfg = config.get("web_search", {}) if isinstance(config, dict) else {}
         self.open_websearch_url = web_search_cfg.get("open_websearch_url", "http://127.0.0.1:3001/mcp")
-        self.open_websearch_engines = web_search_cfg.get("engines", ["duckduckgo", "bing"])
+        self.open_websearch_engines = web_search_cfg.get("engines", ["bing"])
+
+        # open-webSearch MCP 会话复用（避免每次initialize触发服务端重复connect崩溃）
+        self._mcp_session_id: Optional[str] = None
         
         # 排除的域名和关键词
         self.excluded_domains = {
@@ -267,28 +270,30 @@ class EnhancedWebSearcher:
 
     def _search_with_open_websearch(self, query: str, max_results: int = 5) -> List[dict]:
         """通过 open-webSearch MCP HTTP 接口执行搜索。"""
-        initialize_payload = {
-            "jsonrpc": "2.0",
-            "id": 1,
-            "method": "initialize",
-            "params": {
-                "protocolVersion": "2024-11-05",
-                "capabilities": {},
-                "clientInfo": {"name": "astroweaver", "version": "0.1"}
+        if not self._mcp_session_id:
+            initialize_payload = {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "initialize",
+                "params": {
+                    "protocolVersion": "2024-11-05",
+                    "capabilities": {},
+                    "clientInfo": {"name": "astroweaver", "version": "0.1"}
+                }
             }
-        }
 
-        init_headers = {
-            "Content-Type": "application/json",
-            "Accept": "application/json, text/event-stream"
-        }
+            init_headers = {
+                "Content-Type": "application/json",
+                "Accept": "application/json, text/event-stream"
+            }
 
-        init_resp = requests.post(self.open_websearch_url, headers=init_headers, json=initialize_payload, timeout=20)
-        init_resp.raise_for_status()
+            init_resp = requests.post(self.open_websearch_url, headers=init_headers, json=initialize_payload, timeout=20)
+            init_resp.raise_for_status()
 
-        session_id = init_resp.headers.get("mcp-session-id")
-        if not session_id:
-            raise RuntimeError("open-webSearch 未返回 mcp-session-id")
+            session_id = init_resp.headers.get("mcp-session-id")
+            if not session_id:
+                raise RuntimeError("open-webSearch 未返回 mcp-session-id")
+            self._mcp_session_id = session_id
 
         call_payload = {
             "jsonrpc": "2.0",
@@ -307,10 +312,14 @@ class EnhancedWebSearcher:
         call_headers = {
             "Content-Type": "application/json",
             "Accept": "application/json, text/event-stream",
-            "mcp-session-id": session_id
+            "mcp-session-id": self._mcp_session_id
         }
 
         call_resp = requests.post(self.open_websearch_url, headers=call_headers, json=call_payload, timeout=60)
+        if call_resp.status_code >= 400 and self._mcp_session_id:
+            # 会话可能失效，重置并重试一次
+            self._mcp_session_id = None
+            return self._search_with_open_websearch(query, max_results)
         call_resp.raise_for_status()
 
         # MCP streamable HTTP 返回 SSE 格式：event: message\ndata: {...}
@@ -446,10 +455,14 @@ class EnhancedWebSearcher:
 
 
 # 保持向后兼容性的函数
+_GLOBAL_SEARCHER: Optional[EnhancedWebSearcher] = None
+
 def execute_web_query(query: str) -> List[dict]:
-    """向后兼容的函数，使用增强的搜索器"""
-    searcher = EnhancedWebSearcher()
-    return searcher.execute_web_query(query)
+    """向后兼容的函数，使用增强的搜索器（进程级单例，复用MCP会话）"""
+    global _GLOBAL_SEARCHER
+    if _GLOBAL_SEARCHER is None:
+        _GLOBAL_SEARCHER = EnhancedWebSearcher()
+    return _GLOBAL_SEARCHER.execute_web_query(query)
 
 
 if __name__ == "__main__":
