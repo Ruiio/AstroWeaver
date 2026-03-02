@@ -18,9 +18,10 @@ import argparse
 import gc
 import time
 import traceback
+import re
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 import pandas as pd
 
 from weaver.utils.getWikidata import SimpleWikidataClient
@@ -59,6 +60,46 @@ logger = logging.getLogger(__name__)
 
 class IntegratedPipeline:
     """整合版Pipeline类"""
+
+    def _classify_source_authority(self, source_url: str) -> tuple[str, float]:
+        """根据URL域名估计来源权威等级与分值。"""
+        gcfg = self.config.get('graph_conflict', {})
+        aw = gcfg.get('authority_weights', {})
+
+        default_general = float(aw.get('general_web', 0.6))
+        source_url = (source_url or '').lower()
+
+        if any(k in source_url for k in ['simbad', 'cds.unistra.fr']):
+            return 'simbad', float(aw.get('simbad', 1.0))
+        if any(k in source_url for k in ['arxiv.org', 'nature.com', 'science.org', 'iopscience', 'aanda.org', 'apj', 'mnras']):
+            return 'academic_paper', float(aw.get('academic_paper', 0.9))
+        if 'wikipedia.org' in source_url:
+            return 'wikipedia', float(aw.get('wikipedia', 0.7))
+        if any(k in source_url for k in ['news', 'xinhuanet', 'bbc.com/news', 'cnn.com']):
+            return 'web_news', float(aw.get('web_news', 0.5))
+        return 'general_web', default_general
+
+    @staticmethod
+    def _extract_numeric_value(val: Any) -> Optional[float]:
+        """从字符串中提取首个数值（用于容差比较）。"""
+        if val is None:
+            return None
+        if isinstance(val, (int, float)):
+            return float(val)
+        s = str(val)
+        m = re.search(r'[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?', s)
+        if not m:
+            return None
+        try:
+            return float(m.group(0))
+        except Exception:
+            return None
+
+    def _compute_confidence_score(self, authority_score: float, ts_norm: float) -> float:
+        gcfg = self.config.get('graph_conflict', {})
+        w1 = float(gcfg.get('w1', 0.7))
+        w2 = float(gcfg.get('w2', 0.3))
+        return w1 * authority_score + w2 * ts_norm
     
     def __init__(self, config_path: str, skip_audit: bool = False, multi_entity_mode: bool = False, resume: bool = False, output_dir: str = None):
         """初始化整合版Pipeline
@@ -218,7 +259,8 @@ class IntegratedPipeline:
             self.agents['constructor'] = GraphArchitect(
                 driver=self.clients['neo4j'],
                 file_handler=self.clients['file_handler'],
-                llm_client=self.clients['llm']
+                llm_client=self.clients['llm'],
+                config=self.config
             )
             
             # 优化版规范化器 - 包装以支持输出目录
@@ -1554,7 +1596,47 @@ class IntegratedPipeline:
             # =================================================================================
             # 步骤 0: 准备工作 & 加载映射
             # =================================================================================
-            
+
+            # 0.1 为三元组补齐来源权威与冲突融合打分元数据（V1）
+            import hashlib
+            now_ts = time.time()
+            ts_norm_now = min(max(now_ts / 4102444800.0, 0.0), 1.0)  # 近似归一化到2100年
+
+            source_meta_by_id = {}
+            docs_file = self.output_dir / "intermediate_results" / "01_data_acquisition" / "documents.jsonl"
+            if docs_file.exists():
+                with open(docs_file, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        if not line.strip():
+                            continue
+                        d = json.loads(line)
+                        txt = d.get('text', '')
+                        if txt:
+                            sid = hashlib.md5(txt.encode('utf-8')).hexdigest()[:16]
+                            source_meta_by_id[sid] = {
+                                'source_url': d.get('source_url', ''),
+                                'source_type': d.get('source_type', ''),
+                                'origin_type': d.get('origin_type', ''),
+                                'origin_value': d.get('origin_value', ''),
+                                'page_title': d.get('page_title', '')
+                            }
+
+            for triple in canonicalized_triples:
+                sid = triple.get('source_id', '')
+                meta = source_meta_by_id.get(sid, {})
+                source_url = meta.get('source_url', '')
+                source_authority, authority_score = self._classify_source_authority(source_url)
+                confidence_val = float(triple.get('confidence', 1.0) or 1.0)
+                cs = self._compute_confidence_score(authority_score, ts_norm_now)
+                # 融入抽取置信度，保证与现有审核链兼容
+                cs = 0.7 * cs + 0.3 * confidence_val
+
+                triple['source_url'] = source_url
+                triple['source_authority'] = source_authority
+                triple['authority_score'] = authority_score
+                triple['timestamp'] = now_ts
+                triple['confidence_score'] = cs
+
             # 1. 收集三元组中已有的所有节点
             # 用于后续判断哪些结构化数据是“孤立”的（即不在三元组关系网络中）
             existing_graph_nodes = set()

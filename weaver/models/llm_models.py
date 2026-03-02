@@ -35,7 +35,7 @@ class BatchResponse:
 class LLMClient:
     """
     封装与LLM API的交互，支持标准请求和本地模拟的批处理请求。
-    支持阿里云（OpenAI兼容）、智谱AI，以及 NVIDIA(OpenAI兼容) 三种客户端。
+    支持阿里云/DeepSeek（OpenAI兼容）、智谱AI，以及 NVIDIA(OpenAI兼容) 等客户端。
     """
 
     def __init__(self, api_key: str, base_url: Optional[str] = None, max_workers: int = 5, provider: str = "ali", http_client: Optional[httpx.Client] = None):
@@ -245,6 +245,10 @@ def create_llm_client(config: Dict[str, Any]) -> LLMClient:
         api_key = config['api_keys']['closeai_key']
         base_url = config.get('llm', {}).get('closeai', {}).get('base_url', 'https://api.openai-proxy.org/v1')
         return LLMClient(api_key=api_key, base_url=base_url, provider='closeai')
+    elif provider == 'deepseek':
+        api_key = config['api_keys'].get('deepseek_key') or config['api_keys'].get('ali_key')
+        base_url = config.get('llm', {}).get('deepseek', {}).get('base_url', 'https://api.deepseek.com')
+        return LLMClient(api_key=api_key, base_url=base_url, provider='deepseek')
     else:
         # 默认使用阿里云
         api_key = config['api_keys']['ali_key']
@@ -267,6 +271,9 @@ def get_model_name(config: Dict[str, Any], model_type: str = 'base_model') -> st
     elif provider == 'closeai':
         ca_config = config.get('llm', {}).get('closeai', {})
         return ca_config.get(model_type, 'gpt-4o-mini')
+    elif provider == 'deepseek':
+        ds_config = config.get('llm', {}).get('deepseek', {})
+        return ds_config.get(model_type, 'deepseek-chat')
     else:
         ali_config = config.get('llm', {}).get('ali', {})
         return (ali_config.get(model_type) or 

@@ -5,6 +5,7 @@ api_keys:
   ali_key: "${ASTROWEAVER_ALI_KEY}"
   zhipu_key: "${ASTROWEAVER_ZHIPU_KEY}"
   nvidia_key: "${ASTROWEAVER_NVIDIA_KEY}"
+  deepseek_key: "${ASTROWEAVER_DEEPSEEK_KEY}"
   llm: "${ASTROWEAVER_LLM_KEY}" # 默认LLM API密钥（向后兼容）
   X_API_KEY: "${ASTROWEAVER_X_API_KEY}" # bochaai API密钥
   closeai_key: "${ASTROWEAVER_CLOSEAI_KEY}"
@@ -29,7 +30,7 @@ confidence:
   audit_threshold: 0.9 # 审核置信度阈值（分割低置信度和高置信度的三元组）
 # 模型配置
 llm:
-  provider: "zhipu"
+  provider: "deepseek"
   # 阿里云配置
   ali:
     base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
@@ -53,6 +54,12 @@ llm:
     base_model: "gemini-3-pro-preview"
     extraction_model: "gemini-3-pro-preview"
     judge_model: "gemini-3-pro-preview"
+  # DeepSeek（OpenAI兼容）配置
+  deepseek:
+    base_url: "https://api.deepseek.com"
+    base_model: "deepseek-chat"
+    extraction_model: "deepseek-chat"
+    judge_model: "deepseek-chat"
   # 向后兼容的配置（将被弃用）
   base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # LLM API的URL
   base_model: "deepseek-v3"
@@ -79,6 +86,21 @@ pipeline:
   skip_audit: false # 是否跳过审核阶段
   save_triples_to_file: true # 是否将三元组保存到文件
   enable_memory_safe_mode: true # 是否启用内存安全模式
+
+# 图谱冲突融合配置（V1）
+graph_conflict:
+  enabled: true
+  # CS = w1*S + w2*Normalize(T)
+  w1: 0.7
+  w2: 0.3
+  coexist_score_delta: 0.08
+  numeric_tolerance_ratio: 0.03
+  authority_weights:
+    simbad: 1.00
+    academic_paper: 0.90
+    wikipedia: 0.70
+    web_news: 0.50
+    general_web: 0.60
 
 # 性能优化配置
 performance:
