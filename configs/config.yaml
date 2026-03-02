@@ -30,7 +30,7 @@ confidence:
   audit_threshold: 0.9 # 审核置信度阈值（分割低置信度和高置信度的三元组）
 # 模型配置
 llm:
-  provider: "deepseek"
+  provider: "closeai"
   # 阿里云配置
   ali:
     base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
@@ -50,10 +50,10 @@ llm:
     extraction_model: "meta/llama-3.2-3b-instruct"
     judge_model: "meta/llama-3.2-3b-instruct"
   closeai:
-    base_url: "https://api.openai-proxy.org/v1"
-    base_model: "gemini-3-pro-preview"
-    extraction_model: "gemini-3-pro-preview"
-    judge_model: "gemini-3-pro-preview"
+    base_url: "https://api.chatanywhere.tech/v1"
+    base_model: "gpt-5-mini-ca"
+    extraction_model: "gpt-5-mini-ca"
+    judge_model: "gpt-5-mini-ca"
   # DeepSeek（OpenAI兼容）配置
   deepseek:
     base_url: "https://api.deepseek.com"
