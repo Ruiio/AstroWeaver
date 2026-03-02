@@ -1,0 +1,40 @@
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Runtime artifacts
+logs/
+query_service.log
+
+# Data and outputs
+data/
+result/
+new_result/
+rag-600_result/
+rag-600_add_result/
+rag-600_add_2_result/
+
+# Local archives / vendor experiments
+archive_unused_*/
+
+# Large or generated assets
+*.png
+UAT_processed.json
+golden_dataset.jsonl
+qa_from_result_output_closeai.json
+canonicalized_entities.json
+canonicalized_entities_mapping.json
+knowledge_graph.json
+graph_construction_*.json
+
+# Secrets
+sshkey.txt
+sshkey.txt.pub
+.env
