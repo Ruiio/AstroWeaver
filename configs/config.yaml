@@ -1,38 +1,57 @@
 # configs/config.yaml
 
-# API密钥和认证信息
+# API密钥和认证信息（支持环境变量替换）
 api_keys:
-  ali_key: "your-ali-api-key-here"
-  zhipu_key: "your-ali-api-key-here"
-  llm: "your-ali-api-key-here" # 默认LLM API密钥（向后兼容）
-  X_API_KEY: "your-ali-api-key-here"
+  ali_key: "${ASTROWEAVER_ALI_KEY}"
+  zhipu_key: "${ASTROWEAVER_ZHIPU_KEY}"
+  nvidia_key: "${ASTROWEAVER_NVIDIA_KEY}"
+  llm: "${ASTROWEAVER_LLM_KEY}" # 默认LLM API密钥（向后兼容）
+  X_API_KEY: "${ASTROWEAVER_X_API_KEY}" # bochaai API密钥
+  closeai_key: "${ASTROWEAVER_CLOSEAI_KEY}"
 # 文件和目录路径
 paths:
   input_file: "data/input/astroEntity.xlsx"
   output_dir: "data/output"
   vector_db_path: "data/vectordb" # ChromaDB数据存储路径
-  extracted_triples_dir: "data/output/extracted_triples" # 提取的三元组保存目录
   audited_triples_dir: "data/output/audited_triples" # 审核后的三元组保存目录
 # 审核器配置
 auditor:
   confidence_threshold: 1 # 置信度阈值，高于此值的三元组被认为是高质量的
   enable_vector_similarity: true # 是否启用向量相似度检查（需要向量数据库）
   enable_llm_validation: true # 是否启用LLM验证（更准确但更慢）
+
+# 置信度配置
+confidence:
+  default_extraction: 0.5 # 信息抽取的默认置信度，对于llm不提供置信度情况下
+  default_normalization: 0.5 # 规范化的默认置信度（）
+  min_confidence: 0.9 # 最小置信度阈值（低于最小置信度的三元组将直接去除）
+  audit_threshold: 0.9 # 审核置信度阈值（分割低置信度和高置信度的三元组）
 # 模型配置
 llm:
-  provider: "zhipu" # 选择LLM提供商: "ali" 或 "zhipu"
+  provider: "zhipu"
   # 阿里云配置
   ali:
     base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
-    base_model: "deepseek-v3"
-    extraction_model: "deepseek-v3"
-    judge_model: "deepseek-v3"
+    base_model: "deepseek-v3.1"
+    extraction_model: "deepseek-v3.1"
+    judge_model: "deepseek-v3.1"
   # 智谱AI配置
   zhipu:
     base_url: "https://open.bigmodel.cn/api/paas/v4"
-    base_model: "GLM-4-Flash-250414"
-    extraction_model: "GLM-4-Flash-250414"
-    judge_model: "GLM-4-Flash-250414"
+    base_model: "glm-4-flash"
+    extraction_model: "glm-4-flash"
+    judge_model: "glm-4-flash"
+  # NVIDIA（OpenAI兼容）配置
+  nvidia:
+    base_url: "https://integrate.api.nvidia.com/v1"
+    base_model: "meta/llama-3.2-3b-instruct"
+    extraction_model: "meta/llama-3.2-3b-instruct"
+    judge_model: "meta/llama-3.2-3b-instruct"
+  closeai:
+    base_url: "https://api.openai-proxy.org/v1"
+    base_model: "gemini-3-pro-preview"
+    extraction_model: "gemini-3-pro-preview"
+    judge_model: "gemini-3-pro-preview"
   # 向后兼容的配置（将被弃用）
   base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # LLM API的URL
   base_model: "deepseek-v3"
@@ -40,15 +59,15 @@ llm:
   judge_model: "deepseek-v3"      # 用于规范化判断的模型
 
 embedding:
-  api_url: "嵌入模型服务的URL" # 嵌入模型服务的URL
+  api_url: "http://127.0.0.1:8005" # 本地嵌入模型服务URL（tools/local_services/embedding_api.py）
 neo4j:
-  uri: "bolt://xxxxxxxxxxx"
+  uri: "bolt://localhost:7687"
   user: "neo4j"
-  password: "12345678"
+  password: "${ASTROWEAVER_NEO4J_PASSWORD}"
 # 向量数据库配置
 vector_db:
 
-  similarity_threshold: 0.1 # 用于筛选候选者的相似度阈值
+  similarity_threshold: 0.3 # 用于筛选候选者的相似度阈值
   top_k: 5                   # 检索最相似的候选者数量
   relation_collection: "relations"
   entity_collection: "entities"
@@ -62,16 +81,23 @@ pipeline:
 
 # 性能优化配置
 performance:
-  max_concurrent_llm_calls: 3 # 降低并发LLM调用数，避免超时
-  batch_size: 10 # 减小批次大小，提高稳定性
-  llm_timeout: 30 # LLM调用超时时间（秒）
-  max_retries: 2 # 最大重试次数
+  max_concurrent_llm_calls: 100 # 适度提高并发数以加快处理速度
+  batch_size: 10 # 适度增加批次大小
+  llm_timeout: 120 # 缩短单个LLM调用超时时间
+  max_retries: 3 # 最大重试次数
+  canonicalization_timeout: 9999999 # 增加规范化总超时时间到40分钟
+  extraction_concurrent_limit: 20 # 抽取阶段并发限制，避免触发429限流
 
 #minerU配置
 minerU:
-    api_url: "http://xxxxxxxxxxxxe"
+    api_url: "http://127.0.0.1:30924/file_parse"
 
 #文本切块大小配置
 chunk:
   chunk_size: 1024
   chunk_overlap: 80
+
+# Web 搜索配置
+web_search:
+  open_websearch_url: "http://127.0.0.1:3001/mcp"
+  engines: ["duckduckgo", "bing"]
