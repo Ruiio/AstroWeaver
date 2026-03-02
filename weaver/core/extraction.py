@@ -6,11 +6,12 @@ import re
 from typing import List, Dict, Any, Optional
 
 from ..models.llm_models import LLMClient  # 假设的LLM客户端封装
+from ..utils.config import config
 from .extraction_architecture import (
-    ExtractionType, AttributeExtraction, RelationExtraction, ExtractionResult,
-    AttributeClassifier, EntityClassifier,
-    get_attribute_extraction_prompt, get_relation_extraction_prompt,
-    parse_attribute_response, parse_relation_response
+    ExtractionType, AttributeExtraction, RelationExtraction, EventExtraction, ExtractionResult,
+    AttributeClassifier, EntityClassifier, EventClassifier,
+    get_relation_extraction_prompt, get_event_extraction_prompt,
+    parse_relation_response, parse_event_response
 )
 
 logger = logging.getLogger(__name__)
@@ -29,75 +30,75 @@ def _get_extraction_prompt(entity_name: str, section_content: str) -> List[Dict[
     user_prompt = f"""
     Role: You are an expert in constructing astronomical knowledge graphs.
 
-Task:
-Based on the text content provided below, extract relevant astronomical triples for the specified "core entity". In these triples, the "core entity" must act as the "Subject".
+    Task:
+    Based on the text content provided below, extract relevant astronomical triples for the specified "core entity". In these triples, the "core entity" must act as the "Subject".
 
-Core Entity: `{entity_name}`
-Text to Extract From: {section_content}
+    Core Entity: `{entity_name}`
+    Text to Extract From: {section_content}
 
-Output Format Requirements:
-Please strictly follow the JSON format below for the output. Ensure that the "core entity" is the value of the `entity_name` field and is the subject in all extracted relations.
+    Output Format Requirements:
+    Please strictly follow the JSON format below for the output. Ensure that the "core entity" is the value of the `entity_name` field and is the subject in all extracted relations.
 
-```json
-{{
-   "relations": {{
-    "RelationName1": ["ObjectEntity1", "ObjectEntity2"],
-    "RelationName2": ["ObjectEntity3"]
-    // ... more relations
-    }}
-}}
-```
-Where:
-*   `entity_name`: String, the "core entity" around which you are extracting information.
-*   `relations`: List, where each element is a dictionary representing a triple.
-    *   The dictionary key is the "Relation Name (Predicate)", a string.
-    *   The dictionary value is the "Object Entity (Object)", a string, representing another astronomical entity associated with the core entity through this relation.
-
-Important Rules for Naming and Selecting Relations:
-1.  Professionalism and Standardization: Relation names must conform to professional astronomical naming conventions and standards (e.g., use "Orbits", "Has Natural Satellite", "Member Of", "Discovered By", etc.).
-2.  Clarity, Avoid Ambiguity: Relation names should clearly express the specific connection between entities. Avoid using overly vague or general relation names (e.g., avoid relations like "Related To", "Comparable To", "Is A").
-3.  Conciseness, Avoid Over-Detailing: Relation names should summarize the main relationship between entities, avoiding the inclusion of specific attributes or states of an entity as part of the relation. For example, do not use a relation like "hasAtmosphereComposition" to link an entity to its atmospheric composition (an attribute value). Relations should connect two distinct astronomical entities.
-4.  Entity-to-Entity Relations: Extracted relations should be between the "core entity" and "another astronomical entity (object)". Do not use attribute values of the core entity (such as temperature, diameter, color, percentage of specific components, etc.) as the object entity. The object entity should be another celestial body, astronomical phenomenon, constellation, galaxy, discoverer (person or institution), etc.
-5.  If no astronomically relevant relations can be extracted, the `relations` list in the JSON output should be empty.
-
-Reference Example:
-
-Example Input Text:
-Mars is the fourth planet from the Sun. It is also known as the "Red Planet", because of its orange-red appearance.([22])([23]) Mars is a desert-like rocky planet with a tenuous carbon dioxide (CO(2)) atmosphere. At the average surface level the atmospheric pressure is a few thousandths of Earth's, atmospheric temperature ranges from −153 to 20 °C (−243 to 68 °F)([24]) and cosmic radiation is high. Mars retains some water, in the ground as well as thinly in the atmosphere, forming cirrus clouds, frost, larger polar regions of permafrost and ice caps (with seasonal CO(2) snow), but no liquid surface water. Its surface gravity is roughly a third of Earth's or double that of the Moon. It is half as wide as Earth or twice the Moon, with a diameter of 6,779 km (4,212 mi), and has a surface area the size of all the dry land of Earth. Phobos and Deimos are its natural satellites.
-
-Core Entity: Mars
-
-Correct Output:
-```json
-{{
+    ```json
+    {{
     "relations": {{
-        "Orbits": "Sun",
-        "Has Natural Satellite": ["Phobos","Deimos"]
+        "RelationName1": ["ObjectEntity1", "ObjectEntity2"],
+        "RelationName2": ["ObjectEntity3"]
+        // ... more relations
+        }}
     }}
-}}
-```
-Interpretation: Mars -[Orbits]-> Sun; Mars -[Has Natural Satellite]-> Phobos; Mars -[Has Natural Satellite]-> Deimos
+    ```
+    Where:
+    *   `entity_name`: String, the "core entity" around which you are extracting information.
+    *   `relations`: List, where each element is a dictionary representing a triple.
+        *   The dictionary key is the "Relation Name (Predicate)", a string.
+        *   The dictionary value is the "Object Entity (Object)", a string, representing another astronomical entity associated with the core entity through this relation.
 
-Incorrect Output 1 (Relation name too vague):
-```json
-{{
-    "relations": {{
-        "Comparable Body": ["Earth","Moon"]
-    }}
-}}
-```
-Reason: "Comparable Body" is too vague and does not reflect a specific astronomical relationship.
+    Important Rules for Naming and Selecting Relations:
+    1.  Professionalism and Standardization: Relation names must conform to professional astronomical naming conventions and standards (e.g., use "Orbits", "Has Natural Satellite", "Member Of", "Discovered By", etc.).
+    2.  Clarity, Avoid Ambiguity: Relation names should clearly express the specific connection between entities. Avoid using overly vague or general relation names (e.g., avoid relations like "Related To", "Comparable To", "Is A").
+    3.  Conciseness, Avoid Over-Detailing: Relation names should summarize the main relationship between entities, avoiding the inclusion of specific attributes or states of an entity as part of the relation. For example, do not use a relation like "hasAtmosphereComposition" to link an entity to its atmospheric composition (an attribute value). Relations should connect two distinct astronomical entities.
+    4.  Entity-to-Entity Relations: Extracted relations should be between the "core entity" and "another astronomical entity (object)". Do not use attribute values of the core entity (such as temperature, diameter, color, percentage of specific components, etc.) as the object entity. The object entity should be another celestial body, astronomical phenomenon, constellation, galaxy, discoverer (person or institution), etc.
+    5.  If no astronomically relevant relations can be extracted, the `relations` list in the JSON output should be empty.
 
-Incorrect Output 2 (Relation name too detailed, and attributes mistaken for entity relations):
-```json
-{{
-    "relations": {{
-        "hasAtmosphereComposition": ["CarbonDioxide"]
+    Reference Example:
+
+    Example Input Text:
+    Mars is the fourth planet from the Sun. It is also known as the "Red Planet", because of its orange-red appearance.([22])([23]) Mars is a desert-like rocky planet with a tenuous carbon dioxide (CO(2)) atmosphere. At the average surface level the atmospheric pressure is a few thousandths of Earth's, atmospheric temperature ranges from −153 to 20 °C (−243 to 68 °F)([24]) and cosmic radiation is high. Mars retains some water, in the ground as well as thinly in the atmosphere, forming cirrus clouds, frost, larger polar regions of permafrost and ice caps (with seasonal CO(2) snow), but no liquid surface water. Its surface gravity is roughly a third of Earth's or double that of the Moon. It is half as wide as Earth or twice the Moon, with a diameter of 6,779 km (4,212 mi), and has a surface area the size of all the dry land of Earth. Phobos and Deimos are its natural satellites.
+
+    Core Entity: Mars
+
+    Correct Output:
+    ```json
+    {{
+        "relations": {{
+            "Orbits": "Sun",
+            "Has Natural Satellite": ["Phobos","Deimos"]
+        }}
     }}
-}}
-```
-Reason: "hasAtmosphereComposition" is more like an attribute description, and "CarbonDioxide" is a component of Mars's atmosphere (an attribute value), not an astronomical entity forming an independent relationship with Mars. We are focused on relationships between entities.
-    """
+    ```
+    Interpretation: Mars -[Orbits]-> Sun; Mars -[Has Natural Satellite]-> Phobos; Mars -[Has Natural Satellite]-> Deimos
+
+    Incorrect Output 1 (Relation name too vague):
+    ```json
+    {{
+        "relations": {{
+            "Comparable Body": ["Earth","Moon"]
+        }}
+    }}
+    ```
+    Reason: "Comparable Body" is too vague and does not reflect a specific astronomical relationship.
+
+    Incorrect Output 2 (Relation name too detailed, and attributes mistaken for entity relations):
+    ```json
+    {{
+        "relations": {{
+            "hasAtmosphereComposition": ["CarbonDioxide"]
+        }}
+    }}
+    ```
+    Reason: "hasAtmosphereComposition" is more like an attribute description, and "CarbonDioxide" is a component of Mars's atmosphere (an attribute value), not an astronomical entity forming an independent relationship with Mars. We are focused on relationships between entities.
+        """
 
     return [
         {"role": "system", "content": system_prompt},
@@ -198,7 +199,7 @@ def extract_multi_entity_attributes_from_sections(
         else:
             logger.error(f"Multi-entity attribute extraction batch request failed (ID: {result.request_id}). Error: {result.error}")
 
-    logger.info(f"Extracted {len(all_attributes)} attributes from {len(set(attr.entity for attr in all_attributes))} entities.")
+    logger.info(f"Extracted {len(all_attributes)} attributes from {len(set(attr['entity'] for attr in all_attributes))} entities.")
     return all_attributes
 
 
@@ -330,14 +331,14 @@ def extract_relations_from_sections(
     return aggregated_relations
 
 
-def extract_comprehensive_information(
+def extract_events_from_sections(
         entity_name: str,
         sections: List,
         llm_client: LLMClient,
         model_name: str
-) -> ExtractionResult:
+) -> List[EventExtraction]:
     """
-    综合抽取实体的属性和关系信息。
+    使用Batch API从文章章节中抽取事件。
 
     Args:
         entity_name: 核心实体的名称。
@@ -346,13 +347,109 @@ def extract_comprehensive_information(
         model_name: 用于抽取的LLM模型名称。
 
     Returns:
-        包含属性和关系的完整抽取结果。
+        事件抽取结果列表。
     """
-    # 抽取属性
-    attributes = extract_attributes_from_sections(entity_name, sections, llm_client, model_name)
+    batch_requests = []
+    for i, section in enumerate(sections):
+        content = section
+        if not content:
+            continue
+
+        prompt_messages = get_event_extraction_prompt(content, entity_name)
+        request_id = f"event_section_{i}"
+        batch_requests.append(llm_client.prepare_batch_request(request_id, model_name, prompt_messages))
+
+    if not batch_requests:
+        logger.info(f"No content found in sections for entity '{entity_name}'. Skipping event extraction.")
+        return []
+
+    logger.info(f"Submitting {len(batch_requests)} event extraction requests for '{entity_name}' via Batch API.")
+    batch_results = llm_client.submit_batch(batch_requests)
+
+    # 聚合所有章节的事件结果
+    all_events = []
+    for i, result in enumerate(batch_results):
+        if result.is_success():
+            parsed_events = parse_event_response(result.response_text)
+            if parsed_events:
+                all_events.extend(parsed_events)
+        else:
+            logger.error(f"Event extraction batch request failed for '{entity_name}' (ID: {result.request_id}). Error: {result.error}")
+
+    # 过滤重复事件
+    event_classifier = EventClassifier()
+    attribute_classifier = AttributeClassifier()
     
-    # 抽取关系
-    relations_dict = extract_relations_from_sections(entity_name, sections, llm_client, model_name)
+    # 记录已处理的事件类型和实体组合，避免重复
+    processed_events = set()
+    filtered_events = []
+    
+    for event in all_events:
+        # 创建事件唯一标识
+        event_key = (event["event_type"], event["anchor_entity"])
+        
+        # 如果已处理过该事件类型和实体组合，则跳过
+        if event_key in processed_events:
+            continue
+            
+        # 检查是否为有效事件类型
+        if not event_classifier.is_event_type(event["event_type"]):
+            logger.debug(f"Filtered out invalid event type: {event['event_type']}")
+            continue
+            
+        # 添加到已处理集合和过滤后的事件列表
+        processed_events.add(event_key)
+        filtered_events.append(event)
+
+    logger.info(f"Extracted {len(filtered_events)} unique events for '{entity_name}'.")
+    return filtered_events
+
+
+def extract_comprehensive_information(
+        entity_name: str,
+        sections: List,
+        llm_client: LLMClient,
+        model_name: str
+) -> ExtractionResult:
+    """
+    综合抽取实体的属性、关系和事件信息。
+
+    Args:
+        entity_name: 核心实体的名称。
+        sections: 包含文章章节的列表。
+        llm_client: LLM客户端实例。
+        model_name: 用于抽取的LLM模型名称。
+
+    Returns:
+        包含属性、关系和事件的完整抽取结果。
+    """
+    import concurrent.futures
+    import threading
+    
+    # 并行抽取属性、关系和事件
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        # 提交属性抽取任务
+        attr_future = executor.submit(
+            extract_multi_entity_attributes_from_sections,
+            sections, llm_client, model_name
+        )
+        
+        # 提交关系抽取任务
+        relations_future = executor.submit(
+            extract_relations_from_sections,
+            entity_name, sections, llm_client, model_name
+        )
+        
+        # 提交事件抽取任务
+        events_future = executor.submit(
+            extract_events_from_sections,
+            entity_name, sections, llm_client, model_name
+        )
+        
+        # 获取结果
+        attributes = attr_future.result()
+        relations_dict = relations_future.result()
+        events = events_future.result()
     
     # 转换关系格式
     relations = []
@@ -362,7 +459,7 @@ def extract_comprehensive_information(
                 subject=entity_name,
                 predicate=predicate,
                 object=obj,
-                confidence=0.8,  # 默认置信度
+                confidence=config.get('confidence', {}).get('default_extraction', 0.8),  # 默认置信度
                 source_text="",
                 text_id=""
             )
@@ -371,5 +468,6 @@ def extract_comprehensive_information(
     return ExtractionResult(
         attributes=attributes,
         relations=relations,
-        is_relevant=len(attributes) > 0 or len(relations) > 0
+        events=events,
+        is_relevant=len(attributes) > 0 or len(relations) > 0 or len(events) > 0
     )

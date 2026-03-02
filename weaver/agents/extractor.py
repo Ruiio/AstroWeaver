@@ -1,11 +1,28 @@
 
 import logging
-import json
-import re
 import asyncio
 from typing import List, Dict, Any, Optional, TypedDict
 
 from weaver.models.llm_models import LLMClient
+from weaver.utils.config import config
+from weaver.core.extraction_architecture import (
+    get_multi_entity_attribute_extraction_prompt,
+    parse_multi_entity_attribute_response,
+    AttributeExtraction,
+    ExtractionResult,
+    RelationExtraction,
+    EventExtraction,
+    get_relation_extraction_prompt,
+    parse_relation_response,
+    get_event_extraction_prompt,
+    parse_event_response,
+    EventClassifier
+)
+from weaver.core.extraction import (
+    _get_extraction_prompt,
+    _parse_extraction_response,
+    extract_comprehensive_information
+)
 
 logger = logging.getLogger(__name__)
 
@@ -20,93 +37,7 @@ class ExtractedTriple(TypedDict):
     text_id: str
 
 
-def _get_extraction_prompt(text_block: str, topic: str) -> List[Dict[str, str]]:
-    """
-    为关系抽取和置信度评估任务生成LLM prompt。
-    """
-    system_prompt = (
-        "You are an expert in knowledge graph construction. Your task is to analyze a text block, "
-        "determine its relevance to a given topic, and if relevant, extract knowledge triples "
-        "with a confidence score for each. Respond ONLY with the requested JSON object."
-    )
-
-    user_prompt = f"""
-    **Task:**
-    1.  **Relevance Check:** First, determine if the following "Text Block" is relevant to the main topic: **"{topic}"**.
-    2.  **Extraction:** If and only if the text is relevant, extract all meaningful relationships as knowledge triples (Subject, Predicate, Object).
-    3.  **Confidence Score:** For each extracted triple, provide a confidence score between 0.0 and 1.0, representing how certain you are that the triple is accurate and explicitly supported by the text.
-
-    **Main Topic:** "{topic}"
-    **Text Block:**
-    ---
-    {text_block}
-    ---
-
-    **Output Format Rules:**
-    - Your response MUST be a single JSON object.
-    - If the text is NOT relevant to the topic, or no triples can be extracted, return an empty list for the "triples" key.
-    - Predicate names should be standardized and verb-like (e.g., "orbits", "hasMember", "discoveredBy").
-    - The confidence score should be a float. 1.0 means absolute certainty based on the text. 0.5 means it's plausible but not explicit.
-    - Do not use phrase as subject or object!
-    **JSON Output Structure:**
-    ```json
-    {{
-      "is_relevant": boolean,
-      "triples": [
-        {{
-          "subject": "Entity1",
-          "predicate": "hasProperty",
-          "object": "Entity2",
-          "confidence": 0.8
-        }},
-        {{
-          "subject": "Entity3",
-          "predicate": "isPartOf",
-          "object": "Entity4",
-          "confidence": 0.5
-        }}
-      ]
-    }}
-    ```
-    """
-    return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
-
-
-def _parse_extraction_response(response_text: str) -> Optional[List[ExtractedTriple]]:
-    """
-    解析LLM返回的JSON字符串，提取三元组列表。
-    """
-    try:
-        # 寻找被```json ... ```包裹的代码块
-        match = re.search(r"```json\s*(\{.*?\})\s*```", response_text, re.DOTALL)
-        if match:
-            json_str = match.group(1)
-        else:
-            json_str = response_text
-
-        data = json.loads(json_str)
-
-        if not data.get("is_relevant"):
-            return []
-
-        triples = data.get("triples", [])
-        if not isinstance(triples, list):
-            logger.warning(f"LLM response 'triples' is not a list. Response: {response_text[:200]}")
-            return None
-
-        # 验证并返回符合格式的三元组
-        validated_triples = []
-        for t in triples:
-            if all(k in t for k in ["subject", "predicate", "object", "confidence"]):
-                validated_triples.append(t)
-        return validated_triples
-
-    except (json.JSONDecodeError, AttributeError) as e:
-        logger.error(f"Failed to parse LLM extraction response. Error: {e}. Response: {response_text[:300]}")
-        return None
+# 移除重复的方法定义，使用从weaver.core.extraction导入的方法
 
 
 class InformationExtractor:
@@ -145,20 +76,155 @@ class InformationExtractor:
         if not text_block or not text_block.strip():
             return None
 
-        prompt = _get_extraction_prompt(text_block, self.topic)
+        prompt = _get_extraction_prompt(self.topic, text_block)
         try:
             raw_response = await self.llm_client.make_request_async(
                 model=self.model_name,
                 messages=prompt,
                 temperature=0.1
             )
-            triples = _parse_extraction_response(raw_response)
-            if triples:
-                # 为每个三元组添加source_text和text_id
-                for triple in triples:
-                    triple['source_text'] = text_block
-                    triple['text_id'] = text_id
-            return triples
+            relations_dict = _parse_extraction_response(raw_response)
+            if relations_dict:
+                # 将关系字典转换为ExtractedTriple列表
+                triples = []
+                for predicate, objects in relations_dict.items():
+                    for obj in objects:
+                        triple = ExtractedTriple(
+                            subject=self.topic,
+                            predicate=predicate,
+                            object=obj,
+                            confidence=config.get('confidence', {}).get('default_extraction', 0.8),  # 默认置信度
+                            source_text=text_block,
+                            text_id=text_id
+                        )
+                        triples.append(triple)
+                return triples
+            return None
         except Exception as e:
             logger.error(f"Error processing text block. Error: {e}")
             return None
+
+    async def extract_comprehensive_information(self, text_blocks: List[str], entity_name: str = None, multi_entity_mode: bool = False) -> ExtractionResult:
+        """综合抽取信息，包括属性、关系和事件。"""
+        try:
+            # 如果指定了实体名称，使用extraction.py中的综合抽取方法
+            if entity_name and not multi_entity_mode:
+                # 将text_blocks转换为sections格式（字符串列表）
+                sections = [block for block in text_blocks if block.strip()]
+                
+                # 调用extraction.py中的extract_comprehensive_information方法
+                result = extract_comprehensive_information(
+                    entity_name=entity_name,
+                    sections=sections,
+                    llm_client=self.llm_client,
+                    model_name=self.model_name
+                )
+                return result
+            else:
+                # 多实体模式或未指定实体名称时，使用原有逻辑
+                attributes: List[AttributeExtraction] = []
+                relations: List[RelationExtraction] = []
+                events: List[EventExtraction] = []
+                
+                for i, text_block in enumerate(text_blocks):
+                    if not text_block.strip():
+                        continue
+                    
+                    # 使用多实体属性抽取
+                    if multi_entity_mode:
+                        attr_prompt = get_multi_entity_attribute_extraction_prompt(text_block)
+                        attr_response_text = await self.llm_client.make_request_async(
+                            model=self.model_name,
+                            messages=attr_prompt
+                        )
+                        
+                        if attr_response_text:
+                            parsed_attrs = parse_multi_entity_attribute_response(attr_response_text)
+                            if parsed_attrs:
+                                for entity_data in parsed_attrs:
+                                    entity_name = entity_data["entity_name"]
+                                    for attr in entity_data["attributes"]:
+                                        attr_extraction = AttributeExtraction(
+                                            entity=entity_name,
+                                            attribute=attr["attribute"],
+                                            value=attr["value"],
+                                            confidence=attr.get("confidence", config.get('confidence', {}).get('default_extraction', 0.8)),
+                                            source_text=text_block[:200],
+                                            text_id=f"block_{i}"
+                                        )
+                                        attributes.append(attr_extraction)
+                    
+                    # 抽取关系
+                    if multi_entity_mode:
+                        # 在多实体模式下，使用新的关系抽取方法
+                        rel_prompt = get_relation_extraction_prompt(text_block, self.topic)
+                        rel_response_text = await self.llm_client.make_request_async(
+                            model=self.model_name,
+                            messages=rel_prompt
+                        )
+                        
+                        if rel_response_text:
+                            parsed_rels = parse_relation_response(rel_response_text)
+                            if parsed_rels:
+                                for rel in parsed_rels:
+                                    relation = RelationExtraction(
+                                        subject=rel['subject'],
+                                        predicate=rel['predicate'],
+                                        object=rel['object'],
+                                        confidence=rel.get('confidence', config.get('confidence', {}).get('default_extraction', 0.8)),
+                                        source_text=text_block[:200],
+                                        text_id=f"block_{i}",
+                                        attributes=rel.get('attributes', {})
+                                    )
+                                    relations.append(relation)
+                        
+                        # 抽取事件
+                        event_prompt = get_event_extraction_prompt(text_block)
+                        event_response_text = await self.llm_client.make_request_async(
+                            model=self.model_name,
+                            messages=event_prompt
+                        )
+                        
+                        if event_response_text:
+                            parsed_events = parse_event_response(event_response_text)
+                            if parsed_events:
+                                for evt in parsed_events:
+                                    event = EventExtraction(
+                                        event_type=evt['event_type'],
+                                        anchor_entity=evt['anchor_entity'],
+                                        arguments=evt['arguments'],
+                                        confidence=evt.get('confidence', config.get('confidence', {}).get('default_extraction', 0.8)),
+                                        source_text=text_block[:200],
+                                        text_id=f"block_{i}"
+                                    )
+                                    events.append(event)
+                    else:
+                        # 单实体模式下使用原有方法
+                        extracted_triples = await self._process_single_block(text_block, f"block_{i}")
+                        if extracted_triples:
+                            for triple in extracted_triples:
+                                relation = RelationExtraction(
+                                    subject=triple['subject'],
+                                    predicate=triple['predicate'],
+                                    object=triple['object'],
+                                    confidence=triple['confidence'],
+                                    source_text=triple['source_text'],
+                                    text_id=triple['text_id'],
+                                    attributes=triple.get('attributes', {})
+                                )
+                                relations.append(relation)
+            
+            return ExtractionResult(
+                attributes=attributes,
+                relations=relations,
+                events=events,
+                is_relevant=len(attributes) > 0 or len(relations) > 0 or len(events) > 0
+            )
+        except Exception as e:
+            logger.error(f"Error in extract_comprehensive_information: {e}")
+            return ExtractionResult(
+                attributes=[],
+                relations=[],
+                events=[],
+                is_relevant=False
+            )

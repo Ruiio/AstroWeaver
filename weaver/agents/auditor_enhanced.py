@@ -104,8 +104,9 @@ class EnhancedKnowledgeAuditor:
         
         # 调用LLM
         llm_model = self.config.get('llm', {}).get('judge_model', 'deepseek-v3')
+        llm_timeout = self.config.get('performance', {}).get('llm_timeout', 60)
         result = await _llm_judge_synonym_async(
-            term_type, new_term, candidates, self.llm_client, llm_model
+            term_type, new_term, candidates, self.llm_client, llm_model, timeout=llm_timeout
         )
         
         # 缓存结果
@@ -218,7 +219,7 @@ class EnhancedKnowledgeAuditor:
         logger.info(f"开始增强版三元组审核和规范化，共 {len(triples)} 个三元组")
         
         # 1. 置信度过滤
-        confidence_threshold = self.config.get('audit', {}).get('confidence_threshold', 0.7)
+        confidence_threshold = self.config.get('confidence', {}).get('audit_threshold', 0.7)
         high_confidence_triples = [t for t in triples if t.get('confidence', 0) >= confidence_threshold]
         low_confidence_triples = [t for t in triples if t.get('confidence', 0) < confidence_threshold]
         

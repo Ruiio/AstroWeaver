@@ -47,7 +47,7 @@ def _get_canonicalization_prompt(term_type: str, new_term: str, candidates: List
         Return a JSON object with a single key "choice".
         - If the "New Term" should be merged, the value is the name of the chosen "Candidate Canonical Term".
         - If it represents a distinct concept and should NOT be merged, the value must be `null`.
-
+        - Do not include any other information in your response. Just return the JSON object.
         Format: {{"choice": "ChosenCandidateName"}} or {{"choice": null}}
         """
     return [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}]
@@ -84,13 +84,18 @@ def to_pascal_case(text: str) -> str:
 
 
 async def _llm_judge_synonym_async(
-        term_type: str, new_term: str, candidates: List[str], llm_client: LLMClient, model_name: str
+        term_type: str, new_term: str, candidates: List[str], llm_client: LLMClient, model_name: str, timeout: float = 60.0
 ) -> Optional[str]:
     # ... (此函数保持不变) ...
     if not candidates: return None
     prompt = _get_canonicalization_prompt(term_type, new_term, candidates)
     try:
-        raw_response = await llm_client.make_request_async(model=model_name, messages=prompt, temperature=0.0)
+        raw_response = await llm_client.make_request_async(
+            model=model_name, 
+            messages=prompt, 
+            temperature=0.0,
+            timeout=timeout
+        )
         if not raw_response or not raw_response.strip(): return None
         match = re.search(r'\{.*\}', raw_response, re.DOTALL)
         if not match: return None
@@ -100,6 +105,9 @@ async def _llm_judge_synonym_async(
         choice = result_data.get("choice")
         if isinstance(choice, str) and choice in candidates:
             return choice
+        return None
+    except asyncio.TimeoutError:
+        logger.error(f"LLM judge timeout after {timeout}s for term '{new_term}'")
         return None
     except Exception as e:
         logger.error(f"LLM judge failed for term '{new_term}'. Error: {e}", exc_info=True)
@@ -119,7 +127,8 @@ async def _normalize_term(
         # **新增**: 传入一个集合来跟踪本次运行中已经生成的新规范名
         staged_canonical_names: Set[str],
         # **新增**: 传入一个字典来跟踪本次运行中的术语到规范名的映射
-        staged_term_mappings: Optional[Dict[str, str]] = None
+        staged_term_mappings: Optional[Dict[str, str]] = None,
+        llm_timeout: float = 60.0
 ) -> str:
     """
     (批内规范化增强版) 对单个术语进行完整的规范化流程，支持批内相似术语合并。
@@ -144,7 +153,7 @@ async def _normalize_term(
         if staged_canonical_list:
             # 使用LLM判断当前术语是否与批内已有的规范名相似
             batch_canonical = await _llm_judge_synonym_async(
-                term_type, term, staged_canonical_list, llm_client, llm_model_name
+                term_type, term, staged_canonical_list, llm_client, llm_model_name, timeout=llm_timeout
             )
             if batch_canonical:
                 logger.info(f"Term '{term}' merged with batch canonical '{batch_canonical}'")
@@ -156,7 +165,7 @@ async def _normalize_term(
     # 4. LLM 判断数据库中的候选项
     canonical_name = None
     if all_candidates:
-        canonical_name = await _llm_judge_synonym_async(term_type, term, all_candidates, llm_client, llm_model_name)
+        canonical_name = await _llm_judge_synonym_async(term_type, term, all_candidates, llm_client, llm_model_name, timeout=llm_timeout)
 
     # 5. 创建或确认规范名称
     if canonical_name:

@@ -137,8 +137,9 @@ class OptimizedCanonicalization:
         
         # 调用LLM
         llm_model = get_model_name(self.config, 'judge_model')
+        llm_timeout = self.config.get('performance', {}).get('llm_timeout', 60)
         result = await _llm_judge_synonym_async(
-            term_type, new_term, candidates, self.clients['llm'], llm_model
+            term_type, new_term, candidates, self.clients['llm'], llm_model, timeout=llm_timeout
         )
         
         # 缓存结果
@@ -227,10 +228,15 @@ class OptimizedCanonicalization:
         
         logger.info(f"开始优化版批量规范化 {len(terms)} 个{term_type} (并发数: {self.max_concurrent_llm_calls})")
         start_time = time.time()
+        processed_count = 0
         
         # 分批处理以控制内存使用
-        for i in range(0, len(terms), self.batch_size):
-            batch_terms = terms[i:i + self.batch_size]
+        total_batches = (len(terms) + self.batch_size - 1) // self.batch_size
+        for batch_idx in range(0, len(terms), self.batch_size):
+            batch_terms = terms[batch_idx:batch_idx + self.batch_size]
+            current_batch = batch_idx // self.batch_size + 1
+            
+            logger.info(f"处理第 {current_batch}/{total_batches} 批 {term_type} (共 {len(batch_terms)} 个)")
             
             # 并发处理当前批次
             tasks = [
@@ -244,16 +250,28 @@ class OptimizedCanonicalization:
             batch_results = await asyncio.gather(*tasks, return_exceptions=True)
             
             # 处理结果
+            batch_success_count = 0
             for result in batch_results:
                 if isinstance(result, Exception):
                     logger.error(f"批处理中出现异常: {result}")
-                    continue
-                
-                original_term, canonical_name = result
-                term_map[original_term] = canonical_name
+                else:
+                    batch_success_count += 1
+            
+            processed_count += batch_success_count
+            logger.info(f"第 {current_batch} 批完成: {batch_success_count}/{len(batch_terms)} 成功, 总进度: {processed_count}/{len(terms)}")
+            
+            # 强制垃圾回收以释放内存
+            if current_batch % 5 == 0:
+                gc.collect()
+            
+            # 处理成功的结果
+            for result in batch_results:
+                if not isinstance(result, Exception) and result:
+                    original_term, canonical_name = result
+                    term_map[original_term] = canonical_name
             
             # 进度报告和内存清理
-            processed = min(i + self.batch_size, len(terms))
+            processed = min(current_batch * self.batch_size, len(terms))
             logger.info(f"已处理 {processed}/{len(terms)} 个{term_type}")
             
             if processed % (self.batch_size * 2) == 0:
@@ -307,6 +325,10 @@ class OptimizedCanonicalization:
         except Exception as e:
             logger.error(f"批量添加到向量数据库失败: {e}")
     
+    async def _return_empty_dict(self) -> Dict[str, str]:
+        """返回空字典的异步方法"""
+        return {}
+    
     async def batch_add_to_vector_db(self, new_items_to_add: Dict[str, List[Dict]]):
         """批量添加项目到向量数据库"""
         try:
@@ -331,9 +353,16 @@ class OptimizedCanonicalization:
         except Exception as e:
             logger.error(f"批量添加到向量数据库失败: {e}")
     
-    async def canonicalize_triples_batch(self, triples: List[Dict[str, Any]]) -> tuple:
-        """优化版批量规范化三元组"""
+    async def canonicalize_triples_batch(self, triples: List[Dict[str, Any]], 
+                                       existing_relation_map: Dict[str, str] = None,
+                                       existing_entity_map: Dict[str, str] = None,
+                                       progress_file: str = None) -> tuple:
+        """优化版批量规范化三元组（支持断点续传）"""
         try:
+            # 初始化映射
+            relation_map = existing_relation_map or {}
+            entity_map = existing_entity_map or {}
+            
             # 提取所有唯一的关系和实体，处理列表类型的字段
             all_relations = set()
             all_entities = set()
@@ -341,6 +370,10 @@ class OptimizedCanonicalization:
             for t in triples:
                 # 处理predicate（通常是字符串）
                 predicate = t['predicate']
+                # 跳过属性（attributes）的规范化
+                if predicate == 'attribute' or predicate == 'attributes':
+                    continue
+                    
                 if isinstance(predicate, list):
                     all_relations.update(predicate)
                 else:
@@ -360,20 +393,52 @@ class OptimizedCanonicalization:
                 else:
                     all_entities.add(obj)
             
-            all_relations = list(all_relations)
-            all_entities = list(all_entities)
+            # 过滤掉已经处理过的术语
+            new_relations = [r for r in all_relations if r not in relation_map]
+            new_entities = [e for e in all_entities if e not in entity_map]
             
-            logger.info(f"开始优化版规范化: {len(all_relations)} 个关系, {len(all_entities)} 个实体")
+            logger.info(f"开始优化版规范化: {len(new_relations)} 个新关系, {len(new_entities)} 个新实体")
+            logger.info(f"已有映射: {len(relation_map)} 个关系, {len(entity_map)} 个实体")
             
-            # 并发规范化关系和实体
-            relation_task = self.normalize_terms_batch_optimized(
-                all_relations, 'relation', self.relation_collection
-            )
-            entity_task = self.normalize_terms_batch_optimized(
-                all_entities, 'entity', self.entity_collection
-            )
-            
-            relation_map, entity_map = await asyncio.gather(relation_task, entity_task)
+            # 只规范化新的术语
+            if new_relations or new_entities:
+                tasks = []
+                if new_relations:
+                    relation_task = self.normalize_terms_batch_optimized(
+                        new_relations, 'relation', self.relation_collection
+                    )
+                    tasks.append(relation_task)
+                else:
+                    tasks.append(asyncio.create_task(self._return_empty_dict()))
+                
+                if new_entities:
+                    entity_task = self.normalize_terms_batch_optimized(
+                        new_entities, 'entity', self.entity_collection
+                    )
+                    tasks.append(entity_task)
+                else:
+                    tasks.append(asyncio.create_task(self._return_empty_dict()))
+                
+                new_relation_map, new_entity_map = await asyncio.gather(*tasks)
+                
+                # 合并映射
+                relation_map.update(new_relation_map)
+                entity_map.update(new_entity_map)
+                
+                # 保存进度
+                if progress_file:
+                    try:
+                        progress_data = {
+                            'relation_map': relation_map,
+                            'entity_map': entity_map,
+                            'processed_count': len(triples),
+                            'timestamp': time.time()
+                        }
+                        with open(progress_file, 'w', encoding='utf-8') as f:
+                            json.dump(progress_data, f, ensure_ascii=False, indent=2)
+                        logger.info(f"进度已保存到: {progress_file}")
+                    except Exception as e:
+                        logger.warning(f"保存进度失败: {e}")
             
             # 应用映射到三元组，处理列表类型的字段
             canonicalized_triples = []
@@ -387,14 +452,20 @@ class OptimizedCanonicalization:
                 
                 # 处理predicate
                 predicate = triple['predicate']
-                if isinstance(predicate, list):
+                # 跳过属性（attributes）的规范化
+                if predicate == 'attribute' or predicate == 'attributes':
+                    canonicalized_predicate = predicate
+                elif isinstance(predicate, list):
                     canonicalized_predicate = [relation_map.get(p, p) for p in predicate]
                 else:
                     canonicalized_predicate = relation_map.get(predicate, predicate)
                 
                 # 处理object
                 obj = triple['object']
-                if isinstance(obj, list):
+                # 如果是属性（attributes）相关的三元组，不对object进行规范化
+                if predicate == 'attribute' or predicate == 'attributes':
+                    canonicalized_object = obj
+                elif isinstance(obj, list):
                     canonicalized_object = [entity_map.get(o, o) for o in obj]
                 else:
                     canonicalized_object = entity_map.get(obj, obj)
@@ -484,8 +555,27 @@ class OptimizedCanonicalization:
                 logger.error("未能加载任何三元组，规范化终止")
                 return False
             
-            # 3. 执行优化版规范化
-            canonicalized_triples, relation_map, entity_map = await self.canonicalize_triples_batch(triples)
+            # 3. 检查是否有进度文件，支持断点续传
+            progress_file = input_file.replace('.jsonl', '_canonicalization_progress.json')
+            if Path(progress_file).exists():
+                logger.info(f"发现进度文件，尝试从断点继续: {progress_file}")
+                try:
+                    with open(progress_file, 'r', encoding='utf-8') as f:
+                        progress_data = json.load(f)
+                    relation_map = progress_data.get('relation_map', {})
+                    entity_map = progress_data.get('entity_map', {})
+                    processed_count = progress_data.get('processed_count', 0)
+                    logger.info(f"从进度文件恢复: 已处理 {processed_count} 个三元组")
+                except Exception as e:
+                    logger.warning(f"读取进度文件失败，将重新开始: {e}")
+                    relation_map, entity_map = {}, {}
+            else:
+                relation_map, entity_map = {}, {}
+            
+            # 4. 执行优化版规范化（支持断点续传）
+            canonicalized_triples, relation_map, entity_map = await self.canonicalize_triples_batch(
+                triples, existing_relation_map=relation_map, existing_entity_map=entity_map, progress_file=progress_file
+            )
             
             if not canonicalized_triples:
                 logger.error("规范化失败，未生成任何结果")
@@ -494,7 +584,15 @@ class OptimizedCanonicalization:
             # 4. 保存结果
             self.save_canonicalization_results(canonicalized_triples, relation_map, entity_map, input_file)
             
-            # 5. 性能报告
+            # 5. 清理进度文件
+            if Path(progress_file).exists():
+                try:
+                    Path(progress_file).unlink()
+                    logger.info(f"已清理进度文件: {progress_file}")
+                except Exception as e:
+                    logger.warning(f"清理进度文件失败: {e}")
+            
+            # 6. 性能报告
             total_time = time.time() - start_time
             logger.info(f"✅ 优化版规范化完成，总耗时: {total_time:.2f}秒")
             logger.info(f"处理速度: {len(triples)/total_time:.2f} 三元组/秒")

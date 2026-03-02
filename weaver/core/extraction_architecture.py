@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 新的抽取架构设计
-区分属性抽取和三元组抽取，确保属性不会被当作实体处理
+区分属性抽取、三元组抽取和事件抽取，确保属性不会被当作实体处理，事件抽取与属性抽取不重复
 """
 
 import logging
@@ -18,6 +18,7 @@ class ExtractionType(Enum):
     """抽取类型枚举"""
     ATTRIBUTE = "attribute"  # 属性抽取
     RELATION = "relation"    # 关系抽取
+    EVENT = "event"          # 事件抽取
 
 
 class AttributeExtraction(TypedDict):
@@ -38,12 +39,30 @@ class RelationExtraction(TypedDict):
     confidence: float
     source_text: str
     text_id: str
+    attributes: Dict[str, Any]
+
+
+class EventArgument(TypedDict):
+    """事件参数结构"""
+    role: str
+    value: str
+
+
+class EventExtraction(TypedDict):
+    """事件抽取结果结构"""
+    event_type: str
+    anchor_entity: str
+    arguments: List[EventArgument]
+    confidence: float
+    source_text: str
+    text_id: str
 
 
 class ExtractionResult(TypedDict):
     """完整抽取结果结构"""
     attributes: List[AttributeExtraction]
     relations: List[RelationExtraction]
+    events: List[EventExtraction]
     is_relevant: bool
 
 
@@ -185,66 +204,78 @@ class EntityClassifier:
         return False
 
 
-def get_attribute_extraction_prompt(entity_name: str, text_content: str) -> List[Dict[str, str]]:
-    """生成属性抽取的提示词"""
-    system_prompt = (
-        "You are an expert in extracting astronomical entity attributes. "
-        "Your task is to identify and extract specific attributes (properties) of the given entity from the text. "
-        "ONLY extract attributes if the text directly describes the specified entity. "
-        "If the text does not directly mention or describe the specified entity, return is_relevant: false with empty attributes. "
-        "Respond ONLY with the requested JSON object."
-    )
+class EventClassifier:
+    """事件分类器，用于判断一个谓词是否表示事件"""
     
-    user_prompt = f"""
-    **Task:** Extract attributes (properties) of the specified entity from the given text.
+    def __init__(self):
+        # 事件相关谓词关键词
+        self.event_predicates = [
+            # 时间变化类事件
+            'dimmed', 'brightened', 'exploded', 'collapsed', 'formed', 'evolved',
+            'discovered', 'observed', 'detected', 'measured', 'recorded',
+            
+            # 运动类事件
+            'moved', 'orbited', 'rotated', 'accelerated', 'ejected', 'collided',
+            'impacted', 'merged', 'separated', 'approached', 'receded',
+            
+            # 状态变化类事件
+            'increased', 'decreased', 'changed', 'transformed', 'converted',
+            'expanded', 'contracted', 'cooled', 'heated', 'ignited', 'extinguished',
+            
+            # 观测类事件
+            'imaged', 'photographed', 'analyzed', 'studied', 'surveyed',
+            'mapped', 'scanned', 'monitored', 'tracked', 'sampled',
+            
+            # 任务类事件
+            'launched', 'deployed', 'landed', 'docked', 'undocked',
+            'activated', 'deactivated', 'repaired', 'upgraded', 'decommissioned'
+        ]
+        
+        # 事件类型
+        self.event_types = [
+            'Dimming', 'Brightening', 'Explosion', 'Collision', 'Formation',
+            'Discovery', 'Observation', 'Measurement', 'Movement', 'Orbit',
+            'Rotation', 'Acceleration', 'Ejection', 'Impact', 'Merger',
+            'Approach', 'Recession', 'Increase', 'Decrease', 'Change',
+            'Transformation', 'Expansion', 'Contraction', 'Cooling', 'Heating',
+            'Imaging', 'Analysis', 'Study', 'Survey', 'Mapping',
+            'Launch', 'Deployment', 'Landing', 'Docking', 'Activation',
+            'Deactivation', 'Repair', 'Upgrade', 'Decommission'
+        ]
     
-    **Entity:** {entity_name}
-    **Text:** {text_content}
+    def is_event_predicate(self, predicate: str) -> bool:
+        """判断一个谓词是否表示事件"""
+        if not predicate or not isinstance(predicate, str):
+            return False
+        
+        predicate_lower = predicate.lower()
+        
+        # 检查是否包含事件谓词关键词
+        for event_pred in self.event_predicates:
+            if event_pred in predicate_lower:
+                return True
+        
+        # 检查是否为事件类型
+        for event_type in self.event_types:
+            if event_type.lower() in predicate_lower:
+                return True
+        
+        return False
     
-    **Critical Instructions:**
-    1. FIRST determine if the text directly describes or mentions the specified entity
-    2. If the text does NOT directly describe the specified entity, set is_relevant to false and return empty attributes array
-    3. If the text DOES directly describe the specified entity, extract only its direct attributes/properties
-    4. Attributes should be measurable properties, characteristics, or states explicitly mentioned in the text
-    5. Do NOT extract relationships to other entities
-    6. Do NOT infer or assume attributes not explicitly stated in the text
-    7. Include confidence score (0.0-1.0) for each attribute based on how explicitly it's stated
-    
-    **Examples of when to return is_relevant: false:**
-    - Text describes asteroid belt formation but entity is "solar system"
-    - Text describes Jupiter's moons but entity is "Mars"
-    - Text describes stellar evolution but entity is "Earth"
-    
-    **Examples of Valid Attributes (only when text directly describes the entity):**
-    - Physical properties: mass, diameter, temperature, density
-    - Temporal properties: age, orbital period, rotation period
-    - Compositional properties: atmosphere composition, surface material
-    - Observational properties: magnitude, color, spectral type
-    
-    **JSON Output Format:**
-    {{
-      "is_relevant": boolean,
-      "attributes": [
-        {{
-          "attribute": "mass",
-          "value": "1.989 × 10^30 kg",
-          "confidence": 0.9
-        }},
-        {{
-          "attribute": "surface_temperature",
-          "value": "5778 K",
-          "confidence": 0.8
-        }}
-      ]
-    }}
-    
-    **Important:** If is_relevant is false, the attributes array should be empty: []
-    """
-    
-    return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
+    def is_event_type(self, event_type: str) -> bool:
+        """判断一个字符串是否为事件类型"""
+        if not event_type or not isinstance(event_type, str):
+            return False
+        
+        event_type_lower = event_type.lower()
+        
+        # 检查是否为事件类型
+        for et in self.event_types:
+            if et.lower() == event_type_lower or et.lower() in event_type_lower:
+                return True
+        
+        return False
+
 
 
 def get_multi_entity_attribute_extraction_prompt(text_content: str) -> List[Dict[str, str]]:
@@ -257,58 +288,52 @@ def get_multi_entity_attribute_extraction_prompt(text_content: str) -> List[Dict
     )
     
     user_prompt = f"""
-    **Task:** Extract attributes (properties) of ALL entities mentioned in the given text.
-    
+    Task: You are a forensic data analyst. Your single task is to extract static, intrinsic attributes of entities with extreme precision. Your guiding principle is: if there is any ambiguity, do not extract. It is better to return an empty result than an incorrect one.
     **Text:** {text_content}
     
     **Instructions:**
-    1. Identify ALL astronomical entities mentioned in the text
-    2. For each entity, extract only its direct attributes/properties that are explicitly mentioned
-    3. Attributes should be measurable properties, characteristics, or states explicitly stated in the text
-    4. Do NOT extract relationships between entities (those are handled separately)
-    5. Do NOT infer or assume attributes not explicitly stated in the text
-    6. Include confidence score (0.0-1.0) for each attribute based on how explicitly it's stated
-    7. Group attributes by entity
-    
-    **Examples of Valid Attributes:**
-    - Physical properties: mass, diameter, temperature, density, radius
-    - Temporal properties: age, orbital period, rotation period, formation time
-    - Compositional properties: atmosphere composition, surface material, chemical composition
-    - Observational properties: magnitude, color, spectral type, brightness
-    - Structural properties: number of moons, ring system, surface features
-    
-    **JSON Output Format:**
+    1.  **The "Fact Sheet" Principle:** An attribute must be a stable, factual property you would find on a specification sheet or in an encyclopedia (e.g., `cost`, `location`, `mass`). It describes what the entity **IS**, not what it **DOES**.
+
+    2.  **The Rule of Direct Association (CRITICAL):**
+        *   An attribute must be **unambiguously and directly linked** to its entity within the same sentence or clause.
+        *   **Do not infer attributes from proximity.** Just because a location is mentioned near an entity's name does not mean it belongs to that entity.
+        *   **Verification Test:** Can you draw a direct grammatical line from the attribute to the entity?
+        *   **Generic Example:** In the sentence, "The project, managed by Acme Inc., used a server located in Virginia," the location "Virginia" belongs to the "server," NOT to "Acme Inc." Extracting Virginia as Acme Inc.'s location would be a critical error.
+
+    3.  **Forbidden Information (Strictly Enforced):**
+        *   You **MUST NOT** extract roles, functions, actions, responsibilities, or relationships.
+        *   **FORBIDDEN:** `principal investigator`, `lead on the team` (Roles).
+        *   **FORBIDDEN:** `spacecraft construction`, `planning adjustments` (Actions/Functions).
+        *   **FORBIDDEN:** `built by`, `affiliated with`, `provides data` (Relationships).
+
+    4.  **Entity Identification:**
+        *   Identify specific, named entities (organizations, locations, projects).
+        *   Do not treat general activities (e.g., "data analysis") as entities.
+
+    5.  **Group Attribution:**
+        *   If a value (like a cost) applies to an overarching project, assign it to that project, not its individual components.
+
+    6.  **Output Requirements:**
+        *   The final output must be sparse and contain only attributes that are verifiably correct according to the rules above.
+        *   Provide a confidence score (0.0-1.0).
+        *   Use the specified JSON format.
+    **JSON Output Format Example (Generic):**
+    ```json
     {{
-      "entities": [
+    "entities": [
         {{
-          "entity_name": "Sun",
-          "attributes": [
+        "entity_name": "Webb Telescope",
+        "attributes": [
             {{
-              "attribute": "mass",
-              "value": "1.989 × 10^30 kg",
-              "confidence": 0.9
-            }},
-            {{
-              "attribute": "surface_temperature",
-              "value": "5778 K",
-              "confidence": 0.8
+            "attribute": "primary_mirror_diameter",
+            "value": "6.5 meters",
+            "confidence": 1.0
             }}
-          ]
-        }},
-        {{
-          "entity_name": "Earth",
-          "attributes": [
-            {{
-              "attribute": "diameter",
-              "value": "12,742 km",
-              "confidence": 0.9
-            }}
-          ]
+        ]
         }}
-      ]
+    ]
     }}
-    
-    **Important:** Only include entities that have attributes explicitly mentioned in the text.
+    ```
     """
     
     return [
@@ -322,48 +347,134 @@ def get_relation_extraction_prompt(text_content: str, topic: str) -> List[Dict[s
     system_prompt = (
         "You are an expert in extracting relationships between astronomical entities. "
         "Your task is to identify relationships that connect two distinct entities. "
-        "Do NOT extract attributes or properties. Respond ONLY with the requested JSON object."
+        "Do NOT extract attributes, properties, or events. Respond ONLY with the requested JSON object."
     )
     
     user_prompt = f"""
-    **Task:** Extract relationships between distinct astronomical entities from the given text.
-    
-    **Topic:** {topic}
+    Task: Extract fundamental relationships between distinct astronomical entities from the given text.
+    topic: astronomy
+
     **Text:** {text_content}
-    
+
     **Instructions:**
-    1. Extract only entity-to-entity relationships
-    2. Both subject and object must be distinct entities (not attribute values)
-    3. Do NOT extract attributes, properties, or measurements
-    4. Include confidence score (0.0-1.0) for each relationship
-    
-    **Examples of Valid Relationships:**
-    - "Mars orbits Sun" (entity-to-entity)
-    - "Hubble discovered galaxy" (entity-to-entity)
-    - "Jupiter has_satellite Europa" (entity-to-entity)
-    
-    **Examples of Invalid Relationships (these are attributes):**
-    - "Mars has_mass 6.39 × 10^23 kg" (attribute, not relationship)
-    - "Sun has_temperature 5778 K" (attribute, not relationship)
-    - "Earth has_diameter 12,742 km" (attribute, not relationship)
-    
+    1.  **Extract Entity-to-Entity Relationships Only:** The subject and object of a relationship must both be distinct entities.
+    2.  **Strict Definition of an Entity:** An entity must be a specific, named astronomical object, spacecraft, or instrument.
+        *   **Valid Entity Types:** Planets (e.g., Jupiter), Moons (e.g., Titan), Stars (e.g., Proxima Centauri), Galaxies (e.g., Andromeda Galaxy), Spacecraft (e.g., Voyager 1), Instruments (e.g., NIRCam).
+        *   **Invalid as Entities:** Do NOT extract abstract concepts, regions, paths, or properties like 'orbit', 'atmosphere', 'heliopause', 'halfway point'. These describe an entity but are not entities themselves.
+        *   *Handling Context:* If the text mentions "Jupiter's orbit", extract "Jupiter" as the entity, but capture the "orbit" context in the relationship attributes.
+    3.  **Normalize Entity Names:** Always extract the simplest, most common name for an entity, removing descriptive text.
+        *   Example: From "the powerful Near-Infrared Camera (NIRCam)", extract the entity "NIRCam".
+        *   Example: When the text mentions "the atmosphere of Venus", the core entity is "Venus".
+    4.  **Use Specific Names (Co-reference Resolution):** If the text mentions a specific name (e.g., "James Webb Space Telescope") and later uses a general term (e.g., "the telescope"), always use the specific, proper name in your extracted relationships.
+    5.  **Extract Fundamental & Comparative Relationships:** 
+        *   Identify structural connections (e.g., "orbits", "has_component").
+        *   Identify **comparative relationships** (e.g., "larger_than", "similar_to", "compared_to").
+        *   The predicate should be as specific as possible (e.g., prefer "spatially_exceeds" over "compared_to" if applicable).
+    6.  **Do NOT extract internal attributes (Node Properties).**
+        *   Invalid: "Earth has_diameter 12,742 km" (This is a property of Earth).
+        *   **Valid:** "Betelgeuse is larger_than Jupiter" (This is a relationship between two entities).
+    7.  **Do NOT extract events or temporal occurrences.** Focus only on stable, persistent relationships or significant scientific comparisons.
+    8.  **Include a confidence score (0.0-1.0) for each relationship.**
+
+    **Relation Qualifiers (CRITICAL):** 
+    For each relation, you **MUST** use the "attributes" object to capture context. This is vital for comparative relationships.
+    *   **comparison_dimension**: What is being compared? (e.g., "radius", "mass", "distance").
+    *   **context**: Specific context of the entity (e.g., "orbit of", "atmosphere of").
+    *   **value_subject**: The value associated with the subject (e.g., "1.2-8.9 AU").
+    *   **value_object**: The value associated with the object (e.g., "5.5 AU").
+    *   **condition**: Any assumptions (e.g., "assuming placement at Solar System center").
+    *   **time_frame**: If the relationship is specific to a time period.
+
     **JSON Output Format:**
     {{
-      "is_relevant": boolean,
-      "relations": [
+    "is_relevant": boolean,
+    "relations": [
         {{
-          "subject": "Mars",
-          "predicate": "orbits",
-          "object": "Sun",
-          "confidence": 0.9
-        }},
-        {{
-          "subject": "Jupiter",
-          "predicate": "has_satellite",
-          "object": "Europa",
-          "confidence": 0.8
+        "subject": "string",
+        "predicate": "string",
+        "object": "string",
+        "confidence": float,
+        "attributes": {{}}
         }}
-      ]
+    ]
+    }}
+    """
+    
+    return [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt}
+    ]
+
+
+def get_event_extraction_prompt(text_content: str, entity_name: str = None) -> List[Dict[str, str]]:
+    """生成事件抽取的提示词"""
+    system_prompt = (
+        "You are an expert in extracting astronomical events from text. "
+        "Your task is to identify events related to astronomical entities. "
+        "Focus on temporal occurrences, changes, and actions. "
+        "Do NOT extract attributes or stable relationships. Respond ONLY with the requested JSON object."
+    )
+    
+    entity_focus = f"Focus on events related to {entity_name}." if entity_name else "Extract all events mentioned in the text."
+    
+    user_prompt = f"""
+    Task: Extract astronomical events from the given text. {entity_focus}
+
+    **Text:** {text_content}
+
+    **Instructions:**
+    1.  **Extract Events Only:** Events are temporal occurrences, changes, or actions that happen at a specific time or over a period.
+        * Events have a beginning and end, unlike permanent attributes or stable relationships.
+        * Events involve change, action, or occurrence.
+    
+    2.  **Event Structure:**
+        * **event_type:** A descriptive name for the event category (e.g., "Dimming", "Explosion", "Discovery", "Measurement")
+        * **anchor_entity:** The main astronomical entity involved in the event
+        * **arguments:** Key details about the event, including:
+            * **participant:** Entities involved in the event
+            * **time/time_frame/start_time/end_time:** When the event occurred
+            * **location:** Where the event occurred (if applicable)
+            * **result:** Outcome or effect of the event
+            * **instrument:** Tool or method used (if applicable)
+            * Other relevant roles specific to the event type
+    
+    3.  **Distinguish from Attributes:**
+        * Attributes are permanent or semi-permanent properties (e.g., mass, diameter, composition)
+        * Events are occurrences that happen at specific times (e.g., dimming, explosion, discovery)
+        * If something happened at a specific time or represents a change, it's likely an event
+    
+    4.  **Distinguish from Relationships:**
+        * Relationships describe stable connections between entities (e.g., "orbits", "belongs to")
+        * Events describe things that happen (e.g., "dimmed", "exploded", "was discovered")
+    
+    5.  **Include a confidence score (0.0-1.0) for each event.**
+
+    **Examples of Valid Events:**
+    - "Betelgeuse dimmed significantly between October 2019 and February 2020" (Event: Dimming)
+    - "The first measurement of Betelgeuse's angular size was made in 1920" (Event: Measurement)
+    - "Voyager 1 crossed the heliopause in 2012" (Event: Boundary Crossing)
+
+    **Examples of Invalid Events (these are attributes or relationships, not events):**
+    - "Betelgeuse is a red supergiant star" (This is an attribute/classification)
+    - "Mars orbits the Sun" (This is a stable relationship)
+    - "Jupiter has 79 known moons" (This is an attribute/property)
+
+    **JSON Output Format:**
+    {{
+    "is_relevant": boolean,
+    "events": [
+        {{
+        "event_type": "string",
+        "anchor_entity": "string",
+        "arguments": [
+            {{
+            "role": "string",
+            "value": "string"
+            }}
+        ],
+        "confidence": float
+        }}
+    ]
     }}
     """
     
@@ -489,6 +600,7 @@ def parse_relation_response(response_text: str) -> Optional[List[RelationExtract
         # 验证关系格式并过滤属性关系
         classifier = AttributeClassifier()
         entity_classifier = EntityClassifier()
+        event_classifier = EventClassifier()
         
         validated_relations = []
         for rel in relations:
@@ -499,15 +611,55 @@ def parse_relation_response(response_text: str) -> Optional[List[RelationExtract
                     logger.debug(f"Filtered out attribute relation: {rel}")
                     continue
                 
+                # 检查是否为事件关系
+                if event_classifier.is_event_predicate(rel["predicate"]):
+                    logger.debug(f"Filtered out event relation: {rel}")
+                    continue
+                
                 # 检查对象是否为实体
                 if not entity_classifier.is_entity(rel["object"]):
                     logger.debug(f"Filtered out non-entity object: {rel}")
                     continue
                 
+                if "attributes" not in rel or not isinstance(rel.get("attributes"), dict):
+                    rel["attributes"] = {}
                 validated_relations.append(rel)
         
         return validated_relations
     
     except (json.JSONDecodeError, AttributeError) as e:
         logger.error(f"Failed to parse relation response. Error: {e}. Response: {response_text[:300]}")
+        return None
+
+
+def parse_event_response(response_text: str) -> Optional[List[EventExtraction]]:
+    """解析事件抽取响应"""
+    try:
+        # 寻找JSON代码块
+        match = re.search(r"```json\s*(\{.*?\})\s*```", response_text, re.DOTALL)
+        if match:
+            json_str = match.group(1)
+        else:
+            json_str = response_text
+        
+        data = json.loads(json_str)
+        
+        if not data.get("is_relevant"):
+            return []
+        
+        events = data.get("events", [])
+        if not isinstance(events, list):
+            logger.warning(f"Events response is not a list: {response_text[:200]}")
+            return None
+        
+        # 验证事件格式
+        validated_events = []
+        for event in events:
+            if all(k in event for k in ["event_type", "anchor_entity", "arguments", "confidence"]):
+                validated_events.append(event)
+        
+        return validated_events
+    
+    except (json.JSONDecodeError, AttributeError) as e:
+        logger.error(f"Failed to parse event response. Error: {e}. Response: {response_text[:300]}")
         return None

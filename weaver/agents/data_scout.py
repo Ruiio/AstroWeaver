@@ -364,6 +364,16 @@ Respond with a JSON object containing a "tool_calls" list. Each item in the list
                 seen_calls.add(call_representation)
                 unique_tool_plan.append(call)
 
+        # 对 research_topic 强制补充 wikipedia_search 兜底，避免 web_search 全失败时无文本
+        if input_type == "research_topic" and source_identifier:
+            has_wiki_fallback = any(
+                call.get("tool") == "wikipedia_search" and str(call.get("query", "")).strip() == str(source_identifier).strip()
+                for call in unique_tool_plan
+            )
+            if not has_wiki_fallback:
+                unique_tool_plan.append({"tool": "wikipedia_search", "query": str(source_identifier).strip()})
+                logger.info(f"已为主题补充 wikipedia_search 兜底: {source_identifier}")
+
         logger.info(f"生成了 {len(full_tool_plan)} 个工具调用。去重后剩余 {len(unique_tool_plan)} 个唯一调用。")
         logger.info(f"最终生成的唯一执行计划: {json.dumps(unique_tool_plan, indent=2)}")
         # 步骤 3: 执行去重后的计划

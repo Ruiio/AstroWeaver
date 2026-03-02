@@ -75,6 +75,10 @@ def parse_file(file_paths, server_url=config['minerU']['api_url'], **kwargs):
         # 发送POST请求
         response = requests.post(server_url, files=files_to_upload, data=data_payload, timeout=300)  # 设置300秒超时
 
+        # 打印响应状态码和内容，帮助诊断问题
+        print(f"响应状态码: {response.status_code}")
+        print(f"响应内容: {response.text[:500]}...(截断)")
+
         # 检查HTTP响应状态码，如果不是2xx，则会抛出异常
         response.raise_for_status()
         result_json={}
@@ -102,7 +106,7 @@ def parse_file(file_paths, server_url=config['minerU']['api_url'], **kwargs):
 if __name__ == "__main__":
     # --- 准备一个用于测试的虚拟文件 ---
     # 在实际使用中，请将 DUMMY_FILE_PATH 替换为您自己的文件路径
-    DUMMY_FILE_PATH = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\RAKCR.pdf"
+    DUMMY_FILE_PATH = r"C:\Users\Administrator\Desktop\astroWeaver\data\input\test_data\our_solar_system_lithograph.pdf"
 
 
     # --- 示例1: 最简单的调用，使用默认参数解析单个文件 ---

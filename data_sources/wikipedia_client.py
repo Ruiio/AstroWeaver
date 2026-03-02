@@ -147,7 +147,16 @@ class WikipediaClient:
                 logger.warning(f"No sections found for '{entity_name}'.")
                 return []
             logger.info(f"Found {len(sections)} sections for '{entity_name}'.")
-            return sections
+            url = f"https://en.wikipedia.org/wiki/{entity_name.replace(' ', '_')}"
+            wrapped = []
+            for s in sections:
+                if isinstance(s, str) and s.strip():
+                    wrapped.append({
+                        "text": s,
+                        "source_type": "wikipedia",
+                        "source_url": url
+                    })
+            return wrapped
         except Exception as e:
             logger.error(f"Error fetching sections for '{entity_name}': {e}")
             return []

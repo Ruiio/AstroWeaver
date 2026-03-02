@@ -1,5 +1,7 @@
 # astroWeaver/utils/config.py
 
+import os
+import re
 import yaml
 import logging
 from pathlib import Path
@@ -13,7 +15,7 @@ DEFAULT_CONFIG_PATH = Path(__file__).resolve().parents[2] / "configs" / "config.
 
 def load_config(config_path: str = None) -> Dict[str, Any]:
     """
-    从指定的YAML文件加载配置。
+    从指定的YAML文件加载配置，支持环境变量替换。
 
     Args:
         config_path (str, optional): 配置文件的路径。
@@ -36,7 +38,18 @@ def load_config(config_path: str = None) -> Dict[str, Any]:
 
     try:
         with open(path, 'r', encoding='utf-8') as f:
-            config = yaml.safe_load(f)
+            content = f.read()
+        
+        # 环境变量替换：支持 ${VAR_NAME} 或 $VAR_NAME 格式
+        def replace_env_var(match):
+            var_name = match.group(1) or match.group(2)
+            # 尝试从环境变量获取，如果不存在则使用原字符串
+            return os.environ.get(var_name, match.group(0))
+        
+        # 替换 ${VAR} 和 $VAR 格式
+        content = re.sub(r'\$\{([^}]+)\}|\$([A-Za-z_][A-Za-z0-9_]*)', replace_env_var, content)
+        
+        config = yaml.safe_load(content)
 
         # 可以在这里添加对配置项的验证逻辑，例如检查必要的键是否存在
         _validate_config(config)

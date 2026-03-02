@@ -225,5 +225,5 @@ def get_simbad_data(obj_name):
 
 
 # json_data = get_simbad_data("rigel")
-#
+
 # print(json_data)
